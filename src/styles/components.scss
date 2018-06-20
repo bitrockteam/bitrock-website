@@ -1,0 +1,39 @@
+@import './colors.scss';
+
+.card{
+  background-color:#fff;
+  padding: 6px;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.6em;
+  overflow: hidden;
+
+  figure {
+    margin: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+  }
+
+  a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $evident-text01;
+  }
+
+  &.inverted {
+    color: #fff;
+    background: #2A2A2A;
+
+    p{
+      color: #fff;
+    }
+  }
+}
