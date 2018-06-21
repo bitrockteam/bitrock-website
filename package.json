@@ -6,7 +6,10 @@
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --hot"
+    "start": "NODE_ENV=development webpack-dev-server --hot",
+    "build:clean": "rm -rf ./dist",
+    "build:manifest": "mv ./dist/manifest..json ./dist/manifest.json",
+    "build": "npm run build:clean && webpack && npm run build:manifest"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
@@ -21,7 +24,8 @@
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4",
-    "webpack-notifier": "^1.6.0"
+    "webpack-notifier": "^1.6.0",
+    "webpack-pwa-manifest": "^3.6.2"
   },
   "dependencies": {
     "normalize.css": "^8.0.0"

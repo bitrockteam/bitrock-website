@@ -4,6 +4,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
@@ -24,7 +25,21 @@ module.exports = {
       title: pkg.name,
       alwaysNotify: true
     }),
-    new FaviconsWebpackPlugin('./src/assets/logotype.png'),
+    // new FaviconsWebpackPlugin('./src/assets/logotype.png'),
+    new WebpackPwaManifest({
+      name: 'Bitrock',
+      fingerprints: false,
+      theme_color: "#2a2a2a",
+      short_name: 'Bitrock',
+      description: 'What does it take to look beyond?',
+      background_color: '#ffffff',
+      icons: [
+        {
+          src: path.resolve('src/assets/logotype.png'),
+          sizes: [96, 128, 192, 256]
+        }
+      ]
+    }),
     new HtmlWebpackPlugin({
       title: pkg.name,
       template: './src/pages/index.html',

@@ -5,6 +5,12 @@ $menu-width: 32px;
 
 header {
   $bg: rgb(42, 42, 42);
+  position: fixed;
+  z-index: 97;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
 
   background: $bg;
   // height: 80px;
@@ -30,6 +36,16 @@ header {
     top: 0;
     background: rgba(42, 42, 42, 0.95);
 
+    &.open {
+      height: 100%;
+    }
+
+    svg {
+      display: block;
+      margin: 50px auto;
+      transform: scale(1.6);
+    }
+
     ul {
       margin: 0;
       padding: 0;
@@ -37,12 +53,27 @@ header {
 
       li {
         list-style: none;
+        line-height: 3.2em;
+
+        a {
+          text-transform: uppercase;
+          color: $evident-text02;
+          text-decoration: none;
+          font-size: 23px;
+          transition: all 0.4s ease;
+          text-shadow: 0px 0px 5px rgba(0,0,0,0.9);
+
+          &:hover {
+            color: $evident-text01;
+          }
+        }
       }
     }
   }
 }
 
 main{
+
   .card{
     margin: 10px 0;
 
