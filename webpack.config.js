@@ -4,7 +4,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest')
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
@@ -25,7 +25,7 @@ module.exports = {
       title: pkg.name,
       alwaysNotify: true
     }),
-    // new FaviconsWebpackPlugin('./src/assets/logotype.png'),
+    new FaviconsWebpackPlugin('./src/assets/logotype.png'),
     new WebpackPwaManifest({
       name: 'Bitrock',
       fingerprints: false,
@@ -48,7 +48,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: pkg.name,
       template: './src/pages/typography.html',
-      filename: 'typography.html'
+      filename: './typography/index.html'
     })
   ],
   devtool: 'source-map',

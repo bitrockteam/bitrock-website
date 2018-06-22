@@ -1,0 +1,46 @@
+@media (min-width: 992px) {
+
+  $leftBar: 220px;
+
+  header{
+    width: $leftBar;
+    height: 100%;
+    display: block;
+
+    i.fa-bars {
+      display: none;
+    }
+
+    & > svg {
+      display: block;
+    }
+
+    nav {
+      height: auto;
+      position: static;
+
+      svg {
+        display: none;
+      }
+
+      ul {
+        text-align: left;
+        margin-top: 20px;
+
+        li {
+          line-height: 2.8em;
+
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    padding-top: 8px;
+    padding-left: $leftBar + 8px;
+  }
+
+}

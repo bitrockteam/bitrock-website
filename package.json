@@ -9,12 +9,16 @@
     "start": "NODE_ENV=development webpack-dev-server --hot",
     "build:clean": "rm -rf ./dist",
     "build:manifest": "mv ./dist/manifest..json ./dist/manifest.json",
+    "gh:page": "gh-pages -d ./dist",
+    "deploy": "npm run build && npm run gh:page",
     "build": "npm run build:clean && webpack && npm run build:manifest"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
     "favicons-webpack-plugin": "^0.0.9",
     "file-loader": "^1.1.11",
+    "gh-pages": "^1.2.0",
     "html-webpack-plugin": "^3.2.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.3",
@@ -28,6 +32,7 @@
     "webpack-pwa-manifest": "^3.6.2"
   },
   "dependencies": {
+    "@webcomponents/custom-elements": "^1.1.2",
     "normalize.css": "^8.0.0"
   }
 }

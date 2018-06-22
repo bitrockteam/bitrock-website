@@ -19,14 +19,14 @@ header {
   padding: 21px 16px;
   grid-template-columns: 1fr $menu-width;
 
-  i {
+  i.fa-bars {
     font-size: $menu-width;
     color: $evident-text02;
     cursor: pointer;
   }
 
   nav {
-    transition: all 0.4s ease;
+    transition: all 0.35s ease;
     overflow: hidden;
     height: 0;
     position: fixed;
@@ -73,6 +73,7 @@ header {
 }
 
 main{
+  padding: 90px 8px;
 
   .card{
     margin: 10px 0;

@@ -1,0 +1,14 @@
+body {
+  background: #EEEEEE;
+
+  .wrapper {
+    opacity: 0;
+  }
+
+  &.ready {
+    .wrapper {
+      transition: opacity 1s ease;
+      opacity: 1;
+    }
+  }
+}
