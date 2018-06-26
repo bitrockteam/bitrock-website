@@ -5,14 +5,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
+const devMode = process.env.NODE_ENV !== 'production'
 const dist = './dist';
 
 module.exports = {
   entry: {
-    demo: './src/index.js'
+    main: './src/index.js',
   },
   mode: env,
   output: {
@@ -24,6 +26,10 @@ module.exports = {
     new WebpackNotifierPlugin({
       title: pkg.name,
       alwaysNotify: true
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
     }),
     new FaviconsWebpackPlugin('./src/assets/logotype.png'),
     new WebpackPwaManifest({
@@ -68,8 +74,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 
+          'css-loader'
+        ]
       },
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader']
+      // },
       // {
       //   test: /\.scss$/,
       //   use: [
@@ -81,7 +94,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader',
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'],
         // include: fs.realpathSync('./src/styles')

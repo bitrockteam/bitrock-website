@@ -1,6 +1,12 @@
 # bitrock-website
 Bitrock corporate website.
 
+## Requisites
+You need the following software installed in your machine in order to get started:
+* [Node.js](https://nodejs.org/en/) latest stable
+* [Yarn](https://yarnpkg.com/en/) package manager
+Both can be installed via Homebrew on MacOS & Linux environments.
+
 ## Create a local development environment
 Clone the repo locally
 ```bash
@@ -17,6 +23,11 @@ Start the development webserver on `localhost:8090`
 $ yarn start
 ```
 
+## Development
+
 ## Branching policy
 
 ## Update & deploy
+
+## License
+Databiz Group internal use only.

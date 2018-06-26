@@ -1,25 +1,93 @@
 @media (min-width: 992px) {
 
+  body.no-cover {
+    padding-top: 0;
+
+    header {
+      background: rgb(42, 42, 42);
+
+      & > .logo{
+        height: 37px;
+      }
+    }
+  }
+
   $leftBar: 220px;
+
+  section.cover{
+    padding-top: 0px;
+    height: 100vh;
+
+    figure {
+      $padding: 70px;
+      height: 100%;
+
+      svg {
+        display: block;
+        position: absolute;
+        left: $leftBar + $padding;
+        top: $padding;
+        transform-origin: left;
+        transform: scale(2.4);
+      }
+
+      figcaption {
+        left: $leftBar + $padding;
+        right: $padding;
+        bottom: 60px;
+
+        h3{
+          font-size: 78px;
+          
+          small {
+            font-size: 62px;
+          }
+        }
+
+        h4{
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    
+  }
 
   header{
     width: $leftBar;
     height: 100%;
     display: block;
+    background: rgba(20, 20, 20, 0.8);
+    transition: background 1s ease;
+
+    &.active {
+      background: rgb(42, 42, 42);
+
+      & > .logo{
+        height: 37px;
+      }
+    }
 
     i.fa-bars {
       display: none;
     }
 
-    & > svg {
+    & > .logo {
       display: block;
+      overflow: hidden;
+      transition: height 0.4s ease;
+      height: 0;
     }
 
     nav {
       height: auto;
       position: static;
+      background: transparent;
 
-      svg {
+      .logo {
         display: none;
       }
 
@@ -35,12 +103,45 @@
           }
         }
       }
+
+      hr {
+        margin: 24px 0;
+      }
     }
+  }
+
+  main.evidence {
+    column-count: unset;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column-gap: 15px;
   }
 
   main {
     padding-top: 8px;
     padding-left: $leftBar + 8px;
+
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-column-gap: 15px;
+    // grid-auto-flow: dense;
+    column-count: 4;
+    column-gap: 15px;
+
+    .block:first-child {
+      // grid-column-start: span 3;
+      // width: 55%;
+    }
+
+    .block{
+      margin-top: 0;
+      // width: 25%;
+      break-inside: avoid;
+      box-sizing: border-box;
+    }
   }
 
+  footer {
+    padding-left: $leftBar;
+  }
 }

@@ -1,7 +1,9 @@
 
+import { html, render } from 'lit-html';
+
 export default class BitrockLogo extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = /*html*/`
+    const markup = html`
       <svg width="154px" height="37px" viewBox="0 0 154 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
         <desc>Created with Sketch.</desc>
@@ -36,6 +38,8 @@ export default class BitrockLogo extends HTMLElement {
         </g>
       </svg>
     `;
+
+    render(markup, this);
   }
 }
 
