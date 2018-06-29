@@ -38,6 +38,7 @@
     "@webcomponents/custom-elements": "^1.1.2",
     "bitquest": "^1.0.0",
     "lit-html": "^0.10.2",
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "router5": "^6.2.4"
   }
 }

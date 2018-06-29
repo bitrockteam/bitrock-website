@@ -11,6 +11,7 @@ const pkg = require('./package.json');
 const env = process.env.NODE_ENV || 'development';
 const devMode = process.env.NODE_ENV !== 'production'
 const dist = './dist';
+const minify = devMode ? false : true;
 
 module.exports = {
   entry: {
@@ -49,12 +50,14 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: pkg.name,
       template: './src/pages/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      minify
     }),
     new HtmlWebpackPlugin({
       title: pkg.name,
       template: './src/pages/typography.html',
-      filename: './typography/index.html'
+      filename: './typography/index.html',
+      minify
     })
   ],
   devtool: 'source-map',

@@ -1,4 +1,8 @@
 @media (min-width: 992px) {
+  %showLogo {
+    height: 37px;
+    transform: scale(1);
+  }
 
   body.no-cover {
     padding-top: 0;
@@ -7,7 +11,7 @@
       background: rgb(42, 42, 42);
 
       & > .logo{
-        height: 37px;
+        @extend %showLogo;
       }
     }
   }
@@ -67,7 +71,7 @@
       background: rgb(42, 42, 42);
 
       & > .logo{
-        height: 37px;
+        @extend %showLogo;
       }
     }
 
@@ -77,8 +81,10 @@
 
     & > .logo {
       display: block;
+      transform-origin: top;
+      transform: scale(0);
       overflow: hidden;
-      transition: height 0.4s ease;
+      transition: all 0.4s ease;
       height: 0;
     }
 

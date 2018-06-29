@@ -1,10 +1,17 @@
 
-import { html, render } from 'lit-html';
+import { html, render } from 'lit-html/lib/lit-extended';
+import { router, routes } from './../libs/routing';
+import './link';
 
 export default class BitrockLogo extends HTMLElement {
+  _navigate(evt){
+    console.log(evt);
+    router.navigate(routes[0].path);
+  }
+
   connectedCallback() {
     const markup = html`
-      <svg width="154px" height="37px" viewBox="0 0 154 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg on-click=${this._navigate} width="154px" height="37px" viewBox="0 0 154 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
         <desc>Created with Sketch.</desc>
         <defs></defs>
@@ -40,6 +47,15 @@ export default class BitrockLogo extends HTMLElement {
     `;
 
     render(markup, this);
+
+    // this.addEventListener('click', evt => {
+    //   console.log('/');
+      
+    //   import('./../libs/routing').then(module => {
+    //     console.log(module);
+    //     module.router.navigate(module.routes[0].path);
+    //   })
+    // });
   }
 }
 

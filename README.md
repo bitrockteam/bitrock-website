@@ -1,6 +1,8 @@
 # bitrock-website
 Bitrock corporate website.
 
+https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master
+
 ## Requisites
 You need the following software installed in your machine in order to get started:
 * [Node.js](https://nodejs.org/en/) latest stable
