@@ -1,0 +1,1 @@
+export const API = 'http://54.199.243.153/wp-json/wp/v2/';

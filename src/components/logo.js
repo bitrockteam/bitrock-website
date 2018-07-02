@@ -5,13 +5,12 @@ import './link';
 
 export default class BitrockLogo extends HTMLElement {
   _navigate(evt){
-    console.log(evt);
-    router.navigate(routes[0].path);
+    router.navigate(routes[0].name);
   }
 
   connectedCallback() {
     const markup = html`
-      <svg on-click=${this._navigate} width="154px" height="37px" viewBox="0 0 154 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg class="logo" on-click=${this._navigate} width="154px" height="37px" viewBox="0 0 154 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
         <desc>Created with Sketch.</desc>
         <defs></defs>

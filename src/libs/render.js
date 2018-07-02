@@ -1,6 +1,6 @@
 
 import { pagesToMenu, filterTags } from './data';
-import { $, $$, applyCover } from './dom';
+import { $, $$, applyCover, setPosts } from './dom';
 
 export const renderMenu = response =>
   Promise.resolve(response)
@@ -20,5 +20,6 @@ export const renderTags = response =>
 
 export const renderPosts = response =>
   Promise.resolve(response)
+    .then(data => setPosts(data))
     .then(data => data.filter(e => e.sticky))
     .then(sticky => applyCover(sticky))

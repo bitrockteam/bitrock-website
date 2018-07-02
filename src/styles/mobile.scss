@@ -7,6 +7,10 @@ body {
   padding-top: 82px;
 }
 
+svg.logo{
+  cursor: pointer;
+}
+
 body.cover {
   padding-top: 0;
 
@@ -178,6 +182,22 @@ main{
       margin-bottom: 0;
     }
   }
+}
+
+article{
+  text-align: left;
+
+  &.card{
+    padding: 20px;
+
+    h3{
+      font-size: 28pt;
+      text-align: left;
+      font-weight: 300;
+      color: $constrast01;
+    }
+  }
+  
 }
 
 footer {
