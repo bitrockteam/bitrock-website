@@ -1,1 +1,5 @@
-export const API = 'http://54.199.243.153/wp-json/wp/v2/';
+const protocol = 'https';
+const domain = 'api.bitrock.it';
+const wp_rest = 'wp-json/wp/v2';
+
+export const API = `${protocol}://${domain}/${wp_rest}/`;

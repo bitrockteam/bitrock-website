@@ -1,0 +1,11 @@
+
+// Optimistic UI updates
+%optimistic {
+  font-family: 'BLOKKRegular';
+  animation: optimistic 0.8s infinite alternate ease;
+}
+
+@keyframes optimistic {
+  from {opacity: 1; }
+  to {opacity: 0.5; }
+}

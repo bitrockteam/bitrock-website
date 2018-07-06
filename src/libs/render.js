@@ -1,11 +1,11 @@
 
-import { pagesToMenu, filterTags } from './data';
-import { $, $$, applyCover, setPosts } from './dom';
+import { formatMenu, filterTags } from './data';
+import { $, setPosts } from './dom';
 
 export const renderMenu = response =>
   Promise.resolve(response)
     // .then(r => r.json())
-    .then(data => pagesToMenu(data))
+    .then(data => formatMenu(data))
     .then(json => JSON.stringify(json))
     .then(str => $('bitrock-header').setAttribute('menu', str));
     // .then(titles => titles.map(e => `
@@ -20,6 +20,4 @@ export const renderTags = response =>
 
 export const renderPosts = response =>
   Promise.resolve(response)
-    .then(data => setPosts(data))
-    .then(data => data.filter(e => e.sticky))
-    .then(sticky => applyCover(sticky))
+    .then(data => setPosts(data));

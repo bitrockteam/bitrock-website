@@ -1,9 +1,10 @@
 
 @import './colors.scss';
+@import './mixins.scss';
 
 $menu-width: 32px;
 
-body {
+.wrapper {
   padding-top: 82px;
 }
 
@@ -11,7 +12,7 @@ svg.logo{
   cursor: pointer;
 }
 
-body.cover {
+.wrapper.cover {
   padding-top: 0;
 
   section.cover{
@@ -182,23 +183,43 @@ main{
       margin-bottom: 0;
     }
   }
+
+  &.loading {
+    @extend %optimistic;
+  }
 }
 
-article{
-  text-align: left;
-
-  &.card{
-    padding: 20px;
-
-    h3{
-      font-size: 28pt;
-      text-align: left;
-      font-weight: 300;
-      color: $constrast01;
+.content{
+  rock-back{
+    a{
+      color: $normal-text;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 16pt;
     }
   }
-  
+
+  article{
+    text-align: left;
+
+    &.card{
+      padding: 20px;
+      text-align: left;
+
+      h3{
+        font-size: 28pt;
+        font-weight: 300;
+        color: $constrast01;
+      }
+    }
+    
+    &.loading {
+      @extend %optimistic;
+    }
+  }
 }
+
 
 footer {
   p{

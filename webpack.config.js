@@ -38,12 +38,13 @@ module.exports = {
       fingerprints: false,
       theme_color: "#2a2a2a",
       short_name: 'Bitrock',
+      start_url: 'https://bitrockteam.github.io/bitrock-website/',
       description: 'What does it take to look beyond?',
       background_color: '#ffffff',
       icons: [
         {
           src: path.resolve('src/assets/logotype.png'),
-          sizes: [96, 128, 192, 256]
+          sizes: [96, 128, 192, 256, 512]
         }
       ]
     }),

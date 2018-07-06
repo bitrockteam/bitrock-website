@@ -6,7 +6,9 @@ import './components/app';
 
 import './styles/main.scss';
 
-if ('serviceWorker' in navigator) {
+const prod = process.env.NODE_ENV === 'production';
+
+if ('serviceWorker' in navigator && prod) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js');
   });

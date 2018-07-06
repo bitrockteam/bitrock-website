@@ -5,13 +5,13 @@ import listenersPlugin from 'router5/plugins/listeners';
 
 export const routes = [
   { name: 'home-page', path: '/' },
-  // { name: 'progetti', path: '/progetti' },
-  // { name: 'academy', path: '/academy' },
+  { name: 'post', path: '/post/' },
+  { name: 'post.single', path: '/:slug' },
 ];
 
 export const router = createRouter(routes)
   .usePlugin(browserPlugin({
-    useHash: false,
+    useHash: true,
     defaultRoute: '/',
   }), listenersPlugin())
   // .usePlugin(listenersPlugin())

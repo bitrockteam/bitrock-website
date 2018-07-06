@@ -1,9 +1,8 @@
 
-export const pagesToMenu = data => data
-  .sort((a,b) => a.menu_order - b.menu_order)
+export const formatMenu = data => data
   .map(e => {
     return {
-      title: e.title.rendered,
+      title: e.title,
       url: e.slug
     }
   });
@@ -22,9 +21,14 @@ export const filterTags = data => data
 export const pagesToRoutes = data => data
   .map(e => {
     return {
-      name: kebabify(e.title.rendered),
+      name: kebabify(e.title),
       path: '/' + e.slug
     }
   });
+
+export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
+  sourceUrl(embeds['wp:featuredmedia']) : '';
+
+const sourceUrl = media => media[0].media_details.sizes.full.source_url;
 
 const kebabify = str => str.replace(/ +/g, '-').toLowerCase();

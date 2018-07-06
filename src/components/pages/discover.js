@@ -10,6 +10,7 @@ export default class Discover extends HTMLElement {
             <div class="meta"></div>
             <div class="body">
               <h3>Scopri Bitrock</h3>
+              <p></p>
             </div>
           </section>
         </article>

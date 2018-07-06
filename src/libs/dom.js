@@ -3,12 +3,6 @@ export const $ = selector => document.querySelector(selector);
 
 export const $$ = selector => document.querySelectorAll(selector);
 
-export const applyCover = sticky => {
-  const body = document.body.classList;
-  sticky.length ? body.add('cover') : body.add('no-cover');
-  return sticky;
-}
-
 export const setPosts = posts => {
   const $hp = $('home-page');
   const ts = new Date().toISOString();
