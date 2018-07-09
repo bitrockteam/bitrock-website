@@ -6,9 +6,22 @@ export const $$ = selector => document.querySelectorAll(selector);
 export const setPosts = posts => {
   const $hp = $('home-page');
   const ts = new Date().toISOString();
-  $hp.posts = posts;
+  $hp.posts = checkSticky(posts);
   $hp.setAttribute('posts', ts);
   return posts;
+}
+
+export const checkSticky = posts => {
+  const sticky = posts.filter(e => e.sticky);
+  return sticky.length ? setSticky(posts) : posts
+}
+
+export const setSticky = posts => {
+  const $hero = $('rock-hero');
+  const ts = new Date().toISOString();
+  $hero.data = posts.filter(e => e.sticky)[0];
+  $hero.setAttribute('data', ts);
+  return posts.filter(e => !e.sticky);
 }
 
 export const scrollEffect = evt => {

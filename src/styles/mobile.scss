@@ -24,6 +24,10 @@ section.cover{
   display: none;
   padding-top: 82px;
 
+  // &.loading {
+  //   @extend %optimistic;
+  // }
+
   figure {
     margin: 0;
     position: relative;
@@ -139,6 +143,32 @@ header {
 
           &:hover {
             color: $evident-text01;
+          }
+        }
+      }
+    }
+
+    ul.socials{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: 24px 24px 0;
+
+      li {
+        text-align: center;
+
+        a {
+          $size: 38px;
+
+          margin: 0 auto;
+          display: block;
+          width: $size;
+          height: $size;
+          line-height: $size;
+          border-radius: 50%;
+          border: 1px solid $evident-text02;
+
+          &:hover {
+            color: $evident-text02;
           }
         }
       }

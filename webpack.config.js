@@ -15,12 +15,13 @@ const minify = devMode ? false : true;
 
 module.exports = {
   entry: {
-    main: './src/index.js',
+    bitrock: './src/index.js',
+    // 'sw.fetch': './src/sw.fetch.js'
   },
   mode: env,
   output: {
     path: path.join(__dirname, dist),
-    filename: 'bitrock.js',
+    filename: '[name].js',
     chunkFilename: '[chunk].js'
   },
   plugins: [

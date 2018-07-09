@@ -5,7 +5,7 @@ import {
   renderMenu, renderPosts, renderTags
 } from '../libs/render';
 import { pagesToRoutes } from '../libs/data';
-import { API } from '../consts';
+import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
 
 import './header';
@@ -57,9 +57,9 @@ export default class BitrockWebsite extends HTMLElement {
 
   _loadData() {
     Promise.all([
-      bitquest(API + 'menus/nav').get(),
-      bitquest(API + 'tags').get(),
-      bitquest(API + 'posts?_embed').get()
+      bitquest(API + PATHS.menu).get(),
+      bitquest(API + PATHS.tags).get(),
+      bitquest(API + PATHS.posts).get()
     ]).then(responses => {
       renderMenu(responses[0]);
       renderTags(responses[1]);

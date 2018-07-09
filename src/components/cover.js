@@ -1,14 +1,29 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
+import { getFeatImage } from '../libs/data';
+import { post as mock } from '../libs/mock';
 
 const BG = require("./../assets/img/main_bg.jpg");
 
 export default class RockHero extends HTMLElement {
-  connectedCallback() {
+
+  static get observedAttributes() {
+    return ['data'];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    this._render(this.data, false);
+  }
+
+  _render(data, loading) {
+    const optimistic = loading ? 'loading' : '';
+
     const markup = html`
-      <section class="cover">
+      <section class$="cover ${optimistic}">
         <figure>
-          <img src=${BG} alt="">
+          <img src=${getFeatImage(data._embedded)} 
+            alt=""
+          >
           <bitrock-logo></bitrock-logo>
           <figcaption>
             <h3>
@@ -22,6 +37,10 @@ export default class RockHero extends HTMLElement {
     `;
 
     render(markup, this);
+  }
+
+  connectedCallback() {
+    this._render(mock(), true);
   }
 }
 

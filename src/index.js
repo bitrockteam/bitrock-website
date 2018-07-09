@@ -8,9 +8,16 @@ import './styles/main.scss';
 
 const prod = process.env.NODE_ENV === 'production';
 
-if ('serviceWorker' in navigator && prod) {
+if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js');
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => {
+        console.log(reg);
+      });
+    // navigator.serviceWorker.register('./sw.fetch.js')
+    //   .then(reg => {
+    //     console.log(reg);
+    //   });
   });
 }
 

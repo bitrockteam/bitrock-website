@@ -3,6 +3,7 @@ import { html, render } from 'lit-html/lib/lit-extended';
 import { router } from '../libs/routing';
 import './logo';
 import './ui/link';
+import './ui/social';
 
 export default class BitrockHeader extends HTMLElement {
   static get observedAttributes() { 
@@ -31,6 +32,7 @@ export default class BitrockHeader extends HTMLElement {
                 url$="${e.url}"
               ></rock-link></li>`)}
           </ul>
+          <rock-social-icons></rock-social-icons>
           <hr>
           <ul class="tags">
             ${tags.map(e =>

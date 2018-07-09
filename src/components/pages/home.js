@@ -5,7 +5,7 @@ import { setPosts } from '../../libs/dom';
 import { getFeatImage } from '../../libs/data';
 import { router } from '../../libs/routing';
 import { post as mock } from '../../libs/mock';
-import { API } from '../../consts';
+import { API, PATHS } from '../../consts';
 import '../cover';
 import '../ui/link';
 
@@ -31,7 +31,7 @@ export default class HomePage extends HTMLElement {
 
   connectedCallback(){
     this._render(true);
-    bitquest(API + 'posts/?_embed').get()
+    bitquest(API + PATHS.posts).get()
       .then(data => setPosts(data));
   }
 
