@@ -1,8 +1,8 @@
 import { html, render } from 'lit-html/lib/lit-extended';
 
 const DATA = [
-  { name: 'Facebook', icon: 'fa-facebook-f', url: '' },
-  { name: 'Twitter', icon: 'fa-twitter', url: '' },
+  // { name: 'Facebook', icon: 'fa-facebook-f', url: '' },
+  { name: 'Twitter', icon: 'fa-twitter', url: 'https://www.twitter.com/BitrockIT' },
   { name: 'LinkedIn', icon: 'fa-linkedin-in', url: 'https://www.linkedin.com/company/bitrock-srl/' }
 ]
 

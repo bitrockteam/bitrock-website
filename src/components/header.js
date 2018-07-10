@@ -30,6 +30,7 @@ export default class BitrockHeader extends HTMLElement {
               html`<li><rock-link
                 label$="${e.title}"
                 url$="${e.url}"
+                type$="${e.type}"
               ></rock-link></li>`)}
           </ul>
           <rock-social-icons></rock-social-icons>

@@ -2,7 +2,7 @@ import { router } from './../../libs/routing';
 
 export class LinkElement extends HTMLElement {
   static get observedAttributes() {
-    return ['label', 'url', 'active'];
+    return ['label', 'url', 'active', 'type'];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -14,9 +14,12 @@ export class LinkElement extends HTMLElement {
   }
 
   _navigate(evt) {
-    evt.preventDefault();
-    const href = evt.target.dataset.url;
-    router.navigate(href);
+    const custom = evt.target.type === 'custom';
+    if(!custom) {
+      evt.preventDefault();
+      const href = evt.target.dataset.url;
+      router.navigate(href);
+    }
   }
 
 }

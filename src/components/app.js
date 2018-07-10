@@ -14,6 +14,7 @@ import './logo';
 import './pages/home';
 import './pages/discover';
 import './pages/post';
+import './pages/contacts';
 
 const BG = require("./../assets/img/main_bg.jpg");
 
@@ -30,7 +31,9 @@ export default class BitrockWebsite extends HTMLElement {
     document.documentElement.scrollTop = 0;
 
     this.page = route.name;
+    console.log(route);
 
+    window.removeEventListener('scroll', scrollEffect);
     switch(route.name){
       case 'home-page':
         this.cover = this.sticky.length;
@@ -39,10 +42,13 @@ export default class BitrockWebsite extends HTMLElement {
       case 'post.single':
         this.page = route.name.replace('.', '-');
         this.pageId = route.params.id;
+        break;
+      case 'contact-us':
+        this.page = route.name;
+        // this.pageId = route.meta.id;
+        break;
       default:
         this.cover = 0;
-        window.removeEventListener('scroll', scrollEffect);
-        break;
     }
     this._render();
   }
@@ -71,7 +77,8 @@ export default class BitrockWebsite extends HTMLElement {
       $('body').classList.add('ready');
       this._render();
 
-      const routes = pagesToRoutes(responses[0])
+      const routes = pagesToRoutes(responses[0]);
+      console.log(routes);
       router.add(routes);
     }, error => {
       // $('body').classList.add('ready');

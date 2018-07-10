@@ -14,7 +14,6 @@ export const router = createRouter(routes)
     useHash: true,
     defaultRoute: '/',
   }), listenersPlugin())
-  // .usePlugin(listenersPlugin())
   .start(routes[0].path);
 
 

@@ -1,9 +1,14 @@
 
+const sourceUrl = media => media[0].media_details.sizes.full.source_url;
+const kebabify = str => str.replace(/ +/g, '-').toLowerCase();
+const urlType = item => item.object === 'page' ? item.slug : item.url;
+
 export const formatMenu = data => data
   .map(e => {
     return {
       title: e.title,
-      url: e.slug
+      url: urlType(e),
+      type: e.object
     }
   });
 
@@ -22,13 +27,10 @@ export const pagesToRoutes = data => data
   .map(e => {
     return {
       name: kebabify(e.title),
-      path: '/' + e.slug
+      path: '/' + e.slug,
+      custom: { id: parseInt(e.object_id) }
     }
   });
 
 export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
   sourceUrl(embeds['wp:featuredmedia']) : '';
-
-const sourceUrl = media => media[0].media_details.sizes.full.source_url;
-
-const kebabify = str => str.replace(/ +/g, '-').toLowerCase();
