@@ -1,6 +1,5 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
-import { router } from '../libs/routing';
 import './logo';
 import './ui/link';
 import './ui/social';
@@ -10,11 +9,15 @@ export default class BitrockHeader extends HTMLElement {
     return ['menu', 'tags', 'active']; 
   }
 
+  _setId(evt){
+    console.log(evt);
+  }
+
   _render(menu = [], tags = [], active = false) {
     const _active = active ? 'active' : '';
 
     const markup = html`
-      <header class$="${_active}">
+      <header class$="main ${_active}">
         <div class="logo">
           <bitrock-logo></bitrock-logo>
         </div>

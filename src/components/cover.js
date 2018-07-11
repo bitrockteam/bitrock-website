@@ -1,9 +1,26 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
+import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { getFeatImage } from '../libs/data';
 import { post as mock } from '../libs/mock';
 
-const BG = require("./../assets/img/main_bg.jpg");
+// const mockup = html`
+//   <section class$="cover ${optimistic}">
+//     <figure>
+//       <img src=${getFeatImage(data._embedded)} 
+//         alt=""
+//       >
+//       <bitrock-logo></bitrock-logo>
+//       <figcaption>
+//         <h3>
+//           <small>what does it take</small> to look beyond?</h3>
+//         <h4>Business. Technology. Experience. </h4>
+//         <p>In order to successfully develop and apply innovative technology you need to be able to look beyond the horizon, anticipating
+//         trends and recognizing the next standards.</p>
+//       </figcaption>
+//     </figure>
+//   </section>
+// `;
 
 export default class RockHero extends HTMLElement {
 
@@ -26,11 +43,8 @@ export default class RockHero extends HTMLElement {
           >
           <bitrock-logo></bitrock-logo>
           <figcaption>
-            <h3>
-              <small>what does it take</small> to look beyond?</h3>
-            <h4>Business. Technology. Experience. </h4>
-            <p>In order to successfully develop and apply innovative technology you need to be able to look beyond the horizon, anticipating
-            trends and recognizing the next standards.</p>
+            <h3>${unsafeHTML(data.title.rendered)}</h3>
+
           </figcaption>
         </figure>
       </section>

@@ -16,3 +16,7 @@ export const post = () => new Object({
     }]
   }
 });
+
+export const domElement = {
+  setAttribute: data => data 
+}

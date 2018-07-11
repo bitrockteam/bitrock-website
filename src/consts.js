@@ -7,5 +7,8 @@ export const API = `${protocol}://${domain}/${wp_rest}/`;
 export const PATHS = {
   tags: 'tags',
   menu: 'menus/nav',
-  posts: 'posts?_embed=' + random()
+  pages: 'pages',
+  posts: 'posts?_embed=' + random(),
+  page: id => `pages/${id}?_embed=${random()}`,
+  post: id => `posts/${id}?_embed=${random()}`
 }

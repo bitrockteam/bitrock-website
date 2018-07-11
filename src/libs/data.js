@@ -8,7 +8,8 @@ export const formatMenu = data => data
     return {
       title: e.title,
       url: urlType(e),
-      type: e.object
+      type: e.object,
+      id: parseInt(e.object_id)
     }
   });
 
@@ -33,4 +34,4 @@ export const pagesToRoutes = data => data
   });
 
 export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
-  sourceUrl(embeds['wp:featuredmedia']) : '';
+  sourceUrl(embeds['wp:featuredmedia']) : false;

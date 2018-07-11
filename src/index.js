@@ -12,7 +12,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js')
       .then(reg => {
-        console.log(reg);
+        // console.log(reg);
       });
     // navigator.serviceWorker.register('./sw.fetch.js')
     //   .then(reg => {

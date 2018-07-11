@@ -2,7 +2,7 @@ import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { router } from '../../libs/routing';
-import { API } from '../../consts';
+import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
 import { getFeatImage } from '../../libs/data';
 import '../ui/link';
@@ -14,22 +14,20 @@ export default class SinglePost extends HTMLElement {
 
     const markup = html`
       <main class="content">
-        <rock-back
-          label="Home"
-          url="home-page"
-        >
         </rock-back>
         <article class$="card ${optimistic}">
-          <figure>
-            <img 
-              src="${getFeatImage(data._embedded)}"
-              alt="${data.title.rendered}" 
-            >
-          </figure>
+          <header>
+            <figure>
+              <img
+                src="${getFeatImage(data._embedded)}"
+                alt="${data.title.rendered}" 
+              >
+            </figure>
+          </header>
           <section class="">
             <div class="meta"></div>
             <div class="body">
-              <h3>${data.title.rendered}</h3>
+              <h3>${unsafeHTML(data.title.rendered)}</h3>
               ${unsafeHTML(data.content.rendered)}
             </div>
           </section>
@@ -49,7 +47,7 @@ export default class SinglePost extends HTMLElement {
 
     const id = this.getAttribute('id');
 
-    bitquest(`${API}posts/${id}/?_embed`).get()
+    bitquest(API + PATHS.post(id)).get()
       .then(data => this._render(data, false));
   }
 }

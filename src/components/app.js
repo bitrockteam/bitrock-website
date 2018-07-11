@@ -1,5 +1,6 @@
 import { html, render } from 'lit-html/lib/lit-extended';
 import { router } from '../libs/routing';
+import { lastVisited } from '../libs/storage';
 import { $, scrollEffect } from '../libs/dom';
 import {
   renderMenu, renderPosts, renderTags
@@ -11,12 +12,10 @@ import bitquest from 'bitquest';
 import './header';
 import './ui/link';
 import './logo';
-import './pages/home';
-import './pages/discover';
-import './pages/post';
-import './pages/contacts';
-
-const BG = require("./../assets/img/main_bg.jpg");
+// import './pages/home';
+// import './pages/post';
+// import './pages/contacts';
+// import './pages/academy';
 
 export default class BitrockWebsite extends HTMLElement {
 
@@ -31,26 +30,46 @@ export default class BitrockWebsite extends HTMLElement {
     document.documentElement.scrollTop = 0;
 
     this.page = route.name;
-    console.log(route);
-
-    window.removeEventListener('scroll', scrollEffect);
+    lastVisited.set(route);
+    
     switch(route.name){
       case 'home-page':
+        import(/* webpackChunkName: "page.home" */ './pages/home');
         this.cover = this.sticky.length;
         window.addEventListener('scroll', scrollEffect);
         break;
       case 'post.single':
+        import(/* webpackChunkName: "page.post" */ './pages/post');
         this.page = route.name.replace('.', '-');
         this.pageId = route.params.id;
         break;
       case 'contact-us':
-        this.page = route.name;
-        // this.pageId = route.meta.id;
+        import(/* webpackChunkName: "page.contacts" */ './pages/contacts');
+        break;
+      case 'academy':
+        import(/* webpackChunkName: "page.academy" */ './pages/academy');
+        this.page = 'bitrock-academy';
         break;
       default:
+        this.page = route.name;
         this.cover = 0;
+        window.removeEventListener('scroll', scrollEffect);
     }
+
+    if(route.name !== 'home-page'){
+      this.cover = 0;
+      window.removeEventListener('scroll', scrollEffect);
+    }
+
     this._render();
+  }
+
+  _setupRouter(data) {
+    const routes = pagesToRoutes(data);
+    router.add(routes);
+
+    const last = lastVisited.get();
+    router.navigate(last.name, last.params);
   }
 
   connectedCallback() {
@@ -69,17 +88,14 @@ export default class BitrockWebsite extends HTMLElement {
     ]).then(responses => {
       renderMenu(responses[0]);
       renderTags(responses[1]);
-      renderPosts(responses[2])
+      renderPosts(responses[2]);
 
       this.posts = responses[2];
       this.sticky = this.posts.filter(e => e.sticky);
       this.cover = this.sticky.length;
       $('body').classList.add('ready');
       this._render();
-
-      const routes = pagesToRoutes(responses[0]);
-      console.log(routes);
-      router.add(routes);
+      this._setupRouter(responses[0]);
     }, error => {
       // $('body').classList.add('ready');
       window.alert('An error has occured while initializing the application, try to reload.');

@@ -1,10 +1,11 @@
 
-export const $ = selector => document.querySelector(selector);
+import { domElement as mock } from './mock';
 
+export const $ = selector => document.querySelector(selector);
 export const $$ = selector => document.querySelectorAll(selector);
 
 export const setPosts = posts => {
-  const $hp = $('home-page');
+  const $hp = $('home-page') || mock;
   const ts = new Date().toISOString();
   $hp.posts = checkSticky(posts);
   $hp.setAttribute('posts', ts);
@@ -17,7 +18,7 @@ export const checkSticky = posts => {
 }
 
 export const setSticky = posts => {
-  const $hero = $('rock-hero');
+  const $hero = $('rock-hero') || mock;
   const ts = new Date().toISOString();
   $hero.data = posts.filter(e => e.sticky)[0];
   $hero.setAttribute('data', ts);

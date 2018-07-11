@@ -60,7 +60,7 @@
     
   }
 
-  header{
+  header.main{
     width: $leftBar;
     height: 100%;
     display: block;
@@ -123,8 +123,9 @@
   main.evidence {
     column-count: unset;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    // grid-template-columns: 3fr 1fr;
     grid-column-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   main {

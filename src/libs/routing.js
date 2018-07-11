@@ -3,6 +3,10 @@ import createRouter from 'router5';
 import browserPlugin from 'router5/plugins/browser';
 import listenersPlugin from 'router5/plugins/listeners';
 
+export const customData = (router) => (toState, fromState, done) => {
+  console.log(toState, fromState);
+}
+
 export const routes = [
   { name: 'home-page', path: '/' },
   { name: 'post', path: '/post/' },
@@ -14,7 +18,7 @@ export const router = createRouter(routes)
     useHash: true,
     defaultRoute: '/',
   }), listenersPlugin())
-  .start(routes[0].path);
+  .start(routes[0].name);
 
 
 if(process.env.NODE_ENV === 'development'){

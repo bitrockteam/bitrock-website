@@ -15,6 +15,7 @@ export class LinkElement extends HTMLElement {
 
   _navigate(evt) {
     const custom = evt.target.type === 'custom';
+
     if(!custom) {
       evt.preventDefault();
       const href = evt.target.dataset.url;

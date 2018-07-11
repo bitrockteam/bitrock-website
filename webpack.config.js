@@ -22,7 +22,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, dist),
     filename: '[name].js',
-    chunkFilename: '[chunk].js'
+    chunkFilename: '[name].js'
   },
   plugins: [
     new WebpackNotifierPlugin({
@@ -39,7 +39,7 @@ module.exports = {
       fingerprints: false,
       theme_color: "#2a2a2a",
       short_name: 'Bitrock',
-      start_url: 'https://bitrockteam.github.io/bitrock-website/',
+      // start_url: 'https://bitrockteam.github.io/bitrock-website/',
       description: 'What does it take to look beyond?',
       background_color: '#ffffff',
       icons: [

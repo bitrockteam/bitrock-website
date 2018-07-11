@@ -9,8 +9,6 @@ import { API, PATHS } from '../../consts';
 import '../cover';
 import '../ui/link';
 
-// const BG = require("./../../assets/img/main_bg.jpg");
-
 export default class HomePage extends HTMLElement {
   static get observedAttributes() {
     return ['posts'];
@@ -20,12 +18,13 @@ export default class HomePage extends HTMLElement {
     super();
     this.posts = [];
     this.latest = Array.from(Array(2), x => mock());
-    this.older = Array.from(Array(6), x => mock());
+    this.older = Array.from(Array(8), x => mock());
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    this.latest = this.posts.filter((e,i) => i < 2);
-    this.older = this.posts.filter((e,i) => i >= 2);
+    const latest = 2;
+    this.latest = this.posts.filter((e,i) => i < latest);
+    this.older = this.posts.filter((e,i) => i >= latest);
     this._render(false);
   }
 
@@ -48,10 +47,12 @@ export default class HomePage extends HTMLElement {
     const posts = data => html`
       <div class="block">
         <div class="card">
-          <figure>
-            <img src=${getFeatImage(data._embedded)} alt="">
-          </figure>
-          <h4>${data.title.rendered}</h4>
+          <header>
+            <figure>
+              <img src=${getFeatImage(data._embedded)} alt="">
+            </figure>
+          </header>
+          <h4>${unsafeHTML(data.title.rendered)}</h4>
           ${unsafeHTML(data.excerpt.rendered)}
           <p>
             <a 

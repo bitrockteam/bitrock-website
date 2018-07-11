@@ -80,7 +80,7 @@ section.cover{
   }
 }
 
-header {
+header.main {
   $bg: rgb(42, 42, 42);
 
   position: fixed;
@@ -150,7 +150,7 @@ header {
 
     ul.socials{
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       margin: 24px 24px 0;
 
       li {
@@ -220,6 +220,10 @@ main{
 }
 
 .content{
+  &.loading {
+    @extend %optimistic;
+  }
+
   rock-back{
     a{
       color: $normal-text;
