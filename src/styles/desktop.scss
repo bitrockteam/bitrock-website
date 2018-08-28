@@ -9,14 +9,13 @@
 
     header {
       background: rgb(42, 42, 42);
+      margin: 0;
 
       & > .logo{
         @extend %showLogo;
       }
     }
   }
-
-  $leftBar: 220px;
 
   section.cover{
     padding-top: 0px;
@@ -29,14 +28,14 @@
       svg {
         display: block;
         position: absolute;
-        left: $leftBar + $padding;
+        left: 0;
         top: $padding;
         transform-origin: left;
         transform: scale(2.4);
       }
 
       figcaption {
-        left: $leftBar + $padding;
+        left: 0;
         right: $padding;
         bottom: 60px;
 
@@ -61,61 +60,64 @@
   }
 
   header.main{
-    width: $leftBar;
-    height: 100%;
     display: block;
-    background: rgba(20, 20, 20, 0.8);
+    background: rgba(20, 20, 20, 0);
     transition: background 1s ease;
+    margin: 0;
+    padding: 0;
 
     &.active {
       background: rgb(42, 42, 42);
 
-      & > .logo{
-        @extend %showLogo;
-      }
+      // & > .logo{
+      //   @extend %showLogo;
+      // }
+    }
+
+    .wrapper {
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+      margin-top: 10px;
     }
 
     i.fa-bars {
       display: none;
     }
 
-    & > .logo {
-      display: block;
-      transform-origin: top;
-      transform: scale(0);
-      overflow: hidden;
-      transition: all 0.4s ease;
-      height: 0;
-    }
+    // & > .logo {
+    //   display: block;
+    //   transform-origin: top;
+    //   transform: scale(0);
+    //   overflow: hidden;
+    //   transition: all 0.4s ease;
+    //   height: 0;
+    // }
 
     nav {
       height: auto;
       position: static;
       background: transparent;
 
-      .logo {
-        display: none;
-      }
-
       ul {
         text-align: left;
-        margin-top: 20px;
+        margin-top: 0;
 
         li {
-          line-height: 2.8em;
+          display: inline-block;
+          margin-right: 30px;
 
           a{
             font-size: 16px;
           }
+
+          &:last-child {
+            margin-right: 0;
+          }
         }
-      }
-
-      ul.socials{
-        margin: 24px 0 0;
-      }
-
-      hr {
-        margin: 24px 0;
       }
     }
   }
@@ -130,7 +132,6 @@
 
   main {
     padding-top: 8px;
-    padding-left: $leftBar + 8px;
 
     // display: grid;
     // grid-template-columns: repeat(4, 1fr);
@@ -157,7 +158,21 @@
     }
   }
 
+
   footer {
-    padding-left: $leftBar;
+    & > .wrapper {
+      article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: left;
+      } 
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1140px;
+    margin: 0 auto;
   }
 }

@@ -5,14 +5,14 @@
 $menu-width: 32px;
 
 .wrapper {
-  padding-top: 82px;
+  padding: 40px 50px; 
 }
 
 svg.logo{
   cursor: pointer;
 }
 
-.wrapper.cover {
+.cover {
   padding-top: 0;
 
   section.cover{
@@ -94,7 +94,8 @@ header.main {
   // height: 80px;
   // line-height: 80px;
   display: grid;
-  padding: 21px 16px;
+  height: 90px;
+  line-height: 90px;
   grid-template-columns: 1fr $menu-width;
 
   i.fa-bars {
@@ -134,7 +135,7 @@ header.main {
         line-height: 3.2em;
 
         a {
-          text-transform: uppercase;
+          text-transform: capitalize;
           color: $evident-text02;
           text-decoration: none;
           font-size: 23px;
@@ -256,9 +257,41 @@ main{
 
 
 footer {
-  p{
-    text-align: center;
-    padding: 24px;
-    line-height: 1.6em;
+  background: $lightGrey;
+  font-size: 20px;
+  line-height: 30px;
+
+  & > .wrapper {
+    article {
+      
+      text-align: center;
+    }
+  }
+  
+
+  &.credits{
+    background: $darkGrey;
+    font-size: 16px;
+    color: $white;
+
+    .wrapper {
+      padding: 50px 0;
+
+      article {
+        display: block;
+      }
+    }
+
+    figure {
+      img {
+        display: block;
+        margin: 0 auto 20px;
+        width: 150px;
+      }
+    }
+    p{
+      margin: 0;
+      text-align: center;
+    }
   }
 }

@@ -18,31 +18,22 @@ export default class BitrockHeader extends HTMLElement {
 
     const markup = html`
       <header class$="main ${_active}">
-        <div class="logo">
-          <bitrock-logo></bitrock-logo>
-        </div>
-      
-        <i class="fas fa-bars"></i>
-      
-        <nav>
+        <div class="wrapper">
           <div class="logo">
             <bitrock-logo></bitrock-logo>
           </div>
-          <ul>
-            ${menu.map(e => 
-              html`<li><rock-link
-                label$="${e.title}"
-                url$="${e.url}"
-                type$="${e.type}"
-              ></rock-link></li>`)}
-          </ul>
-          <rock-social-icons></rock-social-icons>
-          <hr>
-          <ul class="tags">
-            ${tags.map(e =>
-              html`<li><a href="${e.slug}">#${e.name}</a></li>`)}
-          </ul>
-        </nav>
+        
+          <nav>
+            <ul>
+              ${menu.map(e => 
+                html`<li><rock-link
+                  label$="${e.title}"
+                  url$="${e.url}"
+                  type$="${e.type}"
+                ></rock-link></li>`)}
+            </ul>
+          </nav>
+        </div>
       </header>
     `;
 

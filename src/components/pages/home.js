@@ -22,9 +22,7 @@ export default class HomePage extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    const latest = 2;
-    this.latest = this.posts.filter((e,i) => i < latest);
-    this.older = this.posts.filter((e,i) => i >= latest);
+    this.older = this.posts.slice();
     this._render(false);
   }
 
@@ -69,11 +67,7 @@ export default class HomePage extends HTMLElement {
     const markup = html`
       <rock-hero></rock-hero>
 
-      <main class$="evidence ${optimistic}">
-        ${this.latest.map(e => posts(e))}
-      </main>
-
-      <main class$="${optimistic}">
+      <main class$="wrapper ${optimistic}">
         ${this.older.map(e => posts(e))}
         <!-- <i class="fas fa-circle-notch fa-spin"></i> -->
       </main>

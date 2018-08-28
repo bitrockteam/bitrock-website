@@ -8,6 +8,7 @@ import {
 import { pagesToRoutes } from '../libs/data';
 import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
+import logo from './../assets/BitrockLogo.white.svg';
 
 import './header';
 import './ui/link';
@@ -66,10 +67,12 @@ export default class BitrockWebsite extends HTMLElement {
 
   _setupRouter(data) {
     const routes = pagesToRoutes(data);
-    router.add(routes);
+    router.add(routes)
 
     const last = lastVisited.get();
-    router.navigate(last.name, last.params);
+    last ? 
+      router.navigate(last.name, last.params) : 
+      import(/* webpackChunkName: "page.home" */ './pages/home');
   }
 
   connectedCallback() {
@@ -114,13 +117,65 @@ export default class BitrockWebsite extends HTMLElement {
     const cover = this.cover ? 'cover' : 'no-cover';
 
     const markup = html`
-      <div class$="wrapper ${cover}">
+      <div class$=${cover}>
         <bitrock-header></bitrock-header>
         
         ${this._currentPage()}
 
-        <footer>
-          <p>Copyright ${year} Databiz Group s.r.l. - Partita IVA/C.F.: 04268680263</p>
+        <footer id="corporate" class="corporate">
+          <div class="wrapper">
+            <article>
+              <div>
+                <h4>Treviso</h4>
+                <p>
+                   Sede legale e operativa<br> 
+                   Viale della Repubblica 156/a<br> 
+                   31100 Treviso (TV)<br>
+                   Tel: 0422 1600025
+                </p>
+                <!-- <p>
+                  <a href="mailto:info@databiz.it">
+                    info@databiz.it
+                  </a>
+                </p> -->
+                <!-- <ul class="social">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul> -->
+              </div>
+              <div>
+                <h4>Milano</h4>
+                <p>
+                   Sede operativa<br>
+                   Via Borsieri 41<br> 
+                   20159 Milano (MI)<br>
+                   Tel: 0422 1600025
+                </p>
+                <p>
+                  <a href="mailto:info@bitrock.it">
+                    info@databiz.it
+                  </a>
+                </p>
+                <!-- <ul class="social">
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                  <li><a href=""></a></li>
+                </ul> -->
+              </div>
+            </article>
+          </div>
+        </footer>
+        <footer class="credits">
+          <div class="wrapper">
+            <article>
+              <figure>
+                <img src="${logo}" alt="Bitrock">
+              </figure>
+            
+              <p>Copyright ${year} Databiz Group s.r.l. - Partita IVA/C.F.: 04268680263/p>
+            </article>
+          </div>
         </footer>
       </div>
     `;

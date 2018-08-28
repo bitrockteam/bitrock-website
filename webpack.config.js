@@ -103,6 +103,18 @@ module.exports = {
           'css-loader',
           'sass-loader'],
         // include: fs.realpathSync('./src/styles')
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'img/[name].[ext]',
+              context: ''
+            }
+          }
+        ]
       }
     ]
   },
