@@ -2,7 +2,7 @@ import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { setPosts } from '../../libs/dom';
-import { getFeatImage } from '../../libs/data';
+import { getFeatImage, getCategory } from '../../libs/data';
 import { router } from '../../libs/routing';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
@@ -34,8 +34,9 @@ export default class HomePage extends HTMLElement {
 
   _navigate(evt) {
     evt.preventDefault();
-    const id = evt.target.dataset.id;
-    const slug = evt.target.dataset.slug;
+    const t = evt.currentTarget;
+    const id = t.dataset.id;
+    const slug = t.dataset.slug;
     router.navigate('post.single', { id, slug });
   }
 
@@ -45,21 +46,23 @@ export default class HomePage extends HTMLElement {
     const posts = data => html`
       <div class="block">
         <div class="card">
-          <header>
-            <figure>
-              <img src=${getFeatImage(data._embedded)} alt="">
-            </figure>
-          </header>
-          <h4>${unsafeHTML(data.title.rendered)}</h4>
-          ${unsafeHTML(data.excerpt.rendered)}
-          <p>
-            <a 
-              data-id$="${data.id}" 
-              data-slug$="${data.slug}" 
-              href="/post/${data.slug}"
-              on-click="${this._navigate}"
-            >read more</a>
-          </p>
+          <a
+            data-id$="${data.id}" 
+            data-slug$="${data.slug}" 
+            href="/post/${data.slug}"
+            on-click="${this._navigate}"
+          >
+            <header>
+              <figure>
+                <img src=${getFeatImage(data._embedded)} alt="">
+              </figure>
+            </header>
+            <article>
+              <span class="category">${getCategory(data._embedded)}</span>
+              <h4>${unsafeHTML(data.title.rendered)}</h4>
+              ${unsafeHTML(data.excerpt.rendered)}
+            </article>
+          </a>
         </div>
       </div>
     `;

@@ -35,3 +35,6 @@ export const pagesToRoutes = data => data
 
 export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
   sourceUrl(embeds['wp:featuredmedia']) : false;
+
+export const getCategory = embeds => embeds['wp:term'] ?
+  embeds['wp:term'][0][0].name : '';

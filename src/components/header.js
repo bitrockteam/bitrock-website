@@ -33,6 +33,12 @@ export default class BitrockHeader extends HTMLElement {
                 ></rock-link></li>`)}
             </ul>
           </nav>
+
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
       </header>
     `;
@@ -41,15 +47,19 @@ export default class BitrockHeader extends HTMLElement {
   }
 
   _mobileNav(){
-    const nav = this.querySelector('nav');
-    const ham = this.querySelector('.fa-bars');
+    const nav = this.querySelector('header');
+    const ham = this.querySelector('.hamburger');
 
     ham.addEventListener('click', evt => {
-      nav.classList.add('open');
+      evt.stopPropagation();
+
+      nav.classList.toggle('open');
+      ham.classList.toggle('is-active');
     });
 
     nav.addEventListener('click', evt => {
       nav.classList.remove('open');
+      ham.classList.remove('is-active');
     });
   }
 

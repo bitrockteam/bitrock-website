@@ -5,7 +5,7 @@
 $menu-width: 32px;
 
 .wrapper {
-  padding: 40px 50px; 
+  padding: 40px 33px; 
 }
 
 svg.logo{
@@ -23,7 +23,7 @@ svg.logo{
 section.cover{
   display: none;
   padding-top: 82px;
-
+  height: 100vh;
   // &.loading {
   //   @extend %optimistic;
   // }
@@ -31,27 +31,22 @@ section.cover{
   figure {
     margin: 0;
     position: relative;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-
-    svg{
-      display: none;
-    }
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     figcaption {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
+      padding-top: 300px;
+      display: block;
+      z-index: 5;
       text-align: left;
       color: $evident-text02;
 
       p {
         color: $evident-text02;
-        font-size: 14px;
+        font-size: 18px;
+        line-height: 24px;
       }
 
       h3,h4 {
@@ -62,8 +57,8 @@ section.cover{
 
       h3 {
         text-transform: uppercase;
-        font-size: 30px;
-        margin-bottom: 15px;
+        font-size: 38px;
+        margin-bottom: 28px;
 
         small {
           font-size: 18px;
@@ -74,7 +69,7 @@ section.cover{
       }
 
       h4 {
-        font-size: 17px;
+        font-size: 22px;
       }
     }
   }
@@ -89,56 +84,60 @@ header.main {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-
+  overflow: hidden;
   background: $bg;
-  // height: 80px;
-  // line-height: 80px;
-  display: grid;
   height: 90px;
   line-height: 90px;
-  grid-template-columns: 1fr $menu-width;
+  transition: all 0.35s ease;
 
-  i.fa-bars {
+  &.open {
+    height: 100%;
+  }
+
+  svg {
+    display: block;
+    margin: 23px 0;
+  }
+
+  .wrapper {
+    padding: 0 33px;
+  }
+
+  .hamburger {
     font-size: $menu-width;
-    color: $evident-text02;
     cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 30px;
+    top: -18px;
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: $evident-text02;
+    }
   }
 
   nav {
-    transition: all 0.35s ease;
-    overflow: hidden;
-    height: 0;
-    position: fixed;
     z-index: 98;
     width: 100%;
     left: 0;
     top: 0;
-    background: rgba(42, 42, 42, 0.95);
-
-    &.open {
-      height: 100%;
-    }
-
-    svg {
-      display: block;
-      margin: 50px auto;
-      transform: scale(1.6);
-    }
 
     ul {
       margin: 0;
-      padding: 0;
+      padding: 30px 0 0;
       text-align: center;
 
       li {
         list-style: none;
-        line-height: 3.2em;
+        line-height: 5.0em;
 
         a {
           text-transform: capitalize;
           color: $evident-text02;
           text-decoration: none;
-          font-size: 23px;
+          font-size: 30px;
           transition: all 0.4s ease;
           text-shadow: 0px 0px 5px rgba(0,0,0,0.9);
 
@@ -147,52 +146,6 @@ header.main {
           }
         }
       }
-    }
-
-    ul.socials{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 24px 24px 0;
-
-      li {
-        text-align: center;
-
-        a {
-          $size: 38px;
-
-          margin: 0 auto;
-          display: block;
-          width: $size;
-          height: $size;
-          line-height: $size;
-          border-radius: 50%;
-          border: 1px solid $evident-text02;
-
-          &:hover {
-            color: $evident-text02;
-          }
-        }
-      }
-    }
-
-    ul.tags {
-      li {
-        line-height: 1.9em;
-
-        a{
-          text-transform: lowercase;
-          font-size: 1em;
-          color: $evident-text01;
-        }
-      }
-    }
-
-    hr {
-      height: 1px;
-      border: 0;
-      background-color: $evident-text02;
-      opacity: 0.4;
-      margin: 24px;
     }
   }
 }

@@ -4,7 +4,7 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { router } from '../../libs/routing';
 import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
-import { getFeatImage } from '../../libs/data';
+import { getFeatImage, getCategory } from '../../libs/data';
 import '../ui/link';
 import '../ui/back';
 
@@ -13,9 +13,9 @@ export default class SinglePost extends HTMLElement {
     const optimistic = loading ? 'loading' : '';
 
     const markup = html`
-      <main class="content">
-        </rock-back>
+      <main class="content wrapper">
         <article class$="card ${optimistic}">
+          <div class="category">${getCategory(data._embedded)}</div>
           <header>
             <figure>
               <img
@@ -32,10 +32,10 @@ export default class SinglePost extends HTMLElement {
             </div>
           </section>
         </article>
-        <rock-back
+        <!-- <rock-back
           label="Home"
           url="home-page"
-        >
+        > -->
       </main>
     `;
 

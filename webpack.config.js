@@ -55,12 +55,12 @@ module.exports = {
       filename: 'index.html',
       minify
     }),
-    new HtmlWebpackPlugin({
-      title: pkg.name,
-      template: './src/pages/typography.html',
-      filename: './typography/index.html',
-      minify
-    })
+    // new HtmlWebpackPlugin({
+    //   title: pkg.name,
+    //   template: './src/pages/typography.html',
+    //   filename: './typography/index.html',
+    //   minify
+    // })
   ],
   devtool: 'source-map',
   resolve: {
@@ -68,15 +68,6 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
-          }
-        ]
-      },
       {
         test: /\.css$/,
         use: [

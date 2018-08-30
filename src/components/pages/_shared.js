@@ -9,14 +9,16 @@ export const layout = (content, loading) => {
   const optimistic = loading ? 'loading' : '';
   return html`
     <main class$="content ${optimistic}">
-      <article class="card">
-        <figure></figure>
-        <section class="">
-          <div class="body">
-            ${content}
-          </div>
-        </section>
-      </article>
+      <div class="wrapper">
+        <article class="card">
+          <figure></figure>
+          <section class="">
+            <div class="body">
+              ${content}
+            </div>
+          </section>
+        </article>
+      </div>
     </main>
   `;
 } 

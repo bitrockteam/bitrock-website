@@ -44,8 +44,9 @@ export default class BitrockWebsite extends HTMLElement {
         this.page = route.name.replace('.', '-');
         this.pageId = route.params.id;
         break;
-      case 'contact-us':
-        import(/* webpackChunkName: "page.contacts" */ './pages/contacts');
+      case 'discover':
+        import(/* webpackChunkName: "page.discover" */ './pages/discover');
+        this.page = 'discover-us';
         break;
       case 'academy':
         import(/* webpackChunkName: "page.academy" */ './pages/academy');
@@ -133,16 +134,6 @@ export default class BitrockWebsite extends HTMLElement {
                    31100 Treviso (TV)<br>
                    Tel: 0422 1600025
                 </p>
-                <!-- <p>
-                  <a href="mailto:info@databiz.it">
-                    info@databiz.it
-                  </a>
-                </p> -->
-                <!-- <ul class="social">
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul> -->
               </div>
               <div>
                 <h4>Milano</h4>
@@ -157,11 +148,6 @@ export default class BitrockWebsite extends HTMLElement {
                     info@databiz.it
                   </a>
                 </p>
-                <!-- <ul class="social">
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                  <li><a href=""></a></li>
-                </ul> -->
               </div>
             </article>
           </div>
@@ -173,7 +159,7 @@ export default class BitrockWebsite extends HTMLElement {
                 <img src="${logo}" alt="Bitrock">
               </figure>
             
-              <p>Copyright ${year} Databiz Group s.r.l. - Partita IVA/C.F.: 04268680263/p>
+              <p>Copyright ${year} Databiz Group s.r.l. - Partita IVA/C.F.: 04268680263</p>
             </article>
           </div>
         </footer>
