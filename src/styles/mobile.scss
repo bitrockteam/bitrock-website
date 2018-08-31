@@ -5,7 +5,7 @@
 $menu-width: 32px;
 
 .wrapper {
-  padding: 40px 33px; 
+  padding: 45px 30px; 
 }
 
 .no-cover {
@@ -45,7 +45,7 @@ section.cover{
     background-size: cover;
 
     figcaption {
-      padding-top: 300px;
+      padding-top: 20%;
       display: block;
       z-index: 5;
       text-align: left;
@@ -95,8 +95,9 @@ header.main {
   overflow: hidden;
   background: $bg;
   height: 90px;
+  width: 100%;
   line-height: 90px;
-  transition: all 0.35s ease;
+  transition: all 250ms ease;
 
   &.active {
     @extend %barColor;
@@ -116,6 +117,13 @@ header.main {
     @extend %barColor;
 
     height: 100%;
+    background-color: $bg;
+  }
+
+  &.active {
+    // $h: 60px;
+    // height: $h;
+    // line-height: $h;
   }
 
   svg {
@@ -124,7 +132,7 @@ header.main {
   }
 
   .wrapper {
-    padding: 0 33px;
+    padding: 0 30px;
   }
 
   .hamburger {
@@ -144,7 +152,7 @@ header.main {
 
   nav {
     z-index: 98;
-    width: 100%;
+    // width: 100%;
     left: 0;
     top: 0;
 
@@ -162,7 +170,7 @@ header.main {
           color: $evident-text02;
           text-decoration: none;
           font-size: 30px;
-          transition: all 0.4s ease;
+          transition: all 250ms ease;
           text-shadow: 0px 0px 5px rgba(0,0,0,0.9);
 
           &:hover {
@@ -179,10 +187,10 @@ main.evidence {
 }
 
 main{
-  padding: 8px 8px 90px;
+  // padding: 8px 8px 90px;
 
   .block{
-    margin: 15px 0;
+    margin: 30px 0;
 
     &:first-child{
       margin-top: 0;
@@ -292,4 +300,32 @@ footer {
       text-align: center;
     }
   }
+}
+
+
+
+// da inserire in '~hamburgers/_sass/hamburgers/hamburgers.scss'
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: $black;
+  border-radius: 0;
+}
+
+.hamburger-inner::before {
+  top: -8px;
+}
+
+.hamburger-inner::after {
+  bottom: -8px;
+}
+
+header.topbar button.hamburger {
+  top: -12px;
 }

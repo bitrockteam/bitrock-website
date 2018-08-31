@@ -127,12 +127,35 @@ export default class BitrockWebsite extends HTMLElement {
           <div class="wrapper">
             <article>
               <div>
+                <h4>Corporate</h4>
+                <p>
+                  Sede legale e operativa<br> 
+                  Viale della Repubblica 156/a<br> 
+                  31100 Treviso (TV)<br>
+                  Tel: 0422 1600025
+               </p>
+              </div>
+              <div>
                 <h4>Treviso</h4>
                 <p>
                    Sede legale e operativa<br> 
                    Viale della Repubblica 156/a<br> 
                    31100 Treviso (TV)<br>
                    Tel: 0422 1600025
+                </p>
+              </div>
+              <div>
+                <h4>Milano</h4>
+                <p>
+                   Sede operativa<br>
+                   Via Borsieri 41<br> 
+                   20159 Milano (MI)<br>
+                   Tel: 0422 1600025
+                </p>
+                <p>
+                  <a href="mailto:info@bitrock.it">
+                    info@databiz.it
+                  </a>
                 </p>
               </div>
               <div>

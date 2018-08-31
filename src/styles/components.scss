@@ -37,16 +37,45 @@ main {
     }
 
     p {
-      font-size: 18px;
-      line-height: 25px;
+      font-size: 16px;
+      line-height: 24px;
       font-weight: 300;
     }
 
-    h4{
-      font-size: 24px;
+    h2, h4 {
+      font-size: 20px;
+      line-height: 27px;
       font-weight: 400;
       margin: 10px 0 0;
       padding: 0;
     }
   }
+}
+
+
+article {
+
+  li, p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  h2, h4 {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    margin: 10px 0 0;
+    padding: 0;
+  }
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  figcaption {
+    font-size: 16px;
+  }
+
 }
