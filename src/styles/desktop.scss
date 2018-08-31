@@ -39,7 +39,6 @@
       background-size: cover;
 
       figcaption {
-        padding-top: 300px;
 
         h3{
           font-size: 78px;
@@ -79,9 +78,9 @@
     }
 
     .wrapper {
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .logo {
@@ -100,7 +99,7 @@
 
         li {
           display: inline-block;
-          margin-right: 30px;
+          margin-right: 45px;
 
           a{
             font-size: 16px;
@@ -122,8 +121,9 @@
   }
 
   main {
-    padding-top: 8px;
+    // padding-top: 8px;
     column-count: 4;
+    column-gap: 30px;
 
     .block{
       margin-top: 0;
@@ -169,7 +169,7 @@
 
         p {
           font-size: 18px;
-          line-height: 25px;
+          line-height: 30px;
         }
       }
     }
@@ -180,16 +180,34 @@
     & > .wrapper {
       article {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 60px;
         text-align: left;
       } 
     }
   }
+
+
+  article {
+
+    li, p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h2, h4 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+  }
+
 }
 
 @media (min-width: 1200px) {
   .wrapper {
     width: 1140px;
     margin: 0 auto;
+    padding: 60px 0;
   }
 }
