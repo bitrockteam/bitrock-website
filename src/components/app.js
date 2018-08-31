@@ -87,16 +87,16 @@ export default class BitrockWebsite extends HTMLElement {
   _loadData() {
     Promise.all([
       bitquest(API + PATHS.menu).get(),
-      bitquest(API + PATHS.tags).get(),
+      // bitquest(API + PATHS.tags).get(),
       bitquest(API + PATHS.posts).get()
     ]).then(responses => {
       renderMenu(responses[0]);
-      renderTags(responses[1]);
-      renderPosts(responses[2]);
+      // renderTags(responses[1]);
+      renderPosts(responses[1]);
 
-      this.posts = responses[2];
+      this.posts = responses[1];
       this.sticky = this.posts.filter(e => e.sticky);
-      this.cover = this.sticky.length;
+      this.cover = true || this.sticky.length;
       $('body').classList.add('ready');
       this._render();
       this._setupRouter(responses[0]);

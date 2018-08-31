@@ -5,6 +5,15 @@ export const post = () => new Object({
   excerpt: { rendered: '<p>some sample content</p><p>some sample content</p>' },
   cover: 'https://via.placeholder.com/1200x400?text=Loading+data...',
   _embedded: {
+    author: [
+      {
+        name: 'random user',
+        description: 'some sample content some sample content some sample content',
+        avatar_urls: {
+          '96': 'https://via.placeholder.com/96'
+        }
+      }
+    ],
     'wp:featuredmedia': [{
       media_details: {
         sizes: {

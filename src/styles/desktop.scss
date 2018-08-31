@@ -155,6 +155,12 @@
       .card {
         padding: 50px;
 
+        section {
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          grid-column-gap: 60px;
+        }
+
         .category {
           font-size: 16px;
           text-transform: uppercase;

@@ -8,6 +8,26 @@ import { getFeatImage, getCategory } from '../../libs/data';
 import '../ui/link';
 import '../ui/back';
 
+const header = () => html`
+  <header>
+    <figure>
+      <img
+        src="${getFeatImage(data._embedded)}"
+        alt="${data.title.rendered}" 
+      >
+    </figure>
+  </header>
+`;
+
+const user = data => html`
+  <div class="meta">
+    <img src=${data.avatar_urls['96']}
+      alt=${data.name}>
+    <h6>${data.name}</h6>
+    <p>${data.description}</p>
+  </div>
+`;
+
 export default class SinglePost extends HTMLElement {
   _render(data, loading) {
     const optimistic = loading ? 'loading' : '';
@@ -16,20 +36,12 @@ export default class SinglePost extends HTMLElement {
       <main class="content wrapper">
         <article class$="card ${optimistic}">
           <div class="category">${getCategory(data._embedded)}</div>
-          <header>
-            <figure>
-              <img
-                src="${getFeatImage(data._embedded)}"
-                alt="${data.title.rendered}" 
-              >
-            </figure>
-          </header>
           <section class="">
-            <div class="meta"></div>
             <div class="body">
               <h3>${unsafeHTML(data.title.rendered)}</h3>
               ${unsafeHTML(data.content.rendered)}
             </div>
+            ${user(data._embedded.author[0])}
           </section>
         </article>
         <!-- <rock-back
