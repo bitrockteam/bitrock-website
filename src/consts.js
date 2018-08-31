@@ -8,7 +8,7 @@ export const PATHS = {
   tags: 'tags',
   menu: 'menus/nav',
   pages: 'pages',
-  posts: 'posts?_embed=' + random(),
+  posts: 'posts?per_page=30&_embed=' + random(),
   page: id => `pages/${id}?_embed=${random()}`,
   post: id => `posts/${id}?_embed=${random()}`
 }

@@ -4,16 +4,8 @@
     transform: scale(1);
   }
 
-  %barColor {
-    background: rgb(42, 42, 42);
-  }
-
   .no-cover {
     padding-top: 82px;
-
-    header.main {
-      @extend %barColor;
-    }
   }
 
   .wrapper.no-cover {
@@ -69,10 +61,6 @@
     transition: background 1s ease;
     margin: 0;
     padding: 0;
-
-    &.active {
-      @extend %barColor;
-    }
 
     .hamburger {
       display: none;

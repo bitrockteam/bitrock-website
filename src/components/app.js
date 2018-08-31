@@ -95,7 +95,7 @@ export default class BitrockWebsite extends HTMLElement {
       renderPosts(responses[1]);
 
       this.posts = responses[1];
-      this.sticky = this.posts.filter(e => e.sticky);
+      this.sticky = [true] || this.posts.filter(e => e.sticky);
       this.cover = true || this.sticky.length;
       $('body').classList.add('ready');
       this._render();

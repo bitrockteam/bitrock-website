@@ -8,6 +8,14 @@ $menu-width: 32px;
   padding: 40px 33px; 
 }
 
+.no-cover {
+  padding-top: 82px;
+  
+  header.main { 
+    @extend %barColor;
+  }
+}
+
 svg.logo{
   cursor: pointer;
 }
@@ -22,7 +30,7 @@ svg.logo{
 
 section.cover{
   display: none;
-  padding-top: 82px;
+  // padding-top: 82px;
   height: 100vh;
   // &.loading {
   //   @extend %optimistic;
@@ -76,7 +84,7 @@ section.cover{
 }
 
 header.main {
-  $bg: rgb(42, 42, 42);
+  $bg: rgba(42, 42, 42, 0);
 
   position: fixed;
   z-index: 97;
@@ -90,7 +98,23 @@ header.main {
   line-height: 90px;
   transition: all 0.35s ease;
 
+  &.active {
+    @extend %barColor;
+
+    nav {
+      ul {
+        li {
+          a {
+            text-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
   &.open {
+    @extend %barColor;
+
     height: 100%;
   }
 

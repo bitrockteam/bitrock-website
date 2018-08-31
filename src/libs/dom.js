@@ -7,7 +7,8 @@ export const $$ = selector => document.querySelectorAll(selector);
 export const setPosts = posts => {
   const $hp = $('home-page') || mock;
   const ts = new Date().toISOString();
-  $hp.posts = checkSticky(posts);
+  // $hp.posts = checkSticky(posts);
+  $hp.posts = posts.slice();
   $hp.setAttribute('posts', ts);
   return posts;
 }
