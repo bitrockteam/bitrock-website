@@ -4,6 +4,11 @@
 @import url('https://cdn.rawgit.com/components/blokkfont/master/BLOKKRegular/webfonts/style.css');
 @import "./colors.scss";
 
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
 $font-big: 20px;
 
 // Mixins
