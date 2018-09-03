@@ -38,3 +38,6 @@ export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
 
 export const getCategory = embeds => embeds['wp:term'] ?
   embeds['wp:term'][0][0].name : '';
+
+export const getCategorySlug = embeds => embeds['wp:term'] ?
+  embeds['wp:term'][0][0].slug : '';
