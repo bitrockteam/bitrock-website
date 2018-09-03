@@ -223,6 +223,18 @@ main{
   article{
     text-align: left;
 
+    .alignleft {
+      text-align: left;
+    }
+
+    .aligncenter {
+      text-align: center;
+    }
+
+    .alignright {
+      text-align: right;
+    }
+
     &.card{
       padding: 30px;
       text-align: left;
