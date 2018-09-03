@@ -4,7 +4,7 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { router } from '../../libs/routing';
 import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
-import { getFeatImage, getCategory } from '../../libs/data';
+import { getFeatImage, getCategory, getCategorySlug } from '../../libs/data';
 import '../ui/link';
 import '../ui/back';
 
@@ -33,7 +33,7 @@ export default class SinglePost extends HTMLElement {
     const optimistic = loading ? 'loading' : '';
 
     const markup = html`
-      <main class="content wrapper">
+      <main class$="content wrapper ${getCategorySlug(data._embedded)}">
         <article class$="card ${optimistic}">
           <div class="category">${getCategory(data._embedded)}</div>
           <section class="">
@@ -41,7 +41,7 @@ export default class SinglePost extends HTMLElement {
               <h3>${unsafeHTML(data.title.rendered)}</h3>
               ${unsafeHTML(data.content.rendered)}
             </div>
-            ${user(data._embedded.author[0])}
+            <!-- ${user(data._embedded.author[0])} -->
           </section>
         </article>
         <!-- <rock-back
