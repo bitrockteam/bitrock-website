@@ -22,3 +22,6 @@ if ('serviceWorker' in navigator) {
 }
 
 window.addEventListener('scroll', scrollEffect);
+
+// Javascript disabled warning
+document.querySelector('.js-warning').style.display = 'none';

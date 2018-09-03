@@ -34,10 +34,12 @@ export default class BitrockHeader extends HTMLElement {
             </ul>
           </nav>
 
-          <button class="hamburger hamburger--spin" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
+          <button class="hamburger hamburger--spin" 
+            type="button"
+            aria-label="mobile-menu">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
           </button>
         </div>
       </header>
