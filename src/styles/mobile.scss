@@ -66,7 +66,7 @@ section.cover{
       h3 {
         text-transform: uppercase;
         font-size: 38px;
-        margin-bottom: 28px;
+        margin-bottom: 30px;
 
         small {
           font-size: 18px;
@@ -224,13 +224,22 @@ main{
     text-align: left;
 
     &.card{
-      padding: 20px;
+      padding: 30px;
       text-align: left;
 
-      h3{
+      .category {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $basic01;
+        margin-bottom: 30px;
+      }
+
+      h3 {
         font-size: 28pt;
         font-weight: 300;
-        color: $constrast01;
+        // color: $constrast01;
+        // letter-spacing: 1px;
+        margin-bottom: 30px;
       }
     }
 
