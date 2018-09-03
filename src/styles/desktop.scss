@@ -5,7 +5,7 @@
   }
 
   .no-cover {
-    padding-top: 82px;
+    padding-top: 60px;
   }
 
   .wrapper.no-cover {
@@ -55,7 +55,7 @@
     
   }
 
-  header.main{
+  header.main {
     display: block;
     background: rgba(20, 20, 20, 0);
     transition: background 1s ease;
@@ -70,10 +70,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
-
-    .logo {
-      margin-top: 10px;
     }
 
     nav {
@@ -100,6 +96,23 @@
         }
       }
     }
+
+    &.active {
+
+      .wrapper {
+        height: 60px;
+      }
+    }
+  }
+
+  .no-cover {
+
+    header.main {
+
+      .wrapper {
+        height: 60px;
+      }
+    }   
   }
 
   main.evidence {
@@ -134,10 +147,6 @@
         figure {
           padding: 0;
           margin: 0;
-
-          img {
-            max-width: 100%;
-          }
         }
       }
 
@@ -164,12 +173,16 @@
           font-size: 18px;
           line-height: 30px;
         }
+
+        p:first-child {
+          margin-top: 0;
+        }
       }
     }
 
     &.content {
       
-      &.interviews {
+      &.interviews, &.reviews, &.careers {
 
         .wp-block-columns {
           
@@ -180,17 +193,26 @@
       }
     }
 
+    &.wrapper, .wrapper {
+      padding: 45px 30px !important;
+    }
+
   }
 
 
   footer {
     & > .wrapper {
+      
       article {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 60px;
         text-align: left;
-      } 
+
+        div{
+          margin-bottom: 0;
+        }
+      }
     }
   }
 

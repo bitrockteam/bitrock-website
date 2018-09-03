@@ -4,7 +4,7 @@
 @import url('https://cdn.rawgit.com/components/blokkfont/master/BLOKKRegular/webfonts/style.css');
 @import "./colors.scss";
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
 }
@@ -42,7 +42,7 @@ body {
 }
 
 main p{
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   color: $normal-text;
   line-height: 1.2em;
