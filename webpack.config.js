@@ -109,6 +109,9 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimize: false
+  },
   devServer: {
     contentBase: path.join(__dirname, dist),
     watchContentBase: true,

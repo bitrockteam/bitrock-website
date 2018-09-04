@@ -1,5 +1,5 @@
 
-const sourceUrl = media => media[0].media_details.sizes.full.source_url;
+const sourceUrl = media => media[0].media_details.sizes.medium.source_url;
 const kebabify = str => str.replace(/ +/g, '-').toLowerCase();
 const urlType = item => item.object === 'page' ? item.slug : item.url;
 
