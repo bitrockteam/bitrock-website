@@ -129,36 +129,39 @@ export default class BitrockWebsite extends HTMLElement {
               <div>
                 <h4>Corporate</h4>
                 <p>
-                  Group philosophy<br> 
-                  CSR
+                  <a href="https://www.linkedin.com/company/bitrock-srl/jobs/" target="_blank" rel="noopener">Careers</a> <br>
+                  <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a>
                </p>
-              </div>
-              <div>
-                <h4>Treviso</h4>
-                <p>
-                   Sede legale e operativa<br> 
-                   Viale della Repubblica 156/a<br> 
-                   31100 Treviso (TV)<br>
-                   Tel: 0422 1600025
-                </p>
               </div>
               <div>
                 <h4>Milano</h4>
                 <p>
-                   Sede operativa<br>
+                   Sede legale e operativa<br>
                    Via Borsieri 41<br> 
                    20159 Milano (MI)<br>
                    Tel: 0422 1600025<br>
                    <a href="mailto:info@bitrock.it">
-                    info@databiz.it
+                    info@bitrock.it
+                  </a>
+                </p>
+              </div>
+              <div>
+                <h4>Treviso</h4>
+                <p>
+                   Sede operativa<br> 
+                   Viale della Repubblica 156/a<br> 
+                   31100 Treviso (TV)<br>
+                   Tel: 0422 1600025 <br>
+                   <a href="mailto:info@bitrock.it">
+                    info@bitrock.it
                   </a>
                 </p>
               </div>
               <div>
                 <h4>Follow us</h4>
                 <p>
-                  Linkedin<br>
-                  Twitter
+                  <a href="https://www.linkedin.com/company/databiz-group/" target="_blank" rel="noopener">Linkedin</a><br>
+                  <a href="https://twitter.com/DATABIZit" target="_blank" rel="noopener">Twitter</a>
                 </p>
               </div>
             </article>
@@ -171,7 +174,7 @@ export default class BitrockWebsite extends HTMLElement {
                 <img src="${logo}" alt="Bitrock">
               </figure>
             
-              <p>Copyright ${year} Databiz Group s.r.l. - Partita IVA/C.F.: 04268680263</p>
+              <p>Copyright ${year} Bitrock s.r.l part of Databiz Group - Partita IVA/C.F.: 10150530961</p>
             </article>
           </div>
         </footer>
