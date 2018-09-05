@@ -1,5 +1,9 @@
 
-const sourceUrl = media => media[0].media_details.sizes.medium.source_url;
+import get from 'lodash/get';
+
+const sourceUrl = media => 
+  get(media[0], 'media_details.sizes.medium.source_url', '');
+
 const kebabify = str => str.replace(/ +/g, '-').toLowerCase();
 const urlType = item => item.object === 'page' ? item.slug : item.url;
 
@@ -36,8 +40,8 @@ export const pagesToRoutes = data => data
 export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?
   sourceUrl(embeds['wp:featuredmedia']) : false;
 
-export const getCategory = embeds => embeds['wp:term'] ?
-  embeds['wp:term'][0][0].name : '';
+export const getCategory = embeds => 
+  get(embeds, '["wp:term"][0][0].name', '');
 
-export const getCategorySlug = embeds => embeds['wp:term'] ?
-  embeds['wp:term'][0][0].slug : '';
+export const getCategorySlug = embeds =>
+  get(embeds, '["wp:term"][0][0].slug', '');

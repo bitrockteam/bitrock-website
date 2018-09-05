@@ -39,6 +39,7 @@
     "bitquest": "^1.0.0",
     "hamburgers": "^0.9.3",
     "lit-html": "^0.10.2",
+    "lodash": "^4.17.10",
     "normalize.css": "^8.0.0",
     "router5": "^6.2.4"
   }
