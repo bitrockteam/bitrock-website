@@ -68,10 +68,12 @@ export default class BitrockWebsite extends HTMLElement {
 
   _setupRouter(data) {
     const routes = pagesToRoutes(data);
-    router.add(routes)
+    router.add(routes);
+
+    const isHome = window.location.hash.length < 3;
 
     const last = lastVisited.get();
-    last ? 
+    !isHome && last ? 
       router.navigate(last.name, last.params) : 
       import(/* webpackChunkName: "page.home" */ './pages/home');
   }
