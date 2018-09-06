@@ -1,5 +1,10 @@
 {
   "name": "bitrock-website",
+  "displayName": "Bitrock",
+  "config": {
+    "themeColor": "#2a2a2a"
+  },
+  "description": "In order to successfully develop and apply innovative technology you need to be able to look beyond the horizon, anticipating trends and recognizing the next standards.",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:bitrockteam/bitrock-website.git",
@@ -8,12 +13,11 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --hot",
     "build:clean": "rm -rf ./dist",
-    "build:manifest": "mv ./dist/manifest..json ./dist/manifest.json",
     "build:bundle": "NODE_ENV=production webpack",
     "build:sw": "workbox generateSW workbox-config.js",
     "gh:page": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh:page",
-    "build": "npm run build:clean && npm run build:bundle && npm run build:manifest && npm run build:sw"
+    "build": "npm run build:clean && npm run build:bundle && npm run build:sw"
   },
   "devDependencies": {
     "css-loader": "1.0.0",

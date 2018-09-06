@@ -51,6 +51,9 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: pkg.name,
+      name: pkg.displayName,
+      description: pkg.description,
+      color: pkg.config.themeColor,
       template: './src/pages/index.html',
       filename: 'index.html',
       minify
