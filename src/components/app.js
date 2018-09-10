@@ -66,11 +66,34 @@ export default class BitrockWebsite extends HTMLElement {
     this._render();
   }
 
-  _setupRouter(data) {
+  _getRedirect(hash, posts) {
+    const slug = hash.split('#/post/')[1];
+    if (slug && slug.length) {
+      const data = posts.filter(e => e.slug === slug)[0];
+      const obj = {
+        path: `/post/${slug}`,
+        name: 'post.single',
+        params: {
+          id: data.id, slug
+        },
+        meta: { id: 1, options: {}, params: {
+          post: {}, 'post.single': { slug: 'url' }
+        }}
+      };
+      return obj;
+    } else {
+      return false;
+    }
+  }
+
+  _setupRouter(data, posts) {
     const routes = pagesToRoutes(data);
     router.add(routes);
 
     const isHome = window.location.hash.length < 3;
+
+    const redirect = this._getRedirect(window.location.hash, posts);
+    redirect ? lastVisited.set(redirect) : null;
 
     const last = lastVisited.get();
     !isHome && last ? 
@@ -101,7 +124,7 @@ export default class BitrockWebsite extends HTMLElement {
       this.cover = true || this.sticky.length;
       $('body').classList.add('ready');
       this._render();
-      this._setupRouter(responses[0]);
+      this._setupRouter(responses[0], responses[1]);
     }, error => {
       // $('body').classList.add('ready');
       window.alert('An error has occured while initializing the application, try to reload.');

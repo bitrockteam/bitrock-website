@@ -20,6 +20,10 @@
     "build": "npm run build:clean && npm run build:bundle && npm run build:sw"
   },
   "devDependencies": {
+    "@babel/core": "7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0",
+    "@babel/preset-env": "7.0.0",
+    "babel-loader": "8.0.2",
     "css-loader": "1.0.0",
     "favicons-webpack-plugin": "0.0.9",
     "file-loader": "2.0.0",

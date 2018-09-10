@@ -78,25 +78,12 @@ module.exports = {
           'css-loader'
         ]
       },
-      // {
-      //   test: /\.css$/,
-      //   use: ['style-loader', 'css-loader']
-      // },
-      // {
-      //   test: /\.scss$/,
-      //   use: [
-      //     'style-loader',
-      //     'css-loader?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]',
-      //     'sass-loader'],
-      //   exclude: fs.realpathSync('./src/styles')
-      // },
       {
         test: /\.scss$/,
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'],
-        // include: fs.realpathSync('./src/styles')
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
@@ -109,7 +96,17 @@ module.exports = {
             }
           }
         ]
-      }
+      },
+      // {
+      //   test: /\.js$/,
+      //   exclude: /(node_modules|bower_components)/,
+      //   use: {
+      //     loader: 'babel-loader',
+      //     options: {
+      //       presets: ['@babel/preset-env']
+      //     }
+      //   }
+      // }
     ]
   },
   optimization: {
