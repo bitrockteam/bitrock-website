@@ -6,6 +6,7 @@ const WebpackNotifierPlugin = require('webpack-notifier');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const workboxPlugin = require('workbox-webpack-plugin');
 const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
@@ -21,8 +22,8 @@ module.exports = {
   mode: env,
   output: {
     path: path.join(__dirname, dist),
-    filename: '[name].js',
-    chunkFilename: '[name].js'
+    filename: '[name].[hash].js',
+    chunkFilename: 'js/[name].[hash].js'
   },
   plugins: [
     new WebpackNotifierPlugin({
@@ -58,6 +59,14 @@ module.exports = {
       filename: 'index.html',
       minify
     }),
+    new workboxPlugin.GenerateSW({
+      swDest: 'sw.js',
+      clientsClaim: true,
+      skipWaiting: true,
+      globPatterns: [
+        "**/*.{jpg,js,png,ico,json,html,css}"
+      ],
+    })
     // new HtmlWebpackPlugin({
     //   title: pkg.name,
     //   template: './src/pages/typography.html',

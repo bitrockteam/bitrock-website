@@ -14,10 +14,9 @@
     "start": "NODE_ENV=development webpack-serve",
     "build:clean": "rm -rf ./dist",
     "build:bundle": "NODE_ENV=production webpack",
-    "build:sw": "workbox generateSW workbox-config.js",
     "gh:page": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh:page",
-    "build": "npm run build:clean && npm run build:bundle && npm run build:sw"
+    "build": "npm run build:clean && npm run build:bundle"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",
@@ -38,7 +37,7 @@
     "webpack-notifier": "1.6.0",
     "webpack-pwa-manifest": "3.7.1",
     "webpack-serve": "2.0.2",
-    "workbox-cli": "3.4.1"
+    "workbox-webpack-plugin": "3.4.1"
   },
   "dependencies": {
     "@webcomponents/custom-elements": "1.2.0",
