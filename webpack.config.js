@@ -111,18 +111,5 @@ module.exports = {
   },
   optimization: {
     minimize: false
-  },
-  devServer: {
-    contentBase: path.join(__dirname, dist),
-    watchContentBase: true,
-    watchOptions: {
-      poll: true
-    },
-    compress: true,
-    port: 8090,
-    host: 'localhost',
-    hot: true,
-    inline: true,
-    historyApiFallback: true
   }
 };

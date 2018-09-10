@@ -11,7 +11,7 @@
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --hot",
+    "start": "NODE_ENV=development webpack-serve",
     "build:clean": "rm -rf ./dist",
     "build:bundle": "NODE_ENV=production webpack",
     "build:sw": "workbox generateSW workbox-config.js",
@@ -35,9 +35,9 @@
     "style-loader": "0.23.0",
     "webpack": "4.17.2",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.7",
     "webpack-notifier": "1.6.0",
     "webpack-pwa-manifest": "3.7.1",
+    "webpack-serve": "2.0.2",
     "workbox-cli": "3.4.1"
   },
   "dependencies": {
