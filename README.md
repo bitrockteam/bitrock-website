@@ -1,5 +1,5 @@
 # bitrock-website
-Bitrock corporate website.
+![./src/assets/BitrockLogo.svg](./src/assets/BitrockLogo.svg)
 
 <!-- https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master -->
 
@@ -25,7 +25,35 @@ Start the development webserver on `localhost:8090`
 $ yarn start
 ```
 
-<!-- ## Development -->
+## Development
+
+#### Project structure 
+`| root`          global configurations (Webpack, Yarn, etc...)\
+`|- /scripts`     build time utilities\
+`|- /src`         bootstrapping & globals\
+`|--- /styles`    .scss files\
+`|--- /assets`    images & main .html template\
+`|--- /libs`      JS helpers and API wrappers\
+`|--- /components` \
+`|------ /ui`     global UI elements\
+`|------ /pages`  posts and pages templates\
+
+#### Main libraries
+The project is written without an opinionated framework, but it uses a combination of some libraries to get the job done:
+
+* [lit-html](https://github.com/Polymer/lit-html) the main JS functional template engine
+* [router5](https://router5.js.org/) a client side router that works with state changes
+* [lodash](https://lodash.com/) for a couple of helpers utilities
+
+#### CSS utilities
+We are also using this CSS libraries:
+
+* [normalize.css](https://necolas.github.io/normalize.css/) makes browsers render all elements more consistently and in line with modern standards.
+* [typebase.css](https://github.com/devinhunt/typebase.css) a starting point for web typography
+* [hamburgers](https://jonsuh.com/hamburgers/) CSS-animated hamburgers menu
+
+## Tests
+Coming soon (really!)
 
 ## Branching policy
 This project follows a simple branching policy:
@@ -34,7 +62,7 @@ This project follows a simple branching policy:
 * `development` where evolutive or experimental code is written
 * `gh-pages` where the distrubutable static files are deployed
 
-Do **NOT** merge directly `development` into `master`, always send a PR to have a review.
+Do **NOT** merge directly `development` into `master` (*it's admin-locked...*), always send a PR to have a review.
 
 ## Update & deploy
 Every time the `master` branch got updated (a direct commit or a merged PR) a new [Travis CI](https://travis-ci.org/bitrockteam/tech-radar) job is triggered and it composed basically of 2 steps:
