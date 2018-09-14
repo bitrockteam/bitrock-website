@@ -16,7 +16,9 @@
     "build:bundle": "NODE_ENV=production webpack",
     "gh:page": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh:page",
-    "build": "npm run build:clean && npm run build:bundle"
+    "build": "npm run build:clean && npm run build:bundle",
+    "test:e2e": "cypress run",
+    "test": "npm start & npm run test:e2e"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",
@@ -24,6 +26,7 @@
     "@babel/preset-env": "7.0.0",
     "babel-loader": "8.0.2",
     "css-loader": "1.0.0",
+    "cypress": "3.1.0",
     "favicons-webpack-plugin": "0.0.9",
     "file-loader": "2.0.0",
     "gh-pages": "1.2.0",

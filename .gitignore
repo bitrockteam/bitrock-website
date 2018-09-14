@@ -1,5 +1,6 @@
 dist
 .DS_store
+cypress/videos
 
 # Logs
 logs
