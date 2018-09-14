@@ -1,3 +1,30 @@
+@media (min-width: 576px) {
+  main {
+    column-count: 2;
+    column-gap: 30px;
+
+    &.content {
+      column-count: unset;
+    }
+  }
+
+  footer {
+    & > .wrapper {
+      
+      article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        text-align: left;
+
+        div{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 992px) {
   %showLogo {
     height: 37px;
@@ -31,7 +58,7 @@
       background-size: cover;
 
       figcaption {
-        padding-top: 20%;
+        padding-top: 30vh;
 
         h3{
           font-size: 78px;
@@ -123,8 +150,7 @@
   }
 
   main {
-    // padding-top: 8px;
-    column-count: 4;
+    column-count: 2;
     column-gap: 30px;
 
     .block{
@@ -210,7 +236,7 @@
         text-align: left;
 
         div{
-          margin-bottom: 0;
+          margin-bottom: 30px;
         }
       }
     }
@@ -238,5 +264,18 @@
     width: 1140px;
     margin: 0 auto;
     padding: 60px 0;
+  }
+
+  main {
+    column-count: 3;
+  }
+
+  footer {
+    & > .wrapper {
+      
+      article {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
   }
 }
