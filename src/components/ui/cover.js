@@ -1,9 +1,9 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
-import { getFeatImage } from '../libs/data';
-import { post as mock } from '../libs/mock';
-import staticImg from './../assets/img/main_bg.jpg';
+import { getFeatImage } from './../../libs/data';
+import { post as mock } from './../../libs/mock';
+import staticImg from './../../assets/img/main_bg.jpg';
 
 export default class RockHero extends HTMLElement {
 

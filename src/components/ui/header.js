@@ -1,8 +1,7 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
 import './logo';
-import './ui/link';
-import './ui/social';
+import './link';
 
 export default class BitrockHeader extends HTMLElement {
   static get observedAttributes() { 

@@ -6,8 +6,8 @@ import { getFeatImage, getCategory } from '../../libs/data';
 import { router } from '../../libs/routing';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
-import '../cover';
-import '../ui/link';
+import './../ui/cover';
+import './../ui/link';
 
 export default class HomePage extends HTMLElement {
   static get observedAttributes() {

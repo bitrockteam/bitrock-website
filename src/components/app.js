@@ -10,13 +10,9 @@ import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
 import logo from './../assets/BitrockLogo.white.svg';
 
-import './header';
+import './ui/header';
 import './ui/link';
-import './logo';
-// import './pages/home';
-// import './pages/post';
-// import './pages/contacts';
-// import './pages/academy';
+import './ui/logo';
 
 export default class BitrockWebsite extends HTMLElement {
 

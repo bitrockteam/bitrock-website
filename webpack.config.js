@@ -30,11 +30,14 @@ module.exports = {
       title: pkg.name,
       alwaysNotify: true
     }),
+
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
     }),
+
     new FaviconsWebpackPlugin('./src/assets/logotype.png'),
+
     new WebpackPwaManifest({
       name: 'Bitrock',
       fingerprints: false,
@@ -50,15 +53,17 @@ module.exports = {
         }
       ]
     }),
+
     new HtmlWebpackPlugin({
       title: pkg.name,
       name: pkg.displayName,
       description: pkg.description,
       color: pkg.config.themeColor,
-      template: './src/pages/index.html',
+      template: './src/assets/index.html',
       filename: 'index.html',
       minify
     }),
+
     new workboxPlugin.GenerateSW({
       swDest: 'sw.js',
       clientsClaim: true,
@@ -67,12 +72,7 @@ module.exports = {
         "**/*.{jpg,js,png,ico,json,html,css}"
       ],
     })
-    // new HtmlWebpackPlugin({
-    //   title: pkg.name,
-    //   template: './src/pages/typography.html',
-    //   filename: './typography/index.html',
-    //   minify
-    // })
+
   ],
   devtool: 'source-map',
   resolve: {

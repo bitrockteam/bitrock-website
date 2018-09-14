@@ -1,7 +1,7 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
-import { router, routes } from '../libs/routing';
-import './ui/link';
+import { router, routes } from './../../libs/routing';
+import './link';
 
 export default class BitrockLogo extends HTMLElement {
   _navigate(evt){
