@@ -1,7 +1,7 @@
 # bitrock-website
 ![./src/assets/BitrockLogo.svg](./src/assets/BitrockLogo.svg)
 
-<!-- https://travis-ci.org/bitrock-frontend/basic-starter-kit.svg?branch=master -->
+[![Build Status](https://travis-ci.org/bitrockteam/bitrock-website.svg?branch=master)](https://travis-ci.org/bitrockteam/bitrock-website)
 
 ## Requisites
 You need the following software installed in your machine in order to get started:
