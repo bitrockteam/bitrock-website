@@ -11,8 +11,8 @@ export default class RockLink extends LinkElement {
       <a
         on-click=${this._navigate}
         data-url$=${url} 
-        href$="${url}"
-        type$="${type}"
+        href$=${url}
+        type$=${type}
         rel="noopener"
         target="_blank"
       >${label}</a>

@@ -26,9 +26,9 @@ export default class BitrockHeader extends HTMLElement {
             <ul>
               ${menu.map(e => 
                 html`<li><rock-link
-                  label$="${e.title}"
-                  url$="${e.url}"
-                  type$="${e.type}"
+                  label$=${e.title}
+                  url$=${e.url}
+                  type$=${e.type}
                 ></rock-link></li>`)}
             </ul>
           </nav>

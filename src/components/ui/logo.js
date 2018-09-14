@@ -46,15 +46,6 @@ export default class BitrockLogo extends HTMLElement {
     `;
 
     render(markup, this);
-
-    // this.addEventListener('click', evt => {
-    //   console.log('/');
-      
-    //   import('./../libs/routing').then(module => {
-    //     console.log(module);
-    //     module.router.navigate(module.routes[0].path);
-    //   })
-    // });
   }
 }
 

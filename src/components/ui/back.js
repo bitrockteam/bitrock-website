@@ -10,7 +10,7 @@ export default class RockBack extends LinkElement {
       <a
         on-click=${this._navigate}
         data-url$=${url} 
-        href$="${url}"
+        href$=${url}
       ><i class="fas fa-chevron-left"></i> ${label}</a>
     `;
 

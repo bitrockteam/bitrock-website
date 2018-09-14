@@ -3,7 +3,7 @@ import { router } from '../libs/routing';
 import { lastVisited } from '../libs/storage';
 import { $, scrollEffect } from '../libs/dom';
 import {
-  renderMenu, renderPosts, renderTags
+  renderMenu, renderPosts
 } from '../libs/render';
 import { pagesToRoutes } from '../libs/data';
 import { API, PATHS } from '../consts';
@@ -192,7 +192,7 @@ export default class BitrockWebsite extends HTMLElement {
           <div class="wrapper">
             <article>
               <figure>
-                <img src="${logo}" alt="Bitrock">
+                <img src=${logo} alt="Bitrock">
               </figure>
             
               <p>Copyright ${year} Bitrock s.r.l part of Databiz Group - Partita IVA/C.F.: 10150530961</p>

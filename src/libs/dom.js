@@ -32,5 +32,4 @@ export const scrollEffect = evt => {
   const header = $('bitrock-header');
   condition ? header.setAttribute('active', true) :
     header.removeAttribute('active');
-  // console.log(condition);
 }

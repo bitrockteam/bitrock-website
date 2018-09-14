@@ -12,8 +12,8 @@ const header = () => html`
   <header>
     <figure>
       <img
-        src="${getFeatImage(data._embedded)}"
-        alt="${data.title.rendered}" 
+        src=${getFeatImage(data._embedded)}
+        alt=${data.title.rendered}
       >
     </figure>
   </header>

@@ -16,13 +16,11 @@ export default class HomePage extends HTMLElement {
 
   constructor(){
     super();
-    this.posts = [];
-    this.latest = Array.from(Array(2), x => mock());
-    this.older = Array.from(Array(8), x => mock());
+
+    this.posts = Array.from(Array(8), x => mock());
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    this.older = this.posts.slice();
     this._render(false);
   }
 
@@ -47,10 +45,10 @@ export default class HomePage extends HTMLElement {
       <div class="block">
         <div class="card">
           <a
-            data-id$="${data.id}" 
-            data-slug$="${data.slug}" 
+            data-id$=${data.id}
+            data-slug$=${data.slug} 
             href="/post/${data.slug}"
-            on-click="${this._navigate}"
+            on-click=${this._navigate}
           >
             <header>
               <figure>
@@ -71,8 +69,7 @@ export default class HomePage extends HTMLElement {
       <rock-hero></rock-hero>
 
       <main class$="wrapper ${optimistic}">
-        ${this.older.map(e => posts(e))}
-        <!-- <i class="fas fa-circle-notch fa-spin"></i> -->
+        ${this.posts.map(e => posts(e))}
       </main>
     `;
 
