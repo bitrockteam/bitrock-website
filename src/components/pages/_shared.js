@@ -1,9 +1,10 @@
 import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
+import { updateMetadata } from 'pwa-helpers/metadata';
 import { store } from './../../libs/storage';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
-// import { getFeatImage } from '../../libs/data';
+import { getFeatImage } from '../../libs/data';
 
 export const layout = (content, loading) => {
   const optimistic = loading ? 'loading' : '';
@@ -37,7 +38,13 @@ export class BitrockPage extends HTMLElement {
     const id = getPageId();
 
     bitquest(API + PATHS.page(id)).get()
-      .then(data => this._render(data, false));
+      .then(data => this._render(data, false))
+      .then(data => updateMetadata({
+        title: data.title.rendered,
+        description: data.excerpt.rendered,
+        url: document.location.href,
+        image: getFeatImage(data._embedded)
+      }));
   }
 
 }

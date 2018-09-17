@@ -46,6 +46,7 @@ module.exports = {
       // start_url: 'https://bitrockteam.github.io/bitrock-website/',
       description: 'What does it take to look beyond?',
       background_color: '#ffffff',
+      version: `${pkg.version}.${new Date().toISOString()}`,
       icons: [
         {
           src: path.resolve('src/assets/logotype.png'),

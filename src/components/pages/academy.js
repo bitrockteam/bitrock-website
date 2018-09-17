@@ -13,6 +13,7 @@ export default class Academy extends BitrockPage {
     const markup = layout(content, loading);
 
     render(markup, this);
+    return data;
   }
 
 }

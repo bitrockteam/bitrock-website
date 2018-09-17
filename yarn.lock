@@ -4986,6 +4986,10 @@ punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
 
+pwa-helpers@0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/pwa-helpers/-/pwa-helpers-0.8.3.tgz#f5e4ed50faaefc2ca245c1f05fc0f01c1d9bdfeb"
+
 qs@~6.5.1, qs@~6.5.2:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"

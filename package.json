@@ -5,7 +5,7 @@
     "themeColor": "#2a2a2a"
   },
   "description": "In order to successfully develop and apply innovative technology you need to be able to look beyond the horizon, anticipating trends and recognizing the next standards.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "repository": "git@github.com:bitrockteam/bitrock-website.git",
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
@@ -49,6 +49,7 @@
     "lit-html": "0.10.2",
     "lodash": "4.17.10",
     "normalize.css": "8.0.0",
+    "pwa-helpers": "0.8.3",
     "router5": "6.4.2"
   }
 }

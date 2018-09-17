@@ -1,7 +1,8 @@
 import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
-import { router } from '../../libs/routing';
+import { updateMetadata } from 'pwa-helpers/metadata';
+// import { router } from '../../libs/routing';
 import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
 import { getFeatImage, getCategory, getCategorySlug } from '../../libs/data';
@@ -52,15 +53,21 @@ export default class SinglePost extends HTMLElement {
     `;
 
     render(markup, this);
+    return data;
   }
 
   connectedCallback() {
     this._render(mock(), true);
-
     const id = this.getAttribute('id');
 
     bitquest(API + PATHS.post(id)).get()
-      .then(data => this._render(data, false));
+      .then(data => this._render(data, false))
+      .then(data => updateMetadata({
+        title: data.title.rendered,
+        description: data.excerpt.rendered,
+        url: document.location.href,
+        image: getFeatImage(data._embedded)
+      }));
   }
 }
 

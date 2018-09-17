@@ -1,11 +1,14 @@
 import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+import { updateMetadata } from 'pwa-helpers/metadata';
 import { setPosts } from '../../libs/dom';
 import { getFeatImage, getCategory } from '../../libs/data';
 import { router } from '../../libs/routing';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
+import ogImg from './../../assets/social.png';
+import pkg from './../../../package.json';
 import './../ui/cover';
 import './../ui/link';
 
@@ -28,6 +31,13 @@ export default class HomePage extends HTMLElement {
     this._render(true);
     bitquest(API + PATHS.posts).get()
       .then(data => setPosts(data));
+
+    updateMetadata({
+      title: pkg.displayName,
+      description: pkg.description,
+      url: document.location.href,
+      image: ogImg
+    });
   }
 
   _navigate(evt) {
