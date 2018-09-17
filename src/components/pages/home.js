@@ -20,6 +20,8 @@ export default class HomePage extends HTMLElement {
   constructor(){
     super();
 
+    this.page = 1;
+    this.more = true;
     this.posts = Array.from(Array(8), x => mock());
   }
 
@@ -29,7 +31,7 @@ export default class HomePage extends HTMLElement {
 
   connectedCallback(){
     this._render(true);
-    bitquest(API + PATHS.posts).get()
+    bitquest(API + PATHS.posts()).get()
       .then(data => setPosts(data));
 
     updateMetadata({
@@ -46,6 +48,23 @@ export default class HomePage extends HTMLElement {
     const id = t.dataset.id;
     const slug = t.dataset.slug;
     router.navigate('post.single', { id, slug });
+  }
+
+  _endPagination() {
+    this.more = false;
+    return this.posts;
+  }
+
+  _loadMore() {
+    this.page++;
+
+    bitquest(API + PATHS.posts(this.page)).get()
+      .then(
+        data => this.posts.concat(data),
+        err => this._endPagination()
+      )
+      .then(more => setPosts(more))
+      .then(posts => posts);
   }
 
   _render(loading) {
@@ -80,6 +99,11 @@ export default class HomePage extends HTMLElement {
 
       <main class$="wrapper ${optimistic}">
         ${this.posts.map(e => posts(e))}
+        
+        ${this.more ? 
+          html`<button on-click=${this._loadMore.bind(this)}>
+            Load more
+          </button>` : ''}
       </main>
     `;
 

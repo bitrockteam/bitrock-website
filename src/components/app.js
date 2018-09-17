@@ -109,7 +109,7 @@ export default class BitrockWebsite extends HTMLElement {
     Promise.all([
       bitquest(API + PATHS.menu).get(),
       // bitquest(API + PATHS.tags).get(),
-      bitquest(API + PATHS.posts).get()
+      bitquest(API + PATHS.posts()).get()
     ]).then(responses => {
       renderMenu(responses[0]);
       // renderTags(responses[1]);
