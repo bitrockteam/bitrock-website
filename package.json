@@ -17,7 +17,7 @@
     "gh:page": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh:page",
     "build": "npm run build:clean && npm run build:bundle",
-    "test:e2e": "cypress run",
+    "test:e2e": "npm start & cypress run",
     "test:unit": "ava --verbose",
     "test": "npm run test:unit & npm start & npm run test:e2e"
   },
