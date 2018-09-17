@@ -18,12 +18,15 @@
     "deploy": "npm run build && npm run gh:page",
     "build": "npm run build:clean && npm run build:bundle",
     "test:e2e": "cypress run",
-    "test": "npm start & npm run test:e2e"
+    "test:unit": "ava --verbose",
+    "test": "npm run test:unit & npm start & npm run test:e2e"
   },
   "devDependencies": {
     "@babel/core": "7.0.0",
     "@babel/plugin-syntax-dynamic-import": "7.0.0",
     "@babel/preset-env": "7.0.0",
+    "@babel/register": "7.0.0",
+    "ava": "1.0.0-beta.8",
     "babel-loader": "8.0.2",
     "css-loader": "1.0.0",
     "cypress": "3.1.0",
@@ -51,5 +54,11 @@
     "normalize.css": "8.0.0",
     "pwa-helpers": "0.8.3",
     "router5": "6.4.2"
+  },
+  "ava": {
+    "verbose": true,
+    "require": [
+      "@babel/register"
+    ]
   }
 }
