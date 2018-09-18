@@ -28,10 +28,11 @@ export default class BitrockWebsite extends HTMLElement {
 
     this.page = route.name;
     lastVisited.set(route);
+    console.log(__dirname);
     
     switch(route.name){
       case 'home-page':
-        import(/* webpackChunkName: "page.home" */ './pages/home');
+        import(/* webpackChunkName: "page.home" */  './pages/home');
         this.cover = this.sticky.length;
         window.addEventListener('scroll', scrollEffect);
         break;
@@ -86,9 +87,11 @@ export default class BitrockWebsite extends HTMLElement {
     const routes = pagesToRoutes(data);
     router.add(routes);
 
-    const isHome = window.location.hash.length < 3;
+    const url = window.location.hash.length ? 
+      window.location.hash : window.location.pathname;
+    const isHome = url.length < 3;
 
-    const redirect = this._getRedirect(window.location.hash, posts);
+    const redirect = this._getRedirect(url, posts);
     redirect ? lastVisited.set(redirect) : null;
 
     const last = lastVisited.get();

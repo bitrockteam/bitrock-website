@@ -11,7 +11,7 @@ const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
 const devMode = process.env.NODE_ENV !== 'production'
-const dist = './dist';
+const dist = '/dist';
 const minify = devMode ? false : true;
 
 module.exports = {
@@ -21,9 +21,10 @@ module.exports = {
   },
   mode: env,
   output: {
-    path: path.join(__dirname, dist),
+    path: path.resolve(__dirname, dist),
     filename: '[name].[hash].js',
-    chunkFilename: 'js/[name].[hash].js'
+    chunkFilename: 'js/[name].[hash].js',
+    publicPath: devMode ? '/' : 'https://bitrock.it'
   },
   plugins: [
     new WebpackNotifierPlugin({
@@ -121,5 +122,12 @@ module.exports = {
   },
   optimization: {
     minimize: false
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 8080,
+    hot: true,
+    historyApiFallback: true
   }
 };

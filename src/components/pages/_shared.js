@@ -26,7 +26,8 @@ export const layout = (content, loading) => {
 
 
 export const getPageId = () => {
-  const slug = window.location.hash.replace('#/', '');
+  const slug = window.location.hash.replace('#/', '') || 
+    window.location.pathname.replace('/', '');
   const pages = store.get('pages') || [];
   const result = pages.filter(e => e.url === slug);
   return result.length ? result[0].id : 0;
