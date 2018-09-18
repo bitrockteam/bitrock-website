@@ -99,12 +99,16 @@ export default class HomePage extends HTMLElement {
 
       <main class$="wrapper ${optimistic}">
         ${this.posts.map(e => posts(e))}
-        
-        ${this.more ? 
-          html`<button on-click=${this._loadMore.bind(this)}>
-            Load more
-          </button>` : ''}
       </main>
+
+      ${this.more ?
+        html`
+          <div class="load-more">
+            <button on-click=${this._loadMore.bind(this)}>
+              Load more
+            </button>
+          </div>
+          ` : ''}
     `;
 
     render(markup, this);

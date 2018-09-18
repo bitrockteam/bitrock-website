@@ -217,6 +217,30 @@ main{
   }
 }
 
+.load-more {
+  button {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff; /* $white */
+    background: #e74e0f; /* $basic01 */
+    padding: 12px 40px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    outline: none;
+    margin-bottom: 40px;
+
+    &:hover {
+      background: #eb6608; 
+    }
+  }
+}
+
 .content{
   &.loading {
     @extend %optimistic;
