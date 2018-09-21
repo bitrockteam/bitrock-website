@@ -11,13 +11,12 @@ const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
 const devMode = process.env.NODE_ENV !== 'production'
-const dist = '/dist';
+const dist = './dist';
 const minify = devMode ? false : true;
 
 module.exports = {
   entry: {
     bitrock: './src/index.js',
-    // 'sw.fetch': './src/sw.fetch.js'
   },
   mode: env,
   output: {
@@ -44,7 +43,7 @@ module.exports = {
       fingerprints: false,
       theme_color: "#2a2a2a",
       short_name: 'Bitrock',
-      // start_url: 'https://bitrockteam.github.io/bitrock-website/',
+      start_url: '/',
       description: 'What does it take to look beyond?',
       background_color: '#ffffff',
       version: `${pkg.version}.${new Date().toISOString()}`,

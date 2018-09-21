@@ -1,12 +1,12 @@
 import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
+import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
-import { store } from './../../libs/storage';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
 import { getFeatImage } from '../../libs/data';
 
-export const layout = (content, loading) => {
+const layout = (content, loading) => {
   const optimistic = loading ? 'loading' : '';
   return html`
     <main class$="content ${optimistic}">
@@ -22,23 +22,27 @@ export const layout = (content, loading) => {
       </div>
     </main>
   `;
-} 
-
-
-export const getPageId = () => {
-  const slug = window.location.hash.replace('#/', '') || 
-    window.location.pathname.replace('/', '');
-  const pages = store.get('pages') || [];
-  const result = pages.filter(e => e.url === slug);
-  return result.length ? result[0].id : 0;
 }
 
-export class BitrockPage extends HTMLElement {
+export class SinglePage extends HTMLElement {
+  _render(data, loading) {
+    const content = html`
+      <h3>${unsafeHTML(data.title.rendered)}</h3>
+      ${unsafeHTML(data.content.rendered)}
+    `;
+
+    const markup = layout(content, loading);
+
+    render(markup, this);
+    return data;
+  }
+
   connectedCallback() {
     this._render(mock(), true);
-    const id = getPageId();
+    const slug = this.location.params.slug;
 
-    bitquest(API + PATHS.page(id)).get()
+    bitquest(API + PATHS.page(slug)).get()
+      .then(pages => pages[0])
       .then(data => this._render(data, false))
       .then(data => updateMetadata({
         title: data.title.rendered,
@@ -49,3 +53,6 @@ export class BitrockPage extends HTMLElement {
   }
 
 }
+
+
+customElements.define('page-single', SinglePage);

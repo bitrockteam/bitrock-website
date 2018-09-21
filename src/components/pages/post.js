@@ -2,12 +2,9 @@ import bitquest from 'bitquest';
 import { html, render } from 'lit-html/lib/lit-extended';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
-// import { router } from '../../libs/routing';
 import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
 import { getFeatImage, getCategory, getCategorySlug } from '../../libs/data';
-import '../ui/link';
-import '../ui/back';
 
 const header = () => html`
   <header>
@@ -45,10 +42,6 @@ export default class SinglePost extends HTMLElement {
             <!-- ${user(data._embedded.author[0])} -->
           </section>
         </article>
-        <!-- <rock-back
-          label="Home"
-          url="home-page"
-        > -->
       </main>
     `;
 
@@ -58,9 +51,10 @@ export default class SinglePost extends HTMLElement {
 
   connectedCallback() {
     this._render(mock(), true);
-    const id = this.getAttribute('id');
+    const slug = this.location.params.slug;
 
-    bitquest(API + PATHS.post(id)).get()
+    bitquest(API + PATHS.post(slug)).get()
+      .then(posts => posts[0])
       .then(data => this._render(data, false))
       .then(data => updateMetadata({
         title: data.title.rendered,

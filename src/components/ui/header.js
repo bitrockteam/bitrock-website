@@ -1,35 +1,43 @@
 
 import { html, render } from 'lit-html/lib/lit-extended';
 import './logo';
-import './link';
+
+const page = data => html`
+  <li><a
+    href$="/${data.url}"
+  >${data.title}</a></li>
+`;
+
+const link = data => html`
+  <li><a
+    href$=${data.url}
+    target="_blank"
+    rel="noopener"
+  >${data.title}</a></li>
+`;
 
 export default class BitrockHeader extends HTMLElement {
   static get observedAttributes() { 
-    return ['menu', 'tags', 'active']; 
+    return ['menu', 'active']; 
   }
 
-  _setId(evt){
-    console.log(evt);
-  }
-
-  _render(menu = [], tags = [], active = false) {
+  _render(menu = [], active = false) {
     const _active = active ? 'active' : '';
 
     const markup = html`
       <header class$="main ${_active}">
         <div class="wrapper">
           <div class="logo">
-            <bitrock-logo></bitrock-logo>
+            <a href="/">
+              <bitrock-logo></bitrock-logo>
+            </a>
           </div>
         
           <nav>
             <ul>
               ${menu.map(e => 
-                html`<li><rock-link
-                  label$=${e.title}
-                  url$=${e.url}
-                  type$=${e.type}
-                ></rock-link></li>`)}
+                e.type === 'custom' ? link(e) : page(e)
+              )}
             </ul>
           </nav>
 
@@ -71,12 +79,11 @@ export default class BitrockHeader extends HTMLElement {
         this.active = newValue === 'true';
         break;
       case 'menu':
-      case 'tags':
         this[name] = JSON.parse(newValue) || [];
         break;
     }
 
-    this._render(this.menu, this.tags, this.active);
+    this._render(this.menu, this.active);
   }
 
   connectedCallback(){

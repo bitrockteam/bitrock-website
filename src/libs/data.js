@@ -4,7 +4,6 @@ import get from 'lodash/get';
 const sourceUrl = media => 
   get(media[0], 'media_details.sizes.medium.source_url', '');
 
-const kebabify = str => str.replace(/ +/g, '-').toLowerCase();
 const urlType = item => item.object === 'page' ? item.slug : item.url;
 
 export const formatMenu = data => data
@@ -13,13 +12,6 @@ export const formatMenu = data => data
     url: urlType(e),
     type: e.object,
     id: parseInt(e.object_id)
-  }));
-
-export const pagesToRoutes = data => data
-  .map(e => ({
-    name: kebabify(e.title),
-    path: '/' + e.slug,
-    custom: { id: parseInt(e.object_id) }
   }));
 
 export const getFeatImage = embeds => embeds['wp:featuredmedia'] ?

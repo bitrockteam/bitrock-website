@@ -1,18 +1,40 @@
 import { html, render } from 'lit-html/lib/lit-extended';
-import { router } from '../libs/routing';
-import { lastVisited } from '../libs/storage';
+import { Router } from '@vaadin/router';
 import { $, scrollEffect } from '../libs/dom';
 import {
   renderMenu, renderPosts
 } from '../libs/render';
-import { pagesToRoutes } from '../libs/data';
 import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
 import logo from './../assets/BitrockLogo.white.svg';
 
 import './ui/header';
-import './ui/link';
 import './ui/logo';
+
+window.addEventListener('vaadin-router-location-changed', e => {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+  
+  const component = e.detail.location.route.component;
+  if (component == 'home-page') {
+    import(/* webpackChunkName: "page.home" */ './pages/home');
+    window.addEventListener('scroll', scrollEffect);
+    $('bitrock-header').removeAttribute('active');
+  }
+  if (component == 'post-single') {
+    import(/* webpackChunkName: "single.post" */ './pages/post');
+    window.removeEventListener('scroll', scrollEffect);
+    $('bitrock-header').setAttribute('active', true);
+  }
+  if (component == 'page-single') {
+    import(/* webpackChunkName: "page" */ './pages/single');
+    window.removeEventListener('scroll', scrollEffect);
+    $('bitrock-header').setAttribute('active', true);
+  }
+});
 
 export default class BitrockWebsite extends HTMLElement {
 
@@ -22,100 +44,28 @@ export default class BitrockWebsite extends HTMLElement {
     this.cover = 0;
   }
 
-  _routing(route) {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-
-    this.page = route.name;
-    lastVisited.set(route);
-    console.log(__dirname);
-    
-    switch(route.name){
-      case 'home-page':
-        import(/* webpackChunkName: "page.home" */  './pages/home');
-        this.cover = this.sticky.length;
-        window.addEventListener('scroll', scrollEffect);
-        break;
-      case 'post.single':
-        import(/* webpackChunkName: "page.post" */ './pages/post');
-        this.page = route.name.replace('.', '-');
-        this.pageId = route.params.id;
-        break;
-      case 'discover':
-        import(/* webpackChunkName: "page.discover" */ './pages/discover');
-        this.page = 'discover-us';
-        break;
-      case 'academy':
-        import(/* webpackChunkName: "page.academy" */ './pages/academy');
-        this.page = 'bitrock-academy';
-        break;
-      default:
-        this.page = route.name;
-        this.cover = 0;
-        window.removeEventListener('scroll', scrollEffect);
-    }
-
-    if(route.name !== 'home-page'){
-      this.cover = 0;
-      window.removeEventListener('scroll', scrollEffect);
-    }
-
-    this._render();
-  }
-
-  _getRedirect(hash, posts) {
-    const slug = hash.split('#/post/')[1];
-    if (slug && slug.length) {
-      const data = posts.filter(e => e.slug === slug)[0];
-      const obj = {
-        path: `/post/${slug}`,
-        name: 'post.single',
-        params: {
-          id: data.id, slug
-        },
-        meta: { id: 1, options: {}, params: {
-          post: {}, 'post.single': { slug: 'url' }
-        }}
-      };
-      return obj;
-    } else {
-      return false;
-    }
-  }
-
-  _setupRouter(data, posts) {
-    const routes = pagesToRoutes(data);
-    router.add(routes);
-
-    const url = window.location.hash.length ? 
-      window.location.hash : window.location.pathname;
-    const isHome = url.length < 3;
-
-    const redirect = this._getRedirect(url, posts);
-    redirect ? lastVisited.set(redirect) : null;
-
-    const last = lastVisited.get();
-    !isHome && last ? 
-      router.navigate(last.name, last.params) : 
-      import(/* webpackChunkName: "page.home" */ './pages/home');
-  }
-
   connectedCallback() {
-    this.page = 'home-page';
     this._render();
     this._loadData();
+  }
 
-    router.addListener(route => this._routing(route));
+  _setupVaadinRouter() {
+    const outlet = document.querySelector('.outlet');
+    const router = new Router(outlet);
+
+    router.setRoutes([
+      { path: '/', component: 'home-page' },
+      { path: '/post/:slug', component: 'post-single' },
+      { path: '/:slug', component: 'page-single' },
+    ]);
   }
 
   _loadData() {
     Promise.all([
       bitquest(API + PATHS.menu).get(),
-      // bitquest(API + PATHS.tags).get(),
       bitquest(API + PATHS.posts()).get()
     ]).then(responses => {
       renderMenu(responses[0]);
-      // renderTags(responses[1]);
       renderPosts(responses[1]);
 
       this.posts = responses[1];
@@ -123,18 +73,10 @@ export default class BitrockWebsite extends HTMLElement {
       this.cover = true || this.sticky.length;
       $('body').classList.add('ready');
       this._render();
-      this._setupRouter(responses[0], responses[1]);
+      this._setupVaadinRouter();
     }, error => {
-      // $('body').classList.add('ready');
       window.alert('An error has occured while initializing the application, try to reload.');
     });
-  }
-
-  _currentPage() {
-    const page = document.createElement(this.page);
-    this.pageId ? page.id = this.pageId : null;
-    this.pageId = null;
-    return html`${page}`;
   }
 
   _render() {
@@ -145,7 +87,9 @@ export default class BitrockWebsite extends HTMLElement {
       <div class$=${cover}>
         <bitrock-header></bitrock-header>
         
-        ${this._currentPage()}
+        <div class="outlet">
+          
+        </div>
 
         <footer id="corporate" class="corporate">
           <div class="wrapper">

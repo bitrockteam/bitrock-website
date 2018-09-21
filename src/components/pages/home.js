@@ -4,13 +4,11 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
 import { setPosts } from '../../libs/dom';
 import { getFeatImage, getCategory } from '../../libs/data';
-import { router } from '../../libs/routing';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
 import ogImg from './../../assets/social.png';
 import pkg from './../../../package.json';
 import './../ui/cover';
-import './../ui/link';
 
 export default class HomePage extends HTMLElement {
   static get observedAttributes() {
@@ -22,7 +20,7 @@ export default class HomePage extends HTMLElement {
 
     this.page = 1;
     this.more = true;
-    this.posts = Array.from(Array(8), x => mock());
+    this.posts = Array.from(Array(12), x => mock());
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -38,7 +36,7 @@ export default class HomePage extends HTMLElement {
       title: pkg.displayName,
       description: pkg.description,
       url: document.location.href,
-      image: ogImg
+      image: '/' + ogImg
     });
   }
 
@@ -77,7 +75,6 @@ export default class HomePage extends HTMLElement {
             data-id$=${data.id}
             data-slug$=${data.slug} 
             href="/post/${data.slug}"
-            on-click=${this._navigate}
           >
             <header>
               <figure>
