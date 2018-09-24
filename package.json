@@ -11,6 +11,7 @@
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "serve": "node ./scripts/server.js",
     "start": "NODE_ENV=development webpack-dev-server --hot",
     "build:clean": "rm -rf ./dist",
     "build:bundle": "NODE_ENV=production webpack",
@@ -50,6 +51,7 @@
     "@webcomponents/custom-elements": "1.2.0",
     "bitquest": "1.0.0",
     "hamburgers": "0.9.3",
+    "http-server-pwa": "0.1.4",
     "lit-html": "0.10.2",
     "lodash": "4.17.10",
     "normalize.css": "8.0.0",
