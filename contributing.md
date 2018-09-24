@@ -5,6 +5,7 @@ Key concepts (TL;DR)
 * Bugs, ideas, enhacements to the project can be reported by opening an issue
 * Content-related issues will be ignored and closed immediately
 * Please don't report a duplicate issue, check if a similar one already exists and join the discussion
+* Avoid posting one word/sentence/link issues, try to be descriptive. Issues are discussions.
 * If you want to contribute to code don't request to join the repo, but rather fork it and send a PR
 * Write in english
 

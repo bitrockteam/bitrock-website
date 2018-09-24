@@ -1,7 +1,9 @@
 
+import smoothscroll from 'smoothscroll-polyfill';
 import { scrollEffect } from './libs/dom';
-
 import './styles/main.scss';
+
+smoothscroll.polyfill();
 
 const prod = process.env.NODE_ENV === 'production';
 const app = () => import(

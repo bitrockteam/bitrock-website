@@ -18,7 +18,7 @@
     "gh:page": "gh-pages -d ./dist",
     "deploy": "npm run build && npm run gh:page",
     "build": "npm run build:clean && npm run build:bundle",
-    "test:e2e": "npm start & cypress run",
+    "test:e23": "npm start & cypress run",
     "test:unit": "ava --verbose",
     "test": "npm run test:unit & npm start & npm run test:e2e"
   },
@@ -55,7 +55,8 @@
     "lit-html": "0.10.2",
     "lodash": "4.17.10",
     "normalize.css": "8.0.0",
-    "pwa-helpers": "0.8.3"
+    "pwa-helpers": "0.8.3",
+    "smoothscroll-polyfill": "0.4.3"
   },
   "ava": {
     "verbose": true,
