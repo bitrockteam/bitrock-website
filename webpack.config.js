@@ -23,7 +23,7 @@ module.exports = {
     path: path.resolve(__dirname, dist),
     filename: '[name].[hash].js',
     chunkFilename: 'js/[name].[hash].js',
-    publicPath: devMode ? '/' : 'https://bitrock.it'
+    publicPath: '/'
   },
   plugins: [
     new WebpackNotifierPlugin({
