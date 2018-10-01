@@ -11,7 +11,7 @@
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "node ./scripts/server.js",
+    "serve": "NODE_ENV=production node ./scripts/server.js",
     "start": "NODE_ENV=development webpack-dev-server --hot",
     "build:clean": "rm -rf ./dist",
     "build:bundle": "NODE_ENV=production webpack",
