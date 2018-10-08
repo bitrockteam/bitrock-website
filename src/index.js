@@ -7,11 +7,11 @@ smoothscroll.polyfill();
 
 const prod = process.env.NODE_ENV === 'production';
 const app = () => import(
-  /* webpackChunkName: "app" */  
+  /* webpackChunkName: "app" */
   './components/app');
 
 if(!window.customElements) {
-  import( /* webpackChunkName: "custom-elements" */ 
+  import( /* webpackChunkName: "custom-elements" */
     '@webcomponents/custom-elements/src/custom-elements'
   ).then(() => app());
 } else {

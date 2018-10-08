@@ -10,7 +10,7 @@ const workboxPlugin = require('workbox-webpack-plugin');
 const pkg = require('./package.json');
 
 const env = process.env.NODE_ENV || 'development';
-const devMode = process.env.NODE_ENV !== 'production'
+const devMode = process.env.NODE_ENV !== 'production';
 const dist = './dist';
 const minify = devMode ? false : true;
 
@@ -72,6 +72,16 @@ module.exports = {
       globPatterns: [
         "**/*.{jpg,js,png,ico,json,html,css}"
       ],
+      runtimeCaching: [{
+        urlPattern: new RegExp('^https://api\.bitrock\.it/'),
+        handler: 'networkFirst',
+        options: {
+          cacheName: 'api.bitrock.it-cache',
+          cacheableResponse: {
+            statuses: [200]
+          }
+        }
+      }]
     })
 
   ],
@@ -84,7 +94,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          devMode ? 'style-loader' : MiniCssExtractPlugin.loader, 
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader'
         ]
       },
