@@ -1,21 +1,11 @@
 @import './colors.scss';
 @import './mixins.scss';
 
-$menu-width: 26px;
 $header--height: 90px;
 $header-compact--height: 60px;
 
 .wrapper {
   padding: 45px 30px; 
-}
-
-.no-cover {
-  // padding-top: 82px;
-  padding-top: 60px;
-  
-  header.main { 
-    @extend %barColor;
-  }
 }
 
 svg.logo{
@@ -30,13 +20,9 @@ svg.logo{
   }
 }
 
-section.cover{
+section.cover {
   display: none;
-  // padding-top: 82px;
   height: 100vh;
-  // &.loading {
-  //   @extend %optimistic;
-  // }
 
   figure {
     margin: 0;
@@ -123,12 +109,6 @@ header.main {
     background-color: rgba(42, 42, 42, 100);
   }
 
-  &.active {
-    // $h: 60px;
-    // height: $h;
-    // line-height: $h;
-  }
-
   svg {
     vertical-align: middle;
     cursor: pointer;
@@ -157,7 +137,6 @@ header.main {
 
   nav {
     z-index: 98;
-    // width: 100%;
     left: 0;
     top: 0;
 
@@ -184,14 +163,6 @@ header.main {
         }
       }
     }
-  }
-}
-
-.no-cover {
-
-  header.main {
-    height: $header-compact--height;
-    line-height: $header-compact--height;
   }
 }
 
