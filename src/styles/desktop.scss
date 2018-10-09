@@ -31,23 +31,6 @@
     transform: scale(1);
   }
 
-  .no-cover {
-    padding-top: 60px;
-  }
-
-  .wrapper.no-cover {
-    padding-top: 0;
-
-    header {
-      background: rgb(42, 42, 42);
-      margin: 0;
-
-      & > .logo{
-        @extend %showLogo;
-      }
-    }
-  }
-
   section.cover{
     padding-top: 0px;
     height: 100vh;
@@ -130,16 +113,6 @@
         height: 60px;
       }
     }
-  }
-
-  .no-cover {
-
-    header.main {
-
-      .wrapper {
-        height: 60px;
-      }
-    }   
   }
 
   main.evidence {

@@ -1,20 +1,11 @@
-
 @import './colors.scss';
 @import './mixins.scss';
 
-$menu-width: 26px;
+$header--height: 90px;
+$header-compact--height: 60px;
 
 .wrapper {
   padding: 45px 30px; 
-}
-
-.no-cover {
-  // padding-top: 82px;
-  padding-top: 60px;
-  
-  header.main { 
-    @extend %barColor;
-  }
 }
 
 svg.logo{
@@ -29,13 +20,9 @@ svg.logo{
   }
 }
 
-section.cover{
+section.cover {
   display: none;
-  // padding-top: 82px;
   height: 100vh;
-  // &.loading {
-  //   @extend %optimistic;
-  // }
 
   figure {
     margin: 0;
@@ -93,16 +80,16 @@ header.main {
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
-  line-height: 90px;
+  height: $header--height;
+  line-height: $header--height;
   background-color: transparent;
   overflow: hidden;
 
   &.active {
     @extend %barColor;
 
-    height: 60px;
-    line-height: 60px;
+    height: $header-compact--height;
+    line-height: $header-compact--height;
 
     nav {
       ul {
@@ -120,12 +107,6 @@ header.main {
 
     height: 100% !important;
     background-color: rgba(42, 42, 42, 100);
-  }
-
-  &.active {
-    // $h: 60px;
-    // height: $h;
-    // line-height: $h;
   }
 
   svg {
@@ -156,7 +137,6 @@ header.main {
 
   nav {
     z-index: 98;
-    // width: 100%;
     left: 0;
     top: 0;
 
@@ -186,20 +166,11 @@ header.main {
   }
 }
 
-.no-cover {
-
-  header.main {
-    height: 60px;
-    line-height: 60px;
-  }
-}
-
 main.evidence {
   padding-bottom: 0;
 }
 
 main{
-  // padding: 8px 8px 90px;
 
   .block{
     margin: 30px 0;
@@ -214,6 +185,10 @@ main{
 
   &.loading {
     @extend %optimistic;
+  }
+
+  &.content {
+    margin-top: $header-compact--height;
   }
 }
 
