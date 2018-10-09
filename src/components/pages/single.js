@@ -1,6 +1,6 @@
 import bitquest from 'bitquest';
-import { html, render } from 'lit-html/lib/lit-extended';
-import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+import { html, render } from 'lit-html';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
@@ -9,7 +9,7 @@ import { getFeatImage } from '../../libs/data';
 const layout = (content, loading) => {
   const optimistic = loading ? 'loading' : '';
   return html`
-    <main class$="content ${optimistic}">
+    <main class=${`content ${optimistic}`}>
       <div class="wrapper">
         <article class="card">
           <figure></figure>

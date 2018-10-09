@@ -1,4 +1,4 @@
-import { html, render } from 'lit-html/lib/lit-extended';
+import { html, render } from 'lit-html';
 import { Router } from '@vaadin/router';
 import { $, scrollEffect } from '../libs/dom';
 import {
@@ -18,21 +18,21 @@ window.addEventListener('vaadin-router-location-changed', e => {
     behavior: 'smooth'
   });
   
+  $('bitrock-header').setAttribute('active', true);
+
   const component = e.detail.location.route.component;
-  if (component == 'home-page') {
+  if (component === 'home-page') {
     import(/* webpackChunkName: "page.home" */ './pages/home');
     window.addEventListener('scroll', scrollEffect);
     $('bitrock-header').removeAttribute('active');
   }
-  if (component == 'post-single') {
+  if (component === 'post-single') {
     import(/* webpackChunkName: "single.post" */ './pages/post');
     window.removeEventListener('scroll', scrollEffect);
-    $('bitrock-header').setAttribute('active', true);
   }
-  if (component == 'page-single') {
+  if (component === 'page-single') {
     import(/* webpackChunkName: "page" */ './pages/single');
     window.removeEventListener('scroll', scrollEffect);
-    $('bitrock-header').setAttribute('active', true);
   }
 });
 
@@ -56,7 +56,7 @@ export default class BitrockWebsite extends HTMLElement {
     router.setRoutes([
       { path: '/', component: 'home-page' },
       { path: '/post/:slug', component: 'post-single' },
-      { path: '/:slug', component: 'page-single' },
+      { path: '/:slug', component: 'page-single' }
     ]);
   }
 
@@ -84,7 +84,7 @@ export default class BitrockWebsite extends HTMLElement {
     const cover = this.cover ? 'cover' : 'no-cover';
 
     const markup = html`
-      <div class$=${cover}>
+      <div class=${cover}>
         <bitrock-header></bitrock-header>
         
         <div class="outlet">
