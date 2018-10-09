@@ -25,6 +25,13 @@ const layout = (content, loading) => {
 }
 
 export class SinglePage extends HTMLElement {
+  static get observedAttributes() { return ['location']; }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    const location = JSON.parse(newValue);
+    this._init(location);
+  }
+
   _render(data, loading) {
     const content = html`
       <h3>${unsafeHTML(data.title.rendered)}</h3>
@@ -37,9 +44,9 @@ export class SinglePage extends HTMLElement {
     return data;
   }
 
-  connectedCallback() {
+  _init(location) {
     this._render(mock(), true);
-    const slug = this.location.params.slug;
+    const slug = location.slug;
 
     bitquest(API + PATHS.page(slug)).get()
       .then(pages => pages[0])

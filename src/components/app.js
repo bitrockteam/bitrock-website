@@ -1,9 +1,7 @@
 import { html, render } from 'lit-html';
 import { Router } from '@vaadin/router';
 import { $, scrollEffect } from '../libs/dom';
-import {
-  renderMenu, renderPosts
-} from '../libs/render';
+import { renderMenu } from '../libs/render';
 import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
 import logo from './../assets/BitrockLogo.white.svg';
@@ -21,16 +19,21 @@ window.addEventListener('vaadin-router-location-changed', e => {
   $('bitrock-header').setAttribute('active', true);
 
   const component = e.detail.location.route.component;
-  if (component === 'home-page') {
+  const path = e.detail.location.route.path;
+  
+  // if (component === 'home-page') {
+  if (path === '/') {
     import(/* webpackChunkName: "page.home" */ './pages/home');
     window.addEventListener('scroll', scrollEffect);
     $('bitrock-header').removeAttribute('active');
   }
-  if (component === 'post-single') {
+  // if (component === 'post-single') {
+  if (path === '/post/:slug') {
     import(/* webpackChunkName: "single.post" */ './pages/post');
     window.removeEventListener('scroll', scrollEffect);
   }
-  if (component === 'page-single') {
+  // if (component === 'page-single') {
+  if (path === '/:slug') {
     import(/* webpackChunkName: "page" */ './pages/single');
     window.removeEventListener('scroll', scrollEffect);
   }
@@ -45,28 +48,53 @@ export default class BitrockWebsite extends HTMLElement {
   }
 
   connectedCallback() {
-    this._render();
     this._loadData();
   }
 
   _setupVaadinRouter() {
     const outlet = document.querySelector('.outlet');
-    const router = new Router(outlet);
+    const router = new Router(document.querySelector('#dummy-outlet'));
 
-    router.setRoutes([
-      { path: '/', component: 'home-page' },
-      { path: '/post/:slug', component: 'post-single' },
-      { path: '/:slug', component: 'page-single' }
-    ]);
+    router.setRoutes({
+      path: '/',
+      action: async (context) => {
+        // let Vaadin Router do its job: resolve the pathname
+        // and return a TemplateResult 
+        const resolution = await context.next();
+
+        // if it's not a 404 render the TemplateResult with lit-html
+        if (resolution) {
+          render(resolution.result, outlet);
+          return outlet;
+        }
+      },
+      children: [
+        // the actual routes config
+        { 
+          path: '/', 
+          action: (context) => html`<home-page></home-page>` 
+        },
+        { 
+          path: '/post/:slug', 
+          action: (context) => html`
+            <post-single .location=${context}></post-single>` 
+        },
+        { 
+          path: '/:slug', 
+          action: (context) => html`
+            <page-single 
+              location=${JSON.stringify(context.params)}
+            ></page-single>` 
+        },
+      ]
+    });
   }
 
   _loadData() {
     Promise.all([
       bitquest(API + PATHS.menu).get(),
-      bitquest(API + PATHS.posts()).get()
     ]).then(responses => {
       renderMenu(responses[0]);
-      renderPosts(responses[1]);
 
       this.posts = responses[1];
       this.sticky = [true] || this.posts.filter(e => e.sticky);
@@ -149,7 +177,7 @@ export default class BitrockWebsite extends HTMLElement {
       </div>
     `;
 
-    render(markup, this);
+    return render(markup, this);
   }
 }
 
