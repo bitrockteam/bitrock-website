@@ -52,7 +52,7 @@
     "bitquest": "1.0.0",
     "hamburgers": "0.9.3",
     "http-server-pwa": "0.3.0",
-    "lit-html": "0.10.2",
+    "lit-html": "0.12.0",
     "lodash": "4.17.10",
     "normalize.css": "8.0.0",
     "pwa-helpers": "0.8.3",
