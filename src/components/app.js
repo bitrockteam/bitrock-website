@@ -10,6 +10,10 @@ import './ui/header';
 import './ui/logo';
 
 window.addEventListener('vaadin-router-location-changed', e => {
+  const page_path = e.detail.location.pathname;
+  gtag('config', 'UA-127344693-1', { page_path });
+  // console.log(page_path);
+
   window.scroll({
     top: 0,
     left: 0,
@@ -126,7 +130,8 @@ export default class BitrockWebsite extends HTMLElement {
                 <h4>Corporate</h4>
                 <p>
                   <a href="https://www.linkedin.com/company/bitrock-srl/jobs/" target="_blank" rel="noopener">Careers</a> <br>
-                  <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a>
+                  <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a> <br>
+                  <a href="https://www.iubenda.com/privacy-policy/81384922" target="_blank" rel="noopener">Privacy policy</a>
                </p>
               </div>
               <div>
@@ -174,6 +179,7 @@ export default class BitrockWebsite extends HTMLElement {
             </article>
           </div>
         </footer>
+
       </div>
     `;
 
