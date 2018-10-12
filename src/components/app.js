@@ -10,6 +10,10 @@ import './ui/header';
 import './ui/logo';
 
 window.addEventListener('vaadin-router-location-changed', e => {
+  const page_path = e.detail.location.pathname;
+  gtag('config', 'UA-127344693-1', { page_path });
+  // console.log(page_path);
+
   window.scroll({
     top: 0,
     left: 0,
