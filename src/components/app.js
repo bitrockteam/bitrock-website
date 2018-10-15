@@ -1,7 +1,9 @@
-import { html, render } from 'lit-html';
+import { html, render } from 'lit-html/lib/lit-extended';
 import { Router } from '@vaadin/router';
 import { $, scrollEffect } from '../libs/dom';
-import { renderMenu } from '../libs/render';
+import {
+  renderMenu, renderPosts
+} from '../libs/render';
 import { API, PATHS } from '../consts';
 import bitquest from 'bitquest';
 import logo from './../assets/BitrockLogo.white.svg';
@@ -10,36 +12,27 @@ import './ui/header';
 import './ui/logo';
 
 window.addEventListener('vaadin-router-location-changed', e => {
-  const page_path = e.detail.location.pathname;
-  gtag('config', 'UA-127344693-1', { page_path });
-  // console.log(page_path);
-
   window.scroll({
     top: 0,
     left: 0,
     behavior: 'smooth'
   });
   
-  $('bitrock-header').setAttribute('active', true);
-
   const component = e.detail.location.route.component;
-  const path = e.detail.location.route.path;
-  
-  // if (component === 'home-page') {
-  if (path === '/') {
+  if (component == 'home-page') {
     import(/* webpackChunkName: "page.home" */ './pages/home');
     window.addEventListener('scroll', scrollEffect);
     $('bitrock-header').removeAttribute('active');
   }
-  // if (component === 'post-single') {
-  if (path === '/post/:slug') {
+  if (component == 'post-single') {
     import(/* webpackChunkName: "single.post" */ './pages/post');
     window.removeEventListener('scroll', scrollEffect);
+    $('bitrock-header').setAttribute('active', true);
   }
-  // if (component === 'page-single') {
-  if (path === '/:slug') {
+  if (component == 'page-single') {
     import(/* webpackChunkName: "page" */ './pages/single');
     window.removeEventListener('scroll', scrollEffect);
+    $('bitrock-header').setAttribute('active', true);
   }
 });
 
@@ -52,53 +45,28 @@ export default class BitrockWebsite extends HTMLElement {
   }
 
   connectedCallback() {
+    this._render();
     this._loadData();
   }
 
   _setupVaadinRouter() {
     const outlet = document.querySelector('.outlet');
-    const router = new Router(document.querySelector('#dummy-outlet'));
+    const router = new Router(outlet);
 
-    router.setRoutes({
-      path: '/',
-      action: async (context) => {
-        // let Vaadin Router do its job: resolve the pathname
-        // and return a TemplateResult 
-        const resolution = await context.next();
-
-        // if it's not a 404 render the TemplateResult with lit-html
-        if (resolution) {
-          render(resolution.result, outlet);
-          return outlet;
-        }
-      },
-      children: [
-        // the actual routes config
-        { 
-          path: '/', 
-          action: (context) => html`<home-page></home-page>` 
-        },
-        { 
-          path: '/post/:slug', 
-          action: (context) => html`
-            <post-single .location=${context}></post-single>` 
-        },
-        { 
-          path: '/:slug', 
-          action: (context) => html`
-            <page-single 
-              location=${JSON.stringify(context.params)}
-            ></page-single>` 
-        },
-      ]
-    });
+    router.setRoutes([
+      { path: '/', component: 'home-page' },
+      { path: '/post/:slug', component: 'post-single' },
+      { path: '/:slug', component: 'page-single' },
+    ]);
   }
 
   _loadData() {
     Promise.all([
       bitquest(API + PATHS.menu).get(),
+      bitquest(API + PATHS.posts()).get()
     ]).then(responses => {
       renderMenu(responses[0]);
+      renderPosts(responses[1]);
 
       this.posts = responses[1];
       this.sticky = [true] || this.posts.filter(e => e.sticky);
@@ -116,7 +84,7 @@ export default class BitrockWebsite extends HTMLElement {
     const cover = this.cover ? 'cover' : 'no-cover';
 
     const markup = html`
-      <div class=${cover}>
+      <div class$=${cover}>
         <bitrock-header></bitrock-header>
         
         <div class="outlet">
@@ -130,14 +98,13 @@ export default class BitrockWebsite extends HTMLElement {
                 <h4>Corporate</h4>
                 <p>
                   <a href="https://www.linkedin.com/company/bitrock-srl/jobs/" target="_blank" rel="noopener">Careers</a> <br>
-                  <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a> <br>
-                  <a href="https://www.iubenda.com/privacy-policy/81384922" target="_blank" rel="noopener">Privacy policy</a>
+                  <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a>
                </p>
               </div>
               <div>
                 <h4>Milano</h4>
                 <p>
-                   Sede legale e operativa<br>
+                   Office and Operational HQ<br>
                    Via Borsieri 41<br> 
                    20159 Milano (MI)<br>
                    Tel: 0422 1600025<br>
@@ -149,7 +116,7 @@ export default class BitrockWebsite extends HTMLElement {
               <div>
                 <h4>Treviso</h4>
                 <p>
-                   Sede operativa<br> 
+                   Operational HQ<br> 
                    Viale della Repubblica 156/a<br> 
                    31100 Treviso (TV)<br>
                    Tel: 0422 1600025 <br>
@@ -179,11 +146,10 @@ export default class BitrockWebsite extends HTMLElement {
             </article>
           </div>
         </footer>
-
       </div>
     `;
 
-    return render(markup, this);
+    render(markup, this);
   }
 }
 
