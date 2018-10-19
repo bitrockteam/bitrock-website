@@ -87,14 +87,14 @@ export default class HomePage extends HTMLElement {
     const markup = html`
       <rock-hero></rock-hero>
 
-      <main class="wrapper ${optimistic}">
+      <main id="main" class="wrapper ${optimistic}">
         ${this.posts.map(e => posts(e))}
       </main>
 
       ${this.more ?
         html`
           <div class="load-more">
-            <button @click=${e => this._loadMore()}>
+            <button class="btn btn-1" @click=${e => this._loadMore()}>
               Load more
             </button>
           </div>

@@ -21,14 +21,13 @@ export default class RockHero extends HTMLElement {
     const markup = html`
       <section class="cover ${optimistic}">
         <figure style="background-image: url(${staticImg})">
-          
           <figcaption class="wrapper">
-            <h3><small>what does it take</small> to look beyond?</h3>
-            <h4>Business. Technology. Experience.</h4>
-
-            <p>In order to successfully develop and apply innovative technology you need to be able to look
-beyond the horizon, anticipating trends and recognizing the next standards.</p>
-
+            <div class="claim">
+              <h3>what does it take</h3>
+              <h2>to look beyond?</h2>
+              <p><b>Bitrock</b> is a <b>high-end consulting and system integration company</b>, committed to offering cutting-edge and innovative solutions in <b>Microservices</b>, <b>Reactive Platforms</b>, <b>Data Analytics</b>, <b>DevOps</b> and <b>UX</b>.</p>
+            </div>
+            <a class="btn btn-1" href="#main">Discover</a>
           </figcaption>
         </figure>
       </section>
