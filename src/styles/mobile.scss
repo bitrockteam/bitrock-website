@@ -120,12 +120,12 @@ section.cover {
         margin-bottom: 0;
       }
 
-      .btn {        
-        position: absolute;
-        bottom: 90px;
+      .btn {
+        position: relative;
+        margin-top: 45px;
         box-sizing: border-box;
         width: 100%;
-        max-width: calc(100% - 60px) !important;
+        min-width: 180px;
       }
 
       &.wrapper {
