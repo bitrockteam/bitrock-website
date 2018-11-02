@@ -137,7 +137,7 @@ export default class BitrockWebsite extends HTMLElement {
               <div>
                 <h4>Milano</h4>
                 <p>
-                   Sede legale e operativa<br>
+                   Office and Operational HQ<br>
                    Via Borsieri 41<br> 
                    20159 Milano (MI)<br>
                    Tel: 0422 1600025<br>
@@ -149,7 +149,7 @@ export default class BitrockWebsite extends HTMLElement {
               <div>
                 <h4>Treviso</h4>
                 <p>
-                   Sede operativa<br> 
+                   Operational HQ<br> 
                    Viale della Repubblica 156/a<br> 
                    31100 Treviso (TV)<br>
                    Tel: 0422 1600025 <br>
