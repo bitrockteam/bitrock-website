@@ -1,6 +1,6 @@
 import bitquest from 'bitquest';
-import { html, render } from 'lit-html/lib/lit-extended';
-import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+import { html, render } from 'lit-html';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
@@ -9,7 +9,7 @@ import { getFeatImage } from '../../libs/data';
 const layout = (content, loading) => {
   const optimistic = loading ? 'loading' : '';
   return html`
-    <main class$="content ${optimistic}">
+    <main class=${`content ${optimistic}`}>
       <div class="wrapper">
         <article class="card">
           <figure></figure>
@@ -25,6 +25,13 @@ const layout = (content, loading) => {
 }
 
 export class SinglePage extends HTMLElement {
+  static get observedAttributes() { return ['location']; }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    const location = JSON.parse(newValue);
+    this._init(location);
+  }
+
   _render(data, loading) {
     const content = html`
       <h3>${unsafeHTML(data.title.rendered)}</h3>
@@ -37,9 +44,9 @@ export class SinglePage extends HTMLElement {
     return data;
   }
 
-  connectedCallback() {
+  _init(location) {
     this._render(mock(), true);
-    const slug = this.location.params.slug;
+    const slug = location.slug;
 
     bitquest(API + PATHS.page(slug)).get()
       .then(pages => pages[0])

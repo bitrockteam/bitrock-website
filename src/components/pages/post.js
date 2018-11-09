@@ -1,6 +1,6 @@
 import bitquest from 'bitquest';
-import { html, render } from 'lit-html/lib/lit-extended';
-import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+import { html, render } from 'lit-html';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
 import { API, PATHS } from '../../consts';
 import { post as mock } from '../../libs/mock';
@@ -31,8 +31,8 @@ export default class SinglePost extends HTMLElement {
     const optimistic = loading ? 'loading' : '';
 
     const markup = html`
-      <main class$="content wrapper ${getCategorySlug(data._embedded)}">
-        <article class$="card ${optimistic}">
+      <main class="content wrapper ${getCategorySlug(data._embedded)}">
+        <article class="card ${optimistic}">
           <div class="category">${getCategory(data._embedded)}</div>
           <section class="">
             <div class="body">

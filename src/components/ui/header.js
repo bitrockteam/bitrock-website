@@ -1,16 +1,16 @@
 
-import { html, render } from 'lit-html/lib/lit-extended';
+import { html, render } from 'lit-html';
 import './logo';
 
 const page = data => html`
   <li><a
-    href$="/${data.url}"
+    href="/${data.url}"
   >${data.title}</a></li>
 `;
 
 const link = data => html`
   <li><a
-    href$=${data.url}
+    href=${data.url}
     target="_blank"
     rel="noopener"
   >${data.title}</a></li>
@@ -25,7 +25,7 @@ export default class BitrockHeader extends HTMLElement {
     const _active = active ? 'active' : '';
 
     const markup = html`
-      <header class$="main ${_active}">
+      <header class="main ${_active}">
         <div class="wrapper">
           <div class="logo">
             <a href="/">

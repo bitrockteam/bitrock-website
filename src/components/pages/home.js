@@ -1,8 +1,7 @@
 import bitquest from 'bitquest';
-import { html, render } from 'lit-html/lib/lit-extended';
-import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+import { html, render } from 'lit-html';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html';
 import { updateMetadata } from 'pwa-helpers/metadata';
-import { setPosts } from '../../libs/dom';
 import { getFeatImage, getCategory } from '../../libs/data';
 import { post as mock } from '../../libs/mock';
 import { API, PATHS } from '../../consts';
@@ -11,9 +10,6 @@ import pkg from './../../../package.json';
 import './../ui/cover';
 
 export default class HomePage extends HTMLElement {
-  static get observedAttributes() {
-    return ['posts'];
-  }
 
   constructor(){
     super();
@@ -23,14 +19,11 @@ export default class HomePage extends HTMLElement {
     this.posts = Array.from(Array(12), x => mock());
   }
 
-  attributeChangedCallback(name, oldValue, newValue) {
-    this._render(false);
-  }
-
-  connectedCallback(){
+  connectedCallback() {
     this._render(true);
     bitquest(API + PATHS.posts()).get()
-      .then(data => setPosts(data));
+      .then(data => this.posts = data)
+      .then(posts => this._render(false))
 
     updateMetadata({
       title: pkg.displayName,
@@ -61,8 +54,8 @@ export default class HomePage extends HTMLElement {
         data => this.posts.concat(data),
         err => this._endPagination()
       )
-      .then(more => setPosts(more))
-      .then(posts => posts);
+      .then(more => this.posts = more)
+      .then(posts => this._render(false));
   }
 
   _render(loading) {
@@ -72,8 +65,8 @@ export default class HomePage extends HTMLElement {
       <div class="block">
         <div class="card">
           <a
-            data-id$=${data.id}
-            data-slug$=${data.slug} 
+            data-id=${data.id}
+            data-slug=${data.slug} 
             href="/post/${data.slug}"
           >
             <header>
@@ -94,14 +87,14 @@ export default class HomePage extends HTMLElement {
     const markup = html`
       <rock-hero></rock-hero>
 
-      <main class$="wrapper ${optimistic}">
+      <main class="wrapper ${optimistic}">
         ${this.posts.map(e => posts(e))}
       </main>
 
       ${this.more ?
         html`
           <div class="load-more">
-            <button on-click=${this._loadMore.bind(this)}>
+            <button @click=${e => this._loadMore()}>
               Load more
             </button>
           </div>

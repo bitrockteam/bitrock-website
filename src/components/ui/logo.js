@@ -1,5 +1,5 @@
 
-import { html, render } from 'lit-html/lib/lit-extended';
+import { html, render } from 'lit-html';
 
 export default class BitrockLogo extends HTMLElement {
 

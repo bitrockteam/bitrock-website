@@ -1,7 +1,7 @@
 
-import { html, render } from 'lit-html/lib/lit-extended';
-import { unsafeHTML } from 'lit-html/lib/unsafe-html';
-import { getFeatImage } from './../../libs/data';
+import { html, render } from 'lit-html';
+// import { unsafeHTML } from 'lit-html/lib/unsafe-html';
+// import { getFeatImage } from './../../libs/data';
 import { post as mock } from './../../libs/mock';
 import staticImg from './../../assets/img/main_bg.jpg';
 
@@ -19,8 +19,8 @@ export default class RockHero extends HTMLElement {
     const optimistic = loading ? 'loading' : '';
 
     const markup = html`
-      <section class$="cover ${optimistic}">
-        <figure style$="background-image: url(${staticImg})">
+      <section class="cover ${optimistic}">
+        <figure style="background-image: url(${staticImg})">
           
           <figcaption class="wrapper">
             <h3><small>what does it take</small> to look beyond?</h3>

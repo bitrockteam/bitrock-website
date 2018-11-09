@@ -65,4 +65,5 @@ typings/
 # next.js build output
 .next
 
+# webstorm files
 \.idea/
