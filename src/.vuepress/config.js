@@ -1,0 +1,36 @@
+const pkg = require('./../../package.json');
+
+module.exports = {
+  title: pkg.displayName,
+  description: pkg.description,
+
+  themeConfig: {
+    nav: [
+      { text: 'About', link: '/discover' },
+      { text: 'Academy', link: '/academy' },
+      { text: 'Join Us', link: 'https://www.linkedin.com/company/bitrock-srl/jobs/' }
+    ]
+  },
+
+  head: [
+    ['link', { rel: 'icon', href: '/logotype.png' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['meta', { name: 'theme-color', content: pkg.config.themeColor }],
+    ['meta', { name: 'author', content: pkg.displayName }],
+    ['meta', { name: 'title', property: 'og:title', content: pkg.displayName }],
+    ['meta', { name: 'og:description', content: pkg.description }],
+    ['meta', { name: 'image', property: 'og:image', content: '/social.png' }],
+  ],
+
+  plugins: [
+    // ['@vuepress/google-analytics', {
+    //   'ga': 'UA-127386306-1'
+    // }],
+    // '@vuepress/back-to-top',
+    // ['@vuepress/pwa', {
+    //   'serviceWorker': true,
+    //   // 'popupComponent': 'UpdatePopup',
+    //   'updatePopup': true,
+    // }]
+  ]
+}
