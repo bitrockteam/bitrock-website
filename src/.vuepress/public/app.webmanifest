@@ -1,0 +1,10 @@
+{
+  "name": "Bitrock",
+  "short_name": "Bitrock",
+  "theme_color": "#2a2a2a",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": ".",
+  "icons": []
+}
