@@ -1,14 +1,13 @@
 <template>
-  <footer id="contact" class="contact">
+  <footer id="corporate" class="corporate">
     <div class="wrapper">
       <article>
         <div>
           <h4>Corporate</h4>
           <p>
             <a href="https://www.linkedin.com/company/bitrock-srl/jobs/" target="_blank" rel="noopener">Careers</a> <br>
-            Credits<br>
-            Investors <br>
-            <a href="https://www.iubenda.com/privacy-policy/15812422" target="_blank" rel="noopener">Privacy policy</a>
+            <a href="https://databiz.it/#philosophy" target="_blank" rel="noopener">Group philosophy</a> <br>
+            <a href="https://www.iubenda.com/privacy-policy/81384922" target="_blank" rel="noopener">Privacy policy</a>
           </p>
           
         </div>
@@ -19,7 +18,7 @@
              Viale della Repubblica 156/a<br> 
              31100 Treviso (TV)<br>
              Tel: 0422 1600025<br>
-             <a href="mailto:info@databiz.it">info@databiz.it</a>
+             <a href="mailto:info@bitrock.it">info@bitrock.it</a>
           </p>
         </div>
         <div>
@@ -29,7 +28,7 @@
             Via Borsieri 41<br> 
             20159 Milano (MI)<br>
             Tel: 0422 1600025<br>
-            <a href="mailto:info@databiz.it">info@databiz.it</a>
+            <a href="mailto:info@bitrock.it">info@bitrock.it</a>
           </p>
         </div>
         <div>

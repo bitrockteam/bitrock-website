@@ -3,7 +3,7 @@
     <div class="wrapper">
       <article>
         <figure>
-          <img src="/logos/DatabizLogo.white.svg" alt="Databiz Group">
+          <img src="/BitrockLogo.white.svg" alt="Bitrock">
         </figure>
       
         <p>Copyright <span class="year">{{ year }}</span> 

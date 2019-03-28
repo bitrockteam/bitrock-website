@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://cdn.rawgit.com/components/blokkfont/master/BLOKKRegular/webfonts/style.css');
+@import "./colors.scss";
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+$font-big: 20px;
+
+// Mixins
+%bg {
+  background-color: $black;
+}
+
+%subtitle {
+  @extend %bg;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+%quotes {
+  @extend %bg;
+  padding: 20px;
+  font-size: $font-big;
+  font-style: italic;
+}
+
+%covers {
+  @extend %bg;
+  font-size: $font-big;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+// Base tags
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+main p{
+  font-size: 17px;
+  line-height: 24px;
+  color: $normal-text;
+  line-height: 1.2em;
+}
+
+// Utility classes
+
+.title-chapter {
+  @extend %bg;
+  text-transform: uppercase;
+  color: $evident-text02;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.prs-cover01 {
+  @extend %covers;
+  color: $evident-text01;
+}
+
+.prs-cover02 {
+  @extend %covers;
+  color: $evident-text02;
+}
+
+.quotes-01 {
+  @extend %quotes;
+  color: $evident-text01;
+}
+
+.quotes-02 {
+  @extend %quotes;
+  color: $evident-text02;
+}
+
+.subtitle-01 {
+  @extend %subtitle;
+  color: $evident-text02;
+}
+.subtitle-02 {
+  @extend %subtitle;
+  color: $evident-text01;
+}
+
+.prs-disclaimer{
+  @extend %bg;
+  font-size: 8px;
+  color: $evident-text02;
+}
+
+footer {
+  h4 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $normal-text;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 30px 0 0 0;
+  }
+}
+
+a, a:visited {
+  color: inherit;
+}

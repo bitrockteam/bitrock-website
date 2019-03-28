@@ -1,0 +1,261 @@
+@media (min-width: 576px) {
+  main {
+    column-count: 2;
+    column-gap: 30px;
+
+    &.content {
+      column-count: unset;
+    }
+  }
+
+  footer {
+    & > .wrapper {
+      
+      article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 60px;
+        text-align: left;
+
+        div{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  %showLogo {
+    height: 37px;
+    transform: scale(1);
+  }
+
+  section.cover {
+    padding-top: 0px;
+    height: 100vh;
+
+    figure {
+      height: 100%;
+      overflow: hidden;
+      background-size: cover;
+
+      figcaption {
+
+        .claim {
+          padding-top: 25vh;
+        }
+
+        h3 {
+          font-size: 50px;
+          line-height: 60px;
+          letter-spacing: 1px;
+        }
+
+        h2 {
+          font-size: 75px;
+          line-height: 90px;
+          letter-spacing: 1px;
+        }
+
+        p {
+          font-size: 20px;
+          line-height: 30px;
+          width: 600px;
+        }
+
+        .btn {
+          width: auto;
+        }
+      }
+    }
+    
+  }
+
+  header.main {
+    display: block;
+    background: rgba(20, 20, 20, 0);
+    transition: background 1s ease;
+    margin: 0;
+    padding: 0;
+
+    .hamburger {
+      display: none;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav {
+      height: auto;
+      position: static;
+      background: transparent;
+
+      ul {
+        text-align: left;
+        margin-top: 0;
+        padding-top: 0;
+
+        li {
+          display: inline-block;
+          margin-right: 45px;
+
+          a{
+            font-size: 16px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    &.active {
+
+      .wrapper {
+        height: 60px;
+      }
+    }
+  }
+
+  main.evidence {
+    column-count: unset;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main {
+    column-count: 2;
+    column-gap: 30px;
+
+    .block{
+      margin-top: 0;
+      break-inside: avoid;
+      box-sizing: border-box;
+    }
+
+    &.content {
+      column-count: unset;
+
+      .wp-block-columns{
+        display: grid;
+        grid-column-gap: 45px;
+
+        &.has-2-columns {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        figure {
+          padding: 0;
+          margin: 0;
+        }
+      }
+
+      .card {
+        padding: 45px;
+
+        // section {
+        //   display: grid;
+        //   grid-template-columns: 1fr 300px;
+        //   grid-column-gap: 60px;
+        // }
+
+        .category {
+          font-size: 16px;
+          margin-bottom: 30px;
+        }
+
+        h3 {
+          font-size: 30px;
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        p:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &.content {
+      
+      &.interviews, &.reviews, &.careers {
+
+        .wp-block-columns {
+          
+          &.has-2-columns {
+            grid-template-columns: 2fr 1fr;
+          }
+        }
+      }
+    }
+
+    &.wrapper, .wrapper {
+      padding: 45px 30px !important;
+    }
+
+  }
+
+
+  footer {
+    & > .wrapper {
+      
+      article {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 60px;
+        text-align: left;
+
+        div{
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+
+  article {
+
+    li, p {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    h2, h4 {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 60px 0;
+  }
+
+  main {
+    column-count: 3;
+  }
+
+  footer {
+    & > .wrapper {
+      
+      article {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}

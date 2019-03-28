@@ -8,13 +8,17 @@ module.exports = {
     nav: [
       { text: 'About', link: '/discover' },
       { text: 'Academy', link: '/academy' },
-      { text: 'Join Us', link: 'https://www.linkedin.com/company/bitrock-srl/jobs/' }
+      { 
+        text: 'Join Us', 
+        link: 'https://www.linkedin.com/company/bitrock-srl/jobs/',
+        external: true
+      }
     ]
   },
 
   head: [
     ['link', { rel: 'icon', href: '/logotype.png' }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ['link', { rel: 'manifest', href: '/app.webmanifest' }],
     ['meta', { name: 'theme-color', content: pkg.config.themeColor }],
     ['meta', { name: 'author', content: pkg.displayName }],
     ['meta', { name: 'title', property: 'og:title', content: pkg.displayName }],

@@ -1,0 +1,82 @@
+@import './colors.scss';
+
+// main {
+//   // padding-top: 8px;
+// }
+
+.card {
+  background-color:#fff;
+  font-size: 1.3em;
+  // line-height: 1.6em;
+  overflow: hidden;
+
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  header{
+    figure {
+      margin: 0;
+      position: relative;
+      background-color: #fff;
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  article {
+    padding: 30px;
+
+    .category {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: $basic01;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 24px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    h2, h4 {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 400;
+      padding: 0;
+      margin: 15px 0;
+    }
+  }
+}
+
+
+article {
+
+  li, p {
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 300;
+  }
+
+  h2, h4 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  figure {
+    // margin-left: 0;
+    // margin-right: 0;
+    margin: 0;
+  }
+
+  figcaption {
+    font-size: 17px;
+  }
+
+}
