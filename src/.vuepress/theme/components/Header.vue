@@ -1,5 +1,5 @@
 <template>
-  <header class="main active">
+  <header class="main active" ref="header">
     <div class="wrapper">
       <div class="logo">
         <router-link to="/">
@@ -40,6 +40,8 @@
 <script>
 import BitrockLogo from './BitrockLogo.vue';
 
+export const $ = selector => document.querySelector(selector);
+
 export default {
   components: {
     BitrockLogo
@@ -47,6 +49,22 @@ export default {
   computed: {
     items () {
       return this.$themeConfig.nav || []
+    }
+  },
+  mounted() {
+    if (typeof this.$attrs.scroll === 'string') {
+      window.addEventListener('scroll', this.scrollEffect);
+      this.$refs.header.classList.remove('active');
+    }
+  },
+  methods: {
+    scrollEffect(evt) {
+      const cover = $('section.cover');
+      const coverHeight = cover ? cover.clientHeight : 0;
+      const condition = window.scrollY > coverHeight;
+      const header = this.$refs.header;
+      condition ? header.classList.add('active') :
+        header.classList.remove('active');
     }
   }
 }

@@ -7,11 +7,15 @@ imageMeta:
 type: post
 author: luca
 publish: 2018-07-10
+layout: Post
+category: news
 tags:
   - news
 ---
 
 Born as an **innovative system integrator** in **2009**, **DATABIZ** evolves and transforms into a **holding company** to face an evolving market scenario. 
+
+<!-- more -->
 
 ![/img/posts/dbz-timeline.png](/img/posts/dbz-timeline.png)
 From Databiz to Databiz Group | The foundation of a holding group and the birth of Bitrock in a roadmap of achievements started in 2009.

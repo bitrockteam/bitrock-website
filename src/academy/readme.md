@@ -1,6 +1,10 @@
+---
+layout: Page
+---
+
 # Academy
 
-### BITROCK - PROFESSIONAL & CERTIFIED TRAINING PROGRAMS
+#### BITROCK - PROFESSIONAL & CERTIFIED TRAINING PROGRAMS
 
 Development and growth happens where people are encouraged to be curious and learn. We are firmly convinced that learning-oriented culture help to cultivate leadership and breeds innovation and high-performance.
 

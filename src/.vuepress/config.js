@@ -27,14 +27,15 @@ module.exports = {
   ],
 
   plugins: [
+    '@vuepress/nprogress',
     // ['@vuepress/google-analytics', {
     //   'ga': 'UA-127386306-1'
     // }],
-    // '@vuepress/back-to-top',
-    // ['@vuepress/pwa', {
-    //   'serviceWorker': true,
-    //   // 'popupComponent': 'UpdatePopup',
-    //   'updatePopup': true,
-    // }]
+    '@vuepress/back-to-top',
+    ['@vuepress/pwa', {
+      'serviceWorker': true,
+      // 'popupComponent': 'UpdatePopup',
+      'updatePopup': true,
+    }]
   ]
 }

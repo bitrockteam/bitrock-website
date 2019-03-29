@@ -1,3 +1,6 @@
+---
+layout: Page
+---
 
 # Bitrock | Innovation delivered!
 
