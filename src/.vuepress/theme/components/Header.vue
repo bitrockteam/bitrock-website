@@ -59,6 +59,9 @@ export default {
     if (typeof this.$attrs.scroll === 'string') {
       window.addEventListener('scroll', this.scrollEffect);
       this.$refs.header.classList.remove('active');
+    } else {
+      window.removeEventListener('scroll', this.scrollEffect);
+      this.$refs.header.classList.add('active');
     }
   },
   methods: {
@@ -67,8 +70,13 @@ export default {
       const coverHeight = cover ? cover.clientHeight : 0;
       const condition = window.scrollY > coverHeight;
       const header = this.$refs.header;
-      (condition && cover) ? header.classList.add('active') :
-        header.classList.remove('active');
+      // condition ? header.classList.add('active') :
+      //   header.classList.remove('active');
+      if (condition) {
+        cover && header ? header.classList.add('active') : null;
+      } else {
+        cover && header ? header.classList.remove('active') : null;
+      }
     },
     open(evt) {
       evt.stopPropagation();
