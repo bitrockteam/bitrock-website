@@ -2,7 +2,7 @@
   <header class="main active" ref="header">
     <div class="wrapper">
       <div class="logo">
-        <router-link to="/">
+        <router-link to="/" aria-label="Bitrock logo">
           <BitrockLogo />
         </router-link>
       </div>
@@ -15,11 +15,13 @@
               :href="item.link"
               rel="noopener"
               target="_blank"
+              :aria-label="item.text"
             >{{ item.text }}</a>
             <router-link
               v-else
               :to="item.link"
               :key="item.link"
+              :aria-label="item.text"
               :exact="item.link === '/'">
               {{ item.text }}
             </router-link>
@@ -65,7 +67,7 @@ export default {
       const coverHeight = cover ? cover.clientHeight : 0;
       const condition = window.scrollY > coverHeight;
       const header = this.$refs.header;
-      condition ? header.classList.add('active') :
+      (condition && cover) ? header.classList.add('active') :
         header.classList.remove('active');
     },
     open(evt) {

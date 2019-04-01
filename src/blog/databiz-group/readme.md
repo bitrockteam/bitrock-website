@@ -4,7 +4,6 @@ image: /img/posts/corporate.png
 imageMeta:
   attribution:
   attributionLink:
-type: post
 author: luca
 publish: 2018-07-10
 layout: Post

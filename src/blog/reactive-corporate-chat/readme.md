@@ -1,10 +1,9 @@
 ---
-title: Reactive Corporate Chat - The perfect  combination between your daily workflow and "data property".
+title: Reactive Corporate Chat - The perfect combination between your daily workflow and data property.
 image: /img/posts/technology.png
 imageMeta:
   attribution:
   attributionLink:
-type: post
 author: luca
 publish: 2018-07-11
 layout: Post

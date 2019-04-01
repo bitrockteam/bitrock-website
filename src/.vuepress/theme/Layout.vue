@@ -7,7 +7,7 @@
     <main id="main" class="wrapper">
       <div class="block" v-for="post in posts">
         <div class="card">
-          <router-link :to="post.path">
+          <router-link :to="post.path" :aria-label="post.title">
             <header>
               <figure>
                 <img 

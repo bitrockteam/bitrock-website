@@ -123,7 +123,7 @@ The course is aimed at software engineers and system administrators that want to
 
 #### Learn DevOps: Kubernetes Fast Lane
 
-![/img/kubernets-logo.png](/img/kubernets-logo.png)
+![/img/kubernetes-logo.png](/img/kubernetes-logo.png)
 KFL
 
 This course will help you to gain understanding how to deploy, use, and maintain your applications on Kubernetes. 
@@ -132,7 +132,7 @@ If you are into DevOps, this is a technology you need to master. Kubernetes has 
 
 #### LearnDevOps: Advanced KubernetesMasterclass
 
-![/img/kubernets-logo.png](/img/kubernets-logo.png)
+![/img/kubernetes-logo.png](/img/kubernetes-logo.png)
 KFL
 
 Kubernetes Advanced Usage is the second Kubernetes course in the "Learn DevOps: Kubernetes"series. 
