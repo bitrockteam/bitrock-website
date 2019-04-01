@@ -26,7 +26,9 @@
           </li>
         </ul>
       </nav>
-      <button class="hamburger hamburger--spin" 
+      <button class="hamburger hamburger--spin"
+        ref="ham" 
+        @click="open"
         type="button"
         aria-label="mobile-menu">
           <span class="hamburger-box">
@@ -65,6 +67,12 @@ export default {
       const header = this.$refs.header;
       condition ? header.classList.add('active') :
         header.classList.remove('active');
+    },
+    open(evt) {
+      evt.stopPropagation();
+
+      this.$refs.header.classList.toggle('open');
+      this.$refs.ham.classList.toggle('is-active');
     }
   }
 }

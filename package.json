@@ -20,7 +20,7 @@
     "build:clean": "rm -rf ./dist",
     "build:cname": "cp ./src/CNAME ./dist/CNAME",
     "build:start": "npm run build:clean && npm run build:static",
-    "build": "npm run build:start && npm run build:cname",
+    "build": "npm run build:start",
     "gh:pages": "gh-pages -d dist"
   },
   "devDependencies": {

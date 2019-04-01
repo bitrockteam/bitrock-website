@@ -38,6 +38,8 @@ import Cover from './components/Cover.vue';
 import Footer from './components/Footer.vue';
 import Credits from './components/Credits.vue';
 
+const date = post => new Date(post.frontmatter.publish);
+
 export default {
   components: {
     Header,
@@ -48,7 +50,8 @@ export default {
   computed: {
     posts () {
       return this.$site.pages
-        .filter(e => (e.path.search('/blog/') > -1));
+        .filter(e => (e.path.search('/blog/') > -1))
+        .sort((a,b) => date(b) - date(a));
     }
   }
 }
