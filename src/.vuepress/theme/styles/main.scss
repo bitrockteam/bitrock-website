@@ -1,0 +1,23 @@
+@import "~normalize.css";
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+@import './default.scss';
+@import './typography.scss';
+@import './components.scss';
+@import './mobile.scss';
+@import './desktop.scss';
+
+#nprogress {
+  .bar {
+    background-color: $basic02;
+  }
+}
+
+svg.go-to-top {
+  color: $basic02 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  a.header-anchor {
+    display: none;
+  }
+}
