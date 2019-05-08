@@ -8,7 +8,7 @@ sections:
   path: ''
   label: Pages
   create: all
-  match: src/*.md
+  match: src/**/*.md
   exclude: src/blog/**/*
 - type: directory
   path: src/blog
