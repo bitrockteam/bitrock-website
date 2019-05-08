@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "83c2ea40b6397388f36c93b9bfa398c2"
+    "revision": "81f515ebeb037e963517cd72efd2b176"
   },
   {
     "url": "academy/index.html",
-    "revision": "009225f9025224660bb721bdf01bd731"
+    "revision": "37fb9a57d4a1095de5bdbacda4bf4593"
   },
   {
     "url": "assets/css/0.styles.8ead931b.css",
@@ -212,8 +212,8 @@ self.__precacheManifest = [
     "revision": "0a0fafd74e81ddbedac708e381e1d746"
   },
   {
-    "url": "assets/js/app.f66f7b22.js",
-    "revision": "984822f4994fad3af40a6b9c125101e3"
+    "url": "assets/js/app.c329b279.js",
+    "revision": "411d604abba5cb167f506bcc04f5d211"
   },
   {
     "url": "BitrockLogo.svg",
@@ -225,91 +225,91 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-frontend/index.html",
-    "revision": "78fcdba4ffdfecd1b72bfdcb094d5af5"
+    "revision": "ced6d90a8ae821710e1fe2abd3ceb58a"
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "873595443b53f8174e49d9bc84342a2c"
+    "revision": "443343d68673a0232c7b3100f290c695"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "d620cbd4e99aa08abcfcf2ab570effa8"
+    "revision": "71097adde2cf955d3595567230b171ea"
   },
   {
     "url": "blog/academy-lightbend/index.html",
-    "revision": "49a57851e4a8d814e743f86d95a390f5"
+    "revision": "cf33f3b31757c892a83ebc6e771babe7"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "58000f168d15b24206080030a8d323a9"
+    "revision": "ecaf96e3b2896f20512aea2c6bbd8a56"
   },
   {
     "url": "blog/confluent-certified-training/index.html",
-    "revision": "9e12adafa0e548f47f1a097ad6bbd191"
+    "revision": "b02e097addcd89eb0c9fdda7ae2edcb6"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "c6bdee0520b8149fdf467438f5cb45ca"
+    "revision": "7f1e78c19071162e661a9d414d361708"
   },
   {
     "url": "blog/cto-takeaways/index.html",
-    "revision": "87295e9308f6dca5d4270de1cec27ecb"
+    "revision": "a098b01a30c1db7cf9e046ec24619d19"
   },
   {
     "url": "blog/databiz-group/index.html",
-    "revision": "20773c06c0d4b1af654ca4c3c35bd56d"
+    "revision": "8ef8673535a8a57612aaa6c468c765eb"
   },
   {
     "url": "blog/devops-team/index.html",
-    "revision": "3bd1becdeee5a414f04125f8ecbf5dba"
+    "revision": "2006317d0e99614b997271164fe53d43"
   },
   {
     "url": "blog/event-driven-review/index.html",
-    "revision": "cedaf901840d7686b211b5b49e0cd1ae"
+    "revision": "5eb5fa941ed9936c02e019b2f176c091"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "211583258afc3ca8ab8a3d940f1260d8"
+    "revision": "4ce09490bbefea6434af52277b691b8e"
   },
   {
     "url": "blog/interview-salvatore-laisa/index.html",
-    "revision": "cacec1c8e8ad1e8882587cdba980b475"
+    "revision": "e634dd3a263d87d32c856631d5c3f6b5"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "851db9cdc865873fd50d153d36f2f0c3"
+    "revision": "c45b7c07bf465e2b956df493f9caff27"
   },
   {
     "url": "blog/kubernetes-fastlane/index.html",
-    "revision": "6df52d5b92ba8e69b1ad7a3c4c75c898"
+    "revision": "1cd6db319501de305b065e972bc52e54"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "90ec7ed5a3d7e49f6b4bbb3a8de61d5b"
+    "revision": "560f2ed5b261781d5a7a4885979229c3"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "28f8e4f95c8bd41aeddfd8c1534145d3"
+    "revision": "3703512ccd8575496f358a96728ffda9"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "8b848c13922af4d2c5e41480feae854f"
+    "revision": "629e3fc9474d7d69382c6a722d56dc84"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "54b0469ba683e9fc245e1426278ece10"
+    "revision": "35722d3ed38c99953690d6c6387644d2"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "0056a70fbfadc9e48aad424646b8f9ed"
+    "revision": "dd0ab309e529ce274b88c9ef19c11621"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "e3710241c8059ba5827516d56050cf7d"
+    "revision": "4780a91098cf77f7d6713c56bcb8f776"
   },
   {
     "url": "discover/index.html",
-    "revision": "3bc3c47c864d1f400d22bbe64d85d99d"
+    "revision": "6436984c6790734919d4b2ea545a2858"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -513,7 +513,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "fb840c6b21466685c13c000032488fd3"
+    "revision": "89bfc673ffc2683c9e1b400c79dbb53c"
   },
   {
     "url": "logo.png",
