@@ -2,14 +2,16 @@
 title: Open Class Confluent in Italy
 image: "/img/posts/open_class_01.png"
 imageMeta:
-  attribution: 
-  attributionLink: 
+  attribution:
+  attributionLink:
 author: Luca Lanza
-publish: 2019-06-03T20:46:00.000+00:00
-layout: Post
+publish: 2019-06-03 20:46:00 +0000
+layout: 'Post'
 category: academy
-tags: []
-
+tags:
+  - academy
+  - kafka
+  - training
 ---
 Starts the first Italian [#OpenClass](https://www.linkedin.com/feed/hashtag/?keywords=%23OpenClass) for official[ #certification](https://www.linkedin.com/feed/hashtag/?keywords=%23certification) in "**Confluent Developer Skills for Building Apache Kafka**" <!-- more -->
 
