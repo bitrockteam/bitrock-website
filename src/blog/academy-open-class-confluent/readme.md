@@ -4,7 +4,7 @@ image: "/img/posts/open_class_01.png"
 imageMeta:
   attribution:
   attributionLink:
-author: Luca Lanza
+author: Luca
 publish: 2019-06-03 20:46:00 +0000
 layout: 'Post'
 category: academy
