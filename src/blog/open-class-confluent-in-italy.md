@@ -3,7 +3,7 @@ title: Open Class Confluent in Italy
 image: "/img/Open Class 01.png"
 author: Luca Lanza
 publish: 2019-06-03 20:46:00 +0000
-layout: ''
+layout: post
 category: academy
 tags: []
 
