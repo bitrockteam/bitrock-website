@@ -23,3 +23,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/blog/open-class-confluent-in-italy.md
