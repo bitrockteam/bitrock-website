@@ -179,3 +179,4 @@ Developing well structured, resilient and performant React applications require 
 WC - Professional
 
 Web Components are a recent standard set of APIs that enable developers to create custom HTML tags with their related style and behavior without tie-in to a specific framework or library, components built with this specification are pure “vanilla” tags that can be implemented inside every major Javascript framework.If a company is developing many projects with different codebase and frameworks, Web Components represents a key skill for implementing real cross-project UI elements
+
