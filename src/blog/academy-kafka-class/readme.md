@@ -13,6 +13,4 @@ tags:
   - kafka
   - training
 ---
-Starts the first Italian [#OpenClass](https://www.linkedin.com/feed/hashtag/?keywords=%23OpenClass) for official[ #certification](https://www.linkedin.com/feed/hashtag/?keywords=%23certification) in "**Confluent Developer Skills for Building Apache Kafka**" <!-- more -->
-
-![/img/open_class_01.png](/img/open_class_01.png)
+Starts the first Italian [#OpenClass](https://www.linkedin.com/feed/hashtag/?keywords=%23OpenClass) for official[ #certification](https://www.linkedin.com/feed/hashtag/?keywords=%23certification) in "**Confluent Developer Skills for Building Apache Kafka**" 
