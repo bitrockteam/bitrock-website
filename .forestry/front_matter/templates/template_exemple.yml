@@ -1,0 +1,35 @@
+---
+label: Template_exemple
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: file
+  name: image
+  label: image
+- type: field_group
+  name: imageMeta
+  label: imageMeta
+  fields:
+  - type: text
+    name: attribution
+    label: attribution
+  - type: text
+    name: attributionLink
+    label: attributionLink
+- type: text
+  name: author
+  label: author
+- type: datetime
+  name: publish
+  label: publish
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: category
+  label: category
+- type: list
+  name: tags
+  label: tags
