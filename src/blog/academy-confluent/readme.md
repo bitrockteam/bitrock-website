@@ -1,5 +1,5 @@
 ---
-title: TEST
+title: Designing Event-Driven Systems - A review by Giampaolo Trapasso (CTO)
 image: /img/posts/book.jpg
 imageMeta:
   attribution:
@@ -7,7 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-12-31
 layout: Post
-category: academy
+category: reviews
 tags:
 ---
 
