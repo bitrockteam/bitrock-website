@@ -33,3 +33,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/blog/ Open Class Confluent in Italy/open-class-confluent-in-italy.md
