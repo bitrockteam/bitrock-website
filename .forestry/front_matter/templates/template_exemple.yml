@@ -33,3 +33,5 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/blog/second-open-class-confluent-for-developers.md
