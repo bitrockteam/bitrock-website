@@ -11,6 +11,12 @@ category: academy
 tags: []
 
 ---
+Kafka is the future!
+
+Are you ready to become an **Ace of Kafka**? Check the program of our  **Ace**demy.
+
+Take control of your future!
+
 The full calendar of all **Confluent Certified Courses** for **2019** is now available.
 
 <!-- more -->**Bitrock Academy**, in collaboration with **Confluent**, has designed a distributed educational program to allow your professionals to achieve the necessary certification around **Apache Kafka**.
