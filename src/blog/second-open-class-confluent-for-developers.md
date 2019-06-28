@@ -6,9 +6,10 @@ imageMeta:
   attributionLink: ''
 author: Luca Lanza
 publish: 2019-06-28 13:55:00 +0000
-layout: ''
+layout: Post
 category: academy
-tags: []
+tags:
+- academy
 
 ---
 After the success of the first edition, a new certified Open Class **Developer Skills for Building Apache Kafkas** is coming on July 17-19, 2019 in Milan.
