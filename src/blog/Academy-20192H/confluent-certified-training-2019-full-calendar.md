@@ -13,7 +13,7 @@ tags: []
 ---
 The full calendar of all **Confluent Certified Courses** for **2019** is now available.
 
-**Bitrock Academy**, in collaboration with **Confluent**, has designed a distributed educational program to allow your professionals to achieve the necessary certification around **Apache Kafka**.
+<!-- more -->**Bitrock Academy**, in collaboration with **Confluent**, has designed a distributed educational program to allow your professionals to achieve the necessary certification around **Apache Kafka**.
 
 [LEARN MORE ABOUT CONFLUENT CERTIFIED TRAINING](https://www.confluent.io/training/)
 
