@@ -5,7 +5,7 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: Luca Lanza
-publish: 
+publish: 2019-06-28 13:55:00 +0000
 layout: ''
 category: academy
 tags: []
