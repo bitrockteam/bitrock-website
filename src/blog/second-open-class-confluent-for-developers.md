@@ -1,6 +1,6 @@
 ---
 title: Second Open Class Confluent for Developers
-image: "/img/Copia di Copia di Happy Easter.png"
+image: ''
 imageMeta:
   attribution: ''
   attributionLink: ''
@@ -14,13 +14,11 @@ tags:
 ---
 After the success of the first edition, a new certified Open Class **Developer Skills for Building Apache Kafkas** is coming on July 17-19, 2019 in Milan.
 
-Save the date and enroll now. If you **enroll within July 12 a 10%** **discount** is reserved for you. 
+Save the date and enroll now. If you **enroll within July 12 a 10%** **discount** is reserved for you.
 
 Just write to [**academy@bitrock.it**](mailto:academy@bitrock.it) to obtain your "bonus code".
 
-[Enroll Now]( https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64357816963 "Enroll now")
-
-![Kakfa developers Confluent Certified Training](/img/Copia di Copia di Happy Easter.png "Open Class")
+[Enroll Now](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64357816963 "Enroll now")
 
 In this three-day hands-on course you will learn how to build an application that can publish data to, and subscribe to data from, an Apache KafkaTM cluster. You will learn the role of Kafka in the modern data distribution pipeline, discuss core Kafka architectural concepts and components, and review the Kafka developer APIs. As well as core Kafka, Kafka Connect, and Kafka Streams, the course also covers other components in the broader Confluent Platform, such as the Schema Registry and the REST Proxy.
 
