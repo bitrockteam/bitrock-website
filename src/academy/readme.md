@@ -1,7 +1,7 @@
 ---
 layout: Page
----
 
+---
 # Academy
 
 #### BITROCK - PROFESSIONAL & CERTIFIED TRAINING PROGRAMS
@@ -10,13 +10,13 @@ Development and growth happens where people are encouraged to be curious and lea
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OaoPAh3J8aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-We are **Lightbend Platinum Training Partner** and **Confluent Training Partners**, and we also lead our internal classes of **Front End** and **DevOps**.
+We are **Lightbend Gold Training Partner** and **Confluent Training Partners**, and we also lead our internal classes of **Front End** and **DevOps**.
 
 Following a complete list of our **Professional** & **Expert** Programs:
 
----
+***
 
-![/img/confluent_logo.png](/img/confluent_logo.png)
+![/img/confluent](/img/confluent_logo.png)
 
 This is the list of courses of **Confluent** Professional Training. The courses are provided by certified trainers and each participant will receive an official **Confluent Certification**.
 
@@ -32,13 +32,13 @@ In this three-day hands-on course, you will learn how to build applications that
 
 In this three-day hands-on course, you will be able to build and manage Kafka clusters using industry best-practices developed by the world’s foremost Kafka experts. You will learn how Kafka and the Confluent platform work, their main subsystems, their functions, how they interact, and how to set up, manage, and tune your cluster.
 
-#### Confluent Training: Stream Processing using Kafka Streams & KSQL 
+#### Confluent Training: Stream Processing using Kafka Streams & KSQL
 
 ![/img/kafka-logo-title.png](/img/kafka-logo-title.png)
 
-During this instructor-led, hands-on course, you will learn how to use Confluent KSQL to transform, enrich, filter and aggregate streams of real time data using a SQL-like language. You will also learn how to use the Apache Kafka Streams library to build streaming applications. Furthermore, you will learn how to test, monitor, secure and scale those streaming applications. You will learn how these applications integrate with the Confluent Streaming platform powered by Apache Kafka, KafkaConnect, Confluent Schema Registry, Confluent REST Proxy as well as theConfluent Control Center. You will learn the role of Streaming in the modern data distribution pipeline, discuss architectural concepts and components ofKSQL and Kafka Streams. 
+During this instructor-led, hands-on course, you will learn how to use Confluent KSQL to transform, enrich, filter and aggregate streams of real time data using a SQL-like language. You will also learn how to use the Apache Kafka Streams library to build streaming applications. Furthermore, you will learn how to test, monitor, secure and scale those streaming applications. You will learn how these applications integrate with the Confluent Streaming platform powered by Apache Kafka, KafkaConnect, Confluent Schema Registry, Confluent REST Proxy as well as theConfluent Control Center. You will learn the role of Streaming in the modern data distribution pipeline, discuss architectural concepts and components ofKSQL and Kafka Streams.
 
----
+***
 
 ![/img/lightbend-logo.png](/img/lightbend-logo.png)
 
@@ -100,7 +100,6 @@ LAJ - Expert
 
 The pinnacle of scalable, reactive applications! In this three-day course, experienced application developers learn to build distributed reactive applications using Akka and Java, scaling out multiple nodes, managing consistency, and dealing with persistence.
 
-
 #### Lightbend Apache Spark for Scala - Professional
 
 ![/img/spark-logo.png](/img/akka-logo.png)
@@ -108,7 +107,7 @@ LSS - Professional
 
 This two-day workshop is designed to teach developers how to implement data analytics using Apache Spark for Reactive applications. In this workshop, developers will use hands-on exercises to learn the principles of Apache Spark programming and idioms for specific problems, such as event stream processing, SQL-based analysis on structured data in files, integration with Reactive frameworks like Akka, as well as Hadoop and related tools, and advanced analytics such as machine learning and graph algorithms.
 
----
+***
 
 ![/img/bitrock-devops.png](/img/bitrock-devops.png)
 
@@ -119,14 +118,14 @@ This is the list of courses of **Bitrock DevOps Academy**:
 ![/img/devops-tfl.png](/img/devops-tfl.png)
 TFL
 
-The course is aimed at software engineers and system administrators that want to deliver better software. OtherIT professionals can also take this course, but might have to do some extra research to understand some of the concepts. You will learn how to improve the Software Development Lifecycle by applying techniques to improve software delivery. You will know how to improve delivery using automation, configuration management, provisioning and deployment tools. You will also discover newer tools like Docker and Kubernetes. 
+The course is aimed at software engineers and system administrators that want to deliver better software. OtherIT professionals can also take this course, but might have to do some extra research to understand some of the concepts. You will learn how to improve the Software Development Lifecycle by applying techniques to improve software delivery. You will know how to improve delivery using automation, configuration management, provisioning and deployment tools. You will also discover newer tools like Docker and Kubernetes.
 
 #### Learn DevOps: Kubernetes Fast Lane
 
 ![/img/kubernetes-logo.png](/img/kubernetes-logo.png)
 KFL
 
-This course will help you to gain understanding how to deploy, use, and maintain your applications on Kubernetes. 
+This course will help you to gain understanding how to deploy, use, and maintain your applications on Kubernetes.
 
 If you are into DevOps, this is a technology you need to master. Kubernetes has gained a lot of popularity lately and it isa well sought skill by companies.
 
@@ -135,11 +134,11 @@ If you are into DevOps, this is a technology you need to master. Kubernetes has 
 ![/img/kubernetes-logo.png](/img/kubernetes-logo.png)
 KFL
 
-Kubernetes Advanced Usage is the second Kubernetes course in the "Learn DevOps: Kubernetes"series. 
+Kubernetes Advanced Usage is the second Kubernetes course in the "Learn DevOps: Kubernetes"series.
 
 If you don't have basic Kubernetes experience, make sure you follow first the course "Learn DevOps: Kubernetes Masterclass".
 
----
+***
 
 ![/img/bitrock-frontend.png](/img/bitrock-frontend.png)
 
@@ -152,21 +151,21 @@ JSL - Professional
 
 The Javascript landscape has changed dramatically in the last 5 years, and it’s keeping evolving at a fast pace. It’s not an easy task to get started in the right way in this ever-changing environment and that’s why the Bitrock Javascript Language is here to help. The course will start from Javascript’s very basic concepts while explaining modern tools and methodologies to give you a professional overview of how the language and the environment works today.
 
-#### Vue Framework - Professional 
+#### Vue Framework - Professional
 
 ![/img/vue-logo.png](/img/vue-logo.png)
 VJSF - Professional
 
 Vue.js is the “new kid in town” of Javascript frameworks, although it may sounds like an “unsafe” terrain, it is already used in production on many big web application (Alibaba.com just to name one… ) and it’s having a continuos growing momentum on the community. The frameworks combines the ease-of-use of Angular-like template system, a virtual-dom algorithm like React and introduce a new single file component format that keeps separation of concerns without creating a new mixed language like JSX.
 
-#### React Framework - Professional 
+#### React Framework - Professional
 
 ![/img/react-logo.png](/img/react-logo.png)
 RF - Professional
 
 The framework that redefined the Javascript development landscape. Developed by the Facebook team and used in the social network itself and Instagram, React has proven to offer sa rock-solid architecture for frontend applications and to also improve the rendering performances. This course will demystify all the basics concepts of React like the JSX meta-language, to provide the most efficient way to learn the framework and become productive with it.
 
-#### React Framework - Expert 
+#### React Framework - Expert
 
 ![/img/react-logo.png](/img/react-logo.png)
 RF - Expert
@@ -179,4 +178,3 @@ Developing well structured, resilient and performant React applications require 
 WC - Professional
 
 Web Components are a recent standard set of APIs that enable developers to create custom HTML tags with their related style and behavior without tie-in to a specific framework or library, components built with this specification are pure “vanilla” tags that can be implemented inside every major Javascript framework.If a company is developing many projects with different codebase and frameworks, Web Components represents a key skill for implementing real cross-project UI elements
-
