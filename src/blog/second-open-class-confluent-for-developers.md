@@ -1,6 +1,6 @@
 ---
 title: Second Open Class Confluent for Developers
-image: ''
+image: "/img/Copia di Copia di Happy Easter.png"
 imageMeta:
   attribution: ''
   attributionLink: ''
