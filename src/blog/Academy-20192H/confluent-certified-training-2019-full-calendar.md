@@ -43,4 +43,4 @@ The full calendar of all **Confluent Certified Courses** for **2019** is now ava
 
 * 11 - 12 - 13 December: **Confluent Developer Training: Building Kafka Solutions**
 
-CONTACT US FOR ENROLLING YOUR COURSES at [academy@bitrock.it](mailto:academy@bitrock.it)
+CONTACT US FOR ENROLLING YOUR COURSES at [_academy@bitrock.it_](mailto:academy@bitrock.it)
