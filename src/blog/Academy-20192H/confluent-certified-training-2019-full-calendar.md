@@ -1,6 +1,6 @@
 ---
 title: Confluent Certified Training 2019 - Full calendar
-image: "/img/1.png"
+image: "/img/1-1.png"
 imageMeta:
   attribution: ''
   attributionLink: ''
