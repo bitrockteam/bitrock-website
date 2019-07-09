@@ -36,3 +36,5 @@ The full calendar of all **Confluent Certified Courses** for **2019** is now ava
 * 20 - 21 - 22 November: **Stream Processing using Kafka® Streams & KSQL** \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129")\]
 
 * 11 - 12 - 13 December: **Confluent Developer Training: Building Kafka® Solutions** \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511")\]
+
+Official Certifications are waiting for you.
