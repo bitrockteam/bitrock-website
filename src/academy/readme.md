@@ -54,6 +54,8 @@ Enroll now for your certification:
 
 * 11 - 12 - 13 December: **Confluent Developer Training: Building Kafka® Solutions** \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511")\]
 
+Contact us for further information.
+
 ***
 
 ![/img/lightbend-logo.png](/img/lightbend-logo.png)
