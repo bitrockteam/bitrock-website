@@ -40,7 +40,7 @@ During this instructor-led, hands-on course, you will learn how to use Confluent
 
 # CONFLUENT CERTIFIED TRAINING - CALENDAR 2019
 
-Enroll now your favorite certification:
+Enroll now for your certification:
 
 * 11 - 12 - 13 September: **Confluent Operations for Apache Kafka®** \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661")\]
 * 18 - 19 - 20 September: **Stream Processing using Kafka® Streams & KSQL** \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984")\]
