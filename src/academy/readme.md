@@ -43,10 +43,15 @@ During this instructor-led, hands-on course, you will learn how to use Confluent
 Enroll now for your certification:
 
 * 11 - 12 - 13 September: **Confluent Operations for Apache Kafka®** \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661")\]
+
 * 18 - 19 - 20 September: **Stream Processing using Kafka® Streams & KSQL** \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984")\]
+
 * 9 - 10 - 11 October: **Confluent Developer Training: Building Kafka® Solutions** \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125")\]
+
 * 6 - 7 - 8 November: **Confluent Operations for Apache Kafka®** \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549")\]
+
 * 20 - 21 - 22 November: **Stream Processing using Kafka® Streams & KSQL** \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129")\]
+
 * 11 - 12 - 13 December: **Confluent Developer Training: Building Kafka® Solutions** \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511")\]
 
 ***
