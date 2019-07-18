@@ -6,7 +6,7 @@
         <article class="card">
           <figure></figure>
           <section class="">
-            <div class="body">
+            <div class="body" :class="pageClasses">
               <Content />
             </div>
           </section>
@@ -28,6 +28,14 @@ export default {
     Header,
     Footer,
     Credits,
+  },
+  computed: {
+    pageClasses() {
+        const userPageClass = this.$page.frontmatter.pageClass;
+        return [
+            userPageClass
+        ];
+    }
   }
 }
 </script>

@@ -1,6 +1,6 @@
 ---
 layout: Page
-
+pageClass: custom-page-class
 ---
 # Academy
 
