@@ -265,7 +265,6 @@
 .custom-page-class {
 
   .section-two-column {
-    //border:1px solid yellow;
     display: block;
     p {
       width:100%;
@@ -273,22 +272,44 @@
       padding: 0;
     }
   }
-  .section-calendar-column {
-    //border: 1px solid red;
-  }
-  strong {
-    color: #eb6400;
+
+  .section-details-column {
+    border-bottom:1px solid #ebebeb; 
+    margin-bottom:16px;
+    p {
+      //border: 1px solid red;
+      margin: 0;
+      padding-bottom: 16px; 
+    }
+     
+    p:first-of-type {
+      //border:1px solid green;
+      max-width:20%;
+      width:100%;
+      padding-right: 32px;
+
+    }
   }
 }
 
 @media (min-width: 992px) {
   .custom-page-class {
+
     #academy {
       padding-bottom: 8px; 
     }
-  
+
+    .section-one-column {
+      //border: 1px solid red;
+      padding-top: 32px; 
+      img {
+        max-width:300px;
+        margin: auto;
+        display: block;
+      }
+    }
+
     .section-two-column {
-      //border:1px solid green;
       display: flex;
       padding-top:32px; 
       p {
@@ -297,14 +318,7 @@
         padding: 0 32px 32px 0;
       }
     }
-    .section-one-column {
-      //border: 1px solid red;
-      img {
-        max-width:500px;
-        margin: auto;
-        display: block;
-      }
-    }
+    
     .section-calendar-column {
       display: flex;
       p {
@@ -316,9 +330,31 @@
 
       }
     }
+    .section-details-column {
+      display: flex;
+      padding-top:32px; 
+      border-bottom:1px solid #ebebeb; 
+      margin-bottom:16px;
+
+      p {
+        //border: 1px solid red;
+        margin: 0;
+        padding-bottom: 16px; 
+      }
+       
+      p:first-of-type {
+        //border:1px solid green;
+        max-width:20%;
+        width:100%;
+        padding-right: 32px;
+
+      }
+      
+      img {
+        max-width:200px;
+      }
+    }
   }
-  strong {
-    color: #eb6400;
-  }
+
 }
 
