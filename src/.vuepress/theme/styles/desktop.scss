@@ -273,8 +273,11 @@
       padding: 0;
     }
   }
-  .section-one-column {
+  .section-calendar-column {
     //border: 1px solid red;
+  }
+  strong {
+    color: #eb6400;
   }
 }
 
@@ -300,6 +303,17 @@
         max-width:500px;
         margin: auto;
         display: block;
+      }
+    }
+    .section-calendar-column {
+      display: flex;
+      p {
+        padding-top: 16px;
+        padding-right: 16px;
+        margin: 0;
+        max-width: 50%;
+        width:100%;
+
       }
     }
   }
