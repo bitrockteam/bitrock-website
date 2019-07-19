@@ -259,3 +259,106 @@
     }
   }
 }
+
+/* custom-page-class - Custom css for Page academy */
+
+.custom-page-class {
+
+  .section-one-column{ 
+      img {
+        display: block;
+        max-width: 300px;
+    }
+  }
+  .section-two-column {
+    display: block;
+    p {
+      width:100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
+  .section-details-column {
+    border-bottom:1px solid #ebebeb; 
+    margin-bottom:16px;
+    p {
+      //border: 1px solid red;
+      margin: 0;
+      padding-bottom: 16px; 
+    }
+     
+    p:first-of-type {
+      //border:1px solid green;
+      max-width:20%;
+      width:100%;
+      padding-right: 32px;
+    }
+    
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-page-class {
+
+    #academy {
+      padding-bottom: 8px; 
+    }
+
+    .section-one-column {
+      padding-top: 32px; 
+
+      img {
+        max-width:300px;
+        margin: auto;
+        display: block;
+      }
+    }
+
+    .section-two-column {
+      display: flex;
+      padding-top:32px; 
+      p {
+        max-width: 50%;
+        width:100%;
+        padding: 0 32px 32px 0;
+      }
+    }
+    
+    .section-calendar-column {
+      display: flex;
+      p {
+        padding-top: 16px;
+        padding-right: 16px;
+        margin: 0;
+        max-width: 50%;
+        width:100%;
+
+      }
+    }
+    .section-details-column {
+      display: flex;
+      padding-top:32px; 
+      border-bottom:1px solid #ebebeb; 
+      margin-bottom:16px;
+
+      p {
+        margin: 0;
+        padding-bottom: 16px; 
+      }
+       
+      p:first-of-type {
+        max-width:20%;
+        width:100%;
+        padding-right: 32px;
+
+      }
+      
+      img {
+        max-width:200px;
+      }
+    }
+  }
+
+}
+
