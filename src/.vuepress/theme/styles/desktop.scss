@@ -259,3 +259,44 @@
     }
   }
 }
+
+/* custom-page-class - Custom css for Page academy */
+
+.custom-page-class {
+
+  .section-two-column {
+    //border:1px solid yellow;
+    display: block;
+    p {
+      width:100%;
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  .section-one-column {
+    //border: 1px solid red;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-page-class {
+    #academy {
+      padding-bottom: 8px; 
+    }
+  
+    .section-two-column {
+      //border:1px solid green;
+      display: flex;
+      padding-top:32px; 
+      p {
+        max-width: 50%;
+        width:100%;
+        padding: 0 32px 32px 0;
+      }
+    }
+    .section-one-column {
+      //border: 1px solid red;
+    }
+  }
+}
+
