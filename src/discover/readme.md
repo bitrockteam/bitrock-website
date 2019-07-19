@@ -8,8 +8,11 @@ layout: Page
 
 **Innovation** and **research** are at the very heart of **Bitrock**. These valors are clearly expressed through the constant employment of avant-garde and distinctive technologies (ie.: *Scala Language*), and supported on a daily basis by constant internal training activities, in order to make this approach succeed and evolve in time.
 
-![/img/partners.png](/img/partners.png)
 Our partnerships
+
+![/img/partners.png](/img/partners.png)
+
+
 
 **Bitrock** stand out over competition for an intense activity of international **alliances** and **partnerships**, aimed at increasing its market value proposition: **Bitrock** is premier partner of **Lightbend** and **Confluent**, and actively contributes to the consolidation and dissemination of these technologies through an ambitious project of **Academy**, offering high level certified training paths to third parties. The company, through a dynamic enterprise approach, provides **reliable** and **achievable innovation**, through a completely different paradigm, supported by successful methodologies, aimed at the constant achievement of a safe and guaranteed delivery.
 
