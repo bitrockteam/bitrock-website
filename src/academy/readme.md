@@ -26,30 +26,30 @@ We are **Lightbend Gold Training Partner** and **Confluent Training Partners**, 
 <div>
 Enroll now for your certification:
 
+<br>
 
-
-
-* 11 - 12 - 13 September:  <br>
+:spiral_calendar: *11 - 12 - 13 September:*  <br>
 **Confluent Operations for Apache Kafka®** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661")\]
+<br>
 
-* 18 - 19 - 20 September: <br>
+:spiral_calendar: *18 - 19 - 20 September:* <br>
 **Stream Processing using Kafka® Streams & KSQL**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984")\]
 
-* 9 - 10 - 11 October: <br>
+:spiral_calendar: *9 - 10 - 11 October:* <br>
 **Confluent Developer Training: Building Kafka® Solutions** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125")\]
 
-* 6 - 7 - 8 November: <br>
+:spiral_calendar: *6 - 7 - 8 November:* <br>
 **Confluent Operations for Apache Kafka®**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549")\]
 
-* 20 - 21 - 22 November: <br>
+:spiral_calendar: *20 - 21 - 22 November:* <br>
 **Stream Processing using Kafka® Streams & KSQL** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129")\]
 
-* 11 - 12 - 13 December: <br>
+:spiral_calendar: *11 - 12 - 13 December:* <br>
 **Confluent Developer Training: Building Kafka® Solutions**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511")\]
 
@@ -59,12 +59,14 @@ Contact us for further information.
 
 ***
 
+Following a complete list of our **Professional** & **Expert** Programs:
 
-<div class="section-two-column">
+<div class="section-one-column">
 
 ![/img/confluent](/img/confluent_logo.png)
 
-This is the list of courses of **Confluent** Professional Training. The courses are provided by certified trainers and each participant will receive an official **Confluent Certification**.
+This is the list of courses of **Confluent** Professional Training. <br/>
+The courses are provided by certified trainers and each participant will receive an official **Confluent Certification**.
 
 </div>
 

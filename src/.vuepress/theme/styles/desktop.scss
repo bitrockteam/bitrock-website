@@ -296,7 +296,15 @@
     }
     .section-one-column {
       //border: 1px solid red;
+      img {
+        max-width:500px;
+        margin: auto;
+        display: block;
+      }
     }
+  }
+  strong {
+    color: #eb6400;
   }
 }
 
