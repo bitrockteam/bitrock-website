@@ -21,11 +21,11 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "02d1e24be93f50e561054bfd3acf9bef"
+    "revision": "391047de77ad58869784aa2d68b91795"
   },
   {
     "url": "academy/index.html",
-    "revision": "f8640e8ee2fdfe9a3c8413dbf47fe0a2"
+    "revision": "0ee9be61cf89c946951059d9b74cf173"
   },
   {
     "url": "assets/css/0.styles.36ee78bd.css",
@@ -108,8 +108,8 @@ self.__precacheManifest = [
     "revision": "b73a69ac566914af313f7f15a2ecc33a"
   },
   {
-    "url": "assets/js/15.ea60f547.js",
-    "revision": "36a792c559e971dd0ec7cf5ef4c6982a"
+    "url": "assets/js/15.01c83525.js",
+    "revision": "f59c6d78c89811c9e568fa7985572b4e"
   },
   {
     "url": "assets/js/16.171a306a.js",
@@ -224,8 +224,8 @@ self.__precacheManifest = [
     "revision": "114a041d918e74e2238e4fdb810c2e4b"
   },
   {
-    "url": "assets/js/app.d140a7b0.js",
-    "revision": "32c10dd787a17f8d1c5b932710498a3d"
+    "url": "assets/js/app.c849fd06.js",
+    "revision": "7a8ca2909d2fe12c660a5c363ba8a046"
   },
   {
     "url": "BitrockLogo.svg",
@@ -237,103 +237,103 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/Academy-20192H/confluent-certified-training-2019-full-calendar.html",
-    "revision": "f61cc56573a5c93fbc8c96497361986f"
+    "revision": "70ca3e44ccd6acbe6822e67947d2d492"
   },
   {
     "url": "blog/academy-class/index.html",
-    "revision": "d82e5cabbf8ef137c95423b4e3fc2a3f"
+    "revision": "d44cc9a9d72e3954b51fcbf1f67f197d"
   },
   {
     "url": "blog/academy-confluent/index.html",
-    "revision": "28d66be06e9a3ffbf18134d44eabd4bc"
+    "revision": "031b86fb581e1eecc04e69e46ad8ecbd"
   },
   {
     "url": "blog/academy-frontend/bitrock-front-end-academy.html",
-    "revision": "4a2822fe23e71757123ee7458568ad95"
+    "revision": "e0ff85d74fe20b568425c2cb2f8755c8"
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "444cfef3e60d01b7f0da260a6dd2dd75"
+    "revision": "e684ef0f9b4c2fdad8d92f7b731885fd"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "1885c121f28f6767f8f4c1a3ac2ae73b"
+    "revision": "238ddc35177586edfcd7ee3807433241"
   },
   {
     "url": "blog/academy-lightbend/index.html",
-    "revision": "4f1a381af02cfa4089452bdaaac104e0"
+    "revision": "b222de6390e817d08d81a023b9101c5b"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "28b6e11b5908e95b617b4675f903a769"
+    "revision": "c6127861fbd0874d7adbba5aee5625b1"
   },
   {
     "url": "blog/confluent-certified-training/index.html",
-    "revision": "ed32192b9df0d07cf877b69819ac4375"
+    "revision": "a6e245edd34c526842f6980161810e46"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "a843c7886290e3734eeb510a329c69b6"
+    "revision": "b6698ed6ace2d474f209a2315a81d290"
   },
   {
     "url": "blog/cto-takeaways/index.html",
-    "revision": "408f9ef19726a83ed3ddd8e5b903fd34"
+    "revision": "64ffca3c03e8dfe535a72f02ab3e6863"
   },
   {
     "url": "blog/databiz-group/index.html",
-    "revision": "7447d2b22d1039a87e4b80d0766573a7"
+    "revision": "e8fab4157fe93869d9aeb95c5394325e"
   },
   {
     "url": "blog/devops-team/index.html",
-    "revision": "77651f9a0fd29a09ee92132be104a4ec"
+    "revision": "c155924bca821fb9d1c9c7a9749e26b4"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "ecdf2eb0e04b644db53ed021d1681f1c"
+    "revision": "ceea2fe542c473d00e64adb491f0f4a8"
   },
   {
     "url": "blog/interview-salvatore-laisa/index.html",
-    "revision": "63964a2fb4a9c6b2566994770aae71b9"
+    "revision": "c6159d0a8a1ecbbf987c240f1353a9e7"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "a1a4c8bf4404c2e7521d4648f11886ee"
+    "revision": "480e87cb676a2c1a80f529c1ec761591"
   },
   {
     "url": "blog/kubernetes-fastlane/index.html",
-    "revision": "b5e79d2466deba9cf3dc144be179b9f5"
+    "revision": "d17c1d2e7cfc10646355130e001a9420"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "fd366e6234abe00d982cb1b54cd13855"
+    "revision": "2a50316a455e8f73aa8b6ee1d8524f24"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "cd13b61c6d4814fb84893278a9ae1923"
+    "revision": "c23ce66dcb5285aca7e72c65dd138610"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "52ce48ebe75a2e9dca6f3135af07b38d"
+    "revision": "a4ea848c5e233f868ed19851956f6462"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "de06791fa4a82dfcc3c79abcd4aa8557"
+    "revision": "0e2627897bc9cf4781eb7efe12092df1"
   },
   {
     "url": "blog/second-open-class-confluent-for-developers.html",
-    "revision": "81f6baca9c07f5e471e357687903fd0d"
+    "revision": "c8446c86dd9ca72f1aca03bb7018471a"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "4140375f89d08a8de22c0d867535a52b"
+    "revision": "7e15330c003dc3b53ec6db5cbf3a034b"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "566041e1532ed5a0d5c607d97a84040e"
+    "revision": "e06f7fbde4b4eca58a6a3b34cca9d316"
   },
   {
     "url": "discover/index.html",
-    "revision": "1f4409ebabe86ece211bed888015fe05"
+    "revision": "acef3bc595946e18b19110e5b9f3925f"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -557,7 +557,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "a70f7d4eec38404a405b5bb92e675e91"
+    "revision": "8f0a040ee039fff2b0bdae0ca3ad74e4"
   },
   {
     "url": "logo.png",
