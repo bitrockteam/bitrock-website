@@ -115,8 +115,7 @@ During this instructor-led, hands-on course, you will learn how to use Confluent
 
 ![/img/lightbend-logo.png](/img/lightbend-logo.png)
 
-This is the list of **Lightbend** courses scheduled for the coming months.<br>
-The courses are provided by certified trainers and each participant will receive an official **Lightbend Certification**.
+This is the list of **Lightbend** courses.<br> The courses are provided by certified trainers and each participant will receive an official **Lightbend Certification**.
 
 </div>
 
