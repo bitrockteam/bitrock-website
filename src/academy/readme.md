@@ -9,7 +9,7 @@ pageClass: custom-page-class
 
 <div class="section-two-column">
 
-Development and growth happen where people are encouraged to be curious and learn. We are firmly convinced that learning-oriented culture helps to cultivate leadership and breeds innovation and high-performance. <br><br><br> We are **Lightbend Gold Training Partner** and **Confluent Training Partners**, and we also lead our internal classes of **Front End** and **DevOps**.
+Development and growth happen where people are encouraged to be curious and learn. We are firmly convinced that learning-oriented culture helps to cultivate leadership and breeds innovation and high-performance. <br><br><br> We are **Lightbend Gold Training Partner** and **Confluent Training Partner**, and we also lead our internal classes of **Front End** and **DevOps**.
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OaoPAh3J8aU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
