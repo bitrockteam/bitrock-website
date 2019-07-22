@@ -1,10 +1,11 @@
 ---
 layout: Page
 pageClass: custom-page-class
+
 ---
 # Academy
 
-#### BITROCK - Professional & Cerfied Training Programs 
+#### BITROCK - Professional & Cerfied Training Programs
 
 <div class="section-two-column">
 
@@ -32,12 +33,11 @@ Enroll now for your certification:
 
 <div class="section-calendar-column">
 
-:spiral_calendar: *11 - 12 - 13 September:*  <br>
+:spiral_calendar: _11 - 12 - 13 September:_  <br>
 **Confluent Operations for Apache Kafka®** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970214661")\]
 
-
-:spiral_calendar: *18 - 19 - 20 September:* <br>
+:spiral_calendar: _18 - 19 - 20 September:_ <br>
 **Stream Processing using Kafka® Streams & KSQL**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64970656984")\]
 
@@ -45,12 +45,11 @@ Enroll now for your certification:
 
 <div class="section-calendar-column">
 
-:spiral_calendar: *9 - 10 - 11 October:* <br>
+:spiral_calendar: _9 - 10 - 11 October:_ <br>
 **Confluent Developer Training: Building Kafka® Solutions** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64969701125")\]
 
-
-:spiral_calendar: *6 - 7 - 8 November:* <br>
+:spiral_calendar: _6 - 7 - 8 November:_ <br>
 **Confluent Operations for Apache Kafka®**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549](https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549 "https://www.eventbrite.it/e/biglietti-confluent-operations-for-apache-kafka-64970511549")\]
 
@@ -58,11 +57,11 @@ Enroll now for your certification:
 
 <div class="section-calendar-column">
 
-:spiral_calendar: *20 - 21 - 22 November:* <br>
+:spiral_calendar: _20 - 21 - 22 November:_ <br>
 **Stream Processing using Kafka® Streams & KSQL** <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129](https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129 "https://www.eventbrite.it/e/biglietti-confluent-stream-processing-using-apache-kafka-streams-and-ksql-64971374129")\]
 
-:spiral_calendar: *11 - 12 - 13 December:* <br>
+:spiral_calendar: _11 - 12 - 13 December:_ <br>
 **Confluent Developer Training: Building Kafka® Solutions**  <br>
 \[[https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511](https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511 "https://www.eventbrite.it/e/biglietti-confluent-developer-skills-for-building-apache-kafka-64970164511")\]
 
@@ -76,7 +75,7 @@ Contact us for further information.
 
 <br>
 
-#### Training Course Catalogue 
+#### Training Course Catalogue
 
 <div class="section-one-column">
 
@@ -87,22 +86,20 @@ The courses are provided by certified trainers and each participant will receive
 
 </div>
 
-
 <div class="section-details-column">
 
 ![/img/kafka-logo-title.png](/img/kafka-logo-title.png)
 
-**Confluent Developer Training: Building Kafka Solutions** <br>
+**Confluent Developer Training: Building Kafka® Solutions** <br>
 In this three-day hands-on course, you will learn how to build applications that can publish data to and subscribe to data from, a Kafka cluster. You will learn the role of Kafka in the modern data distribution pipeline, discuss core Kafka architectural concepts and components, and review the Kafka developer APIs. The course also covers other components in the broader Confluent platform.
 
 </div>
 
-
 <div class="section-details-column">
 
 ![/img/kafka-logo-title.png](/img/kafka-logo-title.png)
 
-**Confluent Operations Training for Apache Kafka** <br>
+**Confluent Operations for Apache Kafka®** <br>
 In this three-day hands-on course, you will be able to build and manage Kafka clusters using industry best-practices developed by the world’s foremost Kafka experts. You will learn how Kafka and the Confluent platform work, their main subsystems, their functions, how they interact, and how to set up, manage, and tune your cluster.
 
 </div>
@@ -111,22 +108,19 @@ In this three-day hands-on course, you will be able to build and manage Kafka cl
 
 ![/img/kafka-logo-title.png](/img/kafka-logo-title.png)
 
-**Confluent Training: Stream Processing using Kafka Streams & KSQL**
+**Stream Processing using Kafka® Streams & KSQL**
 During this instructor-led, hands-on course, you will learn how to use Confluent KSQL to transform, enrich, filter and aggregate streams of real time data using a SQL-like language. You will also learn how to use the Apache Kafka Streams library to build streaming applications. Furthermore, you will learn how to test, monitor, secure and scale those streaming applications. You will learn how these applications integrate with the Confluent Streaming platform powered by Apache Kafka, KafkaConnect, Confluent Schema Registry, Confluent REST Proxy as well as theConfluent Control Center. You will learn the role of Streaming in the modern data distribution pipeline, discuss architectural concepts and components ofKSQL and Kafka Streams.
 
 </div>
-
 
 <div class="section-one-column">
 
 ![/img/lightbend-logo.png](/img/lightbend-logo.png)
 
-This is the list of **Lightbend** courses scheduled for the coming months.<br> 
+This is the list of **Lightbend** courses scheduled for the coming months.<br>
 The courses are provided by certified trainers and each participant will receive an official **Lightbend Certification**.
 
 </div>
-
-
 
 <div class="section-details-column">
 
@@ -142,14 +136,11 @@ Designing Reactive systems and microservices requires architects and teams to th
 
 ![/img/akka-logo.png](/img/akka-logo.png)
 
-
 **Lightbend Akka Streams for Scala - Professional** <br>
 LASS - Professional <br>
 This one day course introduces experienced Akka developers to the Akka Streams API. Akka Streams enables the consumption of streaming data, in a fully non-blocking, asynchronous manner. It also allows us to consume that data while providing non-blocking backpressure to prevent mailbox overflows. Our goal is to learn the components that make up the Akka Streams API and how they interact. We will see a broad range of different Akka Streams components and have a chance to use many of them.
 
 </div>
-
-
 
 <div class="section-details-column">
 
@@ -161,7 +152,6 @@ Object-oriented meets functional—elegant class hierarchies, seamless Java inte
 
 </div>
 
-
 <div class="section-details-column">
 
 ![/img/scala-logo.gif](/img/scala-logo.gif)
@@ -171,7 +161,6 @@ LSL - Expert <br>
 The power of Scala’s type system, unleashed - advanced object functional programming, implicits, and more. Leverage rich language features to create well-designed libraries or DSL’s, utilizing proven best practices.
 
 </div>
-
 
 <div class="section-details-column">
 
@@ -193,8 +182,6 @@ This three-day course introduces experienced Java developers to the reactive Akk
 
 </div>
 
-
-
 <div class="section-details-column">
 
 ![/img/akka-logo.png](/img/akka-logo.png)
@@ -204,8 +191,6 @@ LAS - Expert<br>
 The pinnacle of scalable, reactive applications! Experienced application developers learn to build distributed reactive applications using Akka and Scala, scaling out multiple nodes, remoting and clustering.
 
 </div>
-
-
 
 <div class="section-details-column">
 
@@ -245,8 +230,6 @@ The course is aimed at software engineers and system administrators that want to
 
 </div>
 
-
-
 <div class="section-details-column">
 
 ![/img/kubernetes-logo.png](/img/kubernetes-logo.png)
@@ -257,8 +240,6 @@ This course will help you to gain understanding how to deploy, use, and maintain
 If you are into DevOps, this is a technology you need to master. Kubernetes has gained a lot of popularity lately and it isa well sought skill by companies.
 
 </div>
-
-
 
 <div class="section-details-column">
 
@@ -279,7 +260,6 @@ This is the list of courses of **Bitrock FrontEnd Academy**:
 
 </div>
 
-
 <div class="section-details-column">
 
 ![/img/js-logo.png](/img/js-logo.png)
@@ -289,8 +269,6 @@ JSL - Professional<br>
 The Javascript landscape has changed dramatically in the last 5 years, and it’s keeping evolving at a fast pace. It’s not an easy task to get started in the right way in this ever-changing environment and that’s why the Bitrock Javascript Language is here to help. The course will start from Javascript’s very basic concepts while explaining modern tools and methodologies to give you a professional overview of how the language and the environment works today.
 
 </div>
-
-
 
 <div class="section-details-column">
 
@@ -302,8 +280,6 @@ Vue.js is the “new kid in town” of Javascript frameworks, although it may so
 
 </div>
 
-
-
 <div class="section-details-column">
 
 ![/img/react-logo.png](/img/react-logo.png)
@@ -314,8 +290,6 @@ The framework that redefined the Javascript development landscape. Developed by 
 
 </div>
 
-
-
 <div class="section-details-column">
 
 ![/img/react-logo.png](/img/react-logo.png)
@@ -325,8 +299,6 @@ RF - Expert<br>
 Developing well structured, resilient and performant React applications require some skills beyond the framework itself. In this course we will explore how to handle complex client-side data with Redux, some techniques on styling components with regular CSS and with pre-processors like SASS and performance improvements for production deployment with Server Side Rendering.
 
 </div>
-
-
 
 <div class="section-details-column">
 
