@@ -5,7 +5,7 @@ pageClass: custom-page-class
 ---
 # Academy
 
-#### BITROCK - Professional & Cerfied Training Programs
+#### BITROCK - Professional & Certified Training Programs
 
 <div class="section-two-column">
 
