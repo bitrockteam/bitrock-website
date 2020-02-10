@@ -21,6 +21,7 @@
     "build:cname": "cp ./src/CNAME ./dist/CNAME",
     "build:start": "npm run build:clean && npm run build:static",
     "build": "npm run build:start",
+    "postbuild": "node -e \"require('./postbuild.js').moveDemo();\"",
     "gh:pages": "gh-pages -d dist"
   },
   "devDependencies": {
