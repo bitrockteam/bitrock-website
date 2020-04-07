@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "ee85e37e069cda4c0895711f97b8e020"
+    "revision": "25daaff8ecac2895696858b5ac0488bb"
   },
   {
     "url": "assets/css/0.styles.56fd42d3.css",
@@ -84,8 +84,8 @@ self.__precacheManifest = [
     "revision": "14f06de1b58872e4559a14b645f7cf72"
   },
   {
-    "url": "assets/js/10.20f47bcd.js",
-    "revision": "d42bc044e3ff12873074f43437b6b836"
+    "url": "assets/js/10.9a8c808b.js",
+    "revision": "c2c2c3d95f48ece23939d67c683bee17"
   },
   {
     "url": "assets/js/11.c86a24e4.js",
@@ -116,8 +116,8 @@ self.__precacheManifest = [
     "revision": "c68642ce067dd05b59433b9a9d7efe5c"
   },
   {
-    "url": "assets/js/18.e8e171ac.js",
-    "revision": "b58832ed2cea22a0bc126e38168c6978"
+    "url": "assets/js/18.1e7a74ab.js",
+    "revision": "cd1b1e96cdddc044259c5b146630aed0"
   },
   {
     "url": "assets/js/19.fdb16b3d.js",
@@ -152,8 +152,8 @@ self.__precacheManifest = [
     "revision": "e27be8ef3b1656dbec6e4e57e96c40ac"
   },
   {
-    "url": "assets/js/5.60c0d602.js",
-    "revision": "3aa61f538f337602386e578b035ad328"
+    "url": "assets/js/5.129c145a.js",
+    "revision": "c1f918b303d0f6b6420d2a204a433b2f"
   },
   {
     "url": "assets/js/6.c5bf8bf9.js",
@@ -172,8 +172,8 @@ self.__precacheManifest = [
     "revision": "461af6c456b39630b7caeb4b18f37f01"
   },
   {
-    "url": "assets/js/app.008e928a.js",
-    "revision": "d825ac33e60a56b13583d2c914be90be"
+    "url": "assets/js/app.dbf474c4.js",
+    "revision": "998b9a2a3bd070f81e91415e99a13671"
   },
   {
     "url": "BitrockLogo.svg",
@@ -185,55 +185,55 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "3d76096c3320db8fdaa54b341df9a43c"
+    "revision": "07a6f259376fd486c353b728b3bbb6a8"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "545b4c29e0eb73b6daddae9da1ce0e09"
+    "revision": "09b0394d242c2fdce4729707bdaa11ef"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "4593d9c97aed6e1ead0c9343321024c2"
+    "revision": "4085f0addf81ead1421c78309d1e4feb"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "d46922db066fbf8ebb3451651112ea2d"
+    "revision": "74041e1ed2380809f9102560e45e3920"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "fcdecd929945f9beec7e816b50e8f32e"
+    "revision": "486d644a095bd17b74811988628df452"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "f88fa36d020b2d851181c40ec410892a"
+    "revision": "c939327db1e51e83886908850c1e2647"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "4a1c13cac8f438e9f2ea217fa4683603"
+    "revision": "f4fef961649a4b175194d5ab152b0625"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "b8ac0bc93f634d017b60802a3cb35165"
+    "revision": "15661bf5a9c397e73c2ae4d1b37cca0b"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "a4dc1309b81768c6f67c83e12b4ba5a1"
+    "revision": "c076eb87d028542ff7e2f2d086b88215"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "e747c4273f9c80da4c8494f1b529227b"
+    "revision": "c35e276efb56d4014018e3e81a66cbc8"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "0ae551f5c657292ae2b75088892d61dd"
+    "revision": "899ca5276515dfdd07f90c67173902cb"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "a5cce6663fd02639f885df14186d6f2f"
+    "revision": "9a75c7684885cab5dad4c1d942432996"
   },
   {
     "url": "discover/index.html",
-    "revision": "494131633beea19638b26b518dceba21"
+    "revision": "c32d92c48b26424226dd8703b394acf0"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -513,7 +513,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "5f888509ae586ce58749d3bea052a6ea"
+    "revision": "032d2e5038c0ff1b5e2fc105a4111a05"
   },
   {
     "url": "logo.png",
