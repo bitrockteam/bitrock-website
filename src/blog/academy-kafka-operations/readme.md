@@ -1,19 +1,19 @@
 ---
 title: Confluent Operations Training for Apache Kafka
-image: /img/posts/academy-kafka-2.png
+image: Apache Kafka 1.png
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-09-24
 layout: Post
 category: academy
 tags:
-  - academy
-  - kafka
-  - training
----
+- academy
+- kafka
+- training
 
+---
 In this three-day hands-on course you will learn how to build, manage, and monitor clusters using industry best-practices developed by the world’s foremost Apache Kafka experts. <!-- more -->
 
 ![/img/confluent_logo.png](/img/confluent_logo.png)
