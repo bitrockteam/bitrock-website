@@ -1,6 +1,6 @@
 ---
 title: Bitrock is platinum sponsor of "Technology Infrastructure Summit 2018"
-image: Evento 5.jpg
+image: "/img/posts/Evento 5.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
