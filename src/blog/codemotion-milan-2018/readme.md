@@ -1,6 +1,6 @@
 ---
 title: Bitrock is silver sponsor of "Codemotion 2018"
-image: Evento 3.jpeg
+image: "/img/posts/Evento 3.jpeg"
 imageMeta:
   attribution: 
   attributionLink: 
