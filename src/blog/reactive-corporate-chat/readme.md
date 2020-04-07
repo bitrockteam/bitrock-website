@@ -1,7 +1,7 @@
 ---
 title: Reactive Corporate Chat - The perfect combination between your daily workflow
   and data property.
-image: Corporate Chat.jpg
+image: "/img/posts/Corporate Chat.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
