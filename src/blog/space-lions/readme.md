@@ -25,7 +25,7 @@ Helping and supporting 5 young talents, who are now preparing to go "from theory
 
 Such as for these five students, the path of BITROCK has in a certain sense just begun. "We have always been one step ahead, moving on to unexplored territories and tightening avant-garde partnerships with pioneering technology companies: today we are premier partners of Lightbend and Confluent, and this meticulous path has led us to be among the major players in the training field, certified on these technologies, through our Bitrock Academy ", concludes Leo Pillon.
 
-![/img/post/corporate-space-lions.png](/img/post/corporate-space-lions.png)
+![/img/posts/corporate-space-lions.png](/img/posts/corporate-space-lions.png)
 *The full team of **Space Lions** at **Witted**, during the **WitLab Summer Academy**.*
 
 Read more at ANSA:
