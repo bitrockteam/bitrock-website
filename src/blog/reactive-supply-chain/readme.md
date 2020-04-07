@@ -1,7 +1,7 @@
 ---
 title: Reactive Supply Chain - A modern, state of art and scalable managing system
   for Supply Chain
-image: "/img/posts/Reactive Supply Chain.jpg"
+image: "/img/Reactive Supply Chain.jpg"
 imageMeta:
   attribution: 
   attributionLink: 

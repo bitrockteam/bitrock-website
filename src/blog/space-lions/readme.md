@@ -1,7 +1,7 @@
 ---
 title: Bitrock supports Talents | A CSR action addressed to "Space Lions", 5 students
   that last January won the  NASA Challenge "Zero Robotics"
-image: "/img/posts/Space Lions_csr.jpeg"
+image: "/img/Space Lions_csr.jpeg"
 imageMeta:
   attribution: 
   attributionLink: 

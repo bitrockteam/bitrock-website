@@ -1,6 +1,6 @@
 ---
 title: Jenkins World October 22-25, 2018 | Nice, France. Bitrock's team is attending
-image: "/img/posts/Evento 2.jpg"
+image: "/img/Evento 2.jpg"
 imageMeta:
   attribution: 
   attributionLink: 

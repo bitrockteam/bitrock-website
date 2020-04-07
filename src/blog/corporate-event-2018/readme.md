@@ -1,6 +1,6 @@
 ---
 title: Corporate Event | "Databiz Group" - Desenzano del Garda, June 8th, 2018
-image: "/img/posts/bg_01.jpg"
+image: "/img/bg_01.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
