@@ -34,5 +34,5 @@ fields:
   name: tags
   label: tags
 pages:
-- src/blog/second-open-class-confluent-for-developers.md
 - src/blog/Academy-20192H/confluent-certified-training-2019-full-calendar.md
+- src/blog/second-open-class-confluent-for-developers.md
