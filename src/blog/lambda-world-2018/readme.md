@@ -1,6 +1,6 @@
 ---
 title: Lambda World | Cadiz, Spain. October 25th - 26th, 2018. Our team is attending
-image: "/img/posts/Lambda.jpg"
+image: "/img/Lambda.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
@@ -17,6 +17,6 @@ Lambda World is the largest **Functional programming event** in the country, car
 Our colleagues **Andrea Bessi** and **Alberto Adami** will be our representatives in Spain.
 
 ![./people.jpg](./people.jpg)
-*Andrea Bessi & Alberto Adami at Lambda World*
+_Andrea Bessi & Alberto Adami at Lambda World_
 
 Discover the Full Event Agenda at: [http://cadiz.lambda.world/schedule/](http://cadiz.lambda.world/schedule/)
