@@ -1,6 +1,6 @@
 ---
 title: Confluent Developer Training - Building Kafka Solutions
-image: "/img/posts/Apache Kafka 2.png"
+image: "/img/Apache Kafka 2.png"
 imageMeta:
   attribution: 
   attributionLink: 

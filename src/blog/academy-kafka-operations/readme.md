@@ -1,6 +1,6 @@
 ---
 title: Confluent Operations Training for Apache Kafka
-image: "/img/posts/Apache Kafka 1.png"
+image: "/img/Apache Kafka 1.png"
 imageMeta:
   attribution: 
   attributionLink: 

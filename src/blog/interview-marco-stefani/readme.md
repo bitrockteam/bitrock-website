@@ -1,6 +1,6 @@
 ---
 title: Software Development @Bitrock | An interview with Marco Stefani (Head of Engineering)
-image: "/img/posts/Interview.jpeg"
+image: "/img/Interview.jpeg"
 imageMeta:
   attribution: 
   attributionLink: 

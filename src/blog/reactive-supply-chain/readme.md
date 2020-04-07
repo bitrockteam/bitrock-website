@@ -1,7 +1,7 @@
 ---
 title: Reactive Supply Chain - A modern, state of art and scalable managing system
   for Supply Chain
-image: "/img/posts/Reactive Supply Chain.jpg"
+image: "/img/Reactive Supply Chain.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
@@ -37,7 +37,7 @@ Bitrock’s Reactive Supply Chain is designed for:
 
 The achievement of these kind of benefits are **enabling Direct To Market models** by Supply Chain operators and as well more modern integration (and or self implementation) of **eCommerce strategies**, increasing Supply Chain operators **brand identity**. 
 
-![/img/posts/reactive-supply-chain.png](/img/posts/reactive-supply-chain.png)*Reactive Supply Chain Componentss*
+![/img/reactive-supply-chain.png](/img/reactive-supply-chain.png)*Reactive Supply Chain Componentss*
 
 All systems and components are *Dockerized*, so to allow an easy deployment both **on Premises** both **on a Cloud solution** (adding orchestration services such as **Docker Compose**, or **Kubernetes**, or **Mesos DCOS**). All components are configured to use **Kafka** and provide even a set of **REST APIs**.
 

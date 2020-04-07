@@ -1,7 +1,7 @@
 ---
 title: Reactive Corporate Chat - The perfect combination between your daily workflow
   and data property.
-image: "/img/posts/Corporate Chat.jpg"
+image: "/img/Corporate Chat.jpg"
 imageMeta:
   attribution: 
   attributionLink: 
@@ -22,7 +22,7 @@ tags:
 ## What does?
 **Bitrock Reactive Corporate Chat** has the all the standard funcionalities of chat designed to operate at a professional level:
 
-![/img/posts/chat-app.png](/img/posts/chat-app.png)
+![/img/chat-app.png](/img/chat-app.png)
 
 * One to one Chat
 * Topic Chat

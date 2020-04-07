@@ -1,6 +1,6 @@
 ---
 title: Scala Italy 2018 - Bitrock is silver sponsor. We support "Scala Language" worldwide
-image: "/img/posts/Evento 4.png"
+image: "/img/Evento 4.png"
 imageMeta:
   attribution: 
   attributionLink: 
