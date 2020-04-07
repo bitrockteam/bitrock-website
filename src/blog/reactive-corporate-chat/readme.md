@@ -22,7 +22,7 @@ tags:
 ## What does?
 **Bitrock Reactive Corporate Chat** has the all the standard funcionalities of chat designed to operate at a professional level:
 
-![/img/chat-app.png](/img/chat-app.png)
+![/img/posts/chat-app.png](/img/posts/chat-app.png)
 
 * One to one Chat
 * Topic Chat
