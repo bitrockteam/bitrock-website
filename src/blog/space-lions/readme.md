@@ -1,15 +1,16 @@
 ---
-title: Bitrock supports Talents | A CSR action addressed to "Space Lions", 5 students that last January won the  NASA Challenge "Zero Robotics"
-image: /img/posts/corporate-space-lions.png
+title: Bitrock supports Talents | A CSR action addressed to "Space Lions", 5 students
+  that last January won the  NASA Challenge "Zero Robotics"
+image: "/img/posts/Space Lions_csr.jpeg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-09-09
 layout: Post
 category: csr
----
 
+---
 Treviso, September 4, 2018 - BITROCK, supports the Space Lions, five students from Treviso between 17 and 18 years, that last January  won the prestigious NASA Challenge "Zero Robotics" with a computer code for the asteroids coring. <!-- more --> Together with the robotics startup Witted, during the WitLab Summer Academy, alongside the software, the five young talents are developing, with the support of BITROCK, a hardware prototype able to autonomously explore the depths of the seas and lakes.
 
 ![./space-lions-1.jpeg](./space-lions-1.jpeg)
