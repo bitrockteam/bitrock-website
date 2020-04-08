@@ -1,5 +1,11 @@
 <template>
   <section class="cover">
+    <video id="businessVideo" autoplay muted loop>
+      <source src="videos/business.mp4" type="video/mp4">
+    </video>
+  </section>
+  <!-- 
+    <section class="cover">
     <figure style="background-image: url(/img/main_bg.jpg)">
       <figcaption class="wrapper">
         <div class="claim">
@@ -11,6 +17,7 @@
       </figcaption>
     </figure>
   </section>
+  -->
 </template>
 
 <script>
