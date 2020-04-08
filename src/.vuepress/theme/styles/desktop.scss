@@ -1,3 +1,17 @@
+section.cover {
+  padding-top: 0px;
+  height: 100vh;
+
+  #businessVideo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+  }
+}
+
 @media (min-width: 576px) {
   main {
     column-count: 2;
@@ -5,21 +19,6 @@
 
     &.content {
       column-count: unset;
-    }
-  }
-
-  section.cover {
-    padding-top: 0px;
-    height: 100vh;
-  
-    #businessVideo {
-      display: block;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-size: cover;
-      -o-object-fit: cover;
-      object-fit: cover;
     }
   }
 
