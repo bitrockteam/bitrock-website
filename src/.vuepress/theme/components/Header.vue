@@ -3,7 +3,7 @@
     <div class="wrapper">
       <div class="logo">
         <router-link to="/" aria-label="Bitrock logo">
-          <BitrockLogo />
+          <BitrockLogo :mode="colorMode" />
         </router-link>
       </div>
     
@@ -16,14 +16,16 @@
               rel="noopener"
               target="_blank"
               :aria-label="item.text"
+              :class="'text-' + colorMode"
             >{{ item.text }}</a>
             <router-link
               v-else
               :to="item.link"
               :key="item.link"
               :aria-label="item.text"
-              :exact="item.link === '/'">
-              {{ item.text }}
+              :exact="item.link === '/'"
+              :class="'text-' + colorMode"
+              >{{ item.text }}
             </router-link>
           </li>
         </ul>
@@ -51,6 +53,13 @@ export default {
     BitrockLogo
   },
   computed: {
+    colorMode() {
+      if(this.$route.path == "/" || this.$route.path == "/home" ) {
+          return 'dark';
+        } else {
+          return 'light';
+        }
+    },
     items () {
       return this.$themeConfig.nav || []
     }
