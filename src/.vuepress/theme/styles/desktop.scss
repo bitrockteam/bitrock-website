@@ -3,22 +3,63 @@
   height: 100vh;
 
   .cover__description {
+    width: 90%;
     position: absolute;
     top: 30%;
     display: flex;
     flex-flow: column nowrap;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .cover__tagline, .cover__claim {
+    padding: 0 .125rem 0 5%;
     text-transform: uppercase;
+    background-color: $constrast01;
+  }
+
+  .cover__text, .cover__button {
+    padding: .5rem .5rem .5rem 5%;
+  }
+
+  .cover__tagline, .cover__text {
+    font-weight: 100;
+  }
+
+  .cover__tagline, .cover__claim, .cover__text {
+    margin-bottom: .25rem;
+  }
+
+  .cover__tagline, .cover__claim, .cover__text, .cover__button {
+    color: $white;
   }
 
   .cover__tagline {
-    color: $basic01;
+    font-size: 1.875rem;
+    letter-spacing: 1px;
   }
+
+  .cover__claim {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .cover__text, .cover__button {
+    font-size: 1rem;
+  }
+
+  .cover__text {
+    margin-top: 0;
+    line-height: 1.5;
+    background-color: $basic02;
+  }
+
+  .cover__button {
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: $basic01;
+  } 
 
   .cover__video {
     display: block;
@@ -67,45 +108,26 @@
     transform: scale(1);
   }
 
-  section.cover {
-    padding-top: 0px;
-    height: 100vh;
-
-    figure {
-      height: 100%;
-      overflow: hidden;
-      background-size: cover;
-
-      figcaption {
-
-        .claim {
-          padding-top: 25vh;
-        }
-
-        h3 {
-          font-size: 50px;
-          line-height: 60px;
-          letter-spacing: 1px;
-        }
-
-        h2 {
-          font-size: 75px;
-          line-height: 90px;
-          letter-spacing: 1px;
-        }
-
-        p {
-          font-size: 20px;
-          line-height: 30px;
-          width: 600px;
-        }
-
-        .btn {
-          width: auto;
-        }
-      }
+  .cover {
+    .cover__tagline, .cover__claim {
+      padding: 0 .125rem 0 10%;
     }
-    
+
+    .cover__text, .cover__button {
+      padding: .5rem .5rem .5rem 10%;
+    }
+
+    .cover__tagline {
+      font-size: 3rem;
+    }
+  
+    .cover__claim {
+      font-size: 2.25em;
+    }
+  
+    .cover__text, .cover__button {
+      font-size: 1.5rem;
+    }
   }
 
   header.main {
@@ -241,7 +263,6 @@
 
   }
 
-
   footer {
     & > .wrapper {
       
@@ -257,7 +278,6 @@
       }
     }
   }
-
 
   article {
 
