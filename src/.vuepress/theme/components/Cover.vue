@@ -7,7 +7,7 @@
         Bitrock is a high-end technology<br/>
         and consulting firm, committed to offering cutting-edge<br/>
         and innovative solutions in DevOps,<br/>
-        Custom Software Engineering and Data&Analytics</p>
+        Custom Software Engineering and Data&amp;Analytics.</p>
       <a class="cover__button" :href="ctaLink">{{ ctaText }}</a>
     </div>
     <video class="cover__video" autoplay muted loop>

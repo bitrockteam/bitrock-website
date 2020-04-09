@@ -39,18 +39,18 @@
 
   .cover__tagline {
     padding: 0 .125rem 0 5%;
-    font-size: 2.25rem;
+    font-size: 1.875rem;
     letter-spacing: 1px;
   }
 
   .cover__claim {
     padding: 0 .125rem 0 10%;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
   }
 
   .cover__text, .cover__button {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .cover__text {
@@ -103,15 +103,15 @@
     }
 
     .cover__tagline {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   
     .cover__claim {
-      font-size: 3em;
+      font-size: 2.25em;
     }
   
     .cover__text, .cover__button {
-      font-size: 1.25rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -136,6 +136,32 @@
   %showLogo {
     height: 37px;
     transform: scale(1);
+  }
+
+  .cover {
+    .cover__tagline {
+      padding: 0 .125rem 0 25%;
+    }
+
+    .cover__claim {
+      padding: 0 .125rem 0 25%;
+    }
+
+    .cover__text, .cover__button {
+      padding: .5rem .5rem .5rem 25%;
+    }
+
+    .cover__tagline {
+      font-size: 4rem;
+    }
+  
+    .cover__claim {
+      font-size: 3em;
+    }
+  
+    .cover__text, .cover__button {
+      font-size: 1.25rem;
+    }
   }
 
   header.main {
