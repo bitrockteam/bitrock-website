@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
 .cover {
   padding-top: 0px;
   height: 100vh;
@@ -5,7 +7,7 @@
   .cover__description {
     width: 90%;
     position: absolute;
-    top: 30%;
+    top: 25%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -14,13 +16,13 @@
   }
 
   .cover__tagline, .cover__claim {
-    padding: 0 .125rem 0 5%;
     text-transform: uppercase;
     background-color: $constrast01;
+    font-family: "Oswald", sans-serif;
   }
 
   .cover__text, .cover__button {
-    padding: .5rem .5rem .5rem 5%;
+    padding: .5rem .5rem .5rem 10%;
   }
 
   .cover__tagline, .cover__text {
@@ -36,17 +38,19 @@
   }
 
   .cover__tagline {
-    font-size: 1.875rem;
+    padding: 0 .125rem 0 5%;
+    font-size: 2.25rem;
     letter-spacing: 1px;
   }
 
   .cover__claim {
-    font-size: 1.5rem;
+    padding: 0 .125rem 0 10%;
+    font-size: 1.875rem;
     letter-spacing: 1px;
   }
 
   .cover__text, .cover__button {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .cover__text {
@@ -85,6 +89,32 @@
     }
   }
 
+  .cover {
+    .cover__tagline {
+      padding: 0 .125rem 0 15%;
+    }
+
+    .cover__claim {
+      padding: 0 .125rem 0 20%;
+    }
+
+    .cover__text, .cover__button {
+      padding: .5rem .5rem .5rem 20%;
+    }
+
+    .cover__tagline {
+      font-size: 4rem;
+    }
+  
+    .cover__claim {
+      font-size: 3em;
+    }
+  
+    .cover__text, .cover__button {
+      font-size: 1.25rem;
+    }
+  }
+
   footer {
     & > .wrapper {
       
@@ -106,28 +136,6 @@
   %showLogo {
     height: 37px;
     transform: scale(1);
-  }
-
-  .cover {
-    .cover__tagline, .cover__claim {
-      padding: 0 .125rem 0 10%;
-    }
-
-    .cover__text, .cover__button {
-      padding: .5rem .5rem .5rem 10%;
-    }
-
-    .cover__tagline {
-      font-size: 3rem;
-    }
-  
-    .cover__claim {
-      font-size: 2.25em;
-    }
-  
-    .cover__text, .cover__button {
-      font-size: 1.5rem;
-    }
   }
 
   header.main {
