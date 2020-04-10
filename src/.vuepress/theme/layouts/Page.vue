@@ -3,10 +3,10 @@
     <Header />
     <main class="content">
       <div class="wrapper">
-        <article class="card">
+        <article class="card" :class="pageClasses">
           <figure></figure>
           <section class="">
-            <div class="body" :class="pageClasses">
+            <div class="body">
               <Content />
             </div>
           </section>

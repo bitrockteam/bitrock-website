@@ -454,30 +454,5 @@
 
 /* about-page-class - Custom css for Page about */
 .about-page-class {
-  .block {
-    h1, h2, h3, h4, h5, h6 {
-      color: $basic02;
-    }
-
-    h2 {
-      font-size: 30px !important;
-    }
   
-    h3 {
-      font-size: 22px !important;
-      font-style: italic;
-    }
-  }
-
-  .blockquote {
-    margin: auto;
-    text-align: center;
-    font-style: italic;
-  }
-  
-  .border-block {
-    border: 1px solid $black;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
 }
