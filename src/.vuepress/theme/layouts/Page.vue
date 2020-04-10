@@ -1,9 +1,9 @@
 <template>
   <div class="cover">
     <Header />
-    <main class="content">
+    <main class="content" :class="pageClasses">
       <div class="wrapper">
-        <article class="card" :class="pageClasses">
+        <article class="card">
           <figure></figure>
           <section class="">
             <div class="body">
