@@ -23,11 +23,18 @@ Customers require more and **more sophisticated services** that can't be deliver
 
 In this context, choosing the right technology strategy is crucial for any business and it's a challenge that can be won only with knowledge, experience and vision.
 
-## OUR MISSION
-### WE BUILD BUSINESS DRIVEN IT SOLUTIONS
-Our ambition is to help Companies design, develop and sustain Business Driven Software Infrastructures and Applications, providing **knowledge, experience and unparalleled skills**.
+<section class="mission">
 
-How do we pursue this challenge?
+## MISSION
+### WE BUILD BUSINESS DRIVEN IT SOLUTIONS
+
+<blockquote>
+
+Bitrock ambition is to help Companies in **designing, developing and sustaining Business Driven Software Infrastructures and Applications,** providing knowledge, experience and unparalleled skills.
+
+</blockquote>
+
+</section>
 
 -   **BUSINESS DRIVEN SOLUTIONS**
 
