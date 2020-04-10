@@ -3,7 +3,9 @@ layout: Page
 pageClass: about-page-class
 ---
 
-<div class="border-block">
+<div class="introduction">
+
+<div class="introduction__text">
 
 Bitrock is a **high-end technology consultancy** firm focused in delivering reliable innovation through the design and development of **Business Driven IT solutions.** 
 
@@ -11,7 +13,7 @@ We provide a wide range of services including **DevOps, Custom Software Engineer
 
 </div>
 
-<div class="block">
+</div>
 
 ## OUR VISION
 ### EMBRACE THE CHANGE
@@ -20,10 +22,6 @@ World is changing fast, with a pace difficult to match and companies must adopt 
 Customers require more and **more sophisticated services** that can't be delivered without **modern, scalable and flexible technologies**, able to boost productivity while reducing the costs and exploit the hidden value of data.
 
 In this context, choosing the right technology strategy is crucial for any business and it's a challenge that can be won only with knowledge, experience and vision.
-
-</div>
-
-<div class="block">
 
 ## OUR MISSION
 ### WE BUILD BUSINESS DRIVEN IT SOLUTIONS
@@ -43,15 +41,7 @@ In delivering a technical solution, we're working with an end-to-end approach: f
 
 We have several years of experience, exceptional skills and knowledge on cutting-edge technologies to help our Customers in selecting the right technology approach
 
-</div>
-
-<div class="blockquote">
-
 > **When technology makes itself invisible, ideas can really stand out**
-
-</div>
-
-<div class="block">
 
 ## OUR SERVICES
 ### HOW WE CAN HELP
@@ -79,14 +69,8 @@ However, we always have a holistic approach when it comes to technologies: we lo
 
 Furthermore, we offer Professional and Certified Training Programs as official **Confluent Training Partner.** In order to discover our list of professional and expert-level courses, visit the [**Academy**](https://bitrock.it/academy/) section.
 
-</div>
-
-<div class="block">
-
 ## TECHNOLOGY DRIVERS
 **Innovation** and **research** are at the very heart of **Bitrock**. These values are clearly expressed through the constant employment of cutting-edge and distinctive solutions, which represent our technological portfolio.
-
-</div>
 
 Our partnerships
 

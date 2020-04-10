@@ -457,4 +457,27 @@
   .card {
     background-color: #EEEEEE; 
   }
+
+  .introduction {
+    background: url("/img/waves.png");
+    background-size: cover;
+
+    .introduction__text {
+      padding: 2em;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-page-class {
+    .introduction {
+      .introduction__text {
+        width: 70%;
+        height: 300px;
+        padding: 2em 0 8em 2em;
+        text-align: left;
+      }
+    }
+  }
 }
