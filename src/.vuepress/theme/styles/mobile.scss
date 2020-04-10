@@ -357,6 +357,7 @@ footer {
   line-height: 30px;
 
   & > .wrapper {
+    padding: 1.5em;
 
     article {
       text-align: center;
@@ -369,9 +370,9 @@ footer {
   
 
   &.credits{
-    background: $darkGrey;
+    background: #AAAAAA;
     font-size: 16px;
-    color: $white;
+    color: $black;
 
     .wrapper {
 
@@ -380,16 +381,9 @@ footer {
       }
     }
 
-    figure {
-      img {
-        display: block;
-        margin: 0 auto 20px;
-        width: 150px;
-      }
-    }
     p{
       margin: 0;
-      text-align: center;
+      text-align: left;
     }
   }
 }
