@@ -357,7 +357,6 @@ footer {
   line-height: 30px;
 
   & > .wrapper {
-    padding: 1.5em;
 
     article {
       text-align: center;
@@ -375,6 +374,7 @@ footer {
     color: $black;
 
     .wrapper {
+      padding: 1.5em;
 
       article {
         display: block;
