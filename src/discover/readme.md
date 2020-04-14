@@ -36,24 +36,13 @@ Bitrock ambition is to help Companies in **designing, developing and sustaining 
 
 </section>
 
--   **BUSINESS DRIVEN SOLUTIONS**
+<section class="offering">
 
-Our approach includes a preliminary phase, where business people will participate in the solution design, helping defining the logic through an understandable description
-
--   **END-TO-END APPROACH**
-
-In delivering a technical solution, we're working with an end-to-end approach: from the Blueprint design, up to the very last pixel of the visual interface
-
--   **TECHNOLOGY STRATEGY**
-
-We have several years of experience, exceptional skills and knowledge on cutting-edge technologies to help our Customers in selecting the right technology approach
-
-> **When technology makes itself invisible, ideas can really stand out**
-
-## OUR SERVICES
-### HOW WE CAN HELP
+## OFFERING
 Bitrock delivers solutions and services in three main areas: **Infrastructural Design & DevOps, Custom software Design & Development, Data & Analytics**.<br/>
-However, we always have a holistic approach when it comes to technologies: we look at any system as a whole, a unique ecosystem of interconnected elements, working together to achieve a business goal.
+However, we always have a holistic approach when it comes to technologies: we look at any system as a whole, a unique ecosystem of **interconnected elements,** working together to achieve a business goal.
+
+<div class="offering__item">
 
 **DEVOPS**
 -   Software Development LifeCycle Automation
@@ -62,11 +51,19 @@ However, we always have a holistic approach when it comes to technologies: we lo
 -   Applications & Infrastructures
 -   Autoscaling Automation
 
+</div>
+
+<div class="offering__item">
+
 **SOFTWARE ENGINEERING**
 -   Architectural Design
 -   Process Analysis & Design (Domain Events)
 -   Legacy code Modernization & Redesign
 -   Modern Approach to Software Development
+
+</div>
+
+<div class="offering__item">
 
 **DATA & ANALYTICS**
 -   Advanced Analytics
@@ -74,7 +71,9 @@ However, we always have a holistic approach when it comes to technologies: we lo
 -   Data Visualization
 -   Streaming ETL
 
-Furthermore, we offer Professional and Certified Training Programs as official **Confluent Training Partner.** In order to discover our list of professional and expert-level courses, visit the [**Academy**](https://bitrock.it/academy/) section.
+</div>
+
+</section>
 
 ## TECHNOLOGY DRIVERS
 **Innovation** and **research** are at the very heart of **Bitrock**. These values are clearly expressed through the constant employment of cutting-edge and distinctive solutions, which represent our technological portfolio.

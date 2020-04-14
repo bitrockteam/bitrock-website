@@ -508,6 +508,21 @@
     }
   
   }
+
+  .offering {
+    padding: 2em;
+
+    .offering__item {
+
+      ul {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      list-style-type: none;
+      text-align: center;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
