@@ -461,6 +461,7 @@
   .introduction {
     background: url("/img/waves.png");
     background-size: cover;
+    margin-bottom: 2em;
 
     .introduction__text {
       padding: 2em;
@@ -473,6 +474,7 @@
     flex-flow: column nowrap;
     align-items: center;
     text-align: center;
+    margin-bottom: 2em;
     img {
       width: 400px;
     }
@@ -481,6 +483,8 @@
   .mission {
     padding: 2em;
     background-color: $white;
+    margin-bottom: 2em;
+    text-align: center;
 
     h2 {
       font-weight: 100;
@@ -493,39 +497,13 @@
     p {
       font-style: italic;
       text-align: center;
-    }
-
-    blockquote {
-      display: flex;
-      p {
-        padding: 2em;
-      }
-    }
-
-    blockquote:before {
-      color: $basic02;
-      content: "❝";
-      font-size: 4em;
-      align-self: flex-start;
-    }
-
-    blockquote:after {
-      color: $basic02;
-      content: "❞";
-      font-size: 4em;
-      text-align: right;
-      align-self: flex-end;
-    }
-  
+    } 
   }
 
   .offering {
     text-align: center;
-
-    .offering__text {
-      padding: 2em;
-    }
-
+    margin-bottom: 2em;
+    
     .offering__list {
       display: flex;
       flex-flow: column nowrap;
@@ -549,9 +527,15 @@
   }
 
   .technology-drivers {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    text-align: center;
+
+    .technology-drivers__images {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2em;
+    }
 
     img {
       width: 200px;
@@ -578,8 +562,16 @@
       justify-content: space-between;
     }
 
+    .mission {
+      text-align: left;
+    }
+
     .offering {
+      padding: 0 2em;
+      text-align: left;
+
       .offering__list {
+        text-align: center;
         flex-flow: row nowrap;
         justify-content: space-between;
       }
@@ -589,14 +581,15 @@
     }
 
     .technology-drivers {
-      display: flex;
-      flex-flow: row wrap;
-      align-items: center;
-      justify-content: space-between;
-  
-      img {
-        width: 150px;
-        padding: 2em;
+      .technology-drivers__images {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    
+        img {
+          width: 150px;
+          padding: 2em;
+        }
       }
     }
   }

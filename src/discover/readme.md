@@ -40,7 +40,7 @@ In this context, choosing the right technology strategy is crucial for any busin
 
 <blockquote>
 
-Bitrock ambition is to help Companies in **designing, developing and sustaining Business Driven Software Infrastructures and Applications,** providing knowledge, experience and unparalleled skills.
+"Bitrock ambition is to help Companies in **designing, developing and sustaining Business Driven Software Infrastructures and Applications,** providing knowledge, experience and unparalleled skills."
 
 </blockquote>
 
@@ -99,14 +99,21 @@ However, we always have a holistic approach when it comes to technologies: we lo
 
 </section>
 
-## TECHNOLOGY DRIVERS
 <div class="technology-drivers">
-    <img src="/img/cloud.png">
-    <img src="/img/lightbend.png">
-    <img src="/img/confluent.png">
-    <img src="/img/radicalbit.png">
-    <img src="/img/kafka.png">
-    <img src="/img/java.png">
-    <img src="/img/scala.png">
-    <img src="/img/flink.png">
+
+## TECHNOLOGY DRIVERS
+
+<div class="technology-drivers__images">
+
+<img src="/img/cloud.png">
+<img src="/img/lightbend.png">
+<img src="/img/confluent.png">
+<img src="/img/radicalbit.png">
+<img src="/img/kafka.png">
+<img src="/img/java.png">
+<img src="/img/scala.png">
+<img src="/img/flink.png">
+
+</div>
+
 </div>
