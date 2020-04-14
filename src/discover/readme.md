@@ -19,8 +19,9 @@ We provide a wide range of services including **DevOps, Custom Software Engineer
 
 <div class="vision__text">
 
-## VISION
-### EMBRACE THE CHANGE
+<h2>Vision</h2>
+<h3>EMBRACE THE CHANGE</h3>
+
 World is changing fast, with a pace difficult to match and companies must adopt **IT solutions able to evolve** in order to keep up with this **ever-changing scenario.**
 
 Customers require more and **more sophisticated services** that can't be delivered without **modern, scalable and flexible technologies**, able to boost productivity while reducing the costs and exploit the hidden value of data.
@@ -35,8 +36,8 @@ In this context, choosing the right technology strategy is crucial for any busin
 
 <section class="mission">
 
-## MISSION
-### WE BUILD BUSINESS DRIVEN IT SOLUTIONS
+<h2>MISSION</h2>
+<h3>WE BUILD BUSINESS DRIVEN IT SOLUTIONS</h3>
 
 <blockquote>
 
@@ -50,7 +51,8 @@ In this context, choosing the right technology strategy is crucial for any busin
 
 <div class="offering__text">
 
-## OFFERING
+<h2>OFFERING</h2>
+
 Bitrock delivers solutions and services in three main areas: **Infrastructural Design & DevOps, Custom software Design & Development, Data & Analytics**.<br/>
 However, we always have a holistic approach when it comes to technologies: we look at any system as a whole, a unique ecosystem of **interconnected elements,** working together to achieve a business goal.
 
@@ -101,7 +103,7 @@ However, we always have a holistic approach when it comes to technologies: we lo
 
 <div class="technology-drivers">
 
-## TECHNOLOGY DRIVERS
+<h2>Technology enablers</h2>
 
 <div class="technology-drivers__images">
 
@@ -117,3 +119,5 @@ However, we always have a holistic approach when it comes to technologies: we lo
 </div>
 
 </div>
+
+
