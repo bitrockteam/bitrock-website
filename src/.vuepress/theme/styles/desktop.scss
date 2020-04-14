@@ -523,6 +523,17 @@
       }
     }
   }
+
+  .technology-drivers {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    img {
+      width: 200px;
+      margin-top: 1.5em;
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -533,6 +544,18 @@
         height: 300px;
         padding: 2em 0 8em 2em;
         text-align: left;
+      }
+    }
+
+    .technology-drivers {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: space-between;
+  
+      img {
+        width: 150px;
+        padding: 1.5em;
       }
     }
   }

@@ -76,8 +76,13 @@ However, we always have a holistic approach when it comes to technologies: we lo
 </section>
 
 ## TECHNOLOGY DRIVERS
-**Innovation** and **research** are at the very heart of **Bitrock**. These values are clearly expressed through the constant employment of cutting-edge and distinctive solutions, which represent our technological portfolio.
-
-Our partnerships
-
-![/img/partners.png](/img/partners.png)
+<div class="technology-drivers">
+    <img src="/img/cloud.png">
+    <img src="/img/lightbend.png">
+    <img src="/img/confluent.png">
+    <img src="/img/radicalbit.png">
+    <img src="/img/kafka.png">
+    <img src="/img/java.png">
+    <img src="/img/scala.png">
+    <img src="/img/flink.png">
+</div>
