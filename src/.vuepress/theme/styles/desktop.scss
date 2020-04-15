@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
 
 .cover {
   padding-top: 0px;
@@ -506,18 +507,17 @@
     margin-bottom: 2em;
     text-align: center;
 
-    h2 {
-      font-weight: 100;
-    }
-
-    h3 {
-      font-weight: 400;
-    }
-
     p {
       font-style: italic;
       text-align: center;
-    } 
+    }
+    
+    blockquote {
+      font-family: "Playfair Display", sans-serif;
+      em {
+        font-weight: 700;
+      }
+    }
   }
 
   .offering {
@@ -589,6 +589,7 @@
     .offering {
       .offering__text {
         padding: 0 2em;
+        margin-bottom: 2em;
       }
 
       .offering__list {

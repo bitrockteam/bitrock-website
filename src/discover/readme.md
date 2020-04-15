@@ -41,7 +41,7 @@ In this context, choosing the right technology strategy is crucial for any busin
 
 <blockquote>
 
-"Bitrock ambition is to help Companies in **designing, developing and sustaining Business Driven Software Infrastructures and Applications,** providing knowledge, experience and unparalleled skills."
+"Bitrock ambition is to help Companies in <em>designing, developing and sustaining Business Driven Software Infrastructures and Applications,</em> providing knowledge, experience and unparalleled skills."
 
 </blockquote>
 
