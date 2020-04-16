@@ -94,8 +94,16 @@ export default {
     },
     open(evt) {
       evt.stopPropagation();
+      this.colorMode = 'light';
       this.$refs.header.classList.toggle('open');
       this.$refs.ham.classList.toggle('is-active');
+      if(this.$refs.header.classList.contains('open'))
+        window.removeEventListener('scroll', this.scrollEffect);
+      else {
+        this.colorMode = 'dark';
+        window.addEventListener('scroll', this.scrollEffect);
+      }
+        
     }
   }
 }
