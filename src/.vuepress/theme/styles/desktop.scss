@@ -79,6 +79,14 @@
     object-fit: cover;
     z-index: -1;
   }
+
+  header.main {
+    nav {
+      li a {
+        color: $white !important;
+      }
+    }
+  }
 }
 
 @media (min-width: 576px) {
@@ -517,7 +525,7 @@
       em {
         font-weight: 700;
       }
-    }
+    }  
   }
 
   .offering {

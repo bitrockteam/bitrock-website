@@ -49,17 +49,15 @@ import BitrockLogo from './BitrockLogo.vue';
 export const $ = selector => document.querySelector(selector);
 
 export default {
+  data() {
+    return {
+      colorMode: '',
+    }
+  },
   components: {
     BitrockLogo
   },
   computed: {
-    colorMode() {
-      if(this.$route.path == "/" || this.$route.path == "/home" ) {
-          return 'dark';
-        } else {
-          return 'light';
-        }
-    },
     items () {
       return this.$themeConfig.nav || []
     }
@@ -72,6 +70,11 @@ export default {
       window.removeEventListener('scroll', this.scrollEffect);
       this.$refs.header.classList.add('active');
     }
+    if(this.$route.path == "/" || this.$route.path == "/home" ) {
+      this.colorMode = 'dark';
+    } else {
+      this.colorMode = 'light';
+    }
   },
   methods: {
     scrollEffect(evt) {
@@ -83,13 +86,14 @@ export default {
       //   header.classList.remove('active');
       if (condition) {
         cover && header ? header.classList.add('active') : null;
+        this.colorMode = 'light';
       } else {
         cover && header ? header.classList.remove('active') : null;
+        this.colorMode = 'dark';
       }
     },
     open(evt) {
       evt.stopPropagation();
-
       this.$refs.header.classList.toggle('open');
       this.$refs.ham.classList.toggle('is-active');
     }
