@@ -33,3 +33,6 @@ fields:
 - type: list
   name: tags
   label: tags
+pages:
+- src/blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent
+  Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.md
