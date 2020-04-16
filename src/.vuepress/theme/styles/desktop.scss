@@ -1,3 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+
+.cover {
+  padding-top: 0px;
+  height: 100vh;
+
+  .cover__description {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cover__tagline, .cover__claim {
+    text-transform: uppercase;
+    background-color: $constrast01;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .cover__text, .cover__button {
+    padding: .5rem .5rem .5rem 10%;
+  }
+
+  .cover__tagline, .cover__text {
+    font-weight: 100;
+  }
+
+  .cover__tagline, .cover__claim, .cover__text {
+    margin-bottom: .25rem;
+  }
+
+  .cover__tagline, .cover__claim, .cover__text, .cover__button {
+    color: $white;
+  }
+
+  .cover__tagline {
+    padding: 0 .125rem 0 5%;
+    font-size: 1.875rem;
+    letter-spacing: 1px;
+  }
+
+  .cover__claim {
+    padding: 0 .125rem 0 10%;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .cover__text, .cover__button {
+    font-size: 1rem;
+  }
+
+  .cover__text {
+    margin-top: 0;
+    line-height: 1.5;
+    background-color: $basic02;
+  }
+
+  .cover__button {
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: $basic01;
+  } 
+
+  .cover__video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  header.main {
+    nav {
+      li a {
+        color: $white;
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {
   main {
     column-count: 2;
@@ -5,6 +96,40 @@
 
     &.content {
       column-count: unset;
+    }
+  }
+
+  .cover {
+    .cover__tagline {
+      padding: 0 .125rem 0 15%;
+    }
+
+    .cover__claim {
+      padding: 0 .125rem 0 20%;
+    }
+
+    .cover__text, .cover__button {
+      padding: .5rem .5rem .5rem 20%;
+    }
+
+    .cover__tagline {
+      font-size: 3rem;
+    }
+  
+    .cover__claim {
+      font-size: 2.25em;
+    }
+  
+    .cover__text, .cover__button {
+      font-size: 1.5rem;
+    }
+  }
+
+  header.main {
+    nav {
+      li a {
+        color: $black;
+      }
     }
   }
 
@@ -31,45 +156,30 @@
     transform: scale(1);
   }
 
-  section.cover {
-    padding-top: 0px;
-    height: 100vh;
-
-    figure {
-      height: 100%;
-      overflow: hidden;
-      background-size: cover;
-
-      figcaption {
-
-        .claim {
-          padding-top: 25vh;
-        }
-
-        h3 {
-          font-size: 50px;
-          line-height: 60px;
-          letter-spacing: 1px;
-        }
-
-        h2 {
-          font-size: 75px;
-          line-height: 90px;
-          letter-spacing: 1px;
-        }
-
-        p {
-          font-size: 20px;
-          line-height: 30px;
-          width: 600px;
-        }
-
-        .btn {
-          width: auto;
-        }
-      }
+  .cover {
+    .cover__tagline {
+      padding: 0 .125rem 0 25%;
     }
-    
+
+    .cover__claim {
+      padding: 0 .125rem 0 25%;
+    }
+
+    .cover__text, .cover__button {
+      padding: .5rem .5rem .5rem 25%;
+    }
+
+    .cover__tagline {
+      font-size: 4rem;
+    }
+  
+    .cover__claim {
+      font-size: 3em;
+    }
+  
+    .cover__text, .cover__button {
+      font-size: 1.25rem;
+    }
   }
 
   header.main {
@@ -103,8 +213,11 @@
           display: inline-block;
           margin-right: 45px;
 
-          a{
+          a {
             font-size: 16px;
+            &:hover {
+              color: $basic01 !important;
+            }
           }
 
           &:last-child {
@@ -205,7 +318,6 @@
 
   }
 
-
   footer {
     & > .wrapper {
       
@@ -221,7 +333,6 @@
       }
     }
   }
-
 
   article {
 
@@ -362,3 +473,162 @@
 
 }
 
+/* about-page-class - Custom css for Page about */
+.about-page-class {
+  h2 {
+    font-weight: 100;
+    font-size: 40px;
+  }
+
+  h3 {
+    margin-top: .5em;
+    font-weight: 400;
+    font-size: 22px !important;
+  }
+
+  h2, h3 {
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .card {
+    background-color: #EEEEEE; 
+  }
+
+  .introduction {
+    background: url("/img/waves.png");
+    background-size: cover;
+    margin-bottom: 2em;
+
+    .introduction__text {
+      padding: 2em;
+      text-align: center;
+    }
+  }
+
+  .vision {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+    img {
+      width: 400px;
+    }
+  }
+
+  .mission {
+    padding: 2em;
+    background-color: $white;
+    margin-bottom: 2em;
+    text-align: center;
+
+    p {
+      font-style: italic;
+      text-align: center;
+    }
+    
+    blockquote {
+      font-family: "Playfair Display", sans-serif;
+      em {
+        font-weight: 700;
+      }
+    }  
+  }
+
+  .offering {
+    text-align: center;
+    margin-bottom: 2em;
+    
+    .offering__list {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    
+    .offering__item {
+      background: rgb(255,255,255);
+      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,240,1) 100%);
+      padding: .5em;
+      margin-bottom: 2em;
+
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        padding-inline-start: 0;
+        list-style-type: none;
+      }
+    }
+  }
+
+  .technology-drivers {
+    text-align: center;
+
+    .technology-drivers__images {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2em;
+    }
+
+    img {
+      width: 200px;
+      margin-top: 1.5em;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-page-class {
+    .introduction {
+      .introduction__text {
+        width: 70%;
+        height: 300px;
+        padding: 2em 0 8em 2em;
+        text-align: left;
+      }
+    }
+
+    .vision {
+      flex-flow: row nowrap;
+      text-align: left;
+      padding: 2em;
+      justify-content: space-between;
+    }
+
+    .mission {
+      text-align: left;
+    }
+
+    .offering {
+      .offering__text {
+        padding: 0 2em;
+        margin-bottom: 2em;
+      }
+
+      .offering__list {
+        text-align: center;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+      .offering__item {
+        width: 30%;
+      }
+    }
+
+    .technology-drivers {
+      .technology-drivers__images {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+    
+        img {
+          width: 150px;
+          padding: 2em;
+        }
+      }
+    }
+  }
+}
