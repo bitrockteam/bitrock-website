@@ -83,7 +83,7 @@
   header.main {
     nav {
       li a {
-        color: $white !important;
+        color: $white;
       }
     }
   }
@@ -122,6 +122,14 @@
   
     .cover__text, .cover__button {
       font-size: 1.5rem;
+    }
+  }
+
+  header.main {
+    nav {
+      li a {
+        color: $black;
+      }
     }
   }
 
