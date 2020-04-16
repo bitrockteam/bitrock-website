@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "493d45c8f8ef559e2b302e9606c5b02b"
+    "revision": "43046e2dc4aa897f6e7920526f439234"
   },
   {
     "url": "assets/css/0.styles.e808ad6d.css",
@@ -176,8 +176,8 @@ self.__precacheManifest = [
     "revision": "f3b0c5fdde52c8bba211046061c294b7"
   },
   {
-    "url": "assets/js/app.b18ee27c.js",
-    "revision": "25c7648cb6eaacd58a2076242e11dcd6"
+    "url": "assets/js/app.1e7964a7.js",
+    "revision": "8bc8990f180dc30970c402c7f361eaaa"
   },
   {
     "url": "BitrockLogo.svg",
@@ -189,59 +189,59 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "b54e19bb70e715d5c78cbb6186d24430"
+    "revision": "ddd3aaf3601af72fedf9073f50d9ef26"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "57ea936951f0ed8ed4bcca50b2489d09"
+    "revision": "ec2cecde97d1d712d020e39f34660b3b"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "53c7e30be5e1e8aeb68b9a07a20806d8"
+    "revision": "68034661e452c7561e4bf22cd8e14a00"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "9ba284cd47522b6119f63e1593c36a71"
+    "revision": "d514d751cf1c787e22be3f60d3dd3bd7"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "135c20bfbece587b51fae05f460d102b"
+    "revision": "a9c2d848b12d2c7326e5da3df38c175d"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "f4530bf6209a0c296bb1317bcc7633ad"
+    "revision": "f1dc69a6a76235883a93f351afb3d990"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "8ea3cc6d398347f6eb05c94e8a6811aa"
+    "revision": "a4f36a033178efaedc044ae0e16c0719"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "c8d93bec841397bb8de2dda1490ae7f0"
+    "revision": "4b603e88a64480f3fa36474c199f405a"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "484c561d851794be1f41570983b6b5b7"
+    "revision": "59af215fbccf1870b7073e2a7dfeace8"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "4f259a1b0a723975c9d56e6ba6617151"
+    "revision": "f6df963a24e7fe63ab15dd9a5ef614a4"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "d7f4574c08358adf57bbadfa5062ea7d"
+    "revision": "1fa40d1674c645e2b2dd686e58b5307b"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "746a7d782819ce9252e341f1b3265f6c"
+    "revision": "29f9b76e9d7ad7fcab9a19cc0ee6b556"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "41688976b4a9d241f00b625922b8b4b9"
+    "revision": "a9ffc9d8ec97500d69464b7b98324e4b"
   },
   {
     "url": "discover/index.html",
-    "revision": "6f02bc08e84358c94663e40fd730cc46"
+    "revision": "e84a1ae9911de7739005636214b80ee3"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -569,7 +569,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "8f2267761428115254b0a684dd40c3ac"
+    "revision": "4ff883ad49c3c1e013bcce5e54547cfe"
   },
   {
     "url": "logo.png",
