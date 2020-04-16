@@ -7,7 +7,7 @@ pageClass: custom-page-class
 
 #### BITROCK - Professional & Certified Training Programs
 
-Development and growth happen where people are encouraged to be curious and learn. We are firmly convinced that learning-oriented culture helps to cultivate leadership and breeds innovation and high-performance. <br><br><br> We are **Lightbend Gold Training Partner** and **Confluent Training Partner**, and we also lead our internal classes of **Front End** and **DevOps**.
+Development and growth happen where people are encouraged to be curious and learn. We are firmly convinced that learning-oriented culture helps to cultivate leadership and breeds innovation and high-performance. <br><br><br> We are official **Confluent Training Partner** and we offer **professional and expert-level training courses** for organizations and individuals, responding to several needs and requirements.
 <br>
 
 
