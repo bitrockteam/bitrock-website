@@ -34,7 +34,7 @@
         <div>
           <h4>Follow us</h4>
           <p>
-            <a href="https://www.linkedin.com/company/databiz-group/" target="_blank" rel="noopener">Linkedin</a><br>
+            <a href="https://www.linkedin.com/company/bitrock-srl/" target="_blank" rel="noopener">Linkedin</a><br>
             <a href="https://twitter.com/DATABIZit" target="_blank" rel="noopener">Twitter</a>
           </p>
         </div>
