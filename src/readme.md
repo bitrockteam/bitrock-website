@@ -5,7 +5,7 @@ claim: it solutions
 tagline: business-driven
 
 ctaText: Discover
-ctaLink: /#main
+ctaLink: discover
 
 wallpaper: ./images/main.jpg
 
