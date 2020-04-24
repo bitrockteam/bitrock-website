@@ -11,6 +11,7 @@ category: EVENTS
 tags: []
 
 ---
+
 Byteconf React is a 100% free conference with **the best React speakers and teachers in the world**.
 
 The first edition was launched by **Bytesized Code** (whose mission is to innovate developer education online) in March of 2018. The conference, which represented a great resource for React developers of all experience levels, was streamed online on Twitch to over 900 people across the world.
