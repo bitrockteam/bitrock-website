@@ -13,10 +13,6 @@ tags: []
 ---
 **Byteconf 2020 - Claudia Bressi, Frontend Developer @Bitrock, among main Speakers**
 
-Byteconf React 2020
-
-Friday, May 1, 2020 – Saturday, May 2, 2020
-
 Byteconf React is a 100% free conference with **the best React speakers and teachers in the world**.
 
 The first edition was launched by **Bytesized Code** (whose mission is to innovate developer education online) in March of 2018. The conference, which represented a great resource for React developers of all experience levels, was streamed online on Twitch to over 900 people across the world.
@@ -32,5 +28,3 @@ The conference will be streamed on YouTube, for free, so anyone and everyone can
 To support Claudia’s intervention and delve into the world of React, get connected on Saturday, 2nd May - 9.25 p.m.!
 
 For more information, please visit: [https://www.bytesized.xyz/](https://www.bytesized.xyz/ "https://www.bytesized.xyz/")
-
-![](/img/Claudia Bressi.png "Claudia Bressi, Frontend Developer@Bitrock")
