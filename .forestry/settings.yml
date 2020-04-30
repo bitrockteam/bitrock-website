@@ -20,11 +20,9 @@ public_path: "/img"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: 
 build:
   preview_output_directory: ".vuepress/dist"
   install_dependencies_command: yarn install
   preview_docker_image: forestryio/build:latest
   mount_path: "/opt/buildhome/repo"
   instant_preview_command: vuepress dev -p 8080 -h 0.0.0.0
-  preview_command: vuepress build -d .vuepress/dist
