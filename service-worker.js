@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "21718ceb7c83f06352fa9640b3193b35"
+    "revision": "244117ca82957d7a6065b78f5a67c2d6"
   },
   {
     "url": "assets/css/0.styles.e808ad6d.css",
@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "revision": "2bd0c0252211b96c6b7933f35c3f90cb"
   },
   {
-    "url": "assets/js/app.d6367637.js",
-    "revision": "0ea35666b4a96ff0ce924cf48f625a15"
+    "url": "assets/js/app.76d12de5.js",
+    "revision": "5569119ef6e3999097f4d9fc4ed2c93b"
   },
   {
     "url": "BitrockLogo.svg",
@@ -197,67 +197,67 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "76767c098bfcee3a6006f498b1535e76"
+    "revision": "283446a60b5586a2b11401e08d9d9987"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "6c00df30b5d6f37ed20f7e996977039c"
+    "revision": "33c3ca6a641d409e19d5a811f60731f8"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "b7533e3b56729b0eb2bcc58fb4639e2c"
+    "revision": "3ecb1f0b84f6efccabc1802063e8a79b"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "376e07aff0e7d7246adc05cfc97d119d"
+    "revision": "ae1e84f3760d397e3da2756807f721ab"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "0f96ba1c790aa0e3a3c320687c30f5a1"
+    "revision": "3fb38c000c09e0db30fd6b28870f969e"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "dbd01471156ed3381703a5f66c322846"
+    "revision": "c076b37f81c5e00b03472d2442c07b09"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "695f31669d51afe1bf63dde8b78faaa3"
+    "revision": "b680de9ffbec23d4ece3e9edd2f184c0"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "290e7676287418da980461e3d640e4bb"
+    "revision": "8f3dc524a17e7b0d41fdc34fb00136e8"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "30e4256b458ec5bf80308517b174c1a1"
+    "revision": "b710295786087ca11ec21454a39ea444"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "a0576f276aea90311ac987d21ab6516c"
+    "revision": "b0a9a30bd1886032d59dd71fbff316d8"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "dfd717005bf34b034c19ba52a6d25088"
+    "revision": "a3598bcfdf9ba0af194f52fda5008623"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "319110dc252adf704370628f46ee0340"
+    "revision": "25bafd2d78a2bf4ac22939e88b73a710"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "c699aff7f8226cbf69cbaaaee4808036"
+    "revision": "ec0a7e1385ecbc867f86a22fb85dc062"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "d1b027016d9d260e438bc85d920f4f15"
+    "revision": "ae5f2d3c73a21dd56e80c1ef5b3aff98"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "bd302a54c08fce5b80be49057c647e61"
+    "revision": "dc28642dcfe4b7644969b8ae788c740c"
   },
   {
     "url": "discover/index.html",
-    "revision": "46d99987ec6b557e7ca6b76fd8d8be63"
+    "revision": "27538c47cbf06b264033909cc917f113"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -298,6 +298,10 @@ self.__precacheManifest = [
   {
     "url": "img/1.png",
     "revision": "139cb1ca1078fc5548600490f0b8f170"
+  },
+  {
+    "url": "img/20.jpg",
+    "revision": "f6929ac090cd6f1ecb13b1e2be1a06f6"
   },
   {
     "url": "img/akka-logo.png",
@@ -597,7 +601,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "ab8f467402e2b966db5ba6b44113727d"
+    "revision": "9d110675fb9f977e6000f4cddfb6d3c3"
   },
   {
     "url": "logo.png",
