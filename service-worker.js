@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "eb17fcedf6b98d6f5bd94a45ef10ae05"
+    "revision": "21718ceb7c83f06352fa9640b3193b35"
   },
   {
     "url": "assets/css/0.styles.e808ad6d.css",
@@ -108,12 +108,12 @@ self.__precacheManifest = [
     "revision": "6c7ab78ea2d9664e527b403e504d2a73"
   },
   {
-    "url": "assets/js/16.359d8e6e.js",
-    "revision": "c71b74c62547a829ca4afcd9cdb7e67b"
+    "url": "assets/js/16.29ef1bcb.js",
+    "revision": "1c46176dae01e416f94db7c0450acda3"
   },
   {
-    "url": "assets/js/17.1c18d3d1.js",
-    "revision": "3388de55981096911025fdab2bd0f2bd"
+    "url": "assets/js/17.7b623acb.js",
+    "revision": "4bcf5e8ae4aeffb247f39c6da37ce804"
   },
   {
     "url": "assets/js/18.6aab4ba6.js",
@@ -184,8 +184,8 @@ self.__precacheManifest = [
     "revision": "2bd0c0252211b96c6b7933f35c3f90cb"
   },
   {
-    "url": "assets/js/app.bf162904.js",
-    "revision": "3c7d07208973c15b58483d81d3a9e43c"
+    "url": "assets/js/app.d6367637.js",
+    "revision": "0ea35666b4a96ff0ce924cf48f625a15"
   },
   {
     "url": "BitrockLogo.svg",
@@ -197,67 +197,67 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "864c74292ec637d624bbdc4436c21e4f"
+    "revision": "76767c098bfcee3a6006f498b1535e76"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "a1d016df7d19f7755343770b1d597661"
+    "revision": "6c00df30b5d6f37ed20f7e996977039c"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "54cee8c6d52f11c5351715ec3f79123e"
+    "revision": "b7533e3b56729b0eb2bcc58fb4639e2c"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "a3c384f5e26da2cf7fde6c79f01800ee"
+    "revision": "376e07aff0e7d7246adc05cfc97d119d"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "77c2a74848c08fd080250722b1c0c752"
+    "revision": "0f96ba1c790aa0e3a3c320687c30f5a1"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "d58df75a60a3a6c1413e5fa77058e080"
+    "revision": "dbd01471156ed3381703a5f66c322846"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "402c20fd4aacadc9288d04a9eab04085"
+    "revision": "695f31669d51afe1bf63dde8b78faaa3"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "c305e29db34ebee395fe61c0f8d875ca"
+    "revision": "290e7676287418da980461e3d640e4bb"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "e5414baac9ec52ffc2bfa55be2cca26a"
+    "revision": "30e4256b458ec5bf80308517b174c1a1"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "74d4cec6369cf0d8d399b3fdd1626148"
+    "revision": "a0576f276aea90311ac987d21ab6516c"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "f870374d3c0141d4fec746e65de92e29"
+    "revision": "dfd717005bf34b034c19ba52a6d25088"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "795fc97cf6eed0d9fa21c612c7d1f46f"
+    "revision": "319110dc252adf704370628f46ee0340"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "aa10ab0dc3e572f408d68dbe64cf57f0"
+    "revision": "c699aff7f8226cbf69cbaaaee4808036"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "b849d7c543947272b0ed2df8e353d688"
+    "revision": "d1b027016d9d260e438bc85d920f4f15"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "240f54ccc8b8ec48cfd5ce944227e1fb"
+    "revision": "bd302a54c08fce5b80be49057c647e61"
   },
   {
     "url": "discover/index.html",
-    "revision": "d5309c154ff0ae0987a57cd84d21d8f1"
+    "revision": "46d99987ec6b557e7ca6b76fd8d8be63"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -394,6 +394,10 @@ self.__precacheManifest = [
   {
     "url": "img/flink.png",
     "revision": "930f2ede7e3e5309362be38d646efc7f"
+  },
+  {
+    "url": "img/Hashicorp Vault CHIP Virtual Bootcamp.png",
+    "revision": "5b0b6ad17f3ce5bde0cdff5f0b1d52ea"
   },
   {
     "url": "img/Interview.jpeg",
@@ -593,7 +597,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "1090a6e2aa99b70436eb7d57f0e02a1c"
+    "revision": "ab8f467402e2b966db5ba6b44113727d"
   },
   {
     "url": "logo.png",
