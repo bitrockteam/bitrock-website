@@ -34,6 +34,7 @@ fields:
   name: tags
   label: tags
 pages:
+- src/blog/Bitrock DevOps Team joining HashiCorp EMEA Vault CHIP Virtual Bootcamp/bitrock-devops-team-joining-hashicorp-emea-vault-chip-virtual-bootcamp.md
 - src/blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.md
 - src/blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.md
 - src/blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent
