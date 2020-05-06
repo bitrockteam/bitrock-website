@@ -19,11 +19,9 @@ Our DevOps Team will be challenged with a series of highly technical tasks to de
 
 This comes after the great success of last week, which saw our DevOps Team members Matteo Gazzetta, Michael Tabolsky, Gianluca Mascolo, Francesco Bartolini and Simone Ripamonti successfully obtaining **HashiCorp Certification as Vault Associate**. A source of pride for the Bitrock community and a remarkable recognition of our DevOps Team expertise and know-how worldwide.
 
-With the Virtual Bootcamp, the Team is now ready to raise the bar and takes on a new challenge, proving that **there’s no limit to self-improvement and continuous learning**.
+With the Virtual Bootcamp, the Team is now ready to raise the bar and takes on a new challenge, proving that there’s no limit to self-improvement and continuous learning.
 
-**HashiCorp**
-
-**EMEA Vault CHIP Virtual Bootcamp**
+**HashiCorp EMEA Vault CHIP Virtual Bootcamp**
 
 **May 5–May 8, 2020**
 
