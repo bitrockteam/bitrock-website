@@ -52,10 +52,9 @@ export default {
       const cols = 3; 
       const posts = this.$site.pages 
         .filter(e => (e.path.search('/blog/') > -1)) 
-        .sort((a,b) => date(b) - date(a));
-        
-      posts.forEach((post, index) => post.order = ((index + 1) % cols === 0) ? cols : (index + 1) % cols);
-      return posts.sort((a, b) => a.order - b.order); 
+        .sort((a,b) => new Date(b.frontmatter.publish) - new Date(a.frontmatter.publish));
+      
+      return posts
     }
   }
 }
