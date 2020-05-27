@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "4540a9c62d670305f8195ee75e65d039"
+    "revision": "976f33c136325f64b8072f59429ffd0c"
   },
   {
     "url": "assets/css/0.styles.e808ad6d.css",
@@ -188,8 +188,8 @@ self.__precacheManifest = [
     "revision": "8e108082c066f5b731da0143333b161a"
   },
   {
-    "url": "assets/js/app.ceaa40f3.js",
-    "revision": "4af8b27cde4279feccc35071fe9e7ede"
+    "url": "assets/js/app.7c859c50.js",
+    "revision": "88f4ff8ef422a99d5a15fae09db25f09"
   },
   {
     "url": "BitrockLogo.svg",
@@ -201,71 +201,71 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "0a66b9fddcf6b03099aadadf8e77c930"
+    "revision": "67fada31a03c272c9b1dafcc8e23134f"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "995f0dac6eb915f07f40368893c2956e"
+    "revision": "629cbe864a37320e7a4438f48b3a271c"
   },
   {
     "url": "blog/Bitrock DevOps Team joining HashiCorp EMEA Vault CHIP Virtual Bootcamp/bitrock-devops-team-joining-hashicorp-emea-vault-chip-virtual-bootcamp.html",
-    "revision": "835902f83beaac9c3d6ad1f3f6297f95"
+    "revision": "100be47633b71fdfe2326e6b0d868525"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "bd8daf65bab8d8e9ca14b1f57013d11d"
+    "revision": "78025eed4be7962a9c959824d9569601"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "bd79f741c055562390e932b16b99facb"
+    "revision": "d130719eac97689f3558d0b853c8a8f5"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "358b2f1ca8925c0a97e756560343b7d8"
+    "revision": "59baeb237a5caaf4ef718d39c7b23d18"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "8a88ddd2243ee4884e037fa6fbb1f3d0"
+    "revision": "c0861081dca3a292df9f8de6c2f6303d"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "176aafeed35684aaad8a2789849d13b3"
+    "revision": "86c7ae4ac4e8b69fb45052d2f41b60cc"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "1f7d35d2624abc9d514f289f9f7a6d47"
+    "revision": "2a4d11bcc04450dd7864253d5bbb52e8"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "4a6a0de3087bf1e55bc6012db886a6b6"
+    "revision": "a2ecea8703d283f3500b924502a91d50"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "73f229d0173ecbb7ab1f12e96aabd6af"
+    "revision": "9664d5d58b7072a1bd6dbed7f1a0b215"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "2aab31caabb51cdb97c0f131ff2e15b2"
+    "revision": "f94f801f5915dd57d7b3ac464e278fad"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "0404ad21ceefd6d1b16bc95f70499edb"
+    "revision": "864259610dfac9744b47150b743ac604"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "7e394c1cf35cfb6ea2cba796333f29f3"
+    "revision": "eea03c325c43a58e06da297f8b317c8a"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "4a462714489099d058596e19034d5416"
+    "revision": "2e20b88a9130f83d43385b5f80f5ce10"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "8c4b746afb38ce4f95550b3221a90d5f"
+    "revision": "6e8cf0eb5d8484f791d2983ded8db9ba"
   },
   {
     "url": "discover/index.html",
-    "revision": "175869fd5621a1778778b0a7b251ce4e"
+    "revision": "459be4c407e13eb89a46c887ab7b0af0"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -414,6 +414,10 @@ self.__precacheManifest = [
   {
     "url": "img/Hashicorp Vault CHIP Virtual Bootcamp.png",
     "revision": "5b0b6ad17f3ce5bde0cdff5f0b1d52ea"
+  },
+  {
+    "url": "img/hashicorp-and-bitrock-sign-strategic-partnership.png",
+    "revision": "06e675e77f23041491ae9c0e4f08c0d1"
   },
   {
     "url": "img/Interview.jpeg",
@@ -613,7 +617,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "09f9a54f34562882bd2b54e5d7c400bd"
+    "revision": "b59297bcb59b0155cdb986121a496d61"
   },
   {
     "url": "logo.png",
