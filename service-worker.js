@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "976f33c136325f64b8072f59429ffd0c"
+    "revision": "4fcd0f0373c327cad82b975f6faccfa9"
   },
   {
     "url": "assets/css/0.styles.e808ad6d.css",
@@ -188,8 +188,8 @@ self.__precacheManifest = [
     "revision": "8e108082c066f5b731da0143333b161a"
   },
   {
-    "url": "assets/js/app.7c859c50.js",
-    "revision": "88f4ff8ef422a99d5a15fae09db25f09"
+    "url": "assets/js/app.ff8c39ec.js",
+    "revision": "e05e7c0addccf1a43e60d8c27294fa54"
   },
   {
     "url": "BitrockLogo.svg",
@@ -201,71 +201,71 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "67fada31a03c272c9b1dafcc8e23134f"
+    "revision": "d90da115ad0d6f9e310d04adcedd75a3"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "629cbe864a37320e7a4438f48b3a271c"
+    "revision": "5676c346059dc7105158e7939841c648"
   },
   {
     "url": "blog/Bitrock DevOps Team joining HashiCorp EMEA Vault CHIP Virtual Bootcamp/bitrock-devops-team-joining-hashicorp-emea-vault-chip-virtual-bootcamp.html",
-    "revision": "100be47633b71fdfe2326e6b0d868525"
+    "revision": "57ab56c20437c5b9501d2012a8b1afad"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "78025eed4be7962a9c959824d9569601"
+    "revision": "e4bb944581dc1352e5d18bb4d1c0d030"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "d130719eac97689f3558d0b853c8a8f5"
+    "revision": "5b853ce07d627bd9566d921dcf252d29"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "59baeb237a5caaf4ef718d39c7b23d18"
+    "revision": "1c664994008bf355feb7cec2d85d7b01"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "c0861081dca3a292df9f8de6c2f6303d"
+    "revision": "20593b6d900d0b538b8a0c85c693e249"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "86c7ae4ac4e8b69fb45052d2f41b60cc"
+    "revision": "11e002a53986d9c55dc1a2bc6eb2f20b"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "2a4d11bcc04450dd7864253d5bbb52e8"
+    "revision": "6b927ea5e26bbe46ef42905c72db32e3"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "a2ecea8703d283f3500b924502a91d50"
+    "revision": "0d6c6265006fe52bd8672022d29e30c0"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "9664d5d58b7072a1bd6dbed7f1a0b215"
+    "revision": "6412eb0bf9e34f2a44089244c5184786"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "f94f801f5915dd57d7b3ac464e278fad"
+    "revision": "515cffbad9b3134ebd0a5f3c6b6b53fb"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "864259610dfac9744b47150b743ac604"
+    "revision": "8487adcade80bfa52efa18d44138fbb9"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "eea03c325c43a58e06da297f8b317c8a"
+    "revision": "15a5466b72847a283a33a0e1f84424af"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "2e20b88a9130f83d43385b5f80f5ce10"
+    "revision": "c60d4053264cf8f2acd240325e5499b8"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "6e8cf0eb5d8484f791d2983ded8db9ba"
+    "revision": "333e3bd0d8f56be1f8e7b4890ee9d87e"
   },
   {
     "url": "discover/index.html",
-    "revision": "459be4c407e13eb89a46c887ab7b0af0"
+    "revision": "8766e749df9a3f8c207114a0a7410db0"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -617,7 +617,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "b59297bcb59b0155cdb986121a496d61"
+    "revision": "fca86a69b0d701fec398a939728f9dc1"
   },
   {
     "url": "logo.png",
