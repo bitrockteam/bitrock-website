@@ -1,5 +1,5 @@
 ---
-title: HashiCorp and Bitrock sign partnership to boost IT infrastructure innovation
+title: HashiCorp and Bitrock sign Partnership to boost IT Infrastructure Innovation
 image: "/img/hashicorp-and-bitrock-sign-strategic-partnership.png"
 imageMeta:
   attribution: ''
