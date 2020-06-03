@@ -8,7 +8,8 @@ imageMeta:
 author: luca
 publish: 2020-04-14T22:00:00.000+00:00
 layout: Post
-category: []
+category:
+- TECHNOLOGY
 tags:
 - application
 - chat
