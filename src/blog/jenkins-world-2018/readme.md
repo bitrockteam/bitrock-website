@@ -7,7 +7,8 @@ imageMeta:
 author: luca
 publish: 2018-10-24
 layout: Post
-category: []
+category:
+- EVENTS
 
 ---
 Jenkins World brings together the DevOps community in two locations, providing opportunities to learn, explore, network and help shape the future of DevOps and Jenkins. <!-- more --> DevOps World | Jenkins World is designed specifically for IT executives, DevOps practitioners, Jenkins users and partners. 
