@@ -7,8 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-07-14
 layout: Post
-category:
-- BITROCK LIFE
+category: BITROCK LIFE
 tags:
 - corporate
 - events

@@ -8,8 +8,7 @@ imageMeta:
 author: luca
 publish: 2018-09-09
 layout: Post
-category:
-- BITROCK LIFE
+category: BITROCK LIFE
 
 ---
 Treviso, September 4, 2018 - BITROCK, supports the Space Lions, five students from Treviso between 17 and 18 years, that last January  won the prestigious NASA Challenge "Zero Robotics" with a computer code for the asteroids coring. <!-- more --> Together with the robotics startup Witted, during the WitLab Summer Academy, alongside the software, the five young talents are developing, with the support of BITROCK, a hardware prototype able to autonomously explore the depths of the seas and lakes.

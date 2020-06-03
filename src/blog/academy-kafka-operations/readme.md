@@ -7,8 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-09-24
 layout: Post
-category:
-- TECHNOLOGY
+category: TECHNOLOGY
 tags:
 - academy
 - kafka
