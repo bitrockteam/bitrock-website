@@ -7,7 +7,8 @@ imageMeta:
 author: luca
 publish: 2018-09-06
 layout: Post
-category: []
+category:
+- EVENTS
 
 ---
 After sponsoring **Scala Days 2018 in Berlin** and **Scala Days 2018 in NewYork**, our commitment to supporting **Scala language goes on**. <!-- more --> Also this year Bitrock will be sponsor at **Scala Italy 2018, the Italian Conference on Scala, taking place in Florence, September 14th-15th**.
