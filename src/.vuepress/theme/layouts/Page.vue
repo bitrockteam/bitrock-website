@@ -1,7 +1,7 @@
 <template>
   <div class="cover">
     <Header />
-    <main class="content">
+    <main class="content" :class="pageClasses">
       <div class="wrapper">
         <article class="card">
           <figure></figure>
@@ -28,6 +28,14 @@ export default {
     Header,
     Footer,
     Credits,
+  },
+  computed: {
+    pageClasses() {
+        const userPageClass = this.$page.frontmatter.pageClass;
+        return [
+            userPageClass
+        ];
+    }
   }
 }
 </script>

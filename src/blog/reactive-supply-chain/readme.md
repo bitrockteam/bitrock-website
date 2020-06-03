@@ -1,19 +1,20 @@
 ---
-title: Reactive Supply Chain - A modern, state of art and scalable managing system for Supply Chain
-image: /img/posts/technology-2.png
+title: Reactive Supply Chain - A modern, state of art and scalable managing system
+  for Supply Chain
+image: "/img/Reactive Supply Chain.jpg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-07-12
 layout: Post
-category: solutions
+category: TECHNOLOGY
 tags:
-  - application
-  - microservices
-  - reactive
----
+- application
+- microservices
+- reactive
 
+---
 Bitrock’s **Reactive Supply Chain** is a modern, state of the art, overall scalable and **performing system** to implement a **full-cycle Supply Chain Management System**. <!-- more --> sThe solution is **totally modular**, so to be implemented as a one-stop-shop for a new project or it can be composed and integrated to existing systems using only the needed components. From functional perspective the system has been designed to implement **best practices** and to provide the maximum **flexibility** for all industry standards, but at the same time **adapting** to each customer **specific process and workflow**. The solution is based on **OpenSource technologies** covered by **Enterprise Support**, and can be scaled to manage millions of SKUs, with all data tracked and analyzed in real time. The delivery of the solution can be provided on Customer **Premises** or on **Cloud** or in **Hybrid** ways.
 
 For **internal Supply Chain Operators/Customers** who:

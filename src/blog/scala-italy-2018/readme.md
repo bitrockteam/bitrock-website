@@ -1,15 +1,15 @@
 ---
 title: Scala Italy 2018 - Bitrock is silver sponsor. We support "Scala Language" worldwide
-image: /img/posts/corporate-5.png
+image: "/img/Evento 4.png"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-09-06
 layout: Post
-category: events
----
+category: EVENTS
 
+---
 After sponsoring **Scala Days 2018 in Berlin** and **Scala Days 2018 in NewYork**, our commitment to supporting **Scala language goes on**. <!-- more --> Also this year Bitrock will be sponsor at **Scala Italy 2018, the Italian Conference on Scala, taking place in Florence, September 14th-15th**.
 
 ![./scala-italy.jpg](./scala-italy.jpg)

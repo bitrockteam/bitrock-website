@@ -2,11 +2,7 @@
   <footer class="credits">
     <div class="wrapper">
       <article>
-        <figure>
-          <img src="/BitrockLogo.white.svg" alt="Bitrock">
-        </figure>
-      
-        <p>Copyright <span class="year">{{ year }}</span> 
+        <p><b>Bitrock</b> &copy;Copyright <span class="year">{{ year }}</span> 
           {{ text }}</p>
       </article>
     </div>

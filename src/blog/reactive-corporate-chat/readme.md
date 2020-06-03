@@ -1,19 +1,20 @@
 ---
-title: Reactive Corporate Chat - The perfect combination between your daily workflow and data property.
-image: /img/posts/technology.png
+title: Reactive Corporate Chat - The perfect combination between your daily workflow
+  and data property.
+image: "/img/Corporate Chat.jpg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
-publish: 2018-07-11
+publish: 2020-04-14T22:00:00.000+00:00
 layout: Post
-category: solutions
+category: TECHNOLOGY
 tags:
-  - application
-  - chat
-  - reactive
----
+- application
+- chat
+- reactive
 
+---
 **Bitrock Reactive Corporate Chat** is **designed** to provide a fully customizable and adaptable **multifunctional chat solution** that allows enterprises to maintain **full property** and **control** of their **own data**.
 
 <!-- more -->
