@@ -7,7 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-09-10
 layout: Post
-category: academy
+category: []
 tags:
 - academy
 - kafka
