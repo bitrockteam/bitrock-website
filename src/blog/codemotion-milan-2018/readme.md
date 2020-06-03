@@ -7,8 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-09-05
 layout: Post
-category:
-- EVENTS
+category: EVENTS
 
 ---
 **Codemotion** is a **platform** devoted to developers that connect IT professionals, tech communities, and IT companies. As we're a **hub of innovation**, we share the latest tech information and best practices among the tech community worldwide. <!-- more --> We organize:
