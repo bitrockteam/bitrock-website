@@ -5,9 +5,9 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-05-06 08:20:00 +0000
+publish: 2020-05-06T08:20:00.000+00:00
 layout: Post
-category: NEWS
+category: TECHNOLOGY
 tags: []
 
 ---
