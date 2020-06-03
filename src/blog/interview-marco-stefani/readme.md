@@ -7,7 +7,8 @@ imageMeta:
 author: luca
 publish: 2018-09-01
 layout: Post
-category: []
+category:
+- TECHNOLOGY
 tags: 
 
 ---
