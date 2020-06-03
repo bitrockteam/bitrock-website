@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "59c25f9682ff70231c9be530a7b238e5"
+    "revision": "24ce34cae8f7489b592c614a8ca82dae"
   },
   {
     "url": "assets/css/0.styles.24522d57.css",
@@ -192,8 +192,8 @@ self.__precacheManifest = [
     "revision": "2f079699dc6db99bd299edbd82c7c975"
   },
   {
-    "url": "assets/js/app.54e0e177.js",
-    "revision": "708d76ee81c3833d8d30b58aefbc72ab"
+    "url": "assets/js/app.a33f2180.js",
+    "revision": "eeb189b16b980805039d70c7e9b1d002"
   },
   {
     "url": "BitrockLogo.svg",
@@ -205,75 +205,75 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "cbae84fec8b84bc6f376fda3c124160c"
+    "revision": "c8b51be1e91a50fd93926913c19df2b1"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "8848e3e7fe19373e2d523fcae7f33263"
+    "revision": "6baa6b9aba824a62d0925d5fe99dfe62"
   },
   {
     "url": "blog/Bitrock DevOps Team joining HashiCorp EMEA Vault CHIP Virtual Bootcamp/bitrock-devops-team-joining-hashicorp-emea-vault-chip-virtual-bootcamp.html",
-    "revision": "bbb619c8b327134c840526d25070c0de"
+    "revision": "06382dc50a712f70a30d3c15cfc53210"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "2f120a2329a29fa914358cbe86d4a216"
+    "revision": "aace5479a70bb9bd40b163ea8dc6c449"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "59f1f2d1bf6e90d70e1481816b34b82e"
+    "revision": "2674a7ef9aa910f47fd8c92d2071ce53"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "9846441ace72a0628a0f8f7479bb1327"
+    "revision": "24398d4f2f4f2c3bf93c4b3af1365191"
   },
   {
     "url": "blog/HashiCorp and Bitrock sign partnership to boost IT infrastructure innovation/hashicorp-and-bitrock-sign-partnership-to-boost-it-infrastructure-innovation.html",
-    "revision": "1c78afa8218ff686472ed66b78695c30"
+    "revision": "55a94ec14d17e9a0041e9fca144659d0"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "809d4dd8c14b50e37d1e5777fd75f011"
+    "revision": "64dc5a4c3fd9934cbdb7a79fb033b18a"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "c69e289736ad0e835008820b3a83239f"
+    "revision": "d11953745e67bf6dc2ff73da5b3d58c5"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "218771887fad11a6915cc52a377a9cdd"
+    "revision": "076cfebfafa2a2b0b8db2d9b00f784bc"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "7f49dfcdebcb2551c2f7aa4ecebd8df9"
+    "revision": "da0581d9c56089c0f726e67d3a1619e6"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "934663f0379b58a8cc46386637675b77"
+    "revision": "162e35723b87adac46210df0901c8dea"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "7195a43bf367b978f7ac90be9e694254"
+    "revision": "c5b1d1b91f96ddede224c9e7a3dd143e"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "d57a61c2fd3d16d1a33e35fd1b9dfddc"
+    "revision": "58a96eed433684c8698266cb9788c78f"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "4378ae90a14f2f81178323906b2f028d"
+    "revision": "fa0f99f1cd1d3e4c364f2a36d2b67759"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "5e5073ac5a360c0ba345f06e097b2d9e"
+    "revision": "4ced990d53da3a0869263d78968c5f94"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "37416d6e710020bd722c21717df8a497"
+    "revision": "813753e920954b1e60d9603356c063bc"
   },
   {
     "url": "discover/index.html",
-    "revision": "4a3cd0a02578970a87ec6c9bb8c136ef"
+    "revision": "db6ae4f1821dbf8dc7d1cc8ccfa9af92"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -625,7 +625,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "9155353cdd5bfdb746e78da5fb4ae005"
+    "revision": "a3f0672a03bd98b44770892d0fa269b2"
   },
   {
     "url": "logo.png",
