@@ -41,3 +41,4 @@ pages:
 - src/blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent
   Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.md
 - src/blog/bitrock-virtual_office-journal.md
+- src/blog/react-bandersnatch-experiment-getting-close-to-a-real-framework.md
