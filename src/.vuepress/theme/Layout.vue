@@ -42,15 +42,17 @@ export default {
     Footer,
     Credits
   },
+  methods: {
+    toDate(date) {
+      return new Date(date.replace(' +0000', '').replace(/-/g, '/'))
+    }
+  },
   computed: {
     posts() {
       const cols = 3;
       const posts = this.$site.pages
         .filter(e => e.path.search("/blog/") > -1)
-        .sort(
-          (a, b) =>
-            new Date(b.frontmatter.publish) - new Date(a.frontmatter.publish)
-        );
+        .sort((a, b) => this.toDate(b.frontmatter.publish) - this.toDate(a.frontmatter.publish))
 
       return posts;
     }

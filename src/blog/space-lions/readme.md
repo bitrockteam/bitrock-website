@@ -6,7 +6,7 @@ imageMeta:
   attribution: 
   attributionLink: 
 author: luca
-publish: 2018-09-09
+publish: 2018-09-09 00:00:00 +0000
 layout: Post
 category: BITROCK LIFE
 

@@ -5,7 +5,7 @@ imageMeta:
   attribution: 
   attributionLink: 
 author: luca
-publish: 2018-09-01
+publish: 2018-09-01 00:00:00 +0000
 layout: Post
 category: TECHNOLOGY
 tags: 

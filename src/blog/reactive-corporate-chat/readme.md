@@ -6,7 +6,7 @@ imageMeta:
   attribution: 
   attributionLink: 
 author: luca
-publish: 2020-04-14T22:00:00.000+00:00
+publish: 2020-04-14 22:00:00 +0000
 layout: Post
 category: TECHNOLOGY
 tags:

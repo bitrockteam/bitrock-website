@@ -5,7 +5,7 @@ imageMeta:
   attribution: 
   attributionLink: 
 author: luca
-publish: 2018-10-25
+publish: 2018-10-25 00:00:00 +0000
 layout: Post
 category: EVENTS
 
