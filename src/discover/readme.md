@@ -51,10 +51,9 @@ In this context, choosing the right technology strategy is crucial for any busin
 
 <div class="offering__text">
 
-<h2>OFFERING</h2>
+<h2>OUR OFFERING</h2>
 
-Bitrock delivers solutions and services in three main areas: **Infrastructural Design & DevOps, Custom software Design & Development, Data & Analytics**.<br/>
-However, we always have a holistic approach when it comes to technologies: we look at any system as a whole, a unique ecosystem of **interconnected elements,** working together to achieve a business goal.
+Bitrock delivers solutions and services in three main areas: **Infrastructural Design & DevOps, Custom software Design & Development, Data & Analytics**.
 
 </div>
 
@@ -69,7 +68,7 @@ However, we always have a holistic approach when it comes to technologies: we lo
     <li>Application Logging & Monitoring at scale</li>
     <li>Applications & Infrastructures</li>
     <li>Autoscaling Automation</li>
-</ul> 
+</ul>
 
 </div>
 
@@ -81,7 +80,7 @@ However, we always have a holistic approach when it comes to technologies: we lo
     <li>Process Analysis & Design (Domain Events)</li>
     <li>Legacy code Modernization & Redesign</li>
     <li>Modern Approach to Software Development</li>
-</ul> 
+</ul>
 
 </div>
 
@@ -93,7 +92,19 @@ However, we always have a holistic approach when it comes to technologies: we lo
     <li>Streaming Analytics</li>
     <li>Data Visualization</li>
     <li>Streaming ETL</li>
-</ul> 
+</ul>
+
+</div>
+
+</div>
+
+<div class="offering__list">
+
+<div class="offering__item">
+
+**Enterprise-grade UX/UI Design Development**
+
+Thanks to our expertise, we know how to apply the latest technologies and frameworks (Angular, Vue and React) to the front-end development process. Our custom, user-centered interfaces are able to adapt to the complex systems enterprises require today, by delivering a smarter and smoother digital experience to users.
 
 </div>
 
