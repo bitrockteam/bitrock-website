@@ -32,6 +32,15 @@
           </p>
         </div>
         <div>
+          <h4>Lugano</h4>
+          <p>
+            BITROCK SAGL,<br>
+            Via Giacometti 1<br> 
+            6900 Lugano <br>
+            <a href="mailto:info@bitrock.it">info@bitrock.it</a>
+          </p>
+        </div>
+        <div>
           <h4>Follow us</h4>
           <p>
             <a href="https://www.linkedin.com/company/bitrock-srl/" target="_blank" rel="noopener">Linkedin</a><br>

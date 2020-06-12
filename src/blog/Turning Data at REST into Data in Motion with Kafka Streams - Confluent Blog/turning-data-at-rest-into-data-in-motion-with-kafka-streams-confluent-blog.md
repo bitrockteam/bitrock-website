@@ -7,7 +7,7 @@ imageMeta:
 author: MC
 publish: 2020-04-16 15:10:00 +0000
 layout: Post
-category: NEWS
+category: TECHNOLOGY
 tags: []
 
 ---

@@ -8,7 +8,7 @@ imageMeta:
 author: luca
 publish: 2018-07-12
 layout: Post
-category: solutions
+category: TECHNOLOGY
 tags:
 - application
 - microservices

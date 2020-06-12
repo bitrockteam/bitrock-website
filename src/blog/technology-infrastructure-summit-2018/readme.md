@@ -5,9 +5,9 @@ imageMeta:
   attribution: 
   attributionLink: 
 author: luca
-publish: 2018-09-04
+publish: 2018-09-03 22:00:00 +0000
 layout: Post
-category: events
+category: EVENTS
 
 ---
 Addressing the issue of digital transformation often means to focus on the application areas and the business impacts of technologies and digital solutions: performance management, customer experience, the evolution of enterprise  business models are just some of the recurring themes under the broader hat of digital transformation. <!-- more -->
