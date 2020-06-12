@@ -5,9 +5,9 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-04-16 15:15:00 +0000
+publish: 2020-04-16T15:15:00.000+00:00
 layout: Post
-category: CORPORATE
+category: BITROCK LIFE
 tags: []
 
 ---

@@ -323,7 +323,7 @@
       
       article {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         grid-column-gap: 60px;
         text-align: left;
 
@@ -365,7 +365,7 @@
     & > .wrapper {
       
       article {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
       }
     }
   }

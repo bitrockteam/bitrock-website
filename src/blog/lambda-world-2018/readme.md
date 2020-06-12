@@ -7,7 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-10-25
 layout: Post
-category: events
+category: EVENTS
 
 ---
 Lambda World is the largest **Functional programming event** in the country, carefully crafted for you by 47 Degrees and the Scala and Java communities of Spain. <!-- more --> The event takes place in Cádiz, one of the most beautiful cities in Spain, and includes Workshops, hands-on experience, hacking, and debugging.

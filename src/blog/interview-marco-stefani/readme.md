@@ -7,7 +7,7 @@ imageMeta:
 author: luca
 publish: 2018-09-01
 layout: Post
-category: interviews
+category: TECHNOLOGY
 tags: 
 
 ---
