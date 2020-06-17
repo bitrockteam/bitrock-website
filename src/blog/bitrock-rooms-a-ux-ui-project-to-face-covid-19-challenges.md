@@ -90,14 +90,14 @@ Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to f
 
  
 
-_Bitrock Room's daily view interface:_
+_Bitrock Rooms' daily view interface:_
 
 ![](/img/5.png)
 
- _Bitrock Room's weekly view interface:_
+ _Bitrock Rooms' weekly view interface:_
 
 ![](/img/5.png)
 
-_Bitrock Room's mobile view interface:_
+_Bitrock Rooms' mobile view interface:_
 
 ![](/img/6.png)
