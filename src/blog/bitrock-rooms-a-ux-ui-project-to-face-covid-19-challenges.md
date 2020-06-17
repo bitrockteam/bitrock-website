@@ -66,6 +66,10 @@ Here’s the schema that we used:
 
 ![](/img/1-2.png)
 
+![](/img/2.png)
+
+![](/img/3.png)
+
 We then started creating components and services by using the tools that Angular had, for instance using cli commands.
 
 Our choice not to use a state management like NgRx was dictated by the fact that this was a rather simple project with a limited number of components.
