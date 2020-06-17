@@ -87,15 +87,3 @@ The last part of the project covered the styling aspects: we decided to use Ambe
 This project represents the perfect playground for those situations that envisage a sudden problem that needs to be solved in a very short amount of time. During its different steps we had the possibility to **reinforce our team-work spirit, as well as develop a proactive attitude**. Everything was indeed designed, delivered and implemented very well thanks to the effort of the team as a whole, and not just because of individuals.
 
 Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to face Covid-19 challenges, helping creating a safe working environment and delivering a smart and smooth experience to users.
-
-![](https://lh6.googleusercontent.com/oFbP-ZsLSV8gtYvVCPWBX_stkFlEji-blPZrHyj1rKQxmROG14SdTzGodptjsrh-vTzSdfXdcsVLomKqJasI7qGMS5sxFP9Ynz2B3J0uQu8vuuHzPQGQFoJVgyQDgrfYLSZ5kQ =602x327)
-
-_Bitrock Rooms’ daily view interface_
-
-![](https://lh6.googleusercontent.com/tcI9mOcLbH0FOjic5e8HL2_JWuSzUwbQw13I5CydxbCyo3Jo2J-FK7kbW4rx1MFoxMMZAtXQItYkY7AsJRsbPLuIENrUqG6Bccs40X5aARRwEW6jjuHzK8USJ21GJlAh3Lv3Eg =602x327)
-
-_Bitrock Rooms’ weekly view interface_
-
-_![](https://lh5.googleusercontent.com/lOPbz9IaeEozDLKzOsxyHrdeGHNK_uniqO1ODiFiDiglrxEAuFYIakvaGEtMl4ozBYJV-84iHBLYwo86BW06UxNHBSVKj9kOjLhdl7zoiIHoIEDd5upVb5kVcYvDii7cyUWaUg =272x498)_
-
-_Bitrock Rooms’ mobile view interface_
