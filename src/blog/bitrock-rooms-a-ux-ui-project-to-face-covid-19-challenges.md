@@ -88,6 +88,8 @@ This project represents the perfect playground for those situations that envisag
 
 Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to face Covid-19 challenges, helping creating a safe working environment and delivering a smart and smooth experience to users.
 
+</br>
+
 _Bitrock Rooms' daily view interface:_
 
 ![](/img/4.png)
@@ -95,6 +97,8 @@ _Bitrock Rooms' daily view interface:_
 _Bitrock Rooms' weekly view interface:_
 
 ![](/img/5.png)
+
+</br>
 
 _Bitrock Rooms' mobile view interface:_
 
