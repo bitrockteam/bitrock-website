@@ -92,7 +92,7 @@ Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to f
 
 _Bitrock Rooms' daily view interface:_
 
-![](/img/5.png)
+![](/img/4.png)
 
  _Bitrock Rooms' weekly view interface:_
 
