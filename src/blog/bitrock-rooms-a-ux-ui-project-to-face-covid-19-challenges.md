@@ -11,7 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-### Our solution to guarantee a safe working environment
+#### Our solution to guarantee a safe working environment
 
 One of the most recent challenges that we as UX/UI Team have faced in Bitrock is the creation of a brand-new Web App to solve a contingent issue inside the company.
 
@@ -52,9 +52,7 @@ To sum up, here’s the list of the libraries we chosen:
 
 Our philosophy was to have **the right balance between best practices and productivity, while respecting the limited available time**.
 
-The first point to tackle was the data schema to represent the booking of the desks:
-
-we thus created a flat structure, where the main keys were :
+The first point to tackle was the data schema to represent the booking of the desks. We thus created a flat structure, where the main keys were :
 
 * date
 * room
