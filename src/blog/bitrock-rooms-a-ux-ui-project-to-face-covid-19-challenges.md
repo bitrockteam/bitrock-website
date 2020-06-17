@@ -17,8 +17,6 @@ One of the most recent challenges that we as UX/UI Team have faced in Bitrock is
 
 The communication was sudden and with few details about the project: what we had was **a problem to solve, and a strict, dynamic deadline**.
 
- 
-
 **The challenge**
 
 Our mission consisted in delivering an App whose main goal was to manage the booking of the desks available in our Milan HQ office. The social distancing measures caused by Covid-19 pandemic, indeed, had forced Bitrock Team to reduce the capacity of the rooms. Our task was thus to provide **a booking platform that could allow our colleagues to book their desks in advance**, even from home: in this way it would be possible to ensure that employees keep sufficient space from each other and **to** **provide a safe working place**.
@@ -28,8 +26,6 @@ The rules we had to follow when designing the App were simple: every room would 
 On the UX/UI side, we had two kind of views in mind: a daily view, and a weekly one (a feature asked us to ease the booking for several days).
 
 The functional analysis was ready, the deadline was clear. We thus started to work.
-
- 
 
 **The project**
 
@@ -80,21 +76,17 @@ Even the real-time update of the data from Firestore was great: it was so easy t
 
 The last part of the project covered the styling aspects: we decided to use Amber (Bitrock design system) as reference, in order to create a web app with the company “look and feel”.
 
- 
-
 **Conclusions**
 
 This project represents the perfect playground for those situations that envisage a sudden problem that needs to be solved in a very short amount of time. During its different steps we had the possibility to **reinforce our team-work spirit, as well as develop a proactive attitude**. Everything was indeed designed, delivered and implemented very well thanks to the effort of the team as a whole, and not just because of individuals.
 
 Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to face Covid-19 challenges, helping creating a safe working environment and delivering a smart and smooth experience to users.
 
- 
-
 _Bitrock Rooms' daily view interface:_
 
 ![](/img/4.png)
 
- _Bitrock Rooms' weekly view interface:_
+_Bitrock Rooms' weekly view interface:_
 
 ![](/img/5.png)
 
