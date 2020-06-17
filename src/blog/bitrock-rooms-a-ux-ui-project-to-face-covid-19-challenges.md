@@ -87,3 +87,7 @@ The last part of the project covered the styling aspects: we decided to use Ambe
 This project represents the perfect playground for those situations that envisage a sudden problem that needs to be solved in a very short amount of time. During its different steps we had the possibility to **reinforce our team-work spirit, as well as develop a proactive attitude**. Everything was indeed designed, delivered and implemented very well thanks to the effort of the team as a whole, and not just because of individuals.
 
 Bitrock Rooms is now used every day by Bitrock Team as one of the solutions to face Covid-19 challenges, helping creating a safe working environment and delivering a smart and smooth experience to users.
+
+![](/img/4.png)
+
+Bitrock Room daily view interface
