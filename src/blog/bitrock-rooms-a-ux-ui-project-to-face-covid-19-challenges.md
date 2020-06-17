@@ -58,7 +58,9 @@ The first point to tackle was the data schema to represent the booking of the de
 * room
 * user
 
-Here’s the schema that we used:![](https://lh5.googleusercontent.com/-j-GXc8h1gW6ZdQs_thflybdbm6otKyx6XG902lPF1G7_SsQK2ZLD5CsX4odQPdJb15v0Y4sFc9NvNGrIs7JJU6TYs9afrhm9EiLGiJ3MJxbr5gf9wIbD2pz3KMpnomSclvcfg =413x258)![](https://lh4.googleusercontent.com/HUPQdpJH-A2vnkscw9hQ4PT_ebb0MeYL6OlV9YyFDyur0Nx4pfWXcyeUjG2vCObJO8XsrFKHxjj0lbDqc7EkQx23re3tmTSq9URcmPMyHuogVYPU4cv7CQppGu7PGODda5IWLg =412x238)![](https://lh4.googleusercontent.com/rITDQwQQa6t8Xdf-8PoyNl3HXDJbxZFtNjzA3c_auAg1xr8D1b3LzBocyyQp7avvb8QDROnl2MOPmmp7b7aOOM8YT4z-l2nKigf4nExpc2NcM-CwpRTj5VJvA31I7L4YL0dm_g =412x257)
+Here’s the schema that we used:
+
+![](/img/1-2.png)
 
 We then started creating components and services by using the tools that Angular had, for instance using cli commands.
 
