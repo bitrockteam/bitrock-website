@@ -28,6 +28,7 @@ On the UX/UI side, we had two kind of views in mind: a daily view, and a weekly 
 
 The functional analysis was ready, the deadline was clear. We thus started to work.
 
+
 **The project**
 
 At first we created wireframes: they were simple and useful to us in order to have a better understanding of the project.
@@ -76,6 +77,7 @@ The tasks related to the daily view were carried out fast and smoothly: everythi
 Even the real-time update of the data from Firestore was great: it was so easy to implement...like magic! The implementation of the weekly view was a bit more challenging, but we managed to carry it out using our components.
 
 The last part of the project covered the styling aspects: we decided to use Amber (Bitrock design system) as reference, in order to create a web app with the company “look and feel”.
+
 
 **Conclusions**
 
