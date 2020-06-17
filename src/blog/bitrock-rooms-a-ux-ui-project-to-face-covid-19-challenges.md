@@ -17,6 +17,7 @@ One of the most recent challenges that we as UX/UI Team have faced in Bitrock is
 
 The communication was sudden and with few details about the project: what we had was **a problem to solve, and a strict, dynamic deadline**.
 
+
 **The challenge**
 
 Our mission consisted in delivering an App whose main goal was to manage the booking of the desks available in our Milan HQ office. The social distancing measures caused by Covid-19 pandemic, indeed, had forced Bitrock Team to reduce the capacity of the rooms. Our task was thus to provide **a booking platform that could allow our colleagues to book their desks in advance**, even from home: in this way it would be possible to ensure that employees keep sufficient space from each other and **to** **provide a safe working place**.
