@@ -89,16 +89,7 @@
   }
 }
 
-@media (min-width: 576px) {
-  main {
-    column-count: 2;
-    column-gap: 30px;
-
-    &.content {
-      column-count: unset;
-    }
-  }
-
+@media (min-width: 576px) { 
   .cover {
     .cover__tagline {
       padding: 0 .125rem 0 15%;
@@ -243,8 +234,6 @@
   }
 
   main {
-    column-count: 2;
-    column-gap: 30px;
 
     .block{
       margin-top: 0;
@@ -355,10 +344,6 @@
     width: 1140px;
     margin: 0 auto;
     padding: 60px 0;
-  }
-
-  main {
-    column-count: 3;
   }
 
   footer {
@@ -498,7 +483,6 @@
   .introduction {
     background: url("/img/waves.png");
     background-size: cover;
-    margin-bottom: 2em;
 
     .introduction__text {
       padding: 2em;
