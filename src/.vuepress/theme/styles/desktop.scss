@@ -65,7 +65,7 @@
     font-style: italic;
     text-transform: uppercase;
     background-color: $basic01;
-  } 
+  }
 
   .cover__video {
     display: block;
@@ -106,11 +106,11 @@
     .cover__tagline {
       font-size: 3rem;
     }
-  
+
     .cover__claim {
       font-size: 2.25em;
     }
-  
+
     .cover__text, .cover__button {
       font-size: 1.5rem;
     }
@@ -126,7 +126,7 @@
 
   footer {
     & > .wrapper {
-      
+
       article {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -163,11 +163,11 @@
     .cover__tagline {
       font-size: 4rem;
     }
-  
+
     .cover__claim {
       font-size: 3em;
     }
-  
+
     .cover__text, .cover__button {
       font-size: 1.25rem;
     }
@@ -289,11 +289,11 @@
     }
 
     &.content {
-      
+
       &.interviews, &.reviews, &.careers {
 
         .wp-block-columns {
-          
+
           &.has-2-columns {
             grid-template-columns: 2fr 1fr;
           }
@@ -309,7 +309,7 @@
 
   footer {
     & > .wrapper {
-      
+
       article {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -348,7 +348,7 @@
 
   footer {
     & > .wrapper {
-      
+
       article {
         grid-template-columns: repeat(5, 1fr);
       }
@@ -360,7 +360,7 @@
 
 .custom-page-class {
 
-  .section-one-column{ 
+  .section-one-column{
       img {
         display: block;
         max-width: 300px;
@@ -376,21 +376,21 @@
   }
 
   .section-details-column {
-    border-bottom:1px solid #ebebeb; 
+    border-bottom:1px solid #ebebeb;
     margin-bottom:16px;
     p {
       //border: 1px solid red;
       margin: 0;
-      padding-bottom: 16px; 
+      padding-bottom: 16px;
     }
-     
+
     p:first-of-type {
       //border:1px solid green;
       max-width:20%;
       width:100%;
       padding-right: 32px;
     }
-    
+
   }
 }
 
@@ -398,11 +398,11 @@
   .custom-page-class {
 
     #academy {
-      padding-bottom: 8px; 
+      padding-bottom: 8px;
     }
 
     .section-one-column {
-      padding-top: 32px; 
+      padding-top: 32px;
 
       img {
         max-width:300px;
@@ -413,14 +413,14 @@
 
     .section-two-column {
       display: flex;
-      padding-top:32px; 
+      padding-top:32px;
       p {
         max-width: 50%;
         width:100%;
         padding: 0 32px 32px 0;
       }
     }
-    
+
     .section-calendar-column {
       display: flex;
       p {
@@ -434,22 +434,22 @@
     }
     .section-details-column {
       display: flex;
-      padding-top:32px; 
-      border-bottom:1px solid #ebebeb; 
+      padding-top:32px;
+      border-bottom:1px solid #ebebeb;
       margin-bottom:16px;
 
       p {
         margin: 0;
-        padding-bottom: 16px; 
+        padding-bottom: 16px;
       }
-       
+
       p:first-of-type {
         max-width:20%;
         width:100%;
         padding-right: 32px;
 
       }
-      
+
       img {
         max-width:200px;
       }
@@ -477,7 +477,7 @@
   }
 
   .card {
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
   }
 
   .introduction {
@@ -511,37 +511,44 @@
       font-style: italic;
       text-align: center;
     }
-    
+
     blockquote {
       font-family: "Playfair Display", sans-serif;
       em {
         font-weight: 700;
       }
-    }  
+    }
   }
 
   .offering {
-    text-align: center;
     margin-bottom: 2em;
-    
+
+    .offering__text {
+      margin-bottom: 2em;
+    }
+
     .offering__list {
       display: flex;
       flex-flow: column nowrap;
     }
-    
+
     .offering__item {
-      background: rgb(255,255,255);
-      background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(238,238,240,1) 100%);
+      text-align: left;
+      border-left: 4px solid rgba(255,255,255,1);
       padding: .5em;
+      padding-left: 2rem;
       margin-bottom: 2em;
 
       ul {
+        list-style: none;
         display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
+        flex-flow: column wrap;
         padding-inline-start: 0;
-        list-style-type: none;
+
+        li:before {
+          content: "- ";
+          text-indent: -5px;
+        }
       }
     }
   }
@@ -569,7 +576,8 @@
     .introduction {
       .introduction__text {
         width: 70%;
-        padding: 2em 0 2em 2em;
+        height: 200px;
+        padding: 2em 0 4em 2em;
         text-align: left;
       }
     }
@@ -588,16 +596,12 @@
     .offering {
       .offering__text {
         padding: 0 2em;
-        margin-bottom: 2em;
       }
 
       .offering__list {
         text-align: center;
         flex-flow: row nowrap;
         justify-content: space-between;
-      }
-      .offering__item {
-        width: 30%;
       }
     }
 
@@ -606,7 +610,7 @@
         flex-flow: row wrap;
         align-items: center;
         justify-content: space-between;
-    
+
         img {
           width: 150px;
           padding: 2em;
