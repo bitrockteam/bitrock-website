@@ -556,17 +556,20 @@
   .technology-drivers {
     text-align: center;
 
-    .technology-drivers__images {
+    .technology-drivers__images, .frontend__images {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
-      margin-bottom: 2em;
+    }
+
+    .technology-drivers__images:not(:last-child), .hashicorp__images {
+      border-bottom: 5px solid $white;
     }
 
     img {
-      width: 200px;
-      margin-top: 1.5em;
+      width: 150px;
+      padding: 1.5em;
     }
   }
 }
@@ -606,6 +609,10 @@
     }
 
     .technology-drivers {
+      img {
+        padding: 0;
+      }
+      
       .technology-drivers__images {
         flex-flow: row wrap;
         align-items: center;
@@ -613,6 +620,29 @@
 
         img {
           width: 150px;
+          padding: 2em;
+        }
+      }
+
+      .hashicorp__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2em 0;
+
+        .hashicorp__body {
+          img {
+            width: 150px;
+          }
+        }
+      }
+
+      .frontend__images {
+        flex-flow: row wrap;
+        align-items: center;
+
+        img {
+          width: 130px;
           padding: 2em;
         }
       }
