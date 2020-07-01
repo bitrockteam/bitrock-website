@@ -2,7 +2,9 @@
   <div class="cover">
     <Header />
     <main id="main" class="wrapper">
-      <h1 class="category__title">Technology</h1>
+      <h1 class="blog__title">Bitrock Blog</h1>
+      <p class="blog__subtitle">All Insights regarding our cutting-edge technology, events and our corporate culture</p>
+      <h2 class="category__title">Technology</h2>
         <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="post in technologyPosts">
             <Post :post=post></Post>
@@ -11,7 +13,7 @@
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
       </swiper>
-      <h1 class="category__title">Events</h1>
+      <h2 class="category__title">Events</h2>
         <swiper class="swiper" :options="swiperOption">
             <swiper-slide v-for="post in eventsPosts">
                 <Post :post=post></Post>
@@ -20,7 +22,7 @@
             <div class="swiper-button-prev" slot="button-prev"></div>
             <div class="swiper-button-next" slot="button-next"></div>
         </swiper>
-      <h1 class="category__title">Bitrock Life</h1>
+      <h2 class="category__title">Bitrock Life</h2>
         <swiper class="swiper" :options="swiperOption">
             <swiper-slide v-for="post in bitrockLifePosts">
                 <Post :post=post></Post>
