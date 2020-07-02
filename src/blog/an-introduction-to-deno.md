@@ -5,12 +5,12 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-07-02 07:28:52 +0000
+publish: 2020-07-02T07:28:52.000+00:00
 layout: Post
 category: TECHNOLOGY
 tags: []
----
 
+---
 <br />
 
 ##### What is Deno?
@@ -67,7 +67,7 @@ Deno drops Commonjs Modules, which are still used in Node.js, and embraces the m
 
 ![](/img/deno1.png)
 
-**Deno borrows from Golang** the possibility to import the modules directly from an Url
+**Deno borrows from Golang** the possibility to import the modules directly from an Url.
 
 ![](/img/deno2.png)
 
