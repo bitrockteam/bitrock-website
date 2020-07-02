@@ -163,7 +163,7 @@ For further explanation about integrity check and lock files, please have a look
 
 ##### Server Setup
 
-As last point, here’s a quick but interesting comparison between a server setup in Node and in Deno.
+Last but not least, here’s a quick but interesting comparison between a server setup in Node and in Deno.
 
 Node server:
 
