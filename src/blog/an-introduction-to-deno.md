@@ -11,7 +11,9 @@ category: TECHNOLOGY
 tags: []
 
 ---
-What is Deno? “A secure runtime for JavaScript and TypeScript.” This is the definition contained in the official [Deno](https://deno.land/) website.
+What is Deno?  
+
+“A secure runtime for JavaScript and TypeScript.” This is the definition contained in the official [Deno](https://deno.land/) website.
 
 Before going into details, let’s start by clarifying the two main concepts included in this definition.
 
