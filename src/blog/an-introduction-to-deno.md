@@ -121,3 +121,31 @@ This is a sort of replication of package.json present in Node.js, but many Devel
 Here’s an example of a deps.ts file:
 
 ![](/img/deno4.png)
+
+**What about locking the dependencies?**
+
+A file called lock.json is needed in order to lock them. By using the following command, it is possible to cache and assign a hash to every dependency, in a way that no one can temper it:
+
+**deno cache --lock=lock.json --lock-write src/deps.ts**
+
+For further explanation about integrity check and lock files, please have a look at the [official documentation](https://deno.land/manual/linking_to_external_code/integrity_checking).
+
+**Server Setup**
+
+As last point, here’s a quick but interesting comparison between a server setup in Node and in Deno.
+
+Node server:
+
+![](/img/deno5.png)
+
+Deno Server:
+
+  
+![](/img/deno6.png)
+
+As you can notice, the snippets are pretty similar, but with fundamental differences that can sum up what we discussed above. More specifically:
+
+* ES modules;
+* decentralized import from an URL;
+* nextgen javascript feature out of the box;
+* the permission needed to run the script.
