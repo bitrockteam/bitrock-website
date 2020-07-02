@@ -9,23 +9,25 @@ publish: 2020-07-02 07:28:52 +0000
 layout: Post
 category: TECHNOLOGY
 tags: []
-
 ---
-What is Deno?  
+
+<br />
+
+##### What is Deno?
 
 “A secure runtime for JavaScript and TypeScript.” This is the definition contained in the official [Deno](https://deno.land/) website.
 
 Before going into details, let’s start by clarifying the two main concepts included in this definition.
 
- 
+<br />
 
-**What is a runtime system?**
+##### What is a runtime system?
 
 As for Deno, we can say that’s what makes Javascript run outside the browser, adding a series of features that it is not possible to find in the Javascript engine itself.
 
- 
+<br />
 
-**What is Typescript?**
+##### What is Typescript?
 
 Typescript is a superset of Javascript, which adds a series of features that make the language more interesting. Its main features are:
 
@@ -36,23 +38,30 @@ Typescript is a superset of Javascript, which adds a series of features that mak
 
 At this point, you may find a similarity between Node and our Deno definition, since they seem to do almost the same thing and they are both built upon the Javascript V8 engine.
 
-**So Why Deno?**
+<br />
+
+##### So Why Deno?
 
 “Deno” - as Ryan Dahl, Creator of both Deno and Node, said - “is not by any means a rival of Node”. Simply, he was no longer happy with Node and decided to create a new runtime to make up for its “mistakes” and shortages (and adding also a bunch of new features).
 
-  
+<br />
+<br />
 
-### **Getting closer to Deno**
+#### Getting closer to Deno
 
 Let’s now discover what makes Deno so promising and interesting, along with some key differences with Node.js:
 
-**Deno supports out-of-the-box Typescript**
+<br />
+
+##### Deno supports out-of-the-box Typescript
 
 Deno can run Typescript code without installing additional libraries, such as ‘ts-node’.
 
 It is possible to create an app.ts file and make it run with the simple command “Deno run app.ts”, without any other additional step.
 
-**ES Modules**
+<br />
+
+##### ES Modules
 
 Deno drops Commonjs Modules, which are still used in Node.js, and embraces the modern ES modules that are defined as standard in the Javascript world and mostly used in the front-end development scenario.
 
@@ -62,24 +71,28 @@ Deno drops Commonjs Modules, which are still used in Node.js, and embraces the m
 
 ![](/img/deno2.png)
 
-**Security First**
+<br />
+
+##### Security First
 
 Deno implements a philosophy of “least privileges” when it comes to security.To run a script, indeed, you need to add appropriate flags in order to enable certain permissions.
 
 Here’s the list of flags that can be used:
 
-* --allow-env: allow environment access
-* --allow-hrtime: allow high-resolution time measurement
-* --allow-net=<allow-net>: allow network access
-* --allow-plugin: allow loading plugins
-* --allow-read=<allow-read>: allow file system read access
-* --allow-run: allow running subprocesses
-* --allow-write=<allow-write>: allow file system write access
-* --allow-all: allow all permissions (same as -A)
+* `--allow-env`: allow environment access
+* `--allow-hrtime`: allow high-resolution time measurement
+* `--allow-net=<allow-net>`: allow network access
+* `--allow-plugin`: allow loading plugins
+* `--allow-read=<allow-read>`: allow file system read access
+* `--allow-run`: allow running subprocesses
+* `--allow-write=<allow-write>`: allow file system write access
+* `--allow-all`: allow all permissions (same as -A)
 
 ![](/img/deno3.png)
 
-**Standard Libraries**
+<br />
+
+##### Standard Libraries
 
 These libraries (click [here](http://deno.land) to find out more) are developed and maintained by the core team of Deno.
 
@@ -87,7 +100,9 @@ Many other languages - Python included - share this concept of having a library 
 
 Deno is at an initial stage, so the list is still short - but certainly there will be further implementations in the future.
 
-**Built-in Tools**
+<br />
+
+##### Built-in Tools
 
 When it comes to Node.Js, if you want to have specific tools, you have to install them manually; furthermore, they are essentially third-parties tools, which are not maintained by the Node Team.
 
@@ -103,15 +118,21 @@ Here’s a partial list of them, along with the [link](https://deno.land/manual/
 * **Dependency inspector**
 * **Linter**
 
-**Compatibility with Browser API**
+<br />
+
+##### Compatibility with Browser API
 
 Deno API was created to be as compatible as possible with the Browser API, in order to be able to implement any upcoming feature easily. This is one of the main “issues” that Node has, since it uses an incompatible global namespace (“Global” instead of “window”). This is the reason why an API like Fetch has never been implemented in Node.
 
-**Style Guide to building a Module (Opinionated Modules)**
+<br />
+
+##### Style Guide to building a Module (Opinionated Modules)
 
 Unlike Node, Deno has a set of rules that a Developer should follow in order to publish a module. This can avoid the creation of a different way to reach the same output, thus creating a standard - which is a main principle within the Deno ecosystem. To find out more about the topic, click [here](https://deno.land/manual/contributing/style_guide).
 
-**Where is package.json?**
+<br />
+
+##### Where is package.json?
 
 As seen before, there is no package.json in Deno where it is possible to put all the dependencies. The answer is deps.ts.
 
@@ -126,26 +147,31 @@ Here’s an example of a deps.ts file:
 
 ![](/img/deno4.png)
 
-**What about locking the dependencies?**
+<br />
+
+##### What about locking the dependencies?
 
 A file called lock.json is needed in order to lock them. By using the following command, it is possible to cache and assign a hash to every dependency, in a way that no one can temper it:
 
-**deno cache --lock=lock.json --lock-write src/deps.ts**
+```bash
+deno cache --lock=lock.json --lock-write src/deps.ts
+```
 
 For further explanation about integrity check and lock files, please have a look at the [official documentation](https://deno.land/manual/linking_to_external_code/integrity_checking).
 
-**Server Setup**
+<br />
+
+##### Server Setup
 
 As last point, here’s a quick but interesting comparison between a server setup in Node and in Deno.
 
 Node server:
 
-![](/img/deno5.png)
+![An example of Node server](/img/deno5.png)
 
 Deno Server:
 
-  
-![](/img/deno6.png)
+![An example of Deno server](/img/deno6.png)
 
 As you can notice, the snippets are pretty similar, but with fundamental differences that can sum up what we discussed above. More specifically:
 
@@ -154,9 +180,10 @@ As you can notice, the snippets are pretty similar, but with fundamental differe
 * nextgen javascript feature out of the box;
 * the permission needed to run the script.
 
-### **Future Improvements on the Roadmap and Conclusions**
+<br />
+<br />
 
-### 
+#### Future Improvements on the Roadmap and Conclusions
 
 One of the key features in roadmap is the possibility to create a single executable file, as it happens now in many other languages (like Golang, for instance) - something that could revolutionize the Javascript ecosystem itself.
 
