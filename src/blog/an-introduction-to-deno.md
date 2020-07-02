@@ -98,7 +98,7 @@ These libraries (click [here](http://deno.land) to find out more) are developed 
 
 Many other languages - Python included - share this concept of having a library of reference that is stable and tested by developers who maintain it.
 
-Deno is at an initial stage, so the list is still short - but certainly there will be further implementations in the future.
+Since Deno is at an initial stage, the list is still short - but certainly there will be further implementations in the future.
 
 <br />
 
