@@ -36,7 +36,9 @@ At this point, you may find a similarity between Node and our Deno definition, s
 
 “Deno” - as Ryan Dahl, Creator of both Deno and Node, said - “is not by any means a rival of Node”. Simply, he was no longer happy with Node and decided to create a new runtime to make up for its “mistakes” and shortages (and adding also a bunch of new features).
 
-**Getting closer to Deno**
+ 
+
+### **Getting closer to Deno**
 
 Let’s now discover what makes Deno so promising and interesting, along with some key differences with Node.js:
 
