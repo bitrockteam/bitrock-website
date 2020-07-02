@@ -70,3 +70,26 @@ Deno drops Commonjs Modules, which are still used in Node.js, and embraces the m
   * --allow-run: allow running subprocesses
   * --allow-write=<allow-write>: allow file system write access
   * --allow-all: allow all permissions (same as -A)
+
+    ![](/img/deno3.png)
+  * **Standard Libraries**
+
+    These libraries (click [here](http://deno.land) to find out more) are developed and maintained by the core team of Deno.
+
+    Many other languages - Python included - share this concept of having a library of reference that is stable and tested by developers who maintain it.
+
+    Deno is at an initial stage, so the list is still short - but certainly there will be further implementations in the future.
+  * **Built-in Tools**
+
+    When it comes to Node.Js, if you want to have specific tools, you have to install them manually; furthermore, they are essentially third-parties tools, which are not maintained by the Node Team.
+
+    Deno, instead, embraces another philosophy: it offers, indeed, a built-in tool to improve the development. This creates a standard, which makes Deno not so dispersive as the Node ecosystem.
+
+    Here’s a partial list of them, along with the [link](https://deno.land/manual/tools) to the relevant documentation for a deeper understanding of the topic:
+    * **fmt** a built-in code formatter (similar to gofmt in Go)
+    * **test**: runs test
+    * **debugger**
+    * **Bundler**
+    * **Documentation Generator**
+    * **Dependency inspector**
+    * **Linter**
