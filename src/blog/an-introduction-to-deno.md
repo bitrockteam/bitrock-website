@@ -11,9 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-What is Deno? “A secure runtime for JavaScript and TypeScript.”
-
-This is the definition contained in the official [Deno](https://deno.land/) website.
+What is Deno? “A secure runtime for JavaScript and TypeScript.” This is the definition contained in the official [Deno](https://deno.land/) website.
 
 Before going into details, let’s start by clarifying the two main concepts included in this definition.
 
@@ -42,14 +40,31 @@ At this point, you may find a similarity between Node and our Deno definition, s
 
 Let’s now discover what makes Deno so promising and interesting, along with some key differences with Node.js:
 
-**Deno supports out-of-the-box Typescript**
+* **Deno supports out-of-the-box Typescript**
 
 Deno can run Typescript code without installing additional libraries, such as ‘ts-node’.
 
 It is possible to create an app.ts file and make it run with the simple command “Deno run app.ts”, without any other additional step.
 
-**ES Modules**
+* **ES Modules**
 
 Deno drops Commonjs Modules, which are still used in Node.js, and embraces the modern ES modules that are defined as standard in the Javascript world and mostly used in the front-end development scenario.
 
 ![](/img/deno1.png)
+
+* **Deno borrows from Golang** the possibility to import the modules directly from an Url
+
+  ![](/img/deno2.png)
+* **Security First**
+
+  Deno implements a philosophy of “least privileges” when it comes to security.To run a script, indeed, you need to add appropriate flags in order to enable certain permissions.
+
+  Here’s the list of flags that can be used:
+  * --allow-env: allow environment access
+  * --allow-hrtime: allow high-resolution time measurement
+  * --allow-net=<allow-net>: allow network access
+  * --allow-plugin: allow loading plugins
+  * --allow-read=<allow-read>: allow file system read access
+  * --allow-run: allow running subprocesses
+  * --allow-write=<allow-write>: allow file system write access
+  * --allow-all: allow all permissions (same as -A)
