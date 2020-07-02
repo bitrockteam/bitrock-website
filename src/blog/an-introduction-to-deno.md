@@ -149,3 +149,13 @@ As you can notice, the snippets are pretty similar, but with fundamental differe
 * decentralized import from an URL;
 * nextgen javascript feature out of the box;
 * the permission needed to run the script.
+
+### **Future Improvements on the Roadmap and Conclusions**
+
+### 
+
+One of the key features in roadmap is the possibility to create a single executable file, as it happens now in many other languages (like Golang, for instance) - something that could revolutionize the Javascript ecosystem itself.
+
+Also the compatibility layer with the Node.js stdlib is still in progress; this could lead to a faster development of the runtime system.
+
+To sum up, we can say that Deno is in continuous evolution and probably will be the next game-changer of the Javascript ecosystem. The foundations for this runtime are in place and it is already a hot topic, so... keep an eye out!
