@@ -17,9 +17,13 @@ What is Deno?
 
 Before going into details, let’s start by clarifying the two main concepts included in this definition.
 
+ 
+
 **What is a runtime system?**
 
 As for Deno, we can say that’s what makes Javascript run outside the browser, adding a series of features that it is not possible to find in the Javascript engine itself.
+
+ 
 
 **What is Typescript?**
 
