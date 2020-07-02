@@ -134,7 +134,7 @@ Unlike Node, Deno has a set of rules that a Developer should follow in order to 
 
 ##### Where is package.json?
 
-As seen before, there is no package.json in Deno where it is possible to put all the dependencies. The answer is deps.ts.
+As seen before, there is no package.json in Deno where it is possible to put all the dependencies. The answer, then, is deps.ts.
 
 Deps is used for 2 main reasons:
 
