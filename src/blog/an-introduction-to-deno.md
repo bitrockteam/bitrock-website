@@ -93,3 +93,26 @@ Deno drops Commonjs Modules, which are still used in Node.js, and embraces the m
     * **Documentation Generator**
     * **Dependency inspector**
     * **Linter**
+
+* **Compatibility with Browser API**
+
+  Deno API was created to be as compatible as possible with the Browser API, in order to be able to implement any upcoming feature easily. This is one of the main “issues” that Node has, since it uses an incompatible global namespace (“Global” instead of “window”). This is the reason why an API like Fetch has never been implemented in Node.
+
+* **Style Guide to building a Module (Opinionated Modules)**
+
+  Unlike Node, Deno has a set of rules that a Developer should follow in order to publish a module. This can avoid the creation of a different way to reach the same output, thus creating a standard - which is a main principle within the Deno ecosystem. To find out more about the topic, click [here](https://deno.land/manual/contributing/style_guide).
+
+* **Where is package.json?**
+
+  As seen before, there is no package.json in Deno where it is possible to put all the dependencies. The answer is deps.ts.
+
+  Deps is used for 2 main reasons:
+  * to group all the dependencies needed for the project;
+  * to manage versions.
+
+  This is a sort of replication of package.json present in Node.js, but many Developers are no longer considering it as best practice because of the decentralized nature of Deno. Indeed, they are now experimenting a better way to organize the code, which might lead to a different management of the modules. Let’s see how it will evolve in the future...
+
+  Here’s an example of a deps.ts file:
+
+    
+  ![](/img/deno4.png)
