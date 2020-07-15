@@ -26,7 +26,7 @@ fields:
   label: publish
   config:
     display_utc: false
-    export_format: YYYY-MM-DDThh:mm:ssZ
+    export_format: ''
 - type: text
   name: layout
   label: layout
