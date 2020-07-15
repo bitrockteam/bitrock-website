@@ -19,17 +19,25 @@ The hexagonal architecture is allegedly at the origin of the **microservices arc
 
 ![](/img/s_1.png)
 
+<br />
+
 ### What it Brings to the Table
 
 The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
+
+<br />
 
 ## Loose coupling
 
 In the hexagonal architecture, components communicate with each other using a number of exposed ports, which are simple interfaces. This is an application of the **Dependency Inversion Principle** (the “D” in SOLID).
 
+<br />
+
 ## Exchangeable components
 
 An adapter is a software component that allows a technology to interact with a port of the hexagon. Adapters make it easy to exchange a certain layer of the application without impacting business logic. This is a core concept of **evolutionary architectures**.
+
+<br />
 
 ## Maximum isolation
 
@@ -37,17 +45,21 @@ Components can be tested in isolation from the outside environment or you can us
 
 **Contract testing** supersedes integration testing for a faster and easier development flow.
 
+<br />
+
 ## The domain at the center
 
 Domain objects can contain both state and behavior. The closer the behavior is to the state, the easier the code will be to understand, reason about, and maintain.
 
 Since domain objects have no dependencies on other layers of the application, changes in other layers don’t affect them. This is a prime example of the **Single Responsibility Principle** (the “S” in “SOLID”).
 
+<br />
+
 ### How to Implement it
 
 Let's now have a look on what it means to build a project following the hexagonal architecture to better understand the difference and its benefit in comparison with a more common plain layered architecture.
 
-### 
+<br />
 
 ## Project layout
 
@@ -62,6 +74,8 @@ Here we can find a package for each application layer:
 * the one responsible for communicating with other external services;
 * and more...
 
+<br />
+
 ### Layers Coupling
 
 At first glance, this could look like a nice and clean solution to keep the different pieces of the application separated and well organized, but, if we dive a bit deeper into the code, we can find some code smells that should alert us.
@@ -71,6 +85,8 @@ In fact, after a quick inspection of the core business logic of the application,
 ![](/img/s_3.png)
 
 These dependencies imply that in case of changes in the database code or in the external service communication, we'll need to **recompile the main logic** and probably change and adapt it, in order to make it compatible with the new database and external service versions. This means that we need to spend time on this new integration, test it properly and, during this process, we expose ourselves to the introduction of some bugs.
+
+<br />
 
 ### Interfaces to the Rescue
 
@@ -92,6 +108,8 @@ We can then apply the same approach to the external service dependency and final
 
 ![](/img/s_7.png)
 
+<br />
+
 ### DTO for model abstraction
 
 This already give us a nice level of separation, but there is still room for improvement. In fact if you look at the definition of the Database class you will notice that we are using the same model from our main logic to operate on the persistence layer. While this is not a problem for the isolation of our core logic, it could be a good idea to create a separate model for the persistence layer, so that if we need to make some changes in the structure of the table, for example, we are not forced to propagate the changes also to the business logic layer. This can be achieved with the introduction of a **DTO** (Data transfer object).
@@ -109,6 +127,8 @@ Now we can finally change the Database class to work with the newly introduced m
 ![](/img/s_10.png)
 
 This approach works very well to protect our logic from external interference, but it has some consequence. The main one is an explosion of the number of the models, when most of the time the models are the same; the other one is that the logic about transforming models can be tedious and always need to be properly tested to avoid errors. One compromise that we can take is starting only with the business models (defining them in the correct package) and introduce the external models only when the two models diverge.
+
+<br />
 
 ## When to embrace it
 
