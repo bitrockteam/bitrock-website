@@ -19,25 +19,25 @@ The hexagonal architecture is allegedly at the origin of the **microservices arc
 
 ![](/img/s_1.png)
 
-<br /><br />
+<br />
 
 ### What it Brings to the Table
 
 The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
 
-<br /><br />
+<br />
 
 ## Loose coupling
 
 In the hexagonal architecture, components communicate with each other using a number of exposed ports, which are simple interfaces. This is an application of the **Dependency Inversion Principle** (the “D” in SOLID).
 
-<br /><br />
+<br />
 
 ## Exchangeable components
 
 An adapter is a software component that allows a technology to interact with a port of the hexagon. Adapters make it easy to exchange a certain layer of the application without impacting business logic. This is a core concept of **evolutionary architectures**.
 
-<br /><br />
+<br />
 
 ## Maximum isolation
 
@@ -53,13 +53,13 @@ Domain objects can contain both state and behavior. The closer the behavior is t
 
 Since domain objects have no dependencies on other layers of the application, changes in other layers don’t affect them. This is a prime example of the **Single Responsibility Principle** (the “S” in “SOLID”).
 
-<br /><br />
+<br />
 
 ### How to Implement it
 
 Let's now have a look on what it means to build a project following the hexagonal architecture to better understand the difference and its benefit in comparison with a more common plain layered architecture.
 
-<br /><br />
+<br />
 
 ## Project layout
 
@@ -74,7 +74,7 @@ Here we can find a package for each application layer:
 * the one responsible for communicating with other external services;
 * and more...
 
-<br /><br />
+<br />
 
 ### Layers Coupling
 
@@ -86,7 +86,7 @@ In fact, after a quick inspection of the core business logic of the application,
 
 These dependencies imply that in case of changes in the database code or in the external service communication, we'll need to **recompile the main logic** and probably change and adapt it, in order to make it compatible with the new database and external service versions. This means that we need to spend time on this new integration, test it properly and, during this process, we expose ourselves to the introduction of some bugs.
 
-<br /><br />
+<br />
 
 ### Interfaces to the Rescue
 
@@ -108,7 +108,7 @@ We can then apply the same approach to the external service dependency and final
 
 ![](/img/s_7.png)
 
-<br /><br />
+<br />
 
 ### DTO for model abstraction
 
@@ -128,7 +128,7 @@ Now we can finally change the Database class to work with the newly introduced m
 
 This approach works very well to protect our logic from external interference, but it has some consequence. The main one is an explosion of the number of the models, when most of the time the models are the same; the other one is that the logic about transforming models can be tedious and always need to be properly tested to avoid errors. One compromise that we can take is starting only with the business models (defining them in the correct package) and introduce the external models only when the two models diverge.
 
-<br /><br />
+<br />
 
 ## When to embrace it
 
