@@ -24,6 +24,9 @@ fields:
 - type: datetime
   name: publish
   label: publish
+  config:
+    display_utc: false
+    export_format: YYYY-MM-DDThh:mm:ssZ
 - type: text
   name: layout
   label: layout
