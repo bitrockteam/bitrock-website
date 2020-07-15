@@ -11,7 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-## Introduction
+#### Introduction
 
 The hexagonal architecture (also called “ports and adapters”) is an architectural pattern used in software design designed in 2005 by Alistair Cockburn.
 
@@ -21,25 +21,25 @@ The hexagonal architecture is allegedly at the origin of the **microservices arc
 
 <br />
 
-## What it Brings to the Table
+#### What it Brings to the Table
 
 The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
 
 <br />
 
-### Loose coupling
+##### Loose coupling
 
 In the hexagonal architecture, components communicate with each other using a number of exposed ports, which are simple interfaces. This is an application of the **Dependency Inversion Principle** (the “D” in SOLID).
 
 <br />
 
-### Exchangeable components
+##### Exchangeable components
 
 An adapter is a software component that allows a technology to interact with a port of the hexagon. Adapters make it easy to exchange a certain layer of the application without impacting business logic. This is a core concept of **evolutionary architectures**.
 
 <br />
 
-### Maximum isolation
+##### Maximum isolation
 
 Components can be tested in isolation from the outside environment or you can use dependency injection and other techniques (e.g., mocks, stubs) to enable easier testing.
 
@@ -47,7 +47,7 @@ Components can be tested in isolation from the outside environment or you can us
 
 <br /><br />
 
-### The domain at the center
+##### The domain at the center
 
 Domain objects can contain both state and behavior. The closer the behavior is to the state, the easier the code will be to understand, reason about, and maintain.
 
@@ -55,13 +55,13 @@ Since domain objects have no dependencies on other layers of the application, ch
 
 <br />
 
-## How to Implement it
+#### How to Implement it
 
 Let's now have a look on what it means to build a project following the hexagonal architecture to better understand the difference and its benefit in comparison with a more common plain layered architecture.
 
 <br />
 
-### Project layout
+##### Project layout
 
 In a layered architecture project, the package structure usually looks like the following:
 
@@ -76,7 +76,7 @@ Here we can find a package for each application layer:
 
 <br />
 
-### Layers Coupling
+##### Layers Coupling
 
 At first glance, this could look like a nice and clean solution to keep the different pieces of the application separated and well organized, but, if we dive a bit deeper into the code, we can find some code smells that should alert us.
 
@@ -88,7 +88,7 @@ These dependencies imply that in case of changes in the database code or in the 
 
 <br />
 
-### Interfaces to the Rescue
+##### Interfaces to the Rescue
 
 This is where the hexagonal architecture really shines and helps us avoid all of this. First we need to **decouple** the business logic from its database dependencies: this can be easily achieved with the introduction of a simple **interface** (also called “port”) that will define the behavior that a certain database class needs to implement to be compatible with our main logic.
 
@@ -110,7 +110,7 @@ We can then apply the same approach to the external service dependency and final
 
 <br />
 
-### DTO for model abstraction
+##### DTO for model abstraction
 
 This already give us a nice level of separation, but there is still room for improvement. In fact if you look at the definition of the Database class you will notice that we are using the same model from our main logic to operate on the persistence layer. While this is not a problem for the isolation of our core logic, it could be a good idea to create a separate model for the persistence layer, so that if we need to make some changes in the structure of the table, for example, we are not forced to propagate the changes also to the business logic layer. This can be achieved with the introduction of a **DTO** (Data transfer object).
 
@@ -130,7 +130,7 @@ This approach works very well to protect our logic from external interference, b
 
 <br />
 
-## When to embrace it
+#### When to embrace it
 
 Hexagonal architecture is no silver bullet. If you’re building an application with rich business rules that can be expressed in a rich domain model that combines state with behavior, then this architecture really shines because it puts the domain model in the center.
 
