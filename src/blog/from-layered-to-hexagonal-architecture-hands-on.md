@@ -23,7 +23,7 @@ The hexagonal architecture is allegedly at the origin of the **microservices arc
 
 #### What it Brings to the Table
 
-The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
+The most used service architecture is **layered**. Often, this type of architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This brings stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
 
 <br />
 
@@ -80,7 +80,7 @@ Here we can find a package for each application layer:
 
 At first glance, this could look like a nice and clean solution to keep the different pieces of the application separated and well organized, but, if we dive a bit deeper into the code, we can find some code smells that should alert us.
 
-In fact, after a quick inspection of the core business logic of the application, we immediately find something definitely in contrast with our idea of clean and well defined separation of the various components. The business logic that we'd like to keep isolated from all the external layer clearly reference some dependencies from the database and the external service package.
+In fact, after a quick inspection of the core business logic of the application, we immediately find something definitely in contrast with our idea of clean and well defined separation of the various components. The business logic that we'd like to keep isolated from all the external layers clearly references some dependencies from the database and the external service package.
 
 ![](/img/s_3.png)
 
