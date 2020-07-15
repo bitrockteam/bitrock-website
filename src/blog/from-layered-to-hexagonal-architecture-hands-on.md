@@ -11,7 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-### Introduction
+## Introduction
 
 The hexagonal architecture (also called “ports and adapters”) is an architectural pattern used in software design designed in 2005 by Alistair Cockburn.
 
