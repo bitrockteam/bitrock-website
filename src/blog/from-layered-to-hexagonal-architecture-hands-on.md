@@ -45,7 +45,7 @@ Components can be tested in isolation from the outside environment or you can us
 
 **Contract testing** supersedes integration testing for a faster and easier development flow.
 
-<br /><br />
+<br />
 
 ##### The domain at the center
 
