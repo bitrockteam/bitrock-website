@@ -21,25 +21,25 @@ The hexagonal architecture is allegedly at the origin of the **microservices arc
 
 <br />
 
-### What it Brings to the Table
+## What it Brings to the Table
 
 The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
 
 <br />
 
-## Loose coupling
+### Loose coupling
 
 In the hexagonal architecture, components communicate with each other using a number of exposed ports, which are simple interfaces. This is an application of the **Dependency Inversion Principle** (the “D” in SOLID).
 
 <br />
 
-## Exchangeable components
+### Exchangeable components
 
 An adapter is a software component that allows a technology to interact with a port of the hexagon. Adapters make it easy to exchange a certain layer of the application without impacting business logic. This is a core concept of **evolutionary architectures**.
 
 <br />
 
-## Maximum isolation
+### Maximum isolation
 
 Components can be tested in isolation from the outside environment or you can use dependency injection and other techniques (e.g., mocks, stubs) to enable easier testing.
 
@@ -47,7 +47,7 @@ Components can be tested in isolation from the outside environment or you can us
 
 <br /><br />
 
-## The domain at the center
+### The domain at the center
 
 Domain objects can contain both state and behavior. The closer the behavior is to the state, the easier the code will be to understand, reason about, and maintain.
 
@@ -55,13 +55,13 @@ Since domain objects have no dependencies on other layers of the application, ch
 
 <br />
 
-### How to Implement it
+## How to Implement it
 
 Let's now have a look on what it means to build a project following the hexagonal architecture to better understand the difference and its benefit in comparison with a more common plain layered architecture.
 
 <br />
 
-## Project layout
+### Project layout
 
 In a layered architecture project, the package structure usually looks like the following:
 
