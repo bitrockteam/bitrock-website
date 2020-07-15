@@ -11,49 +11,45 @@ category: TECHNOLOGY
 tags: []
 
 ---
-## Introduction
+### Introduction
 
 The hexagonal architecture (also called “ports and adapters”) is an architectural pattern used in software design designed in 2005 by Alistair Cockburn.
 
 The hexagonal architecture is allegedly at the origin of the **microservices architecture**.
 
-  
 ![](/img/s_1.png)
 
-## What it Brings to the Table
+### What it Brings to the Table
 
 The most used service architecture is **layered**. Often, this type architecture leads to dependencies of business logic from external contract (e.g., database, external service, and so on). This bring stiffness and coupling to the system, forcing us to recompile classes that contain the business logic whenever an API changes.
 
-### Loose coupling
+## Loose coupling
 
 In the hexagonal architecture, components communicate with each other using a number of exposed ports, which are simple interfaces. This is an application of the **Dependency Inversion Principle** (the “D” in SOLID).
 
-### Exchangeable components
+## Exchangeable components
 
 An adapter is a software component that allows a technology to interact with a port of the hexagon. Adapters make it easy to exchange a certain layer of the application without impacting business logic. This is a core concept of **evolutionary architectures**.
 
- 
-
-### Maximum isolation
+## Maximum isolation
 
 Components can be tested in isolation from the outside environment or you can use dependency injection and other techniques (e.g., mocks, stubs) to enable easier testing.
 
 **Contract testing** supersedes integration testing for a faster and easier development flow.
 
- 
-
-### The domain at the center
+## The domain at the center
 
 Domain objects can contain both state and behavior. The closer the behavior is to the state, the easier the code will be to understand, reason about, and maintain.
 
 Since domain objects have no dependencies on other layers of the application, changes in other layers don’t affect them. This is a prime example of the **Single Responsibility Principle** (the “S” in “SOLID”).
 
-## How to Implement it
+### How to Implement it
 
 Let's now have a look on what it means to build a project following the hexagonal architecture to better understand the difference and its benefit in comparison with a more common plain layered architecture.
 
-###   
-Project layout
+### 
+
+## Project layout
 
 In a layered architecture project, the package structure usually looks like the following:
 
@@ -72,12 +68,9 @@ At first glance, this could look like a nice and clean solution to keep the diff
 
 In fact, after a quick inspection of the core business logic of the application, we immediately find something definitely in contrast with our idea of clean and well defined separation of the various components. The business logic that we'd like to keep isolated from all the external layer clearly reference some dependencies from the database and the external service package.
 
-  
 ![](/img/s_3.png)
 
 These dependencies imply that in case of changes in the database code or in the external service communication, we'll need to **recompile the main logic** and probably change and adapt it, in order to make it compatible with the new database and external service versions. This means that we need to spend time on this new integration, test it properly and, during this process, we expose ourselves to the introduction of some bugs.
-
- 
 
 ### Interfaces to the Rescue
 
@@ -109,18 +102,15 @@ A DTO is nothing more that a new external model with pair of mapping function th
 
 Then we need to create a proper function to transform this new database model into the internal business logic model (and vice versa based on the application needs).
 
-  
 ![](/img/s_9.png)
 
 Now we can finally change the Database class to work with the newly introduced model and transform it into the logic one when it communicates with the business logic layer.
 
-  
 ![](/img/s_10.png)
 
 This approach works very well to protect our logic from external interference, but it has some consequence. The main one is an explosion of the number of the models, when most of the time the models are the same; the other one is that the logic about transforming models can be tedious and always need to be properly tested to avoid errors. One compromise that we can take is starting only with the business models (defining them in the correct package) and introduce the external models only when the two models diverge.
 
-###   
-When to embrace it
+## When to embrace it
 
 Hexagonal architecture is no silver bullet. If you’re building an application with rich business rules that can be expressed in a rich domain model that combines state with behavior, then this architecture really shines because it puts the domain model in the center.
 
