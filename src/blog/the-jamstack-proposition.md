@@ -101,7 +101,7 @@ To build an example solution, we’re going to use DigitalOcean to host our Word
 
 To begin, we created a droplet on DigitalOcean using their image for Wordpress on Ubuntu 18.04. You can find more information about this [on their website](https://www.digitalocean.com/docs/droplets/how-to/create/), as their wizard will do the bulk of the work for you. Don’t forget to follow the installation of WordPress itself. For this example, we’re not going to even configure a domain for our install, but you definitely want to use a proper configuration. Many hostings also offer simple solutions to host applications such as WordPress, and will do the job nicely.
 
-![](/img/u_1.png)
+![](/img/1_u.png)
 
 Now that our WordPress is set up, we can start working on our frontend. First thing first, we create the project using the command line interface for Gatsby.
 
@@ -111,12 +111,11 @@ _gatsby new example-wordpress_
 
 This creates our base project using the default starter kit from Gatsby. Inside the \`example-wordpress\` we can find the modules needed already preinstalled, some configuration for styling the code (with Prettier), and the source code folder (\`src\`); the latter having inside both the folder for the React \`components\` and the folder for the \`pages\`. Files inside the \`pages\` folder will be accessible by default through their filename (for example, \`page-2\` will be located at \`example.com/page-2\`).
 
-![](/img/u_2.png)
+![](/img/2_u.png)
 
 What we want to do is to hook up into the build process of Gatsby and generate our pages from the WordPress API. You can find more information about the APIs from the [REST API Handbook](https://developer.wordpress.org/rest-api/), but the gist of it is that we’re requesting the posts resource from it using the correct endpoint. You can preview the available resources by going at the page \`example.com\\wp-json\`; we will be accessing the \`wp\\v2\`, under which we have the editorial contents, and query for the posts. Our URL will be something like \`example.com/wp-json/wp/v2/posts\`.
 
-
-![](/img/u_3.png)
+![](/img/3_u.jpg)
 
 Now we just have to pull it inside Gatsby and build the pages. To do this, we open our project and navigate to the \`gatsby-node.js\` file that should be in the root. We install and import the module \`node-fetch\`, so that we have an easy interface to get our resource by using:
 
@@ -128,18 +127,15 @@ _const fetch = require(\`node-fetch\`);_
 
 Next, we hook up into the \`createPages\` step of Gatsby. In order to do so, we will export an asynchronous method from our file called \`createPages\`, which receives an object with the \`actions\` available to us and a \`reporter\` object that can tell Gatsby if something went wrong. Inside this function, we fetch our posts and create a page for each of them.
 
-
-![](/img/u_4.png)
+![](/img/4_u.png)
 
 Let’s create the template page for the blog posts. We create a file in the \`pages\` folder named \`post.js\`, and access the post data by reading it from the props of our page component.
 
-
-![](/img/u_5.png)
+![](/img/5_u.png)
 
 We should now have a corresponding page in our frontend:
 
-
-![](/img/u_6.png)
+![](/img/6_u.png)
 
 This is of course just the beginning.
 
