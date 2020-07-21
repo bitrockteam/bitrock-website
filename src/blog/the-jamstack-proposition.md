@@ -11,9 +11,11 @@ category: TECHNOLOGY
 tags: []
 
 ---
-With the surge in popularity of JavaScript frameworks, Node and container technologies, the past years have seen the rise of microservices as the leading pattern in the architecture of distributed applications on the Web; the lingua franca of these applications being, of course, APIs. Developers adopting these modern tools for frontend environments have though faced emerging challenges when dealing with search engine optimization, rendering the content and serving the applications compared to the common **LAMP** stack, where PHP does the bulk of the work and JavaScript only provides the interactions and dynamic elements.
+With the surge in popularity of JavaScript frameworks, Node and container technologies, the past years have seen the rise of microservices as the leading pattern in the architecture of distributed applications on the Web; the lingua franca of these applications being, of course, APIs. Developers adopting these modern tools for frontend environments have though faced emerging challenges when dealing with search engine optimization, rendering the content and serving the applications compared to the common LAMP stack, where PHP does the bulk of the work and JavaScript only provides the interactions and dynamic elements.
 
-**From Client Side to Hybrid**
+<br />
+
+#### From Client Side to Hybrid
 
 While in the past using frameworks on the client side meant single page applications, using “hacks” such as the hashbang to provide navigation, in recent years the leading JavaScript frameworks embraced the hybrid approach in rendering, where both the server and the client would run the same virtual DOM and reconnect on the browser later, “rehydrating” the application on the client. This way, applications supported both the common navigation controls of the browser and provided accessibility to users with older browsers or even no JavaScript, since the page is readily available on the server. This provided improved performance on the first load, and supported the traditional spiders from search engines.
 
@@ -25,7 +27,9 @@ However, this meant:
 * relying on an increasingly complex deployment on the server compared to traditional shared hosting
 * using “brute force” solutions to prerendering and caching applications, such as headless browsers
 
-**Limits of CMSs**
+<br />
+
+#### Limits of CMSs
 
 Many modern web applications are still nothing more than glorified lists of contents, sometimes enabling modest interactions - such as filtering or sorting contents -, providing taxonomies and interacting with limited components - such as forms for comments or the search bar. As most of the content is static, a complete frontend solution is eventually considered an added cost compared to existing, monolith CMSs; they still offer big communities, a plethora of themes and plugins, and well rodated interfaces for content creators.
 
@@ -33,13 +37,17 @@ Yet, these CMSs still do not provide the same speed or developer experience as t
 
 Last but not least, popular CMS such as WordPress come with larger surface areas for attack as they’re both incredibly popular and the very same endpoint for both the backend and the frontend; hosted on the same old machine, with the same address for both: subject to varying degrees of loads which might need horizontal scaling, creating issues for the cache.
 
-**Enter the Static Sites Generators**
+<br />
+
+#### Enter the Static Sites Generators
 
 Even if CMSs can definitely render pages quickly and avoid the lengthy reconciliation with the browser’s context, they still require a server and dedicated support, with a plurality of codebases and a bad experience for the developer that does not have everything on hand on the local machine, or might not even have the required knowledge to deal with all issues in this tightly coupled project.
 
 Static websites, instead, have no server loading times; require no session on the server, no instance of Linux running, and no real requirements other than a web server to deliver the resources. They can even live off incredibly cheap storage, such as S3 from Amazon.
 
-**A Modern Solution to Static Content**
+<br />
+
+#### A Modern Solution to Static Content
 
 While traditional frameworks such as Jekyll or Hugo are fast and still a good solution, the new frameworks that have entered the space in the last years (such as Gatsby, Gridsome, Nuxt and Next.js) have took static sites to the future. Learning the lessons from hybrid applications and SPAs, they rely on improved tooling running on Node; modern web frameworks are now first class - improving both UX and developer experience.
 
@@ -55,7 +63,9 @@ Frameworks such as Gatsby and Gridsome take a page off the CMS’s playbook by o
 
 The reduction in complexity is significant. A streamlined frontend solution enables developers to focus on the core experience of users instead of wasting time on configuration. The absence of an actual service running the pages allows the website to run just about everywhere, letting backend developers focus on the business logic, and in between, APIs representing the contract between the two sides. DevOps have one less thing to be concerned about. It is the JAMstack: JavaScript, APIs, and markup languages.
 
-**Challenges of the JAM Stack**
+<br />
+
+#### Challenges of the JAM Stack
 
 The massive improvements brought forth by the stack still face issues that many of the other solutions don’t, and by the nature of static contents; consequently, its strong points also represent its main pain points.
 
@@ -67,7 +77,9 @@ Third and last (but also probably the trickiest part), is that by having static 
 
 Both the serverless approach and the delivery of static files is a big reduction in costs compared to deploying virtual servers, as we only use what we need and scale naturally as more the resources are required. But rarely accessed contents or functions do require some extra time as the provider has to “boot up” the context of the functions for us.
 
-**A common Use-Case: a Blog and its Pages**
+<br />
+
+#### A common Use-Case: a Blog and its Pages
 
 Static websites are really suited for delivering the contents of an editorial product. Text and images are usually not updated in real time, and the business requirements are more often aligned with the value proposition of static site generators:
 
@@ -81,7 +93,9 @@ Our choice for a static site generator can also be decided according to the skil
 
 Last but not least, we can decide where to deploy our contents. There’s a huge number of possibilities, from CDNs to storages (such as S3) or many services that pride themselves on simplicity like Netlify and Heroku. Anyway, what we really need is a channel to deliver the bundle of the contents to our users; whenever we update our contents, we will simply call an API to trigger again the build process and reload the files.
 
-**An Example with Gatsby**
+<br />
+
+#### An Example with Gatsby
 
 To build an example solution, we’re going to use DigitalOcean to host our WordPress installation. Our generator will be Gatsby for this very specific example, but the concepts are quite similar for many of them. Note that we will be just using a function to build the pages, but many of these generators offer integration with external CMSs and might use GraphQL and such to do the queries; here is just a generic example.
 
@@ -131,6 +145,8 @@ This is of course just the beginning.
 * A common criticism of this kind of solution is that editors don’t really have an idea of how the content will end up looking on the frontend. We can build a simple WYSIWYG editor on the frontend side by relying on a good library like [Draft.js](https://draftjs.org/). Of course this also requires authentication and so forth. We could also share the same CSS and major HTML between both the WordPress environment and Gatsby.
 * We could lock our WordPress APIs behind a simple authentication using either Apache or Nginx, as they’re quite common in this kind of setups. Logging in through Node is trivial.
 
-**Conclusions**
+<br />
+
+#### Conclusions
 
 Static site generators enable us to provide a good user experience and also good performance, with a bit more effort than using common CMSs such as WordPress as a monolithic approach. We can integrate different sources and create very custom solutions using modern scaffolding and tooling. However, it does require quite a bit more effort, and the disconnect between frontend and backend can be a pain point for our editors.
