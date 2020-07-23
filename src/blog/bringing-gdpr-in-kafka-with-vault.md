@@ -5,7 +5,7 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-07-23 13:44:00 +0000
+publish: 
 layout: Post
 category: TECHNOLOGY
 tags: []
