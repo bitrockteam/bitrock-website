@@ -66,7 +66,7 @@ Crypto operations can be performed as well in a really simple way, it’s just a
   
 ![](/img/d4.png)
 
-The resulting ciphertext will look like vault:v1:<encrypted-data> where v1 represents the first key generation, given it has not been rotated yet.
+The resulting ciphertext will look like **vault:v1:<encrypted-data>** where v1 represents the first key generation, given it has not been rotated yet.
 
 What about decryption? Well, it’s just another API call:
 
@@ -84,7 +84,7 @@ The Producer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/ka
 
 ![](/img/d7.png)
 
-Integrating encryption in the Producer Interceptor is straightforward, given that the onSend method is invoked one message at a time.
+Integrating encryption in the Producer Interceptor is straightforward, given that the **onSend** method is invoked one message at a time.
 
 ## Kafka Consumer Interceptor
 
@@ -106,7 +106,7 @@ or
   
 ![](/img/d10.png)
 
-Notice that value and key serializer class must be set to the StringSerializer, because Vault Transit can only handle strings containing base64 data. The client invoking Kafka Producer and Consumer API however is able to process any supported type of data, according to the serializer or deserializer configured in the interceptor.value.serializer or interceptor.value.deserializer properties.
+Notice that value and key serializer class must be set to the StringSerializer, because Vault Transit can only handle strings containing base64 data. The client invoking Kafka Producer and Consumer API however is able to process any supported type of data, according to the serializer or deserializer configured in the **interceptor.value.serializer** or **interceptor.value.deserializer** properties.
 
 # Conclusions
 
