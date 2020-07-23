@@ -13,15 +13,15 @@ tags: []
 ---
 # Part 1: Concepts
 
-GDPR introduced the “right to be forgotten”, which allows individuals to make verbal or written requests for personal data erasure. One of the common challenges when trying to comply with this requirement in an Apache Kafka based application infrastructure is being able to selectively delete all the Kafka records related to one of the application users.
+GDPR introduced the “right to be forgotten”, which allows individuals to make verbal or written requests for personal data erasure. One of the common challenges when trying to comply with this requirement in an [Apache Kafka](https://kafka.apache.org/) based application infrastructure is being able to selectively delete all the Kafka records related to one of the application users.
 
 Kafka’s data model was never supposed to support such a selective delete feature so businesses had to find and implement workarounds. At the time of writing, the only way to delete messages in Kafka is to wait for the message retention to expire or to use compact topics that expect tombstone messages to be published, which isn't feasible in all environments and just doesn't fit all the use cases.
 
-HashiCorp Vault provides Encryption as a Service, and as it happens, can help us to implement a solution without workarounds either in application code or Kafka data model.
+HashiCorp [Vault](https://www.vaultproject.io/) provides Encryption as a Service, and as it happens, can help us to implement a solution without workarounds either in application code or Kafka data model.
 
 ## Vault Encryption as a Service
 
-Vault Transit secrets engine handles cryptographic operations on in-transit data without persisting any information. This allows a straightforward introduction of cryptography in existing or new applications by performing a simple HTTP request.
+[Vault Transit](https://www.vaultproject.io/docs/secrets/transit) secrets engine handles cryptographic operations on in-transit data without persisting any information. This allows a straightforward introduction of cryptography in existing or new applications by performing a simple HTTP request.
 
 Vault fully and transparently manages the lifecycle of encryption keys, so neither developers or operators have to worry about keys compliance and rotation while the securely stored data can always be encrypted and decrypted as long as the Vault is accessible.
 
@@ -80,7 +80,7 @@ Integrating Vault’s Encryption as a Service within your application becomes re
 
 ## Kafka Producer Interceptor
 
-The Producer Interceptor API can intercept and possibly mutate the records received by the producer before they are published to the Kafka cluster. In this scenario, the goal is to perform encryption within this interceptor, in order to avoid sending plaintext data to the Kafka cluster...
+The Producer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/kafka/clients/producer/ProducerInterceptor.html) can intercept and possibly mutate the records received by the producer before they are published to the Kafka cluster. In this scenario, the goal is to perform encryption within this interceptor, in order to avoid sending plaintext data to the Kafka cluster...
 
 ![](/img/d7.png)
 
@@ -88,7 +88,7 @@ Integrating encryption in the Producer Interceptor is straightforward, given tha
 
 ## Kafka Consumer Interceptor
 
-The Consumer Interceptor API can intercept and possibly mutate the records received by the consumer. In this scenario, we want to perform decryption of the data received from Kafka cluster and return plaintext data to the consumer.
+The Consumer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/kafka/clients/consumer/ConsumerInterceptor.html) can intercept and possibly mutate the records received by the consumer. In this scenario, we want to perform decryption of the data received from Kafka cluster and return plaintext data to the consumer.
 
 ![](/img/d8.png)
 
