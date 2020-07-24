@@ -19,11 +19,15 @@ Kafka’s data model was never supposed to support such a selective delete featu
 
 HashiCorp [Vault](https://www.vaultproject.io/) provides Encryption as a Service, and as it happens, can help us to implement a solution without workarounds either in application code or Kafka data model.
 
+<br/>
+
 ### Vault Encryption as a Service
 
 [Vault Transit](https://www.vaultproject.io/docs/secrets/transit) secrets engine handles cryptographic operations on in-transit data without persisting any information. This allows a straightforward introduction of cryptography in existing or new applications by performing a simple HTTP request.
 
 Vault fully and transparently manages the lifecycle of encryption keys, so neither developers or operators have to worry about keys compliance and rotation while the securely stored data can always be encrypted and decrypted as long as the Vault is accessible.
+
+<br/>
 
 ### Kafka Integration
 
@@ -40,9 +44,13 @@ Kafka APIs support interceptors on message production and consumption, which is 
 
 ![](/img/schermata-2020-07-23-alle-15-14-36.png)
 
+<br/>
+
 ### Logical Deletion
 
 Does this allow us to delete all the Kafka messages related to a single user? Yes, and it is really simple. If the encryption key that we use for encrypting data in Kafka messages is different for each of our application’s users, we can go ahead and delete the encryption key to guarantee that it is no longer possible to read the user data.
+
+<br/>
 
 ### Replication Outside EU
 
@@ -55,6 +63,8 @@ Given that now the sensitive data stored in our Kafka cluster is encrypted at re
 In the previous part we drafted the general idea behind the integration of HashiCorp Vault and Apache Kafka for performing a fine grained encryption at rest of the messages to address GDPR compliance requirements within Kafka. In this post we do a deep dive on how to bring this idea alive. The codebase which we are going to comment is available at [bitrockteam/kafka-vault-transit-interceptor](https://github.com/bitrockteam/kafka-vault-transit-interceptor)
 
 ![](/img/schermata-2020-07-23-alle-15-14-36.png)
+
+<br/>
 
 ### Vault Transit Secret Engine
 
@@ -80,6 +90,8 @@ Integrating Vault’s Encryption as a Service within your application becomes re
   
 ![](/img/d6.png)
 
+<br/>
+  
 ## Kafka Producer Interceptor
 
 The Producer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/kafka/clients/producer/ProducerInterceptor.html) can intercept and possibly mutate the records received by the producer before they are published to the Kafka cluster. In this scenario, the goal is to perform encryption within this interceptor, in order to avoid sending plaintext data to the Kafka cluster...
@@ -88,6 +100,8 @@ The Producer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/ka
 
 Integrating encryption in the Producer Interceptor is straightforward, given that the **onSend** method is invoked one message at a time.
 
+<br/>
+  
 ## Kafka Consumer Interceptor
 
 The Consumer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/kafka/clients/consumer/ConsumerInterceptor.html) can intercept and possibly mutate the records received by the consumer. In this scenario, we want to perform decryption of the data received from Kafka cluster and return plaintext data to the consumer.
@@ -96,6 +110,8 @@ The Consumer Interceptor [API](https://kafka.apache.org/25/javadoc/org/apache/ka
 
 Integrating decryption with Consumer Interceptor is a bit trickier because we wanted to leverage the batch decryption capabilities of Vault, in order to minimize Vault API calls.
 
+<br/>
+  
 ### Usage
 
 Once you have built your interceptors, enabling them is just a matter of configuring your Consumer or Producer client:
