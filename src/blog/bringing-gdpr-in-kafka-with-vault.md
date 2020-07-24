@@ -58,13 +58,13 @@ Given that now the sensitive data stored in our Kafka cluster is encrypted at re
 
 ## Part 2: Technicalities
 
-In the previous part we drafted the general idea behind the integration of HashiCorp Vault and Apache Kafka for performing a fine grained encryption at rest of the messages to address GDPR compliance requirements within Kafka. In this part, instead, we do a deep dive on how to bring this idea alive.
+In the previous part we drafted the general idea behind the integration of HashiCorp Vault and Apache Kafka for performing a fine grained encryption at rest of the messages, in order to address GDPR compliance requirements within Kafka. In this part, instead, we do a deep dive on how to bring this idea alive.
 
 ![](/img/schermata-2020-07-23-alle-15-14-36.png)
 
 <br/>
 
-##### Vault Transit Secret Engine
+##### Vault Transit Secrets Engine
 
 Vault Transit secrets engine is part of Vault Open Source, and it is really easy to get started with. Setting the engine up is just a matter of enabling it and creating some encryption keys:
 
@@ -74,7 +74,7 @@ Crypto operations can be performed as well in a really simple way, it’s just a
 
 ![](/img/d4.png)
 
-The resulting ciphertext will look like **vault:v1:<encrypted-data>** where v1 represents the first key generation, given it has not been rotated yet.
+The resulting ciphertext will look like **vault:v1:<encrypted-data>** - where v1 represents the first key generation, given it has not been rotated yet.
 
 What about decryption? Well, it’s just another API call:
 
@@ -116,7 +116,7 @@ or
 
 ![](/img/d10.png)
 
-Notice that value and key serializer class must be set to the StringSerializer, because Vault Transit can only handle strings containing base64 data. The client invoking Kafka Producer and Consumer API however is able to process any supported type of data, according to the serializer or deserializer configured in the **interceptor.value.serializer** or **interceptor.value.deserializer** properties.
+Notice that value and key serializer class must be set to the StringSerializer, since Vault Transit can only handle strings containing base64 data. The client invoking Kafka Producer and Consumer API, however, is able to process any supported type of data, according to the serializer or deserializer configured in the **interceptor.value.serializer** or **interceptor.value.deserializer** properties.
 
 <br/><br/>
 
