@@ -21,7 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
 self.__precacheManifest = [
   {
     "url": "academy/index.html",
-    "revision": "72a92a69b27a57917eee7090dfa40add"
+    "revision": "428f39a66a37b8911d921675114376b4"
   },
   {
     "url": "assets/css/0.styles.b17daab2.css",
@@ -92,8 +92,8 @@ self.__precacheManifest = [
     "revision": "35820f6c28042fd4509440ef9580a51b"
   },
   {
-    "url": "assets/js/12.09d69e0b.js",
-    "revision": "c66cb38248b21473c9839600a8fe2df1"
+    "url": "assets/js/12.a607be78.js",
+    "revision": "9ac5fd157b7ac9e040f1f9d55dd78220"
   },
   {
     "url": "assets/js/13.4bd9daba.js",
@@ -160,8 +160,8 @@ self.__precacheManifest = [
     "revision": "d2b06b166a2efd565619a1c56d2a8139"
   },
   {
-    "url": "assets/js/28.f0f5d440.js",
-    "revision": "07d2883f302b31959c478b724fba3e43"
+    "url": "assets/js/28.c482be7b.js",
+    "revision": "340b7a60094f6471635bda7cb30b33be"
   },
   {
     "url": "assets/js/29.36bc4ada.js",
@@ -232,8 +232,8 @@ self.__precacheManifest = [
     "revision": "4b07be96cd63980f800b631ff33efecf"
   },
   {
-    "url": "assets/js/app.3a5e178e.js",
-    "revision": "8a997c1ba70547df0b67a846637513bd"
+    "url": "assets/js/app.65d26bae.js",
+    "revision": "fa172a4a6daf9e91480dd62b2616f14f"
   },
   {
     "url": "BitrockLogo.svg",
@@ -245,107 +245,107 @@ self.__precacheManifest = [
   },
   {
     "url": "blog/academy-kafka-operations/index.html",
-    "revision": "27b01e28546bde693006a30b2e0418b4"
+    "revision": "0f9aad7c5ea4dbdcc086b74bf64b9cbc"
   },
   {
     "url": "blog/academy-kafka-solutions/index.html",
-    "revision": "875fba0c303f39184c84fef7e912df44"
+    "revision": "8ad31a29417972eda7404790237803f4"
   },
   {
     "url": "blog/an-introduction-to-deno.html",
-    "revision": "61bf37b3c338ba4361abad24d555a8a1"
+    "revision": "d776277c419751b9db6fb57e9a0c2e3c"
   },
   {
     "url": "blog/Bitrock DevOps Team joining HashiCorp EMEA Vault CHIP Virtual Bootcamp/bitrock-devops-team-joining-hashicorp-emea-vault-chip-virtual-bootcamp.html",
-    "revision": "fde01f47bb233347167ce27724c3969e"
+    "revision": "618adc4d363a221010a800ce5cb81f2d"
   },
   {
     "url": "blog/bitrock-rooms-a-ux-ui-project-to-face-covid-19-challenges.html",
-    "revision": "02c2998436bc59954460d6bac0b42319"
+    "revision": "3a2bb34a77a41a8257c3f84e66fc471d"
   },
   {
     "url": "blog/bitrock-virtual_office-journal.html",
-    "revision": "d503909a79d69855aa6df60407ee301f"
+    "revision": "c805aef6b094ddd450d05e4156cd586d"
   },
   {
     "url": "blog/bringing-gdpr-in-kafka-with-vault.html",
-    "revision": "a3ac3feb0cb9b72ce0944a86c2e72e87"
+    "revision": "1725494abfa86b2f4651732aa53de239"
   },
   {
     "url": "blog/ByteConfReact_2020 - Claudia Bressi/byteconf-2020-claudia-bressi-frontend-developer-bitrock-among-main-speakers.html",
-    "revision": "695481e1d3b62795d98a8e86e174401b"
+    "revision": "28ad0d84d421879abe9fdf56442c3e31"
   },
   {
     "url": "blog/codemotion-milan-2018/index.html",
-    "revision": "106ecf1930cc83b16676ded44dab6fde"
+    "revision": "c238524658a9580a166dbec4d996d5a8"
   },
   {
     "url": "blog/corporate-event-2018/index.html",
-    "revision": "f35b8b157753cfcb6118d080ceabc64a"
+    "revision": "2c48260db2f4d38be59b966ebf723ee3"
   },
   {
     "url": "blog/from-layered-to-hexagonal-architecture-hands-on.html",
-    "revision": "1d35356c905c5de95bc5f991272017de"
+    "revision": "3c7cb216a20124896951d1486d2387b0"
   },
   {
     "url": "blog/HashiCorp and Bitrock sign partnership to boost IT infrastructure innovation/hashicorp-and-bitrock-sign-partnership-to-boost-it-infrastructure-innovation.html",
-    "revision": "f2d6ce28df64d4f463ca74584ac57de7"
+    "revision": "38e507b30636b1e977f7ca655003f055"
   },
   {
     "url": "blog/index.html",
-    "revision": "4dc0847338414a9d7252d82e15b541fc"
+    "revision": "1d98e63c0afd828c605ea34121770d08"
   },
   {
     "url": "blog/interview-marco-stefani/index.html",
-    "revision": "722cf9a818ad0ba39434400465c2b006"
+    "revision": "905a3ed1f63e2f121f6ecbe2dfcc30ab"
   },
   {
     "url": "blog/jenkins-world-2018/index.html",
-    "revision": "606921bf3385127f32616239d1fe6014"
+    "revision": "382f2050559bff1e6182721e387047c2"
   },
   {
     "url": "blog/lambda-world-2018/index.html",
-    "revision": "51c906da512117dafdc0ae0ec911916f"
+    "revision": "4ee730b5ab8eae7f67ee1d2f317ac76a"
   },
   {
     "url": "blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.html",
-    "revision": "e13da850cf35b398a2214b9b3755a20a"
+    "revision": "4d4eccc62167755f159a35fec696af4a"
   },
   {
     "url": "blog/react-bandersnatch-experiment-getting-close-to-a-real-framework.html",
-    "revision": "834fb27bc3a2d71ee772d9bff0b52c9a"
+    "revision": "a91c5e7cadbc2c9010623ddce69c95b4"
   },
   {
     "url": "blog/reactive-corporate-chat/index.html",
-    "revision": "8eae5206e548fb1dda7a7de6b70a430c"
+    "revision": "b6864a2cb856afd2d4e12206593e3393"
   },
   {
     "url": "blog/reactive-supply-chain/index.html",
-    "revision": "8d87b7bb7aef0d12f7e19ec5dd5ab990"
+    "revision": "c99070bf9da317e9561abbdd6cdf619f"
   },
   {
     "url": "blog/scala-italy-2018/index.html",
-    "revision": "b59b47916cba34d6251ecc534c5b9fb7"
+    "revision": "ca6838c3ab1f1f38730c48eb399826ed"
   },
   {
     "url": "blog/space-lions/index.html",
-    "revision": "6861f0f389c733f3b6c7252286a65e23"
+    "revision": "d7d61becf2f521ccfc1254d89168ea88"
   },
   {
     "url": "blog/technology-infrastructure-summit-2018/index.html",
-    "revision": "0d1b528fba37c734f4dec0d039195aa7"
+    "revision": "413806b26fc3ae48d979b99de531279d"
   },
   {
     "url": "blog/the-jamstack-proposition.html",
-    "revision": "159ac4405f799c776c9b2afa1f02e954"
+    "revision": "5e7ab6bb4a5fec536ee4243c60090b48"
   },
   {
     "url": "blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.html",
-    "revision": "7c4b8c0085c28b3871cea1e261c92263"
+    "revision": "634845e658db2cb7d36b039de7542193"
   },
   {
     "url": "discover/index.html",
-    "revision": "c5fb6a065619450c5f7a0da316720c00"
+    "revision": "e8b5bd46ab0521706ecaf37d33dbc943"
   },
   {
     "url": "icons/icon-128x128.png",
@@ -937,7 +937,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "d5756b6353c1575933e704b1469ca084"
+    "revision": "b71b8341c83775e77791f4499650d85a"
   },
   {
     "url": "logo.png",
