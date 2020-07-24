@@ -123,5 +123,7 @@ Notice that value and key serializer class must be set to the StringSerializer, 
 #### Conclusions
 
 HashiCorp Vault Transit secrets engine is definitely the technological component you may want to leverage when addressing cryptographical requirements in your application, even when dealing with legacy components. The entire set of capabilities offered by HashiCorp Vault makes it easy to modernize applications on a security perspective, allowing developers to focus on the business logic rather than spending time in finding a way to properly manage secrets.
+  
+<br/><br/>
 
 _Author: Simone Ripamonti, DevOps Engineer @Bitrock._
