@@ -21,7 +21,7 @@ HashiCorp [Vault](https://www.vaultproject.io/) provides Encryption as a Service
 
 <br/>
 
-### Vault Encryption as a Service
+#### Vault Encryption as a Service
 
 [Vault Transit](https://www.vaultproject.io/docs/secrets/transit) secrets engine handles cryptographic operations on in-transit data without persisting any information. This allows a straightforward introduction of cryptography in existing or new applications by performing a simple HTTP request.
 
@@ -29,7 +29,7 @@ Vault fully and transparently manages the lifecycle of encryption keys, so neith
 
 <br/>
 
-### Kafka Integration
+#### Kafka Integration
 
 What if instead of trying to selectively eliminate the data the application is not allowed to keep, we would just make sure the application (or anyone for this matter) cannot read the data under any circumstances? This would equal physical removal of data just as requested by GDPR compliance. Such a result can be achieved by selectively encrypting information that we might want to be able to delete and throwing away the key when the deletion is requested.
 
@@ -46,13 +46,13 @@ Kafka APIs support interceptors on message production and consumption, which is 
 
 <br/>
 
-### Logical Deletion
+#### Logical Deletion
 
 Does this allow us to delete all the Kafka messages related to a single user? Yes, and it is really simple. If the encryption key that we use for encrypting data in Kafka messages is different for each of our application’s users, we can go ahead and delete the encryption key to guarantee that it is no longer possible to read the user data.
 
 <br/>
 
-### Replication Outside EU
+#### Replication Outside EU
 
 Given that now the sensitive data stored in our Kafka cluster is encrypted at rest, it is possible to replicate our Kafka cluster outside the EU, for example for disaster recovery purposes. The data will only be accessible by who has the right permissions to perform the cryptographic operations in Vault.
 
@@ -66,7 +66,7 @@ In the previous part we drafted the general idea behind the integration of Hashi
 
 <br/>
 
-### Vault Transit Secret Engine
+#### Vault Transit Secret Engine
 
 Vault Transit secrets engine is part of Vault Open Source, and it is really easy to get started with. Setting the engine up is just a matter of enabling it and creating some encryption keys:
 
@@ -112,7 +112,7 @@ Integrating decryption with Consumer Interceptor is a bit trickier because we wa
 
 <br/>
   
-### Usage
+#### Usage
 
 Once you have built your interceptors, enabling them is just a matter of configuring your Consumer or Producer client:
 
