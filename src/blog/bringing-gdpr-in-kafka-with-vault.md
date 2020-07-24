@@ -48,6 +48,8 @@ Does this allow us to delete all the Kafka messages related to a single user? Ye
 
 Given that now the sensitive data stored in our Kafka cluster is encrypted at rest, it is possible to replicate our Kafka cluster outside the EU, for example for disaster recovery purposes. The data will only be accessible by who has the right permissions to perform the cryptographic operations in Vault.
 
+<br/><br/>
+
 ## Part 2: Technicalities
 
 In the previous part we drafted the general idea behind the integration of HashiCorp Vault and Apache Kafka for performing a fine grained encryption at rest of the messages to address GDPR compliance requirements within Kafka. In this post we do a deep dive on how to bring this idea alive. The codebase which we are going to comment is available at [bitrockteam/kafka-vault-transit-interceptor](https://github.com/bitrockteam/kafka-vault-transit-interceptor)
@@ -108,6 +110,8 @@ or
 
 Notice that value and key serializer class must be set to the StringSerializer, because Vault Transit can only handle strings containing base64 data. The client invoking Kafka Producer and Consumer API however is able to process any supported type of data, according to the serializer or deserializer configured in the **interceptor.value.serializer** or **interceptor.value.deserializer** properties.
 
+<br/><br/>
+  
 ## Conclusions
 
 HashiCorp Vault Transit secrets engine is definitely the technological component you may want to leverage when addressing cryptographical requirements in your application, even when dealing with legacy components. The entire set of capabilities offered by HashiCorp Vault makes it easy to modernize applications on a security perspective, allowing developers to focus on the business logic rather than spending time in finding a way to properly manage secrets.
