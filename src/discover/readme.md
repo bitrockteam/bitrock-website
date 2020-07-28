@@ -1,8 +1,8 @@
 ---
 layout: Page
 pageClass: about-page-class
----
 
+---
 <div class="introduction">
 
 <div class="introduction__text">
@@ -64,7 +64,7 @@ Bitrock delivers solutions and services in three main areas: **Infrastructural D
 **DEVOPS**
 <ul>
     <li>Software Development LifeCycle Automation</li>
-    <li>HCI/CD Pipeline Automation</li>
+    <li>CI/CD Pipeline Automation</li>
     <li>Application Logging & Monitoring at scale</li>
     <li>Applications & Infrastructures</li>
     <li>Autoscaling Automation</li>
@@ -157,5 +157,3 @@ Thanks to our expertise, we know how to apply the latest technologies and framew
 </div>
 
 </div>
-
-
