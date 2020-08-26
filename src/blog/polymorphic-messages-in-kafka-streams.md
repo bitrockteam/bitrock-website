@@ -30,6 +30,7 @@ Since the messages themselves are pretty straightforward, you decide to create a
 ![](/img/4-1.png)
 
 <br>
+
 ### ...But then the domain widens
 Today new functional requirements have emerged: your application must now handle **multiple types** of assets, each with its own unique properties. <br> You are pondering how to implement this requirement and make your application more resilient to further changes in behavior.
 
@@ -47,6 +48,7 @@ Luckily for you, Avro offers an interesting feature named **union types**: you c
 ![](/img/6-1.png)
 
 <br>
+
 ### Enter polymorphic streams
 
 ## Objects with no shape
@@ -81,5 +83,7 @@ Finally, the main program where you combine all ingredients:
 
 <br>
 <br>
+
 ### Conclusions
+
 When multiple use cases share (almost) the same business logic, you can create a stream processing application with **ad-hoc polymorphism** and reduce the duplication of code to the minimum, while making your application even more future-proof.
