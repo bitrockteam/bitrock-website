@@ -11,7 +11,6 @@ category: TECHNOLOGY
 tags: []
 
 ---
-# Polymorphic Mmessages in Kafka Streams
 
 ## Things usually start simple...
 
@@ -19,21 +18,18 @@ You are designing a Kafka Streams application which must read commands and produ
 
 The Avro models you’re expecting to read look like this:
 
-  
 ![](/img/1-3.png)
 
 While the output messages you’re required to produce look like this:![](/img/2-1.png)
 
 You know you can leverage the **sbt-avrohugger** plugin to generate the corresponding Scala class for each Avro schema, so that you can focus only on designing the business logic.
 
-  
 ![](/img/3-1.png)
 
 Since the messages themselves are pretty straightforward, you decide to create a **monomorphic function** to map properties between each command and the corresponding event.
 
 The resulting topology ends up looking like this:
 
-  
 ![](/img/4-1.png)
 
 ## ...But then the domain widens
@@ -60,7 +56,6 @@ This is definitely the worst solution from an evolutionary and maintainability p
 
 Luckily for you, Avro offers an interesting feature named **union types**: you could express the diversity in each asset’s properties via a union of multiple payloads, still relying on one single message as wrapper.
 
-  
 ![](/img/5-1.png)
 
 ![](/img/6-1.png)
@@ -73,24 +68,20 @@ To cope with this advanced polymorphism, you leverage the [**shapeless**](https:
 
 First of all, you update the custom types mapping of sbt-avrohugger, so that it generates an additional **sealed trait** for each Avro protocol containing multiple records:
 
-  
 ![](/img/7.png)
 
 The generated command class ends up looking like this:
 
-  
 ![](/img/8.png)
 
 ### Updating the business logic
 
 Thanks to shapeless’ **Poly1** trait you then write the updated business logic in a single class:
 
-  
 ![](/img/9.png)
 
 Changes to the topology are minimal, as you’d expect:
 
-  
 ![](/img/10.png)
 
 ### A special kind of Serde
@@ -99,7 +90,6 @@ Now for the final piece of the puzzle, Serdes. Introducing the [**avro4s**](http
 
 You create a **type class** to extend a plain old Serde providing a brand new method:
 
-  
 ![](/img/11.png)
 
 Now each generated class has its own Serde, tailored on the corresponding Avro schema.
@@ -108,7 +98,6 @@ Now each generated class has its own Serde, tailored on the corresponding Avro s
 
 Finally, the main program where you combine all ingredients:
 
-  
 ![](/img/12.png)
 
 ## Conclusions
