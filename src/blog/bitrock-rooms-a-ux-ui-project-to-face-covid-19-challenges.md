@@ -5,7 +5,7 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-06-17 08:15:00 +0000
+publish: 2020-06-17T08:15:00.000+00:00
 layout: Post
 category: TECHNOLOGY
 tags: []
@@ -103,3 +103,7 @@ _Bitrock Rooms' weekly view interface:_
 _Bitrock Rooms' mobile view interface:_
 
 ![](/img/6.png)
+
+<br/><br/>
+
+_Authors: Marco Petreri, UX/UI Engineer @Bitrock - Yi Zhang, UX/UI Engineer @Bitrock_
