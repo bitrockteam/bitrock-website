@@ -58,7 +58,7 @@ First, we map and expose the services of our "userService", in this case all.The
 
 ![](/img/u-5.png)
 
-Now our user entity should have everything needed. We import our custom Hooks, and that's it. 
+Now our user entity should have everything needed. We import our custom Hooks, and that's it.
 
 To play a little bit, let’s divide the application into several components in order to test it. The result? Well, it works!
 
@@ -69,3 +69,25 @@ And here’s the child component:
 ![](/img/u-7.png)
 
 Here’s how the application works in the browser:
+
+### ![](/img/gif.gif)**Conclusions**
+
+Although this example is quite simple, the outcomes are pretty surprising. It was really easy - and also quite logical - to connect all the pieces to compose the state management and, as we have seen, no configurations (of any kind) were needed.
+
+For those approaching an architecture like this for the first time, the greatest difficulty is certainly represented by RxJS. To write simple services or queries, it may be enough to know the basics of RxJS; however, in case of large applications with complex services, a good knowledge of technology makes a huge (positive difference), really giving an edge. Furthermore, you need to be very careful where and how you use all the various facades in your application. Being in a push pattern, any change of state triggers the React lifecycle in every component that uses our hooks; watching and controlling performance is thus very important.
+
+Obviously, this is just the beginning: there is a world of things to say about Akita, RxJS, push-patterns etc, and it would take much more than one simple article to explore all of them.
+
+The aim of this contribution was to give you just a little idea of this "new" architecture for state management with React. I hope I’ve hit the target.
+
+_Author: Mattia Ripamonti, UX/UI Engineer @Bitrock_
+
+Useful Resources:
+
+1 - [React Facade Best Practices](https://medium.com/@thomasburlesonIA/react-facade-best-practices-1c8186d8495a)
+
+2 - [React Hooks RxJs Facades](https://medium.com/@thomasburlesonIA/https-medium-com-thomasburlesonia-react-hooks-rxjs-facades-4e116330bbe1)
+
+3 - [Push Based Architectures with RxJs](https://medium.com/@thomasburlesonIA/push-based-architectures-with-rxjs-81b327d7c32d)
+
+4 - [Managing State in React with Akita](https://engineering.datorama.com/oop-and-rxjs-managing-state-in-react-with-akita-de981e09307)
