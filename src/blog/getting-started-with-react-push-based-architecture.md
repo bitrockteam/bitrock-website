@@ -82,7 +82,11 @@ Obviously, this is just the beginning: there is a world of things to say about A
 
 The aim of this contribution was to give you just a little idea of this "new" architecture for state management with React. I hope I’ve hit the target.
 
+<br/><br/>
+
 _Author: Mattia Ripamonti, UX/UI Engineer @Bitrock_
+
+<br/><br/>
 
 Useful Resources:
 
