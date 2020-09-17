@@ -70,7 +70,9 @@ And here’s the child component:
 
 Here’s how the application works in the browser:
 
-### ![](/img/gif.gif)**Conclusions**
+![](/img/gif.gif)
+
+### **Conclusions**
 
 Although this example is quite simple, the outcomes are pretty surprising. It was really easy - and also quite logical - to connect all the pieces to compose the state management and, as we have seen, no configurations (of any kind) were needed.
 
