@@ -11,7 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-When approaching the React world, using Redux or MobX as state management is almost automatic. Or, in any case, the libraries change, but the basic architecture doesn’t: it is always something similar to the Redux Pattern with reducers, actions, selector, middlewares, etc.
+When approaching the React world, using Redux or MobX as state management is almost automatic. Or, in any case, the libraries change, but the basic architecture doesn’t: it is always something similar to the Redux Pattern with reducers, actions, selector, middleware, etc.
 
 But is there the possibility of using a different architecture? Something with RxJs as with Angular? By doing some research, it seems so. Let's see more in detail what we are talking about.
 
