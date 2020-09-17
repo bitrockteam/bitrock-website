@@ -37,7 +37,6 @@ Starting from the well-known create-react-app with the addition of TypeScript, w
 
 Inside, we define a simple interface of our "user" entity in the model.ts file:
 
-  
 ![](/img/u-1.png)
 
 Let's now start by initializing the store of our entity, creating a "UsersState" interface and then creating a "UsersStore" store by extending the Akita store, and finally exporting it:
@@ -48,7 +47,6 @@ At this point, we can create services to manipulate the store, also relying on t
 
 This is where we can use all our knowledge of RxJS in order to be able to create more complex flows to act on the store.
 
-  
 ![](/img/u-3.png)  
 Finally, through the "QueryEntity", we can take the whole store - or just a filtered part - and channel it into an observable stream of RxJS.
 
@@ -56,13 +54,14 @@ Finally, through the "QueryEntity", we can take the whole store - or just a filt
 
 Last but not least, the creation of a custom Hooks that will internally manage all issues regarding RxJS, Facades, and Akita.
 
-First, we map and expose the services of our "userService", in this case all.Then, we create the internal state of our custom hook.Finally, we need to build the selectors for \`users\` and \`active\` state changes and manage subscriptions with auto-cleanup.
+First, we map and expose the services of our "userService", in this case all.Then, we create the internal state of our custom hook. Finally, we need to build the selectors for \`users\` and \`active\` state changes and manage subscriptions with auto-cleanup.
 
 ![](/img/u-5.png)
 
-Now our user entity should have everything needed. We import our custom Hooks, and that's it. To play a little bit, let’s divide the application into several components in order to test it. The result? Well, it works!
+Now our user entity should have everything needed. We import our custom Hooks, and that's it. 
 
-  
+To play a little bit, let’s divide the application into several components in order to test it. The result? Well, it works!
+
 ![](/img/u-6.png)
 
 And here’s the child component:
