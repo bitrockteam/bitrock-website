@@ -1,6 +1,6 @@
 ---
 title: Getting Started with React Push-based Architecture
-image: "/img/react-push-based-architecture.png"
+image: "/img/getting-started-with-react-push-based-architecture.png"
 imageMeta:
   attribution: ''
   attributionLink: ''
