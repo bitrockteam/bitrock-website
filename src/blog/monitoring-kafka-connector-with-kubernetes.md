@@ -49,12 +49,10 @@ The sidecar pattern allows you to extract some functionality of your application
 
 Our goal is to obtain something like this:
 
-  
 ![](/img/s-1.png)
 
 First of all, we created a simple application that takes care of calling the connector API and exposes an API for Kubernetes (we used a simple Python application using Flask - but you can use whatever you want). Something like this:
 
-  
 ![](/img/s-2.png)
 
 As you can see, the code is very simple.
@@ -63,7 +61,6 @@ The application does two different things: first of all, it exposes an endpoint 
 
 Now, this application needs to be deployed in the same pods of the connector. This can be done by adding to our deployment.yaml file the container that contains our Python application:
 
-  
 ![](/img/s-3.png)
 
 **Conclusions**
@@ -75,5 +72,7 @@ Both containers expose the health check of the sidecar, since Kubernetes does no
 Once the connector is in FAILED state, Kubernetes will restart the pod.
 
 Some cloud providers may provide a built-in solution for problems like this; but if you can’t use it - for whatever reason - this can be a possible solution.
+
+<br />
 
 _Author: Marco Tosini, Principal Engineer @Bitrock_
