@@ -13,7 +13,7 @@ tags: []
 ---
 <br />
 
-### **The Problem**
+## **The Problem**
 
 The popularity of microservice architecture has enormously increased recently; but this comes with new challenges.
 
@@ -21,7 +21,7 @@ One of these is monitoring. In one of our projects, we used a Kafka connector to
 
 <br />
 
-### **Solution**
+## **Solution**
 
 In our first version, we created a Kubernetes’ CronnJob with a simple shell script that checks the status of the connector and, eventually, deletes the failed and restarts it.
 
@@ -67,7 +67,7 @@ Now, this application needs to be deployed in the same pods of the connector. Th
 
 <br />
 
-### **Conclusions**
+## **Conclusions**
 
 The logical result?
 
