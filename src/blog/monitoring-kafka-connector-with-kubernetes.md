@@ -11,7 +11,6 @@ category: TECHNOLOGY
 tags: []
 
 ---
-**Monitoring Kafka Connector with Kubernetes**
 
 **The Problem**
 
@@ -19,9 +18,11 @@ The popularity of microservice architecture has enormously increased recently; b
 
 One of these is monitoring. In one of our projects, we used a Kafka connector to intercept changes in our database and write data to a topic. This was a very important component of the system, so we needed to consider its health status carefully.
 
+<br />
+
 **Solution**
 
-In our first version, we created a Kubernetes’s CronnJob with a simple shell script that checks the status of the connector and, eventually, deletes the failed and restarts it.
+In our first version, we created a Kubernetes’ CronnJob with a simple shell script that checks the status of the connector and, eventually, deletes the failed and restarts it.
 
 This worked quite well; however, this is different from how the other services are health checked with the Kubernetes.
 
@@ -62,6 +63,8 @@ The application does two different things: first of all, it exposes an endpoint 
 Now, this application needs to be deployed in the same pods of the connector. This can be done by adding to our deployment.yaml file the container that contains our Python application:
 
 ![](/img/s-3.png)
+
+<br />
 
 **Conclusions**
 
