@@ -47,7 +47,7 @@ In this case, from the Kubernetes point of view, everything is ok.
 
 The solution that worked well for us consisted in adding a sidecar container that takes responsibility for exposing the state of the connector task.
 
-The sidecar pattern allows you to extract some functionality of your application in a different component. For example, we can separate the authentication layer from our “main” component that contains the business logic or - as in our case - extracts the monitoring part.
+The sidecar pattern allows you to extract some functionalities of your application in a different component. For example, we can separate the authentication layer from our “main” component that contains the business logic or - as in our case - extracts the monitoring part.
 
 Our goal is to obtain something like this:
 
