@@ -19,9 +19,9 @@ In this blog post we will describe some of them, focusing on those that might no
 
 <br />
 
-## Pull Request Automation
+### Pull Request Automation
 
-# Atlantis
+## Atlantis
 
 [\[ GitHub \]](https://github.com/runatlantis/atlantis)[\[ Website \]](https://www.runatlantis.io/)
 
