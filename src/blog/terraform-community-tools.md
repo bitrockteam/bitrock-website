@@ -1,6 +1,6 @@
 ---
 title: Terraform Community Tools
-image: "/img/terraform-community-tools.png"
+image: "/img/terraform-community-tools-1.png"
 imageMeta:
   attribution: ''
   attributionLink: ''
