@@ -89,7 +89,7 @@ Regula is a tool that inspects Terraform code looking for security misconfigurat
 
 ## Terraform Compliance
 
-# [\[ GitHub \]](https://github.com/eerkunt/terraform-compliance) [\[ Website \]](https://terraform-compliance.com/)
+[\[ GitHub \]](https://github.com/eerkunt/terraform-compliance) [\[ Website \]](https://terraform-compliance.com/)
 
   
 ![](/img/d-4.png)
@@ -97,8 +97,6 @@ Regula is a tool that inspects Terraform code looking for security misconfigurat
 Terraform Compliance approaches the problem from a different perspective, allowing to write compliance rules in a Behaviour Driven Development (BDD) fashion. An extensive set of [examples](https://terraform-compliance.com/pages/Examples/) provides an overview of the capabilities of the tool. It is easy to bring Terraform Compliance into your CI chain and validate infrastructure before deployment.
 
 While Terraform Compliance is free to use and easy to get started with, a much wider set of policies can be defined using HashiCorp Sentinel, which is part of the HashiCorp Enterprise offering. Sentinel supports fine-grained condition-based policies, with different enforcing levels, that are evaluated as part of a Terraform remote execution.
-
-<br />
 
 ### Linting
 
@@ -108,15 +106,12 @@ While Terraform Compliance is free to use and easy to get started with, a much w
 
 TFLint is a Terraform linter that focuses on potential errors and best practices. The tool comes with a general purpose and AWS rule set while the rules for other cloud providers such as Azure and GCP are being added. It does not focus on security or compliance issues, rather on validating configuration variables such as instance types, which might cause a runtime error when applying the changes. TFLint tries to fill the gap of “terraform validate”, which is not able to validate variable values beside syntax and internal consistency checks.
 
-<br />
-
 ### Cost Estimation
 
 ## infracost
 
-[\[ GitHub \]](https://github.com/infracost/infracost) [\[ Website \]](https://www.infracost.io/)
+[\[ GitHub \]](https://github.com/infracost/infracost)[\[ Website \]](https://www.infracost.io/)
 
-  
 ![](/img/d-5.png)
 
 Keeping track of infrastructure pricing is quite a mess and one usually discovers the actual cost of a deployment after running it for days if not weeks. infracost comes in help providing a way to estimate how much the resources you are going to deploy will cost. At the moment the tool supports only AWS, providing insights for the costs of both hourly priced resources and usage based resources such as AWS Lambda Functions. For the latter, it requires the usage of infracost Terraform provider which allows describing usage estimates for a more realistic cost estimate. This enables quick “what-if” analysis like “what if this month my Lambda gets 2 times more requests?”. The ability to output a “diff” of the costs is useful when integrating infracost in your CI pipeline.
