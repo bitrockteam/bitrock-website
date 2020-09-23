@@ -67,7 +67,6 @@ When working with projects that are based on different Terraform versions, it is
 
 [\[ GitHub \]](https://github.com/liamg/tfsec)
 
-  
 ![](/img/d-2.png)
 
 tfsec performs static analysis of your Terraform code in order to detect potential vulnerabilities in the resulting infrastructure configuration. It comes with a set of rules that work cross provider and a set of provider specific ones, with support for AWS, Azure and GCP. It supports disabling checks on specific resources making it easy to include the tool in a CI pipeline.
@@ -76,7 +75,6 @@ tfsec performs static analysis of your Terraform code in order to detect potenti
 
 [\[ GitHub \]](https://github.com/accurics/terrascan) [\[ Website \]](https://docs.accurics.com/projects/accurics-terrascan/en/latest/)
 
-  
 ![](/img/d-3.png)
 
 Terrascan detects security and compliance violations in your Terraform codebase, mitigating the risk of provisioning unsecure cloud infrastructures. The tool supports AWS, Azure, GCP and Kubernetes, and comes with a set of more than 500 policies for security best practices. It is possible to write custom policies with Open Policy Agent Rego language.
@@ -91,12 +89,13 @@ Regula is a tool that inspects Terraform code looking for security misconfigurat
 
 [\[ GitHub \]](https://github.com/eerkunt/terraform-compliance) [\[ Website \]](https://terraform-compliance.com/)
 
-  
 ![](/img/d-4.png)
 
 Terraform Compliance approaches the problem from a different perspective, allowing to write compliance rules in a Behaviour Driven Development (BDD) fashion. An extensive set of [examples](https://terraform-compliance.com/pages/Examples/) provides an overview of the capabilities of the tool. It is easy to bring Terraform Compliance into your CI chain and validate infrastructure before deployment.
 
 While Terraform Compliance is free to use and easy to get started with, a much wider set of policies can be defined using HashiCorp Sentinel, which is part of the HashiCorp Enterprise offering. Sentinel supports fine-grained condition-based policies, with different enforcing levels, that are evaluated as part of a Terraform remote execution.
+
+<br />
 
 ### Linting
 
@@ -105,6 +104,8 @@ While Terraform Compliance is free to use and easy to get started with, a much w
 [\[ GitHub \]](https://github.com/terraform-linters/tflint)
 
 TFLint is a Terraform linter that focuses on potential errors and best practices. The tool comes with a general purpose and AWS rule set while the rules for other cloud providers such as Azure and GCP are being added. It does not focus on security or compliance issues, rather on validating configuration variables such as instance types, which might cause a runtime error when applying the changes. TFLint tries to fill the gap of “terraform validate”, which is not able to validate variable values beside syntax and internal consistency checks.
+
+<br />
 
 ### Cost Estimation
 
