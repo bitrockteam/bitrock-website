@@ -17,6 +17,8 @@ In order to address all the different use cases of Terraform, whether it is exec
 
 In this blog post we will describe some of them, focusing on those that might not be that popular or widely adopted, but certainly deserve some attention.
 
+<br />
+
 ### Pull Request Automation
 
 ## Atlantis
@@ -28,6 +30,8 @@ In this blog post we will describe some of them, focusing on those that might no
 Atlantis is a golang application that listens for Terraform pull request events via webhooks. It allows users to remotely execute \`terraform plan\` and \`terraform apply\` according to the pull request content commenting back the result. Atlantis is a good starting point for making infrastructure changes visible to all teams, allowing even non-operations ones to contribute to Terraform infrastructure codebase. If you want to see Atlantis in action, check this walkthrough video [\[ Youtube \]](https://youtu.be/TmIPWda0IKg).
 
 If you want to restrict and audit the execution of Terraform changes still providing a friendly interface, Terraform Cloud and Enterprise support invoking remote operations by UI, VCS, CLI and API. The offering includes an extensive set of capabilities for integrating infrastructure changes in CI pipelines.
+
+<br />
 
 ### Importing Existing Cloud Resources
 
@@ -45,6 +49,8 @@ Terraforming supports the export of existing AWS resources into Terraform resour
 
 Terraformer supports the export of existing resources from many different providers, such as AWS, Azure and GCP. The tool leverages Terraform providers for performing the mapping of resource attributes to Terraform ones, which makes it more resilient to API upgrades. Terraformer has been developed by Waze and now maintained by Google Cloud Platform team.
 
+<br />
+
 ### Version Management
 
 ## tfenv
@@ -52,6 +58,8 @@ Terraformer supports the export of existing resources from many different provid
 [\[ GitHub \]](https://github.com/tfutils/tfenv)
 
 When working with projects that are based on different Terraform versions, it is tedious to switch from one version to another and the risk of updating the states’ Terraform version to a new one is high. tfenv comes in support and makes it easy to have different Terraform versions installed on the same machine.
+
+<br />
 
 ### Security and Compliance Scanning
 
@@ -90,6 +98,8 @@ Terraform Compliance approaches the problem from a different perspective, allowi
 
 While Terraform Compliance is free to use and easy to get started with, a much wider set of policies can be defined using HashiCorp Sentinel, which is part of the HashiCorp Enterprise offering. Sentinel supports fine-grained condition-based policies, with different enforcing levels, that are evaluated as part of a Terraform remote execution.
 
+<br />
+
 ### Linting
 
 ## TFLint
@@ -97,6 +107,8 @@ While Terraform Compliance is free to use and easy to get started with, a much w
 [\[ GitHub \]](https://github.com/terraform-linters/tflint)
 
 TFLint is a Terraform linter that focuses on potential errors and best practices. The tool comes with a general purpose and AWS rule set while the rules for other cloud providers such as Azure and GCP are being added. It does not focus on security or compliance issues, rather on validating configuration variables such as instance types, which might cause a runtime error when applying the changes. TFLint tries to fill the gap of “terraform validate”, which is not able to validate variable values beside syntax and internal consistency checks.
+
+<br />
 
 ### Cost Estimation
 
