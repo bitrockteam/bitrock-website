@@ -43,12 +43,12 @@ Every 2 hours Prometheus compacts the data that has been buffered up in memory o
 
 To reduce disk footprint, TSDB can have a shorter metrics retention period of the metrics or it can be configured to have a disk space limit.The data can be compacted and the WAL compressed as well.
 
-The data structure is self-sufficient and can be moved from one instance to another independently given each time series is atomic and uniquely identified by its metric name. In recent Prometheus versions, remote storage support has been introduced in order to provide long term storage.
+The data structure is self-sufficient and can be moved from one instance to another independently given each time series is atomic and uniquely identified by its metric name (1). In recent Prometheus versions, remote storage support has been introduced in order to provide long term storage.
 
 Core Prometheus server is a single binary and each Prometheus server is an independent process with its own storage. One of the downsides of this core implementation is the lack of clustering or backfilling “missing” data when a scrape fails.
 
 ![](/img/prometheus_logos.png)  
-Prometheus is not supposed to only be used with standard exporters, you can instrument your own code to capture the metrics that matter to you, business ones for example. Prometheus comes with the support for a wide range of languages (Go, Java or Scala, Python, Ruby, etc). Many upstream libraries are already instrumented by the maintainers, so you will get that for free!
+Prometheus is not supposed to only be used with standard exporters (2), you can instrument your own code to capture the metrics that matter to you, business ones for example. Prometheus comes with the support for a wide range of languages (Go, Java or Scala, Python, Ruby, etc). Many upstream libraries are already instrumented by the maintainers, so you will get that for free!
 
 ## What is a metric?
 
@@ -137,3 +137,10 @@ Alertmanager :
 * Official Project Documentation [https://prometheus.io/docs/](https://prometheus.io/docs/ "https://prometheus.io/docs/")
 * A blog on monitoring, scale and operational Sanity [https://www.robustperception.io/blog](https://www.robustperception.io/blog "https://www.robustperception.io/blog")
 * [https://github.com/prometheus/alertmanager#high-availability](https://github.com/prometheus/alertmanager#high-availability "https://github.com/prometheus/alertmanager#high-availability")
+
+  
+Notes
+
+(1) [https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md](https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md "https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md")
+
+(2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters") [https://github.com/prometheus/prometheus/wiki/default-port-allocations](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
