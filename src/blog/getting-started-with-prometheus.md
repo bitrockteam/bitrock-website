@@ -23,7 +23,10 @@ The CNCF community loves Prometheus because:
 * it’s designed in multiple services, aiming at modularity
 * it’s container ready, “docker run” is enough to have it started
 * it’s orchestrator ready, supporting dynamic configurations
-* it’s an ecosystem: many client libraries and exporters maintained both by Prometheus team and the community![](/img/prometheus-schema-1.png)
+* it’s an ecosystem: many client libraries and exporters maintained both by Prometheus team and the community
+
+  <br/>  
+  ![](/img/prometheus-schema-1.png)
   * Prometheus collects data
   * Exporters expose data
   * Applications expose data
