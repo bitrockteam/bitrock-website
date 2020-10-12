@@ -25,7 +25,11 @@ The CNCF community loves Prometheus because:
 * it’s orchestrator ready, supporting dynamic configurations
 * it’s an ecosystem: many client libraries and exporters maintained both by Prometheus team and the community
 
+<br/>
+
 ![](/img/prometheus-schema-1.png)
+
+<br/>
 
 * Prometheus collects data
 * Exporters expose data
