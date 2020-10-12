@@ -41,7 +41,7 @@ Prometheus is designed to fetch data in intervals measured in seconds. And while
 
 Every 2 hours Prometheus compacts the data that has been buffered up in memory onto blocks on disk.
 
-To reduce disk footprint, TSDB can have a shorter metrics retention period of the metrics or it can be configured to have a disk space limit.The data can be compacted and the WAL compressed as well.
+To reduce disk footprint, TSDB can have a shorter metrics retention period of the metrics or it can be configured to have a disk space limit. The data can be compacted and the WAL compressed as well.
 
 The data structure is self-sufficient and can be moved from one instance to another independently given each time series is atomic and uniquely identified by its metric name (1). In recent Prometheus versions, remote storage support has been introduced in order to provide long term storage.
 
