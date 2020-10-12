@@ -115,8 +115,6 @@ Prometheus Query Language (PromQL) supports a wide range of functions for intera
 
 Our motto is: if you can graph it, you can alert on it! It’s really easy to set up alerts in Prometheus, it’s just a matter of defining which query to evaluate and which is the range of safe values:
 
-  
-  
 ![](/img/schermata-2020-10-12-alle-10-02-22.png)
 
 Prometheus will evaluate the alerting rule regularly and will mark it as firing in case the rule matches. However, Prometheus core component will not take care directly of sending alerts to final users. Alertmanager instead will take care of performing alert related operations.
@@ -129,7 +127,6 @@ Alertmanager :
 * Dispatches them to downstream services, such as Slack or PagerDuty and many more
 * Built In HA leveraging gossip protocol
 
-  
 ![](/img/schema_prometheus.png)
 
 ## References
@@ -138,9 +135,12 @@ Alertmanager :
 * A blog on monitoring, scale and operational Sanity [https://www.robustperception.io/blog](https://www.robustperception.io/blog "https://www.robustperception.io/blog")
 * [https://github.com/prometheus/alertmanager#high-availability](https://github.com/prometheus/alertmanager#high-availability "https://github.com/prometheus/alertmanager#high-availability")
 
-  
 Notes
 
 (1) [https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md](https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md "https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md")
 
 (2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters") [https://github.com/prometheus/prometheus/wiki/default-port-allocations](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
+
+<br/>
+
+_Author: Matteo Gazzetta, DevOps Engineer @Bitrock_
