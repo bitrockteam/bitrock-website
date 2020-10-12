@@ -27,7 +27,7 @@ The CNCF community loves Prometheus because:
 
 <br/>
 
-![](/img/prometheus-schema-1.png)
+![](/img/download.png)
 
 <br/>
 
@@ -51,7 +51,8 @@ The data structure is self-sufficient and can be moved from one instance to anot
 
 Core Prometheus server is a single binary and each Prometheus server is an independent process with its own storage. One of the downsides of this core implementation is the lack of clustering or backfilling “missing” data when a scrape fails.
 
-![](/img/prometheus_logos.png)  
+![](/img/prometheus-exporter-loghi.png)
+
 Prometheus is not supposed to only be used with standard exporters (2), you can instrument your own code to capture the metrics that matter to you, business ones for example. Prometheus comes with the support for a wide range of languages (Go, Java or Scala, Python, Ruby, etc). Many upstream libraries are already instrumented by the maintainers, so you will get that for free!
 
 <br/>
@@ -64,7 +65,7 @@ A metric is any numeric value that tells you something about how your system is 
 * How long the last operation took
 * How many request were served today
 
-![](/img/schema-3.png)
+![](/img/schermata-2020-10-12-alle-15-37-50.png)
 
 In Prometheus there are 4 types of metrics: counter, gauge, histogram and summary.
 
@@ -143,7 +144,7 @@ Alertmanager :
 
 <br/>
 
-![](/img/schema_prometheus.png)
+![](/img/schema.png)
 
 <br/>
 
@@ -161,7 +162,7 @@ Alertmanager :
 
 (1) [https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md](https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md "https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md")
 
-(2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters") 
+(2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
 
 [https://github.com/prometheus/prometheus/wiki/default-port-allocations](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
 
