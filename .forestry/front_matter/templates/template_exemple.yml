@@ -24,6 +24,9 @@ fields:
 - type: datetime
   name: publish
   label: publish
+  config:
+    display_utc: false
+    export_format: ''
 - type: text
   name: layout
   label: layout
@@ -40,4 +43,15 @@ pages:
 - src/blog/Life@Bitrock in the Covid-19 Era/life-bitrock-in-the-covid-19-era.md
 - src/blog/Turning Data at REST into Data in Motion with Kafka Streams - Confluent
   Blog/turning-data-at-rest-into-data-in-motion-with-kafka-streams-confluent-blog.md
+- src/blog/an-introduction-to-deno.md
+- src/blog/bitrock-rooms-a-ux-ui-project-to-face-covid-19-challenges.md
 - src/blog/bitrock-virtual_office-journal.md
+- src/blog/bringing-gdpr-in-kafka-with-vault.md
+- src/blog/from-layered-to-hexagonal-architecture-hands-on.md
+- src/blog/getting-started-with-prometheus.md
+- src/blog/getting-started-with-react-push-based-architecture.md
+- src/blog/monitoring-kafka-connector-with-kubernetes.md
+- src/blog/polymorphic-messages-in-kafka-streams.md
+- src/blog/react-bandersnatch-experiment-getting-close-to-a-real-framework.md
+- src/blog/terraform-community-tools.md
+- src/blog/the-jamstack-proposition.md

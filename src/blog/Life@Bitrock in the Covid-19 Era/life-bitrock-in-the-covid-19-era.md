@@ -1,6 +1,6 @@
 ---
 title: Life@Bitrock in the Covid-19 Era
-image: "/img/Virtual Office.jpg"
+image: "/img/let-s-stayhome-but-let-s-stayhuman-too-1.jpg"
 imageMeta:
   attribution: ''
   attributionLink: ''

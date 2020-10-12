@@ -12,7 +12,8 @@ module.exports = {
         text: 'Join Us', 
         link: 'https://www.linkedin.com/company/bitrock-srl/jobs/',
         external: true
-      }
+      },
+      { text: 'Blog', link: '/blog' },
     ]
   },
 
