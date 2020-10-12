@@ -159,7 +159,9 @@ Alertmanager :
 
 (1) [https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md](https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md "https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md")
 
-(2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters") [https://github.com/prometheus/prometheus/wiki/default-port-allocations](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
+(2) [https://prometheus.io/docs/instrumenting/exporters](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters") 
+
+[https://github.com/prometheus/prometheus/wiki/default-port-allocations](https://prometheus.io/docs/instrumenting/exporters "https://prometheus.io/docs/instrumenting/exporters")
 
 <br/>
 
