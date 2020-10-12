@@ -50,6 +50,8 @@ Core Prometheus server is a single binary and each Prometheus server is an indep
 ![](/img/prometheus_logos.png)  
 Prometheus is not supposed to only be used with standard exporters (2), you can instrument your own code to capture the metrics that matter to you, business ones for example. Prometheus comes with the support for a wide range of languages (Go, Java or Scala, Python, Ruby, etc). Many upstream libraries are already instrumented by the maintainers, so you will get that for free!
 
+<br/>
+
 ## What is a metric?
 
 A metric is any numeric value that tells you something about how your system is operating. For example:
@@ -84,6 +86,8 @@ The essential difference between summaries and histograms is that summaries calc
 
 [https://prometheus.io/docs/practices/histograms/](https://prometheus.io/docs/practices/histograms/ "https://prometheus.io/docs/practices/histograms/")
 
+<br/>
+
 ## Understanding metrics
 
 Prometheus metrics have a name and might have any arbitrary number of labels:
@@ -100,6 +104,8 @@ Examples:
 
 ![](/img/schermata-2020-10-12-alle-10-02-13.png)
 
+<br/>
+
 ## PromQL
 
 Prometheus Query Language (PromQL) supports a wide range of functions for interacting with scraped metrics. Some examples:
@@ -110,6 +116,8 @@ Prometheus Query Language (PromQL) supports a wide range of functions for intera
 * Aggregation and Grouping: _sum(rate(node_network_receive_bytes_total\[5m\])) by (instance)_
 * Quantile: _histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket\[5m\])) by (le))_
 * Recording Rule: precompute frequently needed or computationally expensive expressions, in order to make recurring queries much faster to compute
+
+<br/>
 
 ## Alerting
 
@@ -129,11 +137,15 @@ Alertmanager :
 
 ![](/img/schema_prometheus.png)
 
+<br/>
+
 ## References
 
 * Official Project Documentation [https://prometheus.io/docs/](https://prometheus.io/docs/ "https://prometheus.io/docs/")
 * A blog on monitoring, scale and operational Sanity [https://www.robustperception.io/blog](https://www.robustperception.io/blog "https://www.robustperception.io/blog")
 * [https://github.com/prometheus/alertmanager#high-availability](https://github.com/prometheus/alertmanager#high-availability "https://github.com/prometheus/alertmanager#high-availability")
+
+<br/>
 
 Notes
 
