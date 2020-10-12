@@ -62,7 +62,9 @@ A metric is any numeric value that tells you something about how your system is 
 
 * How much memory it is using
 * How long the last operation took
-* How many request were served today![](/img/schema-3.png)
+* How many request were served today
+
+![](/img/schema-3.png)
 
 In Prometheus there are 4 types of metrics: counter, gauge, histogram and summary.
 
