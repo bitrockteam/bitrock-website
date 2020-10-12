@@ -55,7 +55,7 @@ Core Prometheus server is a single binary and each Prometheus server is an indep
 
 <br/>
 
-![](/img/prometheus-exporter-loghi-2.png)
+![](/img/prometheus-exporter-loghi-3.png)
 
 <br/>
 
