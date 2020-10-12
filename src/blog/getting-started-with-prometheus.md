@@ -155,7 +155,7 @@ Alertmanager :
 
 <br/>
 
-Notes
+**Notes**
 
 (1) [https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md](https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md "https://github.com/bitnami/kube-prod-runtime/blob/master/docs/migration-guides/prometheus-migration.md")
 
