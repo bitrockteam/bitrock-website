@@ -1,15 +1,15 @@
 ---
 title: Jenkins World October 22-25, 2018 | Nice, France. Bitrock's team is attending
-image: /img/posts/corporate-6.png
+image: "/img/20.jpg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-10-24
 layout: Post
-category: events
----
+category: EVENTS
 
+---
 Jenkins World brings together the DevOps community in two locations, providing opportunities to learn, explore, network and help shape the future of DevOps and Jenkins. <!-- more --> DevOps World | Jenkins World is designed specifically for IT executives, DevOps practitioners, Jenkins users and partners. 
 
 ![./jw-1.jpg](./jw-1.jpg)

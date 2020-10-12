@@ -5,17 +5,17 @@ $header--height: 90px;
 $header-compact--height: 60px;
 
 .wrapper {
-  padding: 45px 30px; 
+  padding: 45px 30px;
 }
 
-svg.logo{
+svg.logo {
   cursor: pointer;
 }
 
 .cover {
   padding-top: 0;
 
-  section.cover{
+  section.cover {
     display: block;
   }
 }
@@ -55,8 +55,10 @@ button {
   transition: all .2s ease;
 }
 
-button:focus, .button:hover,
-.btn:focus, .btn:hover {
+button:focus,
+.button:hover,
+.btn:focus,
+.btn:hover {
   outline: 0;
   text-decoration: none;
 }
@@ -92,7 +94,8 @@ section.cover {
         padding-top: 25vh;
       }
 
-      h3, h2 {
+      h3,
+      h2 {
         text-transform: uppercase;
         margin: 0;
         padding: 0;
@@ -137,10 +140,10 @@ section.cover {
 
 header.main {
   $bg: rgba(42, 42, 42, 0);
-  
+
   transition: all 250ms ease;
   position: fixed;
-  z-index: 97;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -160,8 +163,18 @@ header.main {
         li {
           a {
             text-shadow: none;
+            color: $white !important;
           }
         }
+      }
+    }
+
+    .hamburger {
+
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        background-color: $white;
       }
     }
   }
@@ -176,7 +189,7 @@ header.main {
   svg {
     vertical-align: middle;
     cursor: pointer;
-    max-height: 40px
+    max-height: 1000px
   }
 
   .wrapper {
@@ -189,13 +202,13 @@ header.main {
     right: 30px;
     top: -8px;
     font-size: 26px;
-    color: #cccccc;
+    color: $black;
     cursor: pointer;
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      background-color: $evident-text02;
+      background-color: $black;
     }
   }
 
@@ -215,11 +228,9 @@ header.main {
 
         a {
           text-transform: capitalize;
-          color: $evident-text02;
           text-decoration: none;
           font-size: 24px;
           transition: all 250ms ease;
-          text-shadow: 0px 0px 5px rgba(0,0,0,0.9);
 
           &:hover {
             color: $evident-text01;
@@ -234,15 +245,16 @@ main.evidence {
   padding-bottom: 0;
 }
 
-main{
+main {
 
-  .block{
+  .block {
     margin: 30px 0;
 
-    &:first-child{
+    &:first-child {
       margin-top: 0;
     }
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
@@ -264,12 +276,12 @@ main{
   }
 }
 
-.content{
+.content {
   &.loading {
     @extend %optimistic;
   }
 
-  rock-back{
+  rock-back {
     a {
       color: $normal-text;
       text-decoration: none;
@@ -279,11 +291,12 @@ main{
     }
   }
 
-  &.wrapper, .wrapper {
+  &.wrapper,
+  .wrapper {
     padding: 0;
   }
 
-  article{
+  article {
     text-align: left;
 
     .alignleft {
@@ -303,7 +316,7 @@ main{
       height: auto;
     }
 
-    &.card{
+    &.card {
       padding: 30px;
       text-align: left;
 
@@ -344,7 +357,7 @@ main{
         font-size: 18px;
       }
     }
-    
+
     &.loading {
       @extend %optimistic;
     }
@@ -357,40 +370,34 @@ footer {
   font-size: 20px;
   line-height: 30px;
 
-  & > .wrapper {
+  &>.wrapper {
 
     article {
       text-align: center;
 
-      div{
+      div {
         margin-bottom: 30px;
       }
     }
   }
-  
 
-  &.credits{
-    background: $darkGrey;
+
+  &.credits {
+    background: #AAAAAA;
     font-size: 16px;
-    color: $white;
+    color: $black;
 
     .wrapper {
+      padding: 1.5em;
 
       article {
         display: block;
       }
     }
 
-    figure {
-      img {
-        display: block;
-        margin: 0 auto 20px;
-        width: 150px;
-      }
-    }
-    p{
+    p {
       margin: 0;
-      text-align: center;
+      text-align: left;
     }
   }
 }
@@ -404,7 +411,9 @@ footer {
   height: 24px;
 }
 
-.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
   width: 30px;
   height: 2px;
   background-color: $black;

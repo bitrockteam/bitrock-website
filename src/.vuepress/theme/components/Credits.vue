@@ -2,12 +2,7 @@
   <footer class="credits">
     <div class="wrapper">
       <article>
-        <figure>
-          <img src="/BitrockLogo.white.svg" alt="Bitrock">
-        </figure>
-      
-        <p>Copyright <span class="year">{{ year }}</span> 
-          {{ text }}</p>
+        <p><b>Bitrock</b> &copy;Copyright <span class="year">{{ year }}</span>. All rights reserved. P.IVA 10150530961</p>
       </article>
     </div>
   </footer>
@@ -15,9 +10,6 @@
 
 <script>
 export default {
-  props: {
-    text: ''
-  },
   computed: {
     year () {
       return new Date().getFullYear()

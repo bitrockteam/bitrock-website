@@ -1,18 +1,18 @@
 ---
 title: Corporate Event | "Databiz Group" - Desenzano del Garda, June 8th, 2018
-image: /img/posts/corporate-2.png
+image: "/img/bg_01.jpg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-07-14
 layout: Post
-category: news
+category: BITROCK LIFE
 tags:
-  - corporate
-  - events
----
+- corporate
+- events
 
+---
 As a yearly tradition, **DatabizGroup**, holding group owner of **Bitrock**, celebrated a Corporate Event in the marvelous setting of the southern coast of the **Garda Lake** (Desenzano del Garda - BS). <!-- more -->
 
 During this **2 days** Event, held at the exciting location of **Hotel Acquaviva** del Garda, the **3 souls of Databiz Group** met up together to review 1H - 2018 achievements and discuss about next strategical operations: **Databiz HoldingManagement** and **Staff**, **Bitrock's team** and **Radicalbit developers** had the opportunity to meet up and share mutual experiences, achievements, projects and targets.

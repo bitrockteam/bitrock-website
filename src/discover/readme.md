@@ -1,96 +1,159 @@
 ---
 layout: Page
+pageClass: about-page-class
+
 ---
+<div class="introduction">
 
-# Bitrock | Innovation delivered!
+<div class="introduction__text">
 
-**Bitrock** is the result of the reorganization of **Databiz**, an innovative system integrator founded in 2009, and transformed into a holding company in 2018 in order to face a constantly evolving market scenario. **Bitrock** is a high-end **consulting** and **system integration company**, strongly committed to offering **cutting-edge** and **innovative solutions** in the field of **Microservices**, **Reactive Platforms**, **Data Analytics** and **DevOps**, configuring itself as a trusted and **reliable partner** for accompanying and supporting companies along the path of **digital transformation**.
+Bitrock is a **high-end technology consultancy** firm focused in delivering reliable innovation through the design and development of **Business Driven IT solutions.** 
 
-**Innovation** and **research** are at the very heart of **Bitrock**. These valors are clearly expressed through the constant employment of avant-garde and distinctive technologies (ie.: *Scala Language*), and supported on a daily basis by constant internal training activities, in order to make this approach succeed and evolve in time.
+We provide a wide range of services including **DevOps, Custom Software Engineering and Data & Analytics,** adopting an end-to-end approach and helping our Customer select the right technology enablers.
 
-Our partnerships
+</div>
 
-![/img/partners.png](/img/partners.png)
+</div>
 
+<div class="vision">
 
+<div class="vision__text">
 
-**Bitrock** stand out over competition for an intense activity of international **alliances** and **partnerships**, aimed at increasing its market value proposition: **Bitrock** is premier partner of **Lightbend** and **Confluent**, and actively contributes to the consolidation and dissemination of these technologies through an ambitious project of **Academy**, offering high level certified training paths to third parties. The company, through a dynamic enterprise approach, provides **reliable** and **achievable innovation**, through a completely different paradigm, supported by successful methodologies, aimed at the constant achievement of a safe and guaranteed delivery.
+<h2>Vision</h2>
+<h3>EMBRACE THE CHANGE</h3>
 
-## Bitrock | Our Capabilities
-* **Reactive Applications** on **JVM** using primarily the **Lightbend Reactive Platform**, and promoting where possible, the **Scala language**
-* **Complete J2EE solutions** to make the most of traditional architectures
-* Implementation of **Big Data solutions** by modeling the data to its transformation supporting the customer in the migration from the old relational model
-* **Fast Data solutions** leveraging the partnership with **Radicalbit** (product company 100% owned by BITROCK focused on Fast Data) to propose in real time applications that manage streaming data.
+World is changing fast, with a pace difficult to match and companies must adopt **IT solutions able to evolve** in order to keep up with this **ever-changing scenario.**
 
-## Bitrock | Our Proposition
+Customers require more and **more sophisticated services** that can't be delivered without **modern, scalable and flexible technologies**, able to boost productivity while reducing the costs and exploit the hidden value of data.
 
-#### We Understand Business
-When we start a project, any project, we aim to improve the performance of anything related to it: from the business processes to the technical solutions. Check-IT team is certified ISTQB (International Software Testing Qualifications Board), the organization that certified software testers worldwide.
+In this context, choosing the right technology strategy is crucial for any business and it's a challenge that can be won only with knowledge, experience and vision.
 
-* Testing Methodology and operational support (from unit to acceptance)
-* User Acceptance Test
-* Test-factory process Design, Set up and fine tuning
-* ISTQB Certified
-* Functional Analysis
-* Management Consulting
-* Process Mapping
-* Internal Policies Design
+</div>
 
-#### We Master Technology
-We support customers in the development of ICT systems through the introduction of innovative technologies. Each and every person at BITROCK is deeply passionate about technology and innovation, putting in what they do a unique element: the heart. We’re Lightbend Premier Partner and Confluent Premier Partner.
+<img src="/img/binoculars.png">
 
-* End-to-End Enterprise Website & Mobile Applications
-* DevOps support for Software Life Cycle improvement and efficiency
-* R&D and Technology Scouting
-* Lightbend Premier Partner
-* Confluent Premier Partner
+</div>
 
-#### We Create Experience
-We adopt a Lean UX approach, creating a cross-functional team engaged actively in all phases of design and production of the product: idea definition, sketch, prototyping, observation & feedback. The Design team works together with a team of developers, activating the Design Studio sessions. Ideas take shape in sketches, simple drawings to guide the next stages of design. Collecting the most voted ideas, the design team creates an MVP: wireframes, graphic mockups, interactive prototypes or full stack code are all valid tools to test the product with end users.
+<section class="mission">
 
-* User Experience Design
-* Information Architecture Design
-* Visual Concept and graphic design
-* Usability test and performance assessment
-* Nielsen Norman Certified
+<h2>MISSION</h2>
+<h3>WE BUILD BUSINESS DRIVEN IT SOLUTIONS</h3>
 
-## Bitrock | Our Methodologies
+<blockquote>
 
-#### We work Agile﻿
-A powerful approach to deliver high value products where IT and Business cooperate continuously in order to achieve the best results also in evolving requirements and contexts. We leverage on the best-of-breed methodologies and Agile frameworks to reach a true Business Agility.
+"Bitrock ambition is to help Companies in <em>designing, developing and sustaining Business Driven Software Infrastructures and Applications,</em> providing knowledge, experience and unparalleled skills."
 
-#### We master DevOps
-Our DevOps services allow you to carefully review customer processes to improve workflows to ensure unparalleled efficiency:
+</blockquote>
 
-* ASSESSMENT. We analyze the pain-points, draw a road map and recommend tools and processes to automate the distribution cycles on the delivery infrastructure;
-* AUTOMATION. We automate the end-to-end delivery cycle and ensure that implementations and rollbacks are performed in one click with mitigated risks and increased productivity;
-* MANAGEMENT. We assist the customer's main team by ensuring complete integrated operation of the delivery pipeline automation cycle.
+</section>
 
-#### Make UX
-The Make-UX methodology comes from the Nielsen Norman Group, the company that defines the dictates of Usability in the world: the head of Make-UX is one of the 20 certified throughout Italy.
+<section class="offering">
 
-* USABILITY, ACCESSIBILITY: analysis of needs and behaviors; User interaction test with interfaces
-* INTERACTION DESIGN: design the interactions between users and interface
-* INFORMATION ARCHITECTURE & CONTENT STRATEGY: collection and organization of content and services across multiple channels, structuring of information and analysis of the navigation flow
-* VISUAL DESIGN: creation of concept and graphic tables
-* DIGITAL ANALYTICS: measurement and analysis of performance
-R&D: data visualization, wearables, etc...
+<div class="offering__text">
 
-#### Lean UX
-Lean UX is a methodology to allow to design new products/services in a short time. How it works: a team working together in a “war room”; a time boxed agenda with well defined milestones.
+<h2>OUR OFFERING</h2>
 
-* MONDAY: it’s the day dedicated to the analysis
-* TUESDAY: starting to schetching
-* WEDNESDAY: time to check and  vote the drafts
-* THURSDAY: ideas become a prototype
-* FRIDAY: testing the  prototype with end users
+Bitrock delivers solutions and services in three main areas: **Infrastructural Design & DevOps, Custom software Design & Development, Data & Analytics**.
 
-The target is to get quickly to an initial Minimum Viable Product (MVP), to be tested with End Users. Getting the End Users feedback and adding new features week by week the MVP grows up to a Candidate Release.
+</div>
 
+<div class="offering__list">
 
-#### Think & Check IT
-* ASSESSMENT: Analysis and evaluation of reference context
-* DEFINITION OF TEST MANAGEMENT FRAMEWORK: methods and testing strategies most suitable for the achievement of shared goals
-* TEST MANAGEMENT: management of Testing Process | Plans, develops, implements and evaluates all testing activities in the field of software development
-* TESTING: running Unit, Integration, System (Functional Functional -I), User Acceptance Test.
-* TEST GOVERNANCE: manage all the stages of the Test in line with the directives of the Bank of Italy – ‘Circ. 285 14 Aggiornamento’
+<div class="offering__item">
+
+**DEVOPS**
+<ul>
+    <li>Software Development LifeCycle Automation</li>
+    <li>CI/CD Pipeline Automation</li>
+    <li>Application Logging & Monitoring at scale</li>
+    <li>Applications & Infrastructures</li>
+    <li>Autoscaling Automation</li>
+</ul>
+
+</div>
+
+<div class="offering__item">
+
+**SOFTWARE ENGINEERING**
+<ul>
+    <li>Architectural Design</li>
+    <li>Process Analysis & Design (Domain Events)</li>
+    <li>Legacy code Modernization & Redesign</li>
+    <li>Modern Approach to Software Development</li>
+</ul>
+
+</div>
+
+<div class="offering__item">
+
+**DATA & ANALYTICS**
+<ul>
+    <li>Advanced Analytics</li>
+    <li>Streaming Analytics</li>
+    <li>Data Visualization</li>
+    <li>Streaming ETL</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="offering__list">
+
+<div class="offering__item">
+
+**Enterprise-grade UX/UI Design Development**
+
+Thanks to our expertise, we know how to apply the latest technologies and frameworks (Angular, Vue and React) to the front-end development process. Our custom, user-centered interfaces are able to adapt to the complex systems enterprises require today, by delivering a smarter and smoother digital experience to users.
+
+</div>
+
+</div>
+
+</section>
+
+<div class="technology-drivers">
+
+<h2>Technology enablers</h2>
+
+<div class="technology-drivers__images">
+
+<img src="/img/cloud.png">
+<img src="/img/lightbend.png">
+<img src="/img/confluent.png">
+<img src="/img/radicalbit.png">
+<img src="/img/kafka.png">
+<img src="/img/java.png">
+<img src="/img/scala.png">
+<img src="/img/flink.png">
+
+</div>
+
+<div class="hashicorp__images">
+
+<div class="hashicorp__main">
+
+<img src="/img/HashiCorp.png">
+
+</div>
+
+<div class="hashicorp__body">
+
+<img src="/img/HashiCorp__Consul.png">
+<img src="/img/HashiCorp__Nomad.png">
+<img src="/img/HashiCorp__Terraform.png">
+<img src="/img/HashiCorp__Vault.png">
+
+</div>
+
+</div>
+
+<div class="frontend__images">
+
+<img src="/img/react.png">
+<img src="/img/vue.png">
+<img src="/img/angular.png">
+
+</div>
+
+</div>

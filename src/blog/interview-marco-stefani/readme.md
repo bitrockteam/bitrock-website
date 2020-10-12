@@ -1,16 +1,16 @@
 ---
 title: Software Development @Bitrock | An interview with Marco Stefani (Head of Engineering)
-image: /img/posts/technology-3.png
+image: "/img/Interview.jpeg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
 publish: 2018-09-01
 layout: Post
-category: interviews
-tags:
----
+category: TECHNOLOGY
+tags: 
 
+---
 We met up with **Marco Stefani**, Head of Engineering in Bitrock, in order to understand his point of view and vision related to software development today. <!-- more --> A good opportunity to explore closely the key points of the Bitrock technology experience, and to better understand the features that a developer must have to become part of this team.
 
 > Marco Stefani (*Head of Engineering @Bitrock*) interviewed by Luca Lanza (*Corporate Strategist @Databiz Group*).s

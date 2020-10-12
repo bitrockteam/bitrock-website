@@ -1,15 +1,15 @@
 ---
 title: Bitrock is platinum sponsor of "Technology Infrastructure Summit 2018"
-image: /img/posts/corporate-3.png
+image: "/img/Evento 5.jpg"
 imageMeta:
-  attribution:
-  attributionLink:
+  attribution: 
+  attributionLink: 
 author: luca
-publish: 2018-09-04
+publish: 2018-09-03 22:00:00 +0000
 layout: Post
-category: events
----
+category: EVENTS
 
+---
 Addressing the issue of digital transformation often means to focus on the application areas and the business impacts of technologies and digital solutions: performance management, customer experience, the evolution of enterprise  business models are just some of the recurring themes under the broader hat of digital transformation. <!-- more -->
 
 On the other hand, flexibility, performance, scalability and responsiveness are the elements that are increasingly essential in a modern and digital-ready infrastructure: being able to adapt and face the challenges of the business becomes the founding condition of every IT infrastructure in an overall digital transformation strategy.

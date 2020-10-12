@@ -1,11 +1,11 @@
 ---
 home: true
 
-claim: to look beyond?
-tagline: what does it take
+claim: it solutions
+tagline: business-driven
 
 ctaText: Discover
-ctaLink: /#main
+ctaLink: discover
 
 wallpaper: ./images/main.jpg
 
