@@ -27,6 +27,8 @@ The CNCF community loves Prometheus because:
 
 <br/>
 
+<br/>
+
 ![](/img/download.png)
 
 <br/>
