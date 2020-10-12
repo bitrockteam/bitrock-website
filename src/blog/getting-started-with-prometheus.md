@@ -51,7 +51,11 @@ The data structure is self-sufficient and can be moved from one instance to anot
 
 Core Prometheus server is a single binary and each Prometheus server is an independent process with its own storage. One of the downsides of this core implementation is the lack of clustering or backfilling “missing” data when a scrape fails.
 
-![](/img/prometheus-exporter-loghi.png)
+<br/>
+
+![](/img/prometheus_logos.png)
+
+<br/>
 
 Prometheus is not supposed to only be used with standard exporters (2), you can instrument your own code to capture the metrics that matter to you, business ones for example. Prometheus comes with the support for a wide range of languages (Go, Java or Scala, Python, Ruby, etc). Many upstream libraries are already instrumented by the maintainers, so you will get that for free!
 
