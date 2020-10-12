@@ -25,13 +25,13 @@ The CNCF community loves Prometheus because:
 * it’s orchestrator ready, supporting dynamic configurations
 * it’s an ecosystem: many client libraries and exporters maintained both by Prometheus team and the community
 
-  <br/>  
-  ![](/img/prometheus-schema-1.png)
-  * Prometheus collects data
-  * Exporters expose data
-  * Applications expose data
-  * Grafana displays data
-  * Alertmanager dispatches alerts
+![](/img/prometheus-schema-1.png)
+
+* Prometheus collects data
+* Exporters expose data
+* Applications expose data
+* Grafana displays data
+* Alertmanager dispatches alerts
 
 Prometheus is a pull-based monitoring system that scrapes metrics from configured endpoints, stores them efficiently and supports a powerful query language to compose dynamic information from a variety of otherwise unrelated data points.
 
