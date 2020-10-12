@@ -48,5 +48,10 @@ pages:
 - src/blog/bitrock-virtual_office-journal.md
 - src/blog/bringing-gdpr-in-kafka-with-vault.md
 - src/blog/from-layered-to-hexagonal-architecture-hands-on.md
+- src/blog/getting-started-with-prometheus.md
+- src/blog/getting-started-with-react-push-based-architecture.md
+- src/blog/monitoring-kafka-connector-with-kubernetes.md
+- src/blog/polymorphic-messages-in-kafka-streams.md
 - src/blog/react-bandersnatch-experiment-getting-close-to-a-real-framework.md
+- src/blog/terraform-community-tools.md
 - src/blog/the-jamstack-proposition.md

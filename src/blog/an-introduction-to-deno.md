@@ -190,3 +190,7 @@ One of the key features in roadmap is the possibility to create a single executa
 Also the compatibility layer with the Node.js stdlib is still in progress; this could lead to a faster development of the runtime system.
 
 To sum up, we can say that Deno is in continuous evolution and probably will be the next game-changer of the Javascript ecosystem. The foundations for this runtime are in place and it is already a hot topic, so... keep an eye out!
+
+<br/><br/>
+
+_Author: Yi Zhang, UX/UI Engineer @Bitrock_

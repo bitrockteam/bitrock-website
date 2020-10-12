@@ -5,7 +5,7 @@ imageMeta:
   attribution: ''
   attributionLink: ''
 author: MC
-publish: 2020-07-21 14:29:00 +0000
+publish: 2020-07-21T14:29:00.000+00:00
 layout: Post
 category: TECHNOLOGY
 tags: []
@@ -150,3 +150,7 @@ This is of course just the beginning.
 #### Conclusions
 
 Static site generators enable us to provide a good user experience and also good performance, with a bit more effort than using common CMSs such as WordPress as a monolithic approach. We can integrate different sources and create very custom solutions using modern scaffolding and tooling. However, it does require quite a bit more effort, and the disconnect between frontend and backend can be a pain point for our editors.
+
+<br/><br/>
+
+_Author: Federico Muzzo, UX/UI Engineer @Bitrock_
