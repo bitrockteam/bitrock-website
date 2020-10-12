@@ -135,7 +135,11 @@ Alertmanager :
 * Dispatches them to downstream services, such as Slack or PagerDuty and many more
 * Built In HA leveraging gossip protocol
 
+<br/>
+
 ![](/img/schema_prometheus.png)
+
+<br/>
 
 <br/>
 
