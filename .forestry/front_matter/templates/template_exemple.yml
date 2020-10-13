@@ -47,6 +47,7 @@ pages:
 - src/blog/bitrock-rooms-a-ux-ui-project-to-face-covid-19-challenges.md
 - src/blog/bitrock-virtual_office-journal.md
 - src/blog/bringing-gdpr-in-kafka-with-vault.md
+- src/blog/data-engineering-handling-unreliable-sources.md
 - src/blog/from-layered-to-hexagonal-architecture-hands-on.md
 - src/blog/getting-started-with-prometheus.md
 - src/blog/getting-started-with-react-push-based-architecture.md
