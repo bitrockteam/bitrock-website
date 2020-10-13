@@ -22,15 +22,15 @@ Let's give a look at one of the aspects of the data wrangling process: how to ha
 <br />
 
 ## The Context
+
 In a recent project we have been involved in, we faced the scenario in which the data sources were heavily unreliable.
 
-
 Given the early definitions the expected data, to be received data from a set of sensors, should have been:
-- ~ 10 different types of data
-- every type at a fixed pace (every 10 minutes)
-- data will arrive in a landing bucket
-- data will be in CSV, with a predefined schema and a fixed number of rows
 
+* \~ 10 different types of data
+* every type at a fixed pace (every 10 minutes)
+* data will arrive in a landing bucket
+* data will be in CSV, with a predefined schema and a fixed number of rows
 
 Starting from this, we would have performed validation, cleaning, and aggregation, in order to compute some KPIs.
 Moreover, these KPIs were the starting point of a later Machine Learning prediction.
@@ -42,19 +42,21 @@ Like any real-world data project, the source data was suffering from multiple is
 <br />
 
 ## The Solution
+
 In scenarios like this, it's very important to be able to track the transformations the data pipeline will apply, and being able to answer questions like:
-- which are the source values for a given result?
-- does it come from real data or imputed data?
-- does all the sources arrived on time?
-- how much reliable is a given result?
+
+* which are the source values for a given result?
+* does it come from real data or imputed data?
+* does all the sources arrived on time?
+* how much reliable is a given result?
 
 To be able to answer this kind of questions, we first have to isolate three different kinds of data in at least three areas:
 
 | Area | Description |
-|---|---|
-| _Landing_ | data received from the sources but not yet entered in the data pipeline |
-| _Raw_ | data received from the sources, identified and stored as-is in the data lake |
-| _Processed_ | data processed by the data pipeline |
+| --- | --- |
+| Landing | data received from the sources but not yet entered in the data pipeline |
+| Raw | data received from the sources, identified and stored as-is in the data lake |
+| Processed | data processed by the data pipeline |
 
 <br />
 
@@ -110,7 +112,8 @@ In the fixed version of the file, there is a valid entry for each entity. The pi
 
 In this case, the _Run Control Value_ allows us to identify precisely which portion of data has been ingested with the previous execution so we can safely remove it and re-execute it with the correct one.
 
------------
+***
+
 These are just two simple scenarios that can be tackled in this way, but many other data pipeline issues that can benefit from this approach.
 
 This mechanism allows us to have also **idempotency** of the pipeline stages, i.e. being able to track the data flowing in the different stages it enables the possibility to re-apply the transformations on the same input and to obtain the same result.
@@ -124,3 +127,5 @@ In this article, we dived a bit into the data engineering world, specifically ho
 We have seen why the stage separation is important in designing a data pipeline and also which properties every "_area_" will hold, this helps us in understanding better what is happening and identifying the potential issues.
 
 Another aspect that we have highlighted is how this technique facilitates the handling of late-arriving data or re-ingesting corrected data in case an issue can be recovered at the source side.
+
+_Author: Luca Tronchin, Software Engineer @Bitrock_
