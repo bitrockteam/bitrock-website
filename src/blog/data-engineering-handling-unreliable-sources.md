@@ -1,13 +1,13 @@
 ---
 title: Data Engineering - Handling Unreliable Sources
-image: ''
+image: "/img/what_is_information_technology.jpg"
 imageMeta:
   attribution: ''
   attributionLink: ''
-author: ''
+author: MC
 publish: 
-layout: ''
-category: ''
+layout: Post
+category: TECHNOLOGY
 tags: []
 
 ---
