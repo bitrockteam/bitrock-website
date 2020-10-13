@@ -52,7 +52,7 @@ In scenarios like this, it's very important to be able to track the transformati
 
 To be able to answer this kind of questions, we first have to isolate three different kinds of data in at least three areas:
 
-
+![](/img/schermata-2020-10-13-alle-11-04-46.png)
 
 <br />
 
@@ -78,7 +78,7 @@ Let's see with some examples the potential of using the data separation describe
 
 Let's consider as a first the scenario in which the output is odd and it seems wrong.  The `RCV` column represents the _Run Control Value_ and it's being added by the pipeline.
 
-![Example 2: bad data from sources](./de_bs_example_1_img_1.png)
+![](/img/de_bs_example_1_img_1-d8fdbf56.png)
 
 Here we can see that if we look only into processed data, that for the input at hour `11:00` we are missing the entry with `ID=2` and the Counter with `ID=1` has a strange zero as its value (let's just assume that our domain expert said that zeros in Counter column are anomalous).
 
@@ -100,11 +100,11 @@ In the first example, we discussed about retrospectively analyzing the processin
 
 The following image shows the status of the data warehouse when the input at hour `11.00` has a couple of issues: the entry with `ID=2` is missing and the entry `ID=1` has a negative value and we have a validation rule to convert to zero the negative values. So the _Processed Area_ table contains the validated data.
 
-![Example 2: bad data from sources](./de_bs_example_2_img_1.png)
+![](/img/de_bs_example_2_img_1-bb498020.png)
 
 In the fixed version of the file, there is a valid entry for each entity. The pipeline will use the `RCV=101` as a reference to clean up the table from the previous run and ingest the new file.
 
-![Example 2: fix bad data](./de_bs_example_2_img_2.png)
+![](/img/de_bs_example_2_img_2-9bdc205e.png)
 
 In this case, the _Run Control Value_ allows us to identify precisely which portion of data has been ingested with the previous execution so we can safely remove it and re-execute it with the correct one.
 
@@ -123,5 +123,7 @@ In this article, we dived a bit into the data engineering world, specifically ho
 We have seen why the stage separation is important in designing a data pipeline and also which properties every "_area_" will hold, this helps us in understanding better what is happening and identifying the potential issues.
 
 Another aspect that we have highlighted is how this technique facilitates the handling of late-arriving data or re-ingesting corrected data in case an issue can be recovered at the source side.
+
+<br />
 
 _Author: Luca Tronchin, Software Engineer @Bitrock_
