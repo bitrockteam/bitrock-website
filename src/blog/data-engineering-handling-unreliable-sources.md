@@ -52,11 +52,7 @@ In scenarios like this, it's very important to be able to track the transformati
 
 To be able to answer this kind of questions, we first have to isolate three different kinds of data in at least three areas:
 
-| Area | Description |
-| --- | --- |
-| Landing | data received from the sources but not yet entered in the data pipeline |
-| Raw | data received from the sources, identified and stored as-is in the data lake |
-| Processed | data processed by the data pipeline |
+
 
 <br />
 
