@@ -66,19 +66,19 @@ After having considered the previous three areas to store the data, we need to i
 
 The _Run Control Value_, it's metadata, it can be a serial, a timestamp, or others, and it gives us the possibility to correlate the data in the different areas with the pipeline runs.
 
-This concept is quite simple to implement, but it's not so obvious to understand. On the other hand, it is easy to be misled and think that it is superfluous and that it can be removed in favor of information already present in the data, such as a timestamp.
+This concept is quite simple to implement, but it's not so obvious to understand. On the other hand, it is easy to be misled; I think it is superfluous, and could be removed in favor of information already present in the data, such as a timestamp.
 
-Let's see with some examples the potential of using the data separation described above together with the _Run Control Value_.
+Let's now see, with a few examples, the potential of using the data separation described above, together with the _Run Control Value_.
 
 <br />
 
 #### Example 1: _Tracking data imputation_
 
-Let's consider as a first the scenario in which the output is odd and it seems wrong.  The `RCV` column represents the _Run Control Value_ and it's being added by the pipeline.
+Let's first consider the scenario in which the output is odd and seems wrong.  The `RCV` column represents the _Run Control Value_ and it's being added by the pipeline.
 
 ![](/img/de_bs_example_1_img_1-d8fdbf56.png)
 
-Here we can see that if we look only into processed data, that for the input at hour `11:00` we are missing the entry with `ID=2` and the Counter with `ID=1` has a strange zero as its value (let's just assume that our domain expert said that zeros in Counter column are anomalous).
+Here we can see that, if we look only into processed data, that for the input at hour `11:00` we are missing the entry with `ID=2` and the Counter with `ID=1` has a strange zero as its value (let's just assume that our domain expert said that zeros in Counter column are anomalous).
 
 In this case, we can backtrack in the pipeline stages, using the _Run Control Value_ and see which values have concretely contributed to the output, if all the input were available by the time the computation has run, or if some file were missing in the _Raw Area_ and so some imputed values have been used.
 
