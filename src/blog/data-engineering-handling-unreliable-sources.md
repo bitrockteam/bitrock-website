@@ -88,13 +88,13 @@ The thing of keeping distinct the _Landing Area_ from the _Raw Area_ allows us a
 
 Given the scenario described at the beginning of the article, we where in a batch scenario with a scheduler that drives the ingestion. So, what if, at the time of the scheduler trigger the ingestion one input was missing and so it has been imputed, but at the time we are going to debug it we can see that it's available?
 
-In this case, it will be available in the _Landing Area_ but it will be missing in the _Raw Area_, so, without even opening the file to check the values, we can quickly understand that for that specific run, those values have been imputed.
+In this case, it will be available in the _Landing Area_ but it will be missing in the _Raw Area_; so, without even opening the file to check the values, we can quickly understand that for that specific run, those values have been imputed.
 
 <br />
 
 #### Example 2: _Error from the sources with input data re-submission_
 
-In the first example, we discussed about retrospectively analyzing the processing or debugging it. Now we consider the case a source had a problem and submitted bad data on a given run, but, after the problem has been fixed, we want to re-ingest the data for the same run to update our output, re-executing it in the same context.
+In the first example, we discussed about retrospectively analyzing the processing or debugging it. We now consider another case: when a source had a problem and submitted bad data on a given run, but, after the problem has been fixed, we want to re-ingest the data for the same run to update our output, re-executing it in the same context.
 
 The following image shows the status of the data warehouse when the input at hour `11.00` has a couple of issues: the entry with `ID=2` is missing and the entry `ID=1` has a negative value and we have a validation rule to convert to zero the negative values. So the _Processed Area_ table contains the validated data.
 
@@ -108,9 +108,9 @@ In this case, the _Run Control Value_ allows us to identify precisely which port
 
 ***
 
-These are just two simple scenarios that can be tackled in this way, but many other data pipeline issues that can benefit from this approach.
+These are just two simple scenarios that can be tackled in this way, but many other data pipeline issues can benefit from this approach.
 
-This mechanism allows us to have also **idempotency** of the pipeline stages, i.e. being able to track the data flowing in the different stages it enables the possibility to re-apply the transformations on the same input and to obtain the same result.
+Furthermore, this mechanism allows us to have **idempotency** of the pipeline stages, i.e. being able to track the data flowing at the different stages enables the possibility to re-apply the transformations on the same input and to obtain the same result.
 
 <br />
 
