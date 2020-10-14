@@ -37,20 +37,20 @@ Moreover, these KPIs were the starting point of a later Machine Learning predict
 
 On top of this, there was a requirement to produce updated reports and predictions every 10 minutes with the most up-to-date information received.
 
-Like any real-world data project, the source data was suffering from multiple issues: like missing data in the CSV (sometimes some value missing in some cells, or entire rows were missing, or sometimes there were duplicated rows), or late-arriving data (even not arriving at all).
+Like any real-world data project, the source data was suffering from multiple issues, like missing data in the CSV (sometimes some value missing in some cells, or entire rows were missing, or sometimes there were duplicated rows), or late-arriving data (even not arriving at all).
 
 <br />
 
 ## The Solution
 
-In scenarios like this, it's very important to be able to track the transformations the data pipeline will apply, and being able to answer questions like:
+In similar scenarios, it is fundamental to track the transformations that the data pipeline will apply, and to answer questions like these:
 
 * which are the source values for a given result?
 * does it come from real data or imputed data?
-* does all the sources arrived on time?
-* how much reliable is a given result?
+* did all the sources arrive on time?
+* how reliable is a given result?
 
-To be able to answer this kind of questions, we first have to isolate three different kinds of data in at least three areas:
+To be able to answer these questions, we first have to isolate three different kinds of data, in at least three areas:
 
 ![](/img/schermata-2020-10-13-alle-11-04-46.png)
 
