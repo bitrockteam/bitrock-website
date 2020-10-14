@@ -118,9 +118,9 @@ Furthermore, this mechanism allows us to have **idempotency** of the pipeline st
 
 ## Conclusions
 
-In this article, we dived a bit into the data engineering world, specifically how to handle the data unreliable sources, the majority of the cases in real-world projects.
+In this article, we have dived a bit into the data engineering world, specifically discovering how to handle data unreliable sources, most of the cases in real-world projects.
 
-We have seen why the stage separation is important in designing a data pipeline and also which properties every "_area_" will hold; this helps us  understand better what is happening and identify the potential issues.
+We have seen why the stage separation is important in designing a data pipeline and also which properties every "_area_" will hold; this helps us  better understand what is happening and identify the potential issues.
 
 Another aspect we have highlighted is how this technique facilitates the handling of late-arriving data or re-ingesting corrected data, in case an issue can be recovered at the source side.
 
