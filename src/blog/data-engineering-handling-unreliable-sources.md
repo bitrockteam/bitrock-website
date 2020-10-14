@@ -54,8 +54,6 @@ To be able to answer this kind of questions, we first have to isolate three diff
 
 ![](/img/schermata-2020-10-13-alle-11-04-46.png)
 
-<br />
-
 Specifically, the _Landing Area_ is a place in which the external systems (i.e. data sources) will write, while our data pipeline can only read the information from there or delete the data after a safe retention time.
 
 In the _Raw Area_ instead, we are going to copy the CSVs from the _Landing Area_ keeping the data as-is, but enriching the metadata (e.g. labeling the file, or putting it in a better directory structure). This will be our **Data Lake**, from which we can always retrieve the original data, in case of error during processing or functionalities developed after the data has been already processed by the pipeline.
