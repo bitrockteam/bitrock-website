@@ -17,7 +17,7 @@ But **working with data is not easy**: as seen before, real data is always noisy
 
 It is thus very important to make the data usable via a process known as **data wrangling** (i.e. the process of cleaning, structuring, and enriching raw data into the desired format) for better decision making. The crucial thing to understand here is that **bad data lead to poor decision-making**, so it's important to make this process stable, repeatable, and idempotent, in order to ensure that our transformations are improving the quality of the data and not degrading it.
 
-Let's give a look at one of the aspects of the data wrangling process: how to handle data sources that cannot guarantee about the quality of the data they are providing.
+Let's have a look at one of the aspects of the data wrangling process: how to handle data sources that cannot guarantee about the quality of the data they are providing.
 
 <br />
 
