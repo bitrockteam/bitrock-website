@@ -11,9 +11,9 @@ category: TECHNOLOGY
 tags: []
 
 ---
-Most of you have probably already heard the phrase "_data is the new oil_", and that's because everything in our world produces valuable information. It's up to us being able to extract the value from all the noisy, messy data that is being produced every instant.
+Most of you have probably already heard the phrase "_data is the new oil_", and that's because everything in our world produces valuable information. It's up to us to be able to extract the value from all the noisy, messy data that is being produced every instant.
 
-But **working with data is not easy**: as I was saying, real data is always noisy, messy, and often incomplete, and even the process of extraction sometimes is affected by some faults.
+But **working with data is not easy**: as seen before, real data is always noisy, messy, and often incomplete, and even the process of extraction sometimes is affected by some faults.
 
 It is thus very important to make the data usable via a process known as **data wrangling** (i.e. the process of cleaning, structuring, and enriching raw data into the desired format) for better decision making. The crucial thing to understand here is that **bad data lead to poor decision-making**, so it's important to make this process stable, repeatable, and idempotent, to ensure that our transformations are improving the quality of the data and not degrading it.
 
