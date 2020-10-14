@@ -114,6 +114,8 @@ This mechanism allows us to have also **idempotency** of the pipeline stages, i.
 
 <br />
 
+<br />
+
 ## Conclusions
 
 In this article, we dived a bit into the data engineering world, specifically how to handle the data unreliable sources, the majority of the cases in real-world projects.
