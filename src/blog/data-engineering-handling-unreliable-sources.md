@@ -80,7 +80,7 @@ Let's first consider the scenario in which the output is odd and seems wrong.  T
 
 Here we can see that, if we look only into processed data, for the input at hour `11:00` we are missing the entry with `ID=2`, and the Counter with `ID=1` has a strange zero as its value (let's just assume that our domain expert said that zeros in Counter column are anomalous).
 
-In this case, we can backtrack in the pipeline stages, using the _Run Control Value_, and see which values have concretely contributed to the output, if all the inputs were available by the time the computation has run, or if some file were missing in the _Raw Area_ and so some imputed values have been used.
+In this case, we can backtrack in the pipeline stages, using the _Run Control Value_, and see which values have concretely contributed to the output, if all the inputs were available by the time the computation has run, or if some files were missing in the _Raw Area_ and so some imputed values have been used.
 
 In the image above, we can see that in the _Raw Area_ the inputs with `RCV=101` were both negatives, and the entity with `ID=2` is related to `time=12:00`. If we then check the original file in the _Landing Area_ we can see that this file was named `1100.csv` (in the image represented as a couple of table rows for simplicity), so the entry related to the hour `12:00` was an error so the entry got removed in the processed, while the other one was reset to zero by an imputation rule.
 
