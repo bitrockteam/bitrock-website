@@ -85,7 +85,7 @@ In the image above, we can see that in the _Raw Area_ the inputs with `RCV=101` 
 
 The solution of keeping the _Landing Area_ distinct from the _Raw Area_ allows us also to handle the case of Late Arriving Data.
 
-Given the scenario described at the beginning of the article, we receive data in batches with a scheduler that drives the ingestion. So, what if, at the time of the scheduled trigger the ingestion, one of the inputs was missing and it has been fulfilled with the imputed values, but, at the time we are going to debug it, we can see that it's available?
+Given the scenario described at the beginning of the article, we receive data in batches with a scheduler that drives the ingestion. So, what if, at the time of the scheduled ingestion, one of the inputs was missing and it has been fulfilled with the imputed values, but, at the time we are going to debug it, we can see that it's available?
 
 In this case, it will be available in the _Landing Area_ but it will be missing in the _Raw Area_; so, without even opening the file to check the values, we can quickly understand that for that specific run, those values have been imputed.
 
