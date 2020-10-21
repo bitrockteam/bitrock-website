@@ -11,7 +11,7 @@ category: TECHNOLOGY
 tags: []
 
 ---
-Most of you have probably already heard the phrase "_data is the new oil_", and that's because everything in our world produces valuable information. It's up to us to be able to extract the value from all the noisy, messy data that is being produced every instant.
+Most of you have probably heard the phrase "_data is the new oil_", and that's because everything in our world produces valuable information. It's up to us to be able to extract the value from all the noisy, messy data that is being produced every instant.
 
 But **working with data is not easy**: as seen before, real data is always noisy, messy, and often incomplete, and even the process of extraction sometimes is affected by some faults.
 
